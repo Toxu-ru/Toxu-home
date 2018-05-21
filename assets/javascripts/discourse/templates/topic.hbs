@@ -1,6 +1,11 @@
 <div class="container-tip">
 <div class="container-telo">
 
+<style>.navigation-topics tr.category-other{display: none;}</style>
+{{#if currentUser.custom_fields.userbar_profile}}
+<style>.navigation-topics tr.category-other{display: inline-block;}</style>
+{{/if}}
+
 {{#discourse-topic multiSelect=multiSelect enteredAt=enteredAt topic=model hasScrolled=hasScrolled}}
   {{#if model}}
     {{add-category-class category=model.category}}
