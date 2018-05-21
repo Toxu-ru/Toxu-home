@@ -3,7 +3,10 @@
     <label class="control-label">Для общения</label>
      <div class="controls">
       <label class='checkbox-label'>
-        {{input type="checkbox" checked=model.custom_fields.userbar_profile}}
+        {{preference-checkbox labelKey="user.userbar_profile" checked=model.custom_fields.userbar_profile}}
+        
+       
+        
            <span class="instructions"> Добавить раздел Для общения в ленту вопросов.</span>
       </label>
     </div>
@@ -13,7 +16,7 @@
     <label class="control-label">Расположение колонки</label>
    <div class="controls">
       <label class='checkbox-label'>
-        {{input type="checkbox" checked=model.custom_fields.userbar_cat}}
+        {{preference-checkbox labelKey="user.userbar_cat"  checked=model.custom_fields.userbar_cat}}
         <span class="instructions">   Расположить боковую колонку (с Разделами) в правой части экрана.</span>
       </label>
     </div>
