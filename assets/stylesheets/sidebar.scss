@@ -107,6 +107,13 @@ a:hover {color: #f56400;}
 .container-bar {display: none;}
 }
 
+tr.category-other .no-no.centr::after {
+    display: inline-block;
+    content: '\f27b';
+    font-family: FontAwesome;
+    margin-left: 5px;
+    font-size: 14px;
+}
 
 /*верхнее меню*/
 .nav-pills>li.active>a, .nav-pills>li>a.active {color: #999;font-weight: 500;background-color: #fff;border-bottom: 2px solid #f56400;}
