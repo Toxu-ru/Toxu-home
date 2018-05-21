@@ -57,4 +57,4 @@ User.register_custom_field_type('userbar_profile', :boolean)
 end
 
 
-register_asset "javascripts/discourse/templates/connectors/user-custom-preferences/userbar-preferences.hbs"
+register_asset "javascripts/discourse/templates/connectors/user-custom-preferences/user-preferences-interface.hbs"
