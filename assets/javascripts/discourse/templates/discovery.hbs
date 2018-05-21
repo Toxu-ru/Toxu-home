@@ -3,6 +3,11 @@
   {{discourse-banner user=currentUser banner=site.banner}}
 </div>
 
+<style>.navigation-topics tr.category-other{display: none;}</style>
+{{#if currentUser.custom_fields.userbar_profile}}
+<style>.navigation-topics tr.category-other{display: inline-block;}</style>
+{{/if}}
+
 {{mount-widget widget="toxu-items"}}
 
 <div class="blog-list">
