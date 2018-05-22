@@ -6,12 +6,15 @@
  {{mount-widget widget="link-top"}}
 </div>
 
+<div class='messag'>
 <h3 class="sidebar-sug">Рекомендованные</h3>
 {{#if topics}} {{else}} 
 {{#unless loadingMore}}
 <center><small style="color:#888">формируется список...<br><br></small></center>
 {{/unless}}
 {{/if}}
+
+
 
 {{topic-list-sug showParticipants=showParticipants
                  showPosters=showPosters
@@ -22,7 +25,9 @@
                  canBulkSelect=canBulkSelect
                  selected=selected
                  skipHeader=skipHeader}}
- 
+
+
+
 <a href="https://toxu.ru{{unbound url}}.rss" title="лента для данного вопроса и его ответов" class="ser cvet">RSS лента вопроса...</a>
 <hr class="shar"> 
 <div class="share2">
@@ -35,7 +40,8 @@
 <a rel="nofollow" class="soc-link" href="https://vk.com/share.php?url=https://toxu.ru{{unbound url}}" target="_blank">
 <i class="fa fa-vk" aria-hidden="true"></i></a>
 </div>
-<div>
+</div>
+<div class='messag2'>
 <a class="cvet" href="https://toxu.ru{{unbound url}}" id="scroll-top" style="display: inline;"><i class="fa fa-arrow-up"></i></a>
 </div>
 
