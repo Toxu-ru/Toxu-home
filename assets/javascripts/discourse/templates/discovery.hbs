@@ -4,9 +4,9 @@
   {{discourse-banner user=currentUser banner=site.banner}}
 </div>
 
-<style>.navigation-topics tr.category-other{display: none !important;}</style>
+<style>.navigation-topics tr.category-other.liked{display: none !important;}</style>
 {{#if currentUser.custom_fields.userbar_profile}}
-<style>.navigation-topics tr.category-other{display: block !important;}</style>
+<style>.navigation-topics tr.category-other.liked{display: block !important;}</style>
 {{/if}}
 
 {{mount-widget widget="toxu-items"}}
