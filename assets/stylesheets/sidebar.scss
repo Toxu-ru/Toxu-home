@@ -317,7 +317,7 @@ body[class*="navigation-categories"] #main-outlet .container.list-container.has-
 .stats small {text-transform: uppercase;color: #777;font-weight: 300;font-size: 12px;}
 .has-description {float: left;width: 70%;}
 .cat-glav {height: 80px;}
-.badge-category-bg {display: none;}
+.badge-category-bg {display: none !important;}
 .badge-wrapper.bullet span.badge-category:hover {color: #f56400;}
 .category-logo-small {width: 16px;height: 16px;}
 .category-description {max-width: 450px;font-size: 0.97rem;font-weight: 400;line-height: 1.2;color: #777;}
