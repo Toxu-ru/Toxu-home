@@ -197,8 +197,7 @@ nav.post-controls {    margin-top: -10px;}
 /*ПМ и комм*/
 .user-messages-page .categ:after {display: inline-block;content: '\f003';font-family: FontAwesome; color:#339900;margin-left: 5px;}
 h2.selected-name{overflow: hidden !important;}
-.collection-header .category-filter, .category-internet tr.category-internet-sites, 
-.category-internet .category-internet-computers, .category-other2 {    display: none !important;}
+.collection-header .category-filter  {    display: none !important;}
 body:not(.user-messages-page){
     .main-nav li:nth-child(4){
         display:none;
