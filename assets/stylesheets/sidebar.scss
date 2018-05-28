@@ -69,16 +69,16 @@ a.ser{color: #666;margin-bottom: 2px;}
 }
 
 /* баннер */
-#banner-content {
+#banner-content-t {
     background: url(https://toxu.ru/uploads/default/original/2X/4/40a369bb0fbe0b72d259b0dbb0ffcc525c283ad7.jpg);
     background-position-x: 0%;background-position-y: 0%;max-width: 1200px;background-position: center 17%;
     background-size: 100% auto;padding-bottom: 10px;text-align: center;border: 1px solid rgba(27,31,35,0.075);}
-#banner-content h1 {font-weight: 700;color:#f56400;letter-spacing: 0;font-size: 34px;width: 60%;margin: 10px auto;line-height: 45px;}
-#banner-content p {font-weight: 300;font-size: 16px;line-height: 150%;color: #667d99;width: 70%;margin: 10px auto;}
-#banner-content a.kn {margin-top: 15px;margin-right: 15px;display: inline-block;border: solid 1px #0095ff;padding: 6px 11px;
+#banner-content-t h1 {font-weight: 700;color:#f56400;letter-spacing: 0;font-size: 34px;width: 60%;margin: 10px auto;line-height: 45px;}
+#banner-content-t p {font-weight: 300;font-size: 16px;line-height: 150%;color: #667d99;width: 70%;margin: 10px auto;}
+#banner-content-t a.kn {margin-top: 15px;margin-right: 15px;display: inline-block;border: solid 1px #0095ff;padding: 6px 11px;
 	border-radius: 1px;text-transform: uppercase;font-weight: 600;font-size: 13px;line-height: 1.42857;color: #0095ff;}
-#banner-content a.kn:hover {background: rgba(0,0,0,0);border: solid 1px #f56400;color: #f56400;}
-@media screen and (max-width : 1100px) {#banner-content h1{font-size: 30px;}#banner-content p {font-size:14px;}} 
+#banner-content-t a.kn:hover {background: rgba(0,0,0,0);border: solid 1px #f56400;color: #f56400;}
+@media screen and (max-width : 1100px) {#banner-content-t h1{font-size: 30px;}#banner-content-t p {font-size:14px;}} 
 
 /*колонки*/
 .sidebar-m, li.nav-item-guidelines {display: none;}
