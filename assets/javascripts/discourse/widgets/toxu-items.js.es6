@@ -16,9 +16,9 @@ export default createWidget('toxu-items', {
     } else { 
  
 contents.push(
-new RawHtml({ html: `<div class="banner-toxu">
+new RawHtml({ html: `<div class="banner-toxu-t">
 
-<div id="banner-content">
+<div id="banner-content-t">
 <!--p><a title="Что такое Toxu?" href="https://toxu.ru/toxu"><img border="0" src="https://toxu.ru/uploads/default/original/2X/f/f8927774785cc502811a9ce4b5cdca0dcf2472db.jpg" alt="Талисман Toxu.ru" width="75" height="75"></a></p-->
 <h1>Toxu — место для обмена знаниями</h1>
 <p class="obyav">Это место для лучшего понимания мира. Мы стремимся к достижению этой цели путём создания лучшего сайта вопросов и ответов. 
