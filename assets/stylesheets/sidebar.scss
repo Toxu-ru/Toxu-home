@@ -104,6 +104,11 @@ a:hover {color: #f56400;}
 .fa{margin-right: 4px;color: #339900;}
 }
 
+
+@media screen and (max-width : 1200px) {
+#scroll-top  {display: none !important;}
+}
+
 @media screen and (max-width : 1150px) {
 .topic-body {max-width: 650px;}
 }
