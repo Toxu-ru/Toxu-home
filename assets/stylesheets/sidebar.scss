@@ -206,25 +206,6 @@ nav.post-controls {    margin-top: -10px;}
 .user-messages-page .categ:after {display: inline-block;content: '\f003';font-family: FontAwesome; color:#339900;margin-left: 5px;}
 h2.selected-name{overflow: hidden !important;}
 .collection-header .category-filter  {    display: none !important;}
-body:not(.user-messages-page){
-    .main-nav li:nth-child(4){
-        display:none;
-    }
-}
-body.user-messages-page{
-    .main-nav li{
-        display:none;
-        &:nth-child(4){
-            display:block;
-            a{
-                cursor:default;
-                border:0;
-                font-weight:bold;
-            }
-        }
-    }        
-}
-
 .post-hidden, .del {
 .topic-avatar, .like-button, .share, .reply {display: none !important;}
 nav.post-controls, p, a.expand-hidden, .topic-meta-data {font-size: 13px;margin: 1px;}
