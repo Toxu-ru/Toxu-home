@@ -1,7 +1,4 @@
 <div id="fon" class="fon">
-<div class="container">
-  {{discourse-banner user=currentUser banner=site.banner}}
-</div>
 
 <style>.navigation-topics tr.category-other{display: none !important;}</style>
 {{#if currentUser.custom_fields.userbar_profile}}
@@ -38,6 +35,9 @@
 <div class="telo-qa">
 
 <div class="container list-container {{if siteSettings.sidebar_enable "has-sidebar"}} {{if currentUser.custom_fields.userbar_cat "test"}}">
+ 
+{{discourse-banner user=currentUser banner=site.banner}} 
+ 
  
 <div class="list-controls">
   <div class="container">
