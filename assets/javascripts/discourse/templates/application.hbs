@@ -6,7 +6,9 @@
               toggleAnonymous=(route-action "toggleAnonymous")
               logout=(route-action "logout")}}
 <a name="toxu-top"></a> 
-<div id="main-outlet" class="wrap toxu">
+<div id="main-outlet" class="toxu-t">
+
+<div id="main-outlet" class="wrap">
   <div class="container">
     {{#if showTop}}
       {{custom-html name="top"}}
@@ -18,8 +20,12 @@
   {{outlet}}
   {{outlet "user-card"}}
 </div>
+
+</div>
+
 <a href="https://toxu.ru/#toxu-top" id="scroll-top" style="display: none;" class="cvet"><i class="fa fa-arrow-up"></i></a>
-<footer class="footer-toxu"><div class="footer_column">
+
+<div class="footer-toxu"><div class="footer_column">
 <div class="one">
 <a title="Писатели" rel="nofollow" href="https://toxu.ru/profile">Писатели</a> 
 <a class="links" title="Теги" rel="nofollow" href="https://toxu.ru/tags">Теги</a> 
@@ -28,7 +34,7 @@
 <a class="links" title="Обратная связь" href="https://toxu.ru/t/voprosy-k-administraczii-sajta/2016">Обратная связь</a> 
 <a class="links" title="Правила" href="https://toxu.ru/c/toxu/regulations">Правила</a>
 <a class="links" title="Помощь" href="https://toxu.ru/help">Помощь</a></div>
-<div class="too">© 2017–2018 <a href="https://toxu.ru">«Toxu» – обмен знаниями и опытом</a></div></div></footer>
+<div class="too">© 2017–2018 <a href="https://toxu.ru">«Toxu» – обмен знаниями и опытом</a></div></div></div>
 
 {{outlet "modal"}}
 {{topic-entrance}}
