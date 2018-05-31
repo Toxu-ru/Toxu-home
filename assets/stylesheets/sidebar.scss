@@ -54,6 +54,7 @@ a.ser{color: #666;margin-bottom: 2px;}
 .prof-txt {text-align:center;font-size:1.4em;color:#666;font-family: Georgia,Arial,sans-serif;font-weight: 300;}
 
 @media (max-width: 850px){
+.prof-txt{white-space: nowrap;    overflow: hidden;    padding: 5px;    text-overflow: ellipsis;}	
 .prof-blog-2 {float: left;width: 33%;}
 .prof-num, h1.prof {font-size: 2em;}
 .prof-txt, h3.user {font-size: 1em;}
