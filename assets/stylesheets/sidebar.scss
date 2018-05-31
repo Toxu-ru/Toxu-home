@@ -59,6 +59,7 @@ a.ser{color: #666;margin-bottom: 2px;}
 .prof-num, h1.prof {font-size: 2em;}
 .prof-txt, h3.user {font-size: 1em;}
 .prof-num img.avatar {width: 34px;height:34px;}  
+.no-mob {display: none;}
 }
 
 .d-editor-textarea-wrapper-info  {
@@ -407,7 +408,7 @@ body.category-toxu-regulations { overflow-x: hidden;
 /*add mobile*/
 html.mobile-view {
 .sidebar, .user-signature, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
- #scroll-bottom, #scroll-top, .category-list  .category-description, .no-mob, .container-bar {display: none !important;}
+ #scroll-bottom, #scroll-top, .category-list  .category-description,  .container-bar {display: none !important;}
 .navigation-categories {th.latest, td.latest {display: none;}.category {width: 99%;}}
 .topic-post.comment .topic-avatar {padding-top: 0;}
 .list-container.has-sidebar, .container-telo {width: 100%;}
