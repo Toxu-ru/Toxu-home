@@ -24,6 +24,7 @@ export default createWidget('link-top', {
  title = topics[t].title;
  slug = topics[t].slug; 
  catid = topics[t].category_id;
+ //@computed('categories.[].uploaded_logo.url')
    
  contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><a href="/t/${slug}">${title}</a></div>`})); 
    
