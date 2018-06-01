@@ -6,11 +6,12 @@ export default createWidget('link-top', {
 
   html(attrs, state) {
   let contents = []
-    
+  var img;
   var title;
   var slug;
   var catid;
-
+  var name;
+    
   $.ajax({
   url: "/top/daily.json",
   dataType: 'json',
@@ -24,14 +25,13 @@ export default createWidget('link-top', {
  title = topics[t].title;
  slug = topics[t].slug; 
  catid = topics[t].category_id;
- //@computed('categories.[].uploaded_logo.url')
-   
- contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><a href="/t/${slug}">${title}</a></div>`})); 
+ img = Discourse.Category.findById(catid).uploaded_logo.url;
+ name =  Discourse.Category.findById(catid).name;   
+ contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><img src="${img}" alt="${name}" title="${name}" class="cat-small" width="16" height="16"> 
+ <a href="/t/${slug}">${title}</a></div>`})); 
    
  }
  }
  });
-    
  return contents;
-
 }});
