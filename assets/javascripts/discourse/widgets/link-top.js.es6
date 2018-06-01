@@ -5,13 +5,12 @@ export default createWidget('link-top', {
   buildKey: (attrs) => 'link-top',
 
   html(attrs, state) {
-
   let contents = []
     
   var title;
   var slug;
+  var catid;
 
-  
   $.ajax({
   url: "/top/daily.json",
   dataType: 'json',
@@ -24,6 +23,8 @@ export default createWidget('link-top', {
  if(t >2) break;  
  title = topics[t].title;
  slug = topics[t].slug; 
+ catid = topics[t].category_id;
+   
  contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><a href="/t/${slug}">${title}</a></div>`})); 
    
  }
@@ -32,5 +33,4 @@ export default createWidget('link-top', {
     
  return contents;
 
-}
-});
+}});
