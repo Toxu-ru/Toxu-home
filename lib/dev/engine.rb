@@ -29,7 +29,7 @@ module DiscourseQa
 
     config.after_initialize do
 		Discourse::Application.routes.append do
-			mount ::DiscourseToxu::Engine, at: "/"
+			mount ::DiscourseQa::Engine, at: "/"
 		end
     end
   end
