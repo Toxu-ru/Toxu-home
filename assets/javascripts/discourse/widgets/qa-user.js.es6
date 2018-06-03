@@ -42,7 +42,7 @@ export default createWidget('qa-user', {
   
   if ( id == 104) {
 
-  contents.push( new RawHtml({ html: `<div class="bd"><center><div class="prof-num">Сертификат</div>    ${userid}
+  contents.push( new RawHtml({ html: `<div class="bd"><center><div class="prof-num">Сертификат</div>   
   
   <img src="https://toxu.ru/discobot/certificate.svg?date=${granted_at}&amp;user_id=${userid}" alt="Грамота" style="max-width:1000px"></center>
   
