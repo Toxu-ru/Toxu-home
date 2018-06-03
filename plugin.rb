@@ -19,7 +19,7 @@ Discourse::Application.routes.append do
   get '/profile' => 'discourse_profile/profile#index'
   get '/profile/:username' => 'profile#show', constraints: { username: RouteFormat.username }
   
-  get '/qa' => 'discourse_qa/qa#my_page'
+  get '/qa/:username' => 'discourse_qa/qa#index', constraints: { username: RouteFormat.username }
   
 end
 
