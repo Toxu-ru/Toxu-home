@@ -8,17 +8,16 @@ export default createWidget('qa-user', {
   html(attrs, state) {
     const { currentUser } = this;
     let contents = []
-
     
-    var  username;
+ var  username;
+
+ var pathArray = window.location.pathname.split( '/' );
+ username   = pathArray[2]; 
 	
-     
-	var pathArray = window.location.pathname.split( '/' );
-	username   = pathArray[2]; 
-	
-	var id;
-  var granted_at;
+ var id;
+ var granted_at;
  var userid;
+	  
   $.ajax({
   url: "/users/"+ username +".json", 
   dataType: 'json',
