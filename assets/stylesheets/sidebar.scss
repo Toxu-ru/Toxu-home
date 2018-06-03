@@ -198,7 +198,7 @@ a.reply-to-tab img.avatar, .user-signature, .names span.full-name, .avatar-flair
 .topic-avatar { width: 20px;}
 .topic-body .contents .cooked {font-size: 1.1em;}
 .topic-body .regular {margin-top: 1px;}
-.topic-body { max-width: 657px;border-right: none;padding: 5px 11px 0 6px;}
+.topic-body { max-width: 657px;border-right: none;padding: 5px 0 0 6px}
 nav.post-controls button {font-size: 1em;}	
 nav.post-controls {    margin-top: -10px;}
 .who-liked {margin-top: 1px;}
@@ -234,7 +234,7 @@ img.avatar {border-radius: 5%;}
 .private-message-map h3:after { content: " (приватно)";} 
 button.btn-primary.create span.d-button-label, li.extra-nav-item-outlet.votes {display: none;}
 button.btn-primary.create:after { content: " Ответить приватно";} 	
-}
+} 
 
 
 /*теги*/
