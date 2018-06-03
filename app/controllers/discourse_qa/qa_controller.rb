@@ -1,12 +1,26 @@
 module DiscourseQa
+	
 	class QaController < ApplicationController
 
-		def my_page
-			render :json => { name: "Для sdfsdfsdf нужен сайт Toxu.ru... " }
-      rescue StandardError => e
-        render_json_error e.message
-   
-		end
+#  requires_login only: [:live_post_counts]
 
-	end
+  skip_before_action :check_xhr, only: [:index]
+
+  def index
+ #  return redirect_to path('/login') if SiteSetting.login_required? && current_user.nil?
+
+ 
+
+    @qa = About.new 
+    respond_to do |format|
+      format.html do
+        render :index  
+      end
+     format.json do
+       render_serialized(@qa, AboutSerializer)
+     end
+    end
+  end
+
+end
 end
