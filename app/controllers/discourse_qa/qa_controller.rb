@@ -18,6 +18,8 @@ module DiscourseQa
      end
     end
   end
+
+skip_before_action :check_xhr, only: [:pages]
 		
 def pages
     @qa = About.new 
