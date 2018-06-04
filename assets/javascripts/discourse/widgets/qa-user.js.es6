@@ -105,7 +105,7 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
   id = badges[t].badge_id;
   granted_at = badges[t].granted_at;
   
-  if ( id == 103) {
+  if ( id == 104) {
   contents.push( new RawHtml({ html: `<div class="bd"><center><br><h1 class="prof">Сертификат</h2>  
   <img src="https://toxu.ru/discobot/certificate.svg?date=${granted_at}&amp;user_id=${userid}" alt="Грамота" style="max-width:800px">
   </center></div>`})); 
