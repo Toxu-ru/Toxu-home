@@ -96,8 +96,6 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
 
 </div><div class="bord new-str"></div></center></div>`})); 
   
-  
-	  
   $.ajax({
   url: "/user-badges/"+ username +".json", 
   dataType: 'json',
@@ -124,16 +122,25 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
 
 if (yes) { } else {  contents.push( new RawHtml({ html: `<div class="bd"><br><br><center> <span class="no"> Сертификата нет</span> <br> <a href="https://toxu.ru/t/pochemu-mne-pishet-kakoj-to-bot/2294">Посмотреть</a>, как получить сертификат. </center></div>`}));  }
 
-
 contents.push( new RawHtml({ html: `<div class="bd"> <center>
-<br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a></center>
-<br><br>
+<br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a> 
+</center></div>`}));
+
+if (currentUser) { 
+const myid = currentUser.get('id');
+const myusername = currentUser.get('username');
+if (myid != userid) {
+contents.push( new RawHtml({ html: `<div class="bd"> <center>  
+<br><br><a rel="nofollow" class="btn-primary-my create btn btn-icon-text ember-view" href="https://toxu.ru/qa/${myusername}">Посмотреть свой профиль</a> 
+</center></div>`}));	
+}
+} 
+
+contents.push( new RawHtml({ html: `<div class="bd"><br><br>
 <a href="https://vk.com/share.php?url=https://toxu.ru/qa/${username}&title=${username}%20%D0%BD%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B5%20Toxu%20-%20%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D1%8B%D1%82%D0%BE%D0%BC&image=https://toxu.ru${avasm}">Поделиться в ВКонтакте</a>
+</div>`}));	
 
-
-</div>`}));	  
-
-} else {contents.push( new RawHtml({ html: `<div><br><br><center><h1 class="prof">Такого пользователя не существует</h1><br> <a href="https://toxu.ru">Перейди на центральную страницу сайта</a><center></div>`})); }		
+} else { contents.push( new RawHtml({ html: `<div><br><br><center><h1 class="prof">Такого пользователя не существует</h1><br> <a href="https://toxu.ru">Перейди на центральную страницу сайта</a><center></div>`})); }		
 	
 return contents;
 
