@@ -18,6 +18,9 @@ export default createWidget('qa-user', {
  var granted_at;
  var userid;
  var name;
+ var str;
+ var ava;
+ var prbg;
 	  
   $.ajax({
   url: "/users/"+ username +".json", 
@@ -26,16 +29,21 @@ export default createWidget('qa-user', {
   success: function(data) {
   userid =  data.user.id;
   name =  data.user.name;
-  var str =  data.user.avatar_template;
-  const ava = str.replace('{size}', '120');	
+  prbg =  data.user.profile_background;
+  str =  data.user.avatar_template;
+  ava = str.replace('{size}', '120');	
   }
   });
  
 	  
  contents.push( new RawHtml({ html: `<div> <center>
- <h1 class="user">${username}</h1>
- <img alt="${username} ${name}" src="${ava}" class="avatar" width="120" height="120">
+<h1 class="user">${username}</h1>
+ <section class="user-main ember-view"> 
+ <section style="background-image: url(${prbg})" class=" about has-background">
+ <div class="card-content fonava">      
  <br><br> 
+ </div> </section></section>
+ <div class="avam"><img alt="${username} ${name}" src="${ava}" class="avam"></div>
  <h3 class="user">${name}</h3>
  <br></center></div>`}));  
 	  
@@ -54,18 +62,15 @@ export default createWidget('qa-user', {
   id = badges[t].badge_id;
   granted_at = badges[t].granted_at;
   
-  if ( id == 104) {
-  contents.push( new RawHtml({ html: `<div class="bd"><center><div class="prof-num">Сертификат</div>   
-  <img src="https://toxu.ru/discobot/certificate.svg?date=${granted_at}&amp;user_id=${userid}" alt="Грамота" style="max-width:1000px"></center>
-  </div>`})); 
+  if ( id == 103) {
+  contents.push( new RawHtml({ html: `<div class="bd"><center><h1 class="prof">Сертификат</h2>  
+  <img src="https://toxu.ru/discobot/certificate.svg?date=${granted_at}&amp;user_id=${userid}" alt="Грамота" style="max-width:800px">
+  <br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a>
+  </center></div>`})); 
    
-   } else { }
+   } else {  contents.push( new RawHtml({ html: `<div class="bd"> <center>У пользователя нет грамоты...</center>  </div>`})); }
    
-	  
-contents.push( new RawHtml({ html: `<div class="bd"><center> 
-<br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a>
-<br></center></div>`}));
-	  
+  
 }
 }
 });
