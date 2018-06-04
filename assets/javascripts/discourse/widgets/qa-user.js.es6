@@ -24,6 +24,7 @@ export default createWidget('qa-user', {
  var trust_level;
  var badge_count;
  var profile_view_count; 
+ var bio_excerpt;
  var yes;
     
     
@@ -38,7 +39,7 @@ export default createWidget('qa-user', {
   trust_level = data.user.trust_level;
   badge_count = data.user.badge_count;
   profile_view_count = data.user.profile_view_count;
- 
+  bio_excerpt = data.user.bio_excerpt;
   prbg =  data.user.profile_background;
   str =  data.user.avatar_template;
   ava = str.replace('{size}', '120');	
@@ -71,7 +72,8 @@ if (prbg) {
  <br></center></div>`}));  
 
 }
-  
+ 
+if (bio_excerpt) { contents.push( new RawHtml({ html: `<div><center><blockquote> ${bio_excerpt}</blockquote></center></div>`}));  }
   
 contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
 
