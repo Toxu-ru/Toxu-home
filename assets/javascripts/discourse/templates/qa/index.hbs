@@ -4,33 +4,13 @@
 .avam-n{  margin-bottom: 10px;  display: block;}
 img.avam, img.avam-n {border-radius: 50%;width: 120px;}
 .bd .no { background-color: #FFF8DC; text-transform: uppercase;padding: 10px;display: block;color: #666;font-size: 16px;}
-blockquote {   color: #231E28;
-    padding: 20px 20px 20px 60px;
-    position: relative;
-    background: #FAF8EB;
-    font-family: Verdana,Geneva,sans-serif;
-    font-weight: 300;
-    max-width: 700px;
-    border-left: 2px solid #FAF8EB;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    line-height: 2.4;
-    font-size: 16px;
-}
+.btn-primary[href]:hover {color: #eee;}
 
-
-blockquote::before {
-    content: "\201C";
-    font-family: Arial;
-    color: #CBDDE7;
-    font-size: 70px;
-    position: absolute;
-    left: 15px;
-    top: 5px;
-}
-.btn-primary[href]:hover {
-    color: #eee;
-}
+blockquote {color: #231E28;padding: 20px;position: relative;
+    background: #FAF8EB;font-family: Verdana,Geneva,sans-serif;
+    font-weight: 300;max-width: 700px;border-left: 2px solid #FAF8EB;
+    margin-bottom: 20px;margin-top: 10px;line-height: 1.7;font-size: 16px;}
+blockquote::before {content: "\201C";font-family: Arial;color: #CBDDE7;font-size: 70px;position: absolute;left: 15px;top: -35px;}
 </style>
 {{mount-widget widget="qa-user" args=(hash qa=username)}}
 {{footer-toxu}}
