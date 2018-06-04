@@ -126,7 +126,7 @@ contents.push( new RawHtml({ html: `<div class="bd"> <center>
 <br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a></center>
 </div>`}));	  
 
-}{contents.push( new RawHtml({ html: `<div><br><br><center><div class="prof-num">Такого пользователя не существует</div>Нажмите на логотип и перейдите на главную страницу сайта...<center></div>`})); }		
+} else {contents.push( new RawHtml({ html: `<div><br><br><center><h1 class="prof">Такого пользователя не существует</h1><br> <a href="https://toxu.ru">Перейди на центральную страницу сайта</a><center></div>`})); }		
 	
 return contents;
 
