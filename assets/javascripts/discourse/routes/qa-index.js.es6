@@ -7,7 +7,7 @@ export default Discourse.Route.extend({
   },
 
   titleToken() {
-    return "Моя страница";  
+    return "${opts.qa} - награды на Toxu.ru";  
 },
   
   setupController(controller, model) {
