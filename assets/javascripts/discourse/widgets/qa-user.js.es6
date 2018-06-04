@@ -80,16 +80,16 @@ if (prbg) {
   <br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a>
   </center></div>`})); 
    
-   } else {  contents.push( new RawHtml({ html: `<div class="bd"> <center>У пользователя нет грамоты...
-
- <br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a></center>
-
-</div>`})); }
+   } else {   }
 	  
 }
 }
 });
 
+contents.push( new RawHtml({ html: `<div class="bd"> <center>
+<br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a></center>
+</div>`}));	  
+	  
 return contents;
 
 }
