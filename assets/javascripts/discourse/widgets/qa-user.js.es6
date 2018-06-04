@@ -32,12 +32,15 @@ export default createWidget('qa-user', {
   prbg =  data.user.profile_background;
   str =  data.user.avatar_template;
   ava = str.replace('{size}', '120');	
+  
+  
   }
   });
  
-	  
+if (prbg) { 
+  
  contents.push( new RawHtml({ html: `<div> <center>
-<h1 class="user">${username}</h1>
+ <h1 class="user">${username}</h1>
  <section class="user-main ember-view"> 
  <section style="background-image: url(${prbg})" class=" about has-background">
  <div class="card-content fonava">      
@@ -46,8 +49,17 @@ export default createWidget('qa-user', {
  <div class="avam"><img alt="${username} ${name}" src="${ava}" class="avam"></div>
  <h3 class="user">${name}</h3>
  <br></center></div>`}));  
-	  
-	  
+  
+} else {
+
+ contents.push( new RawHtml({ html: `<div> <center>
+ <h1 class="user">${username}</h1>
+ <div class="avam-n"><img alt="${username} ${name}" src="${ava}" class="avam-n"></div>
+ <h3 class="user">${name}</h3>
+ <br></center></div>`}));  
+
+}
+  
 	  
   $.ajax({
   url: "/user-badges/"+ username +".json", 
@@ -70,7 +82,7 @@ export default createWidget('qa-user', {
    
    } else {  contents.push( new RawHtml({ html: `<div class="bd"> <center>У пользователя нет грамоты...</center>  </div>`})); }
    
-  
+	  
 }
 }
 });
