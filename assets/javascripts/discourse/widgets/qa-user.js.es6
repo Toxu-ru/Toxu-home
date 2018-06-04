@@ -23,7 +23,7 @@ export default createWidget('qa-user', {
  var prbg;
  var trust_level;
  var badge_count;
- var post_count;
+ var profile_view_count; 
  var yes;
     
     
@@ -37,9 +37,9 @@ export default createWidget('qa-user', {
  
   trust_level = data.user.trust_level;
   badge_count = data.user.badge_count;
-  post_count = data.user.post_count;
+  profile_view_count = data.user.profile_view_count;
  
- prbg =  data.user.profile_background;
+  prbg =  data.user.profile_background;
   str =  data.user.avatar_template;
   ava = str.replace('{size}', '120');	
   
@@ -47,6 +47,8 @@ export default createWidget('qa-user', {
   }
   });
  
+if (userid) { }{contents.push( new RawHtml({ html: `<div>Пользователя такого не существует </div>`})); }	  
+	  
 if (prbg) { 
   
  contents.push( new RawHtml({ html: `<div> <center>
@@ -85,8 +87,8 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
 
 
 <div class="prof-blog">
-<div class="prof-num">${post_count}</div>
-<div class="prof-txt">постов</div>
+<div class="prof-num">${profile_view_count}</div>
+<div class="prof-txt">просмотров</div>
 </div>
 
 </div><div class="bord new-str"></div></center></div>`})); 
