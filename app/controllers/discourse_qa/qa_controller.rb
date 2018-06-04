@@ -8,9 +8,6 @@ module DiscourseQa
 
   def index
  #  return redirect_to path('/login') if SiteSetting.login_required? && current_user.nil?
-
- 
-
     @qa = About.new 
     respond_to do |format|
       format.html do
@@ -21,6 +18,19 @@ module DiscourseQa
      end
     end
   end
+		
+def pages
+    @qa = About.new 
+    respond_to do |format|
+      format.html do
+        render :pages  
+      end
+     format.json do
+       render_serialized(@qa, AboutSerializer)
+     end
+    end
+  end		
+		
 
 end
 end
