@@ -276,8 +276,8 @@ ${shcala}
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
 <a target="_blank" href="https://toxu.ru/u/${username}/summary"><small><i>- посмотреть</i></small></a>
 <br>или<br>
-<span class="excerpt"><small>https://toxu.ru/profile/${username}</small></span>
-<a target="_blank" href="https://toxu.ru/profile/${username}"><small><i>- посмотреть</i></small></a><br>
+<span class="excerpt"><small>https://toxu.ru/qa/${username}</small></span>
+<a target="_blank" href="https://toxu.ru/qa/${username}"><small><i>- посмотреть</i></small></a><br>
 <i>В зависимости от сайта, ссылки будет выглядеть по разному. Второй вариант, это карточка профиля (урезанная версия).</i>
 <br><br>Или html (для html страниц)<br>
 <span class="excerpt"><small>&lt;a href="https://toxu.ru/u/${username}/summary" target="_blank"&gt;${name} (@${username}) — на Toxu.ru&lt;/a&gt;</small></span>
