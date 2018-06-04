@@ -61,6 +61,11 @@ export default createWidget('qa-user', {
    
    } else { }
    
+	  
+contents.push( new RawHtml({ html: `<div class="bd"><center> 
+<br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a>
+<br></center></div>`}));
+	  
 }
 }
 });
