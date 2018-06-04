@@ -127,7 +127,7 @@ if (yes) { } else {  contents.push( new RawHtml({ html: `<div class="bd"><br><br
 contents.push( new RawHtml({ html: `<div class="bd"> <center>
 <br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a></center>
 <br><br>
-<a href="https://vk.com/share.php?url=https://toxu.ru/qa/${username}&title=%D0%AF%20(${username})%20%D0%BD%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B5%20Toxu%20-%20%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D1%8B%D1%82%D0%BE%D0%BC&image=https://toxu.ru${ava}">Поделиться в ВКонтакте</a>
+<a href="https://vk.com/share.php?url=https://toxu.ru/qa/${username}&title=${username}%20%D0%BD%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B5%20Toxu%20-%20%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D1%8B%D1%82%D0%BE%D0%BC&image=https://toxu.ru${ava}">Поделиться в ВКонтакте</a>
 
 
 </div>`}));	  
