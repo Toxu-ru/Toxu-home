@@ -1,6 +1,6 @@
 # name: Toxu
 # about: add a detals site and dev, stats
-# version: 0.6
+# version: 1.1
 # authors:  Evg
 # url: https://github.com/Toxu-ru/Toxu
 
