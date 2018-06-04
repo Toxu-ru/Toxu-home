@@ -24,6 +24,7 @@ export default createWidget('qa-user', {
  var trust_level;
  var badge_count;
  var post_count;
+ var yes;
     
     
   $.ajax({
@@ -105,7 +106,7 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
   id = badges[t].badge_id;
   granted_at = badges[t].granted_at;
   
-  if ( id == 104) {
+  if ( id == 104) { yes = 1;
   contents.push( new RawHtml({ html: `<div class="bd"><center><br><h1 class="prof">Сертификат</h2>  
   <img src="https://toxu.ru/discobot/certificate.svg?date=${granted_at}&amp;user_id=${userid}" alt="Грамота" style="max-width:800px">
   </center></div>`})); 
@@ -115,6 +116,8 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
 }
 }
 });
+
+if (yes) { } else {  contents.push( new RawHtml({ html: `<div class="bd"><br><br><center>  Сертификата нет. <br> <a href="https://toxu.ru/t/pochemu-mne-pishet-kakoj-to-bot/2294">Посмотреть, как получить сертификат.<a> </center></div>`}));  }
 
 
 contents.push( new RawHtml({ html: `<div class="bd"> <center>
