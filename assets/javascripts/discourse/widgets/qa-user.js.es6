@@ -47,7 +47,7 @@ export default createWidget('qa-user', {
   }
   });
  
-if (userid) { }{contents.push( new RawHtml({ html: `<div>Пользователя такого не существует </div>`})); }	  
+if (userid) {   
 	  
 if (prbg) { 
   
@@ -125,7 +125,9 @@ if (yes) { } else {  contents.push( new RawHtml({ html: `<div class="bd"><br><br
 contents.push( new RawHtml({ html: `<div class="bd"> <center>
 <br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a></center>
 </div>`}));	  
-	  
+
+}{contents.push( new RawHtml({ html: `<div><br><br><center><div class="prof-num">Такого пользователя не существует</div>Нажмите на логотип и перейдите на главную страницу сайта...<center></div>`})); }		
+	
 return contents;
 
 }
