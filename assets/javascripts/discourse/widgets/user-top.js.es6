@@ -13,8 +13,8 @@ export default createWidget('user-top', {
   var avatar;
   
   $.ajax({
-  url: "http://localhost:3000/uploads/monthly.json",
-  //url: "/top/monthly.json",
+ // url: "http://localhost:3000/uploads/monthly.json",
+  url: "/top/monthly.json",
   dataType: 'json',
   async: false,
   success: function(data) {
