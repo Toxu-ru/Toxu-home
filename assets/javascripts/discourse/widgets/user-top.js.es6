@@ -21,7 +21,7 @@ export default createWidget('user-top', {
     
  var users = data.users;
  
- for (var t = 0; t < 18; t++) {
+ for (var t = 0; t < 20; t++) {
  id = users[t].id;
  username = users[t].username; 
  avatar = users[t].avatar_template; 
@@ -37,7 +37,7 @@ contents.push( new RawHtml({ html: `<div class="prof-blog-2">
  
  contents.push( new RawHtml({ html: `<div class="blog"><br><h1 class="t1">Популярные вопросы</h1></div>`})); 
  
-  for (var t = 0; t < 10; t++) {
+  for (var t = 0; t < 15; t++) {
   var id = data.topic_list.topics[t].id;
   var title = data.topic_list.topics[t].title; 
   var slug = data.topic_list.topics[t].slug;
