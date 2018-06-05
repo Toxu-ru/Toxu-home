@@ -9,7 +9,9 @@ export function categoryBadgeHTML(category, opts) {
   let categoryID = escapeExpression(get(category, 'id'));
   let img = Discourse.Category.findById(categoryID).uploaded_logo.url;
   let categoryName = escapeExpression(get(category, 'name'));
-  return `<img src="${img}" alt="${categoryName}" class="catid-logo">`;
+  let url = opts.url ? opts.url : Discourse.getURL("/c/") + Discourse.Category.slugFor(category); 
+ 
+  return `<a class="catid-url" title="${categoryName}" href="${url}"><img src="${img}" alt="${categoryName}" class="catid-logo"></a>`;
 }
 
 export function categoryLinkHTML(category, options) {
