@@ -48,14 +48,15 @@ contents.push( new RawHtml({ html: `<div class="prof-blog-2">
   var catid =  data.topic_list.topics[t].category_id;
   var img = Discourse.Category.findById(catid).uploaded_logo.url;
     
-  contents.push( new RawHtml({ html: `<div class="blog-title"> 
-<img src="${img}" class="cat-small" width="16" height="16"> <a class="title" href="${slug}/${id}">${title}</a>
+  contents.push( new RawHtml({ html: `<div class="blog-title"> <div class="blog-img">
+<img src="${img}" class="cat-small" width="16" height="16"></div> 
+<div class="blog-telo">
+<a class="title" href="${slug}/${id}">${title}</a>
 <div class="blog-info"><i class="fa fa-user-o" aria-hidden="true"></i> <span class="rez">${last_poster_username}</span> 
 <i class="fa fa-heart-o d-icon d-icon-d-unliked"></i> <span class="rez">${like_count}</span> 
 <i class="fa fa-eye" aria-hidden="true"></i> <span class="rez">${views}</span>
 <a href="${slug}/${id}">Ответов: <span class="rez">${posts_count}</span></a> 
-</div>
- </div>`})); 
+</div></div></div>`})); 
  
    }
  
