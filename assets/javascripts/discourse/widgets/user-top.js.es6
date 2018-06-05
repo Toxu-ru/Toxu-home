@@ -45,13 +45,16 @@ contents.push( new RawHtml({ html: `<div class="prof-blog-2">
   var like_count = data.topic_list.topics[t].like_count;
   var views = data.topic_list.topics[t].views;
   var last_poster_username = data.topic_list.topics[t].last_poster_username;
-  
-  
-  contents.push( new RawHtml({ html: `<div class="blog-title"><a class="title" href="${slug}/${id}">${title}</a>
+  var catid =  data.topic_list.topics[t].category_id;
+  var img = Discourse.Category.findById(catid).uploaded_logo.url;
+    
+  contents.push( new RawHtml({ html: `<div class="blog-title"> 
+<img src="${img}" class="cat-small" width="16" height="16"> <a class="title" href="${slug}/${id}">${title}</a>
 <div class="blog-info"><i class="fa fa-user-o" aria-hidden="true"></i> <span class="rez">${last_poster_username}</span> 
-<i class="fa fa-comment-o" aria-hidden="true"></i> <span class="rez">${posts_count}</span> 
 <i class="fa fa-heart-o d-icon d-icon-d-unliked"></i> <span class="rez">${like_count}</span> 
-<i class="fa fa-eye" aria-hidden="true"></i> <span class="rez">${views}</span></div>
+<i class="fa fa-eye" aria-hidden="true"></i> <span class="rez">${views}</span>
+<a href="${slug}/${id}">Ответов: <span class="rez">${posts_count}</span></a> 
+</div>
  </div>`})); 
  
    }
