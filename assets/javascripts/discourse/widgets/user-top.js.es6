@@ -48,9 +48,9 @@ contents.push( new RawHtml({ html: `<div class="prof-blog-2">
   
   
   contents.push( new RawHtml({ html: `<div class="blog-title"><a class="title" href="${slug}/${id}">${title}</a>
-  <div class="blog-info">Задал: ${last_poster_username} Ответов: ${posts_count} Нравится: ${like_count} Просмотров: ${views}</div>
-  
-  </div>`})); 
+<div class="blog-info">Задал: <span class="rez">${last_poster_username}</span> Ответов: <span class="rez">${posts_count}</span> 
+Нравится: <span class="rez">${like_count}</span> Просмотров: <span class="rez">${views}</span></div>
+ </div>`})); 
  
    }
  
