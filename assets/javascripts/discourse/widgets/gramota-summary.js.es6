@@ -25,7 +25,7 @@ $.ajax({
   id = badges[t].badge_id;
   granted_at = badges[t].granted_at;
   
-  if ( id == 104) { contents.push( new RawHtml({ html: `<div class="bd"><a class="gram" title="Грамота" href="/qa/${username}">Г<i aria-hidden="true" class="fa fa-trophy"></i></a></div>`})); 
+  if ( id == 104) { contents.push( new RawHtml({ html: `<div class="bd"><a class="gram" title="Грамота" href="/qa/${username}"><i aria-hidden="true" class="fa fa-trophy"></i></a></div>`})); 
    
    } else {  }
 	  
