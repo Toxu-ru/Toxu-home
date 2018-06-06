@@ -51,6 +51,8 @@ a.ser{color: #666;margin-bottom: 2px;}
 .prof-num {color: #f56400; text-align: center; font-size: 4em;font-family: Georgia,Arial,sans-serif;}
 .prof-num-u {color: #f56400; text-align: center; font-size: 3em;font-family: Georgia,Arial,sans-serif;}
 .prof-txt {text-align:center;font-size:1.2em;color:#666;font-family: Georgia,Arial,sans-serif;font-weight: 300;}
+.gram {color: #f56400; font-size: 2em;}
+.gram:hover {color: #f54400;}
 
 @media (max-width: 850px){
 .prof-txt{white-space: nowrap;    overflow: hidden;    padding: 5px;    text-overflow: ellipsis;}	
