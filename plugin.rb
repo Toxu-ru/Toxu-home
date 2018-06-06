@@ -36,23 +36,11 @@ User.register_custom_field_type('see_userbar', :boolean)
 User.register_custom_field_type('userbar_cat', :boolean)
 User.register_custom_field_type('userbar_profile', :boolean)  
   
-  require 'listable_topic_serializer'
-  class ::ListableTopicSerializer
-
-    def excerpt_toxu
-      accepted_id = object.custom_fields["accepted_answer_post_id"].to_i
-      if accepted_id > 0
-        cooked = Post.where(id: accepted_id).pluck('cooked')
-        PrettyText.excerpt_toxu(cooked[0], 100, {})
-      else
-        object.excerpt_toxu
-      end
-    end
-
-    def include_excerpt?
-      true
-    end
+  add_to_class :post, :excerpt_for_topic do
+      Post.excerpt(cooked, 50, strip_links: true)
   end
+  add_to_serializer(:listable_topic, :include_excerpt?) { true }
+ 
 end
 
 register_asset "javascripts/discourse/templates/connectors/user-custom-preferences/userbar-preferences.hbs"
