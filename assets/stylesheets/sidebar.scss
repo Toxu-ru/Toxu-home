@@ -134,6 +134,9 @@ tr.category-other .no-no.centr::after {
 .nav-pills > li > a:hover{color: #999;  background-color: #fff;  border-bottom: 2px solid #f56400;} 
 
 /*new css кнопки*/
+#topic-footer-buttons button.btn, #topic-footer-buttons button.btn i.fa {color: #39739d !important;background-color: #E1ECF4 !important;} 
+#topic-footer-buttons button.btn:hover, #topic-footer-buttons button.btn i.fa:hover
+.d-editor-button-bar button.btn:hover {color: #39739d !important;background-color: #d5eff4  !important;}
 .btn-primary {background: #0095ff !important;color: #fff !important;}
 .btn-primary:hover, .btn-primary:active {background: #1b95d2 !important;color: #fff !important;}
 #create-topic {background: transparent !important;color: #f56400 !important;font-size: 1.2487em;margin-top: -3px;}
