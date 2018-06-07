@@ -134,8 +134,10 @@ tr.category-other .no-no.centr::after {
 .nav-pills > li > a:hover{color: #999;  background-color: #fff;  border-bottom: 2px solid #f56400;} 
 
 /*new css кнопки*/
-.btn-primary {background: #0095ff;}
-.btn-primary:hover, .btn-primary:active {background: #1b95d2;color: #fff;}
+.btn, .btn:focus, .btn:active {color: #39739d;background-color: #E1ECF4;} 
+.btn:hover, .d-icon.d-icon-d-watching:hover, .fa-exclamation-circle::before {background-color: #d5eff4;color: #39739d;} 
+.btn-primary {background: #0095ff !important;color: #fff !important;}
+.btn-primary:hover, .btn-primary:active {background: #1b95d2 !important;}
 
 
 /*боковые категории*/
