@@ -7,7 +7,7 @@ var get = Em.get,
 
 function categoryStripe(color, classes) {
   var style = color ? "style='background-color: #" + color + ";'" : "";
-  return "1<span class='" + classes + "' " + style + "></span>2";
+  return "<span class='" + classes + "' " + style + "></span>";
 }
 
 /**
@@ -31,6 +31,10 @@ export function categoryBadgeHTML(category, opts) {
 
   let description = get(category, 'description_text');
   let restricted = get(category, 'read_restricted');
+  
+  let categoryID = get(category, 'id');
+  let img = Discourse.Category.findById(categoryID).uploaded_logo.url;   
+    
   let url = opts.url ? opts.url : Discourse.getURL("/c/") + Discourse.Category.slugFor(category);
   let href = (opts.link === false ? '' : url);
   let tagName = (opts.link === false || opts.link === "false" ? 'span' : 'a');
@@ -45,12 +49,12 @@ export function categoryBadgeHTML(category, opts) {
   }
 
   const categoryStyle = opts.categoryStyle || Discourse.SiteSettings.category_style;
-  if (categoryStyle !== "none") {
+ /** if (categoryStyle !== "none") {
     if (parentCat && parentCat !== category) {
       html += categoryStripe(get(parentCat,'color'), "badge-category-parent-bg");
     }
     html += categoryStripe(color, "badge-category-bg");
-  }
+  } **/
 
   let classNames = "badge-category clear-badge";
   if (restricted) { classNames += " restricted"; }
@@ -60,7 +64,7 @@ export function categoryBadgeHTML(category, opts) {
     style = `style="color: #${get(category, 'text_color')};"`;
   }
 
-  html += `<span ${style} ` +
+  html += ` <img src="${img}" alt="${tagName}" class="catid-lg">  <span ${style} ` +
              'data-drop-close="true" class="' + classNames + '"' +
              (description ? 'title="' + escapeExpression(description) + '" ' : '') +
           ">";
