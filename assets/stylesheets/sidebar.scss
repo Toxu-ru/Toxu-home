@@ -2,11 +2,6 @@
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
-img.catid-lg {
-    width: 16px;
-    margin-right: 5px;
-}
-
 .topic-body .contents .cooked {
     line-height: 1.5;
     font-size: 1.17em;
@@ -149,7 +144,6 @@ tr.category-other .no-no.centr::after {
 /*боковые категории*/
 .anon .sidebar #create-topic {width: 90%;}
 .sidebar {    
-.add-t {margin-top: 3px;}
 .vid {color: #919191;}
 .badge-wrapper.bullet .badge-category-parent-bg, .category-other2 {display: none;}
 a.badge-notification{float: right;}
