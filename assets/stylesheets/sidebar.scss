@@ -134,11 +134,11 @@ tr.category-other .no-no.centr::after {
 .nav-pills > li > a:hover{color: #999;  background-color: #fff;  border-bottom: 2px solid #f56400;} 
 
 /*new css кнопки*/
-#topic-footer-buttons button.btn, #topic-footer-buttons button.btn i.fa {color: #39739d !important;background-color: #E1ECF4 !important;} 
-#topic-footer-buttons button.btn:hover, #topic-footer-buttons button.btn i.fa:hover
+#topic-footer-buttons button.btn, #topic-footer-buttons button.btn i.fa, .search-menu .btn {color: #39739d !important;background-color: #E1ECF4 !important;} 
+#topic-footer-buttons button.btn:hover, #topic-footer-buttons button.btn i.fa:hover, .search-menu .btn:hover, 
 .d-editor-button-bar button.btn:hover {color: #39739d !important;background-color: #d5eff4  !important;}
-.btn-primary {background: #0095ff !important;color: #fff !important;}
-.btn-primary:hover, .btn-primary:active {background: #1b95d2 !important;color: #fff !important;}
+#topic-footer-buttons button.btn-primary,  #topic-footer-buttons button.btn.btn-primary i.fa {background: #0095ff !important;color: #fff !important;}
+#topic-footer-buttons button.btn-primary:hover, .btn-primary:active {background: #1b95d2 !important;color: #fff !important;}
 #create-topic {background: transparent !important;color: #f56400 !important;font-size: 1.2487em;margin-top: -3px;}
 #create-topic:hover, #create-topic:active {color: #fff !important;background-color: #f56400 !important;}
 
@@ -236,7 +236,7 @@ img.avatar {border-radius: 5%;}
 .topic-post {margin-bottom: 10px;} 
 .topic-body, .topic-avatar, .topic-status-info {border-top: none;}
 #suggested-topics .loading-container.ember-view  {display:block !important;}
-#topic-footer-buttons button.create, #reply-control .btn-primary {color: white; background-color: #306f30}
+#topic-footer-buttons button.create, #reply-control .btn-primary {color: white !important; background-color: #306f30 !important;}
 .topic-post button.btn-primary.create:after  {content: "комм приватно";}
 .private-message-map h3:after { content: " (приватно)";} 
 button.btn-primary.create span.d-button-label, li.extra-nav-item-outlet.votes {display: none;}
