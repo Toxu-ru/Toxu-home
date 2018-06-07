@@ -27,7 +27,7 @@ export default createWidget('link-top', {
  catid = topics[t].category_id;
  img = Discourse.Category.findById(catid).uploaded_logo.url;
  name =  Discourse.Category.findById(catid).name;   
- contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><img src="${img}" alt="${name}" title="${name}" class="cat-small" width="16" height="16"> 
+ contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><img src="${img}" alt="${name}" title="${name}" class="cat-small"> 
  <a href="/t/${slug}">${title}</a></div>`})); 
    
  }
