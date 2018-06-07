@@ -51,7 +51,7 @@ contents.push( new RawHtml({ html: `<div class="prof-blog-2">
   contents.push( new RawHtml({ html: `<div class="blog-title"> <div class="blog-img">
 <img alt="Иконка раздела" src="${img}" class="cat-small" width="32" height="32"></div> 
 <div class="blog-telo">
-<a class="title" href="${slug}/${id}">${title}</a>
+<a class="title" href="/t/${slug}/${id}">${title}</a>
 <div class="blog-info"><i class="fa fa-user-o" aria-hidden="true"></i> <span class="rez">${last_poster_username}</span> 
 <i class="fa fa-heart-o d-icon d-icon-d-unliked"></i> <span class="rez">${like_count}</span> 
 <i class="fa fa-eye" aria-hidden="true"></i> <span class="rez">${views}</span>
