@@ -1,4 +1,4 @@
-.sidebar .badge-wrapper .badge-category .category-name, .title-t a.title, .topic-body .contents .cooked {
+.sidebar .badge-wrapper .badge-category .category-name, .title-t a.title, #create-topic, .topic-body .contents .cooked {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
@@ -359,7 +359,7 @@ text-transform: none;}
 post-menu-area {margin-bottom: 1px;margin-top:2px;}
 .regular.contents a[rel~="nofollow"]::after {display: inline-block;content: ' \f08e ';font-family: FontAwesome;color: #999;
     font-size: 11px;margin-left: 3px;}
-#create-topic {background: transparent;color: #f56400;}
+#create-topic {background: transparent;color: #f56400;font-size: 1.2487em;margin-top: -3px;}
 #create-topic:hover, #create-topic:active {color: #fff;background-color: #f56400;}
 img.avatar:hover, .d-header #site-logo:hover {opacity: 0.8;}
 .topic-list > tbody {border-top: 1px solid #e9e9e9;}
