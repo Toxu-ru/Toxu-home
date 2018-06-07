@@ -4,14 +4,10 @@ import { number } from 'discourse/lib/formatter';
 
 createWidget('cat-category', {
   tagName: 'div.cat-link',
-
-  
-  
   
   html(c) {
     
     var results=''; 
-    
     
     if (c.parent_category_id) {
       this.tagName += '.subcategory';
@@ -19,16 +15,12 @@ createWidget('cat-category', {
  
     this.tagName += '.category-' + Discourse.Category.slugFor(c, '-');
 
-   // const results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ];
-
+ // const results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ];
  //   for (var t = 0; t < c.notification_level; t++) { 
-    
  //     results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ];
- 
  //   }   
     
-if (c.notification_level !== 0) { results = [ this.attach('category-link-sug', { category: c, allowUncategorized: true }) ]; }
-    
+if (c.notification_level !== 0) { results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ]; }
     
     const unreadTotal = parseInt(c.get('unreadTopics'), 10) + parseInt(c.get('newTopics'), 10);
     if (unreadTotal) {
