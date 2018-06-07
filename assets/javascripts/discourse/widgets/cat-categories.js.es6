@@ -27,7 +27,7 @@ createWidget('cat-category', {
  
  //   }   
     
-if (c.notification_level !== 0) { results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ]; }
+if (c.notification_level !== 0) { results = [ this.attach('category-link-sug', { category: c, allowUncategorized: true }) ]; }
     
     
     const unreadTotal = parseInt(c.get('unreadTopics'), 10) + parseInt(c.get('newTopics'), 10);
