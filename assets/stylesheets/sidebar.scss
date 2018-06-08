@@ -252,8 +252,19 @@ button.btn-primary.create:after { content: " Ответить приватно";
 
 /*теги*/
 html:not(.mobile-view) {
-.discourse-tag.bullet {position: relative;font-size: 13px;padding: 2px 8px;background: #f4f4fa;
-font-weight: 300;border-radius: 12px;cursor: pointer;margin-right: 3px;}
+    font-size: 13px;
+    font-weight: normal;
+    display: inline-block;
+    background-color: #F7FDFF;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: visible;
+    margin-right: 2px;
+    padding: .2em .8em;
+    line-height: 1.2;
+    border: 1px solid #e1edf1;
+    border-radius: 15px;
+    border-image: initial;}
 .discourse-tag.bullet:before {display: none;}
 .discourse-tag.bullet:hover{color: #f56400 !important;}
 h2.tag-show-heading a {margin-top: -6px;}
