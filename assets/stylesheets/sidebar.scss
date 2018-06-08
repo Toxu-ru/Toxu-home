@@ -251,7 +251,7 @@ button.btn-primary.create:after { content: " Ответить приватно";
 
 
 /*теги*/
-html:not(.mobile-view) .discourse-tag.bullet {
+html:not(.mobile-view) { .discourse-tag.bullet {
     font-size: 13px;
     font-weight: normal;
     display: inline-block;
