@@ -141,7 +141,12 @@ tr.category-other .no-no.centr::after {
 #topic-footer-buttons button.btn-primary:hover, .btn-primary:active {background: #1b95d2 !important;color: #fff !important;}
 #create-topic {background: transparent !important;color: #f56400 !important;font-size: 1.2487em;margin-top: -3px;}
 #create-topic:hover, #create-topic:active {color: #fff !important;background-color: #f56400 !important;}
-
+.add.create-topic{
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+}
 
 /*боковые категории*/
 html:not(.anon) {#main-outlet {padding-top: 75px;}}
