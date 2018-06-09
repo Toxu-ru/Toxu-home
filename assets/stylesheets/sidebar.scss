@@ -257,18 +257,18 @@ html:not(.mobile-view) { .discourse-tag.bullet {
     font-size: 13px;
     font-weight: normal;
     display: inline-block;
-    background-color: #F7FDFF;
+    color: #39739d !important;	
+    background: rgba(0,132,255,.1);
     text-decoration: none;
     white-space: nowrap;
     overflow: visible;
     margin-right: 2px;
     padding: .2em .8em;
     line-height: 1.2;
-    border: 1px solid #e1edf1;
     border-radius: 15px;
     border-image: initial;}
 .discourse-tag.bullet:before {display: none;}
-.discourse-tag.bullet:hover{color: #f56400 !important;}
+.discourse-tag.bullet:hover{color: #f56400 !important;background-color:rgba(0,132,255,.15);}
 h2.tag-show-heading a {margin-top: -6px;}
 #list-area h2.tag-show-heading {margin: 0 0 30px;}
 .tag.sbar{position: relative;font-size: 13px;padding: 4px 8px;background: #fff;font-weight: 300;
