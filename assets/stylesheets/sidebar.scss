@@ -7,6 +7,8 @@
     font-size: 1.17em;
 }
 
+.bbcodeleft img {float: left; margin-bottom: 5px; margin-right: 5px;}
+.bbcoderight img {  float: right; margin-left: 5px; margin-bottom: 5px;}
 
 /*логин и регистрация фон*/
 html:not(.mobile-view) {
