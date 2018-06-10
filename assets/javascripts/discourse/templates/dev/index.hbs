@@ -1,74 +1,26 @@
 <style type="text/css">
-.toxo-owl {float:left;margin: 4px 20px 2px 0px;width:160px;border:1px solid #CCC;padding:6px;}
-.toxu {margin-bottom: 20px;font-weight: 300; font-size: 1.03em;line-height: 24px;font-family: Verdana,Geneva,sans-serif;}
-h1.t1 {color: #555;margin-top: 15px;margin-bottom: 15px;font-weight: 300;font-size: 1.9em;}
-h2.t2 {color: #555;margin-top: 15px;font-weight: 300;font-size: 1.6em;}
-h3.t3 {color: #555;margin-top: 15px;font-weight: 300;font-size: 1.3em;}
-body {background: #f9f9f9;}
-.sidebar-menu {
-    float: left;
-    width: 225px;
-    position: fixed;
-    background: #f9f9f9;
-    padding: 1px 11px 10px 17px;
-    background-color: #fff;
-    border: 1px solid #e8e8e8;
-}
-.telo {
-    float: right;
-    width: 69%;
-    margin-left: 20px;
-    background-color: #fff;
-    border: 1px solid #e8e8e8;
-    padding: 5px 20px 3px 20px;
-}
-.menu {
-    margin-bottom: 10px;
-    font-size: 15px;
-    display: block;
-}
-span.menu {
-    color: #f56400;
-}
-img {max-width: 95%;}
+img.img {border: 1px solid #e9e9e9;margin-top: 15px;margin-bottom: 15px;box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);}
+h3 {font-weight: 600;font-size:18px;}
+.help-telo {line-height: 1.5;font-size: 1.11em;}
 tbody {border-top: none;}
 tr {border-bottom: none;}
-.help-box {width: 99%;margin: 0 1% 1.5em 1%;}
-.help-g {margin: 2em auto;text-align: left; -moz-column-count: 3;column-count: 3;}
-.help-box-heading{text-align: center;}
-.help-box-inner{width: 100%;padding: 0;border-width: 1px;border-style: solid;border-color: #e5e5e5;}
-.help-box-heading i.fa {font-size: 22px;color: #444;text-align: center;margin-top: 0.4em;}
-.help-box h3 {font-size: 1.3em;margin-bottom: 0.5em;margin-top: 0.25em;line-height: 1.1em;text-align: center;color: #444;}
-.help-box-inner {text-align: center;}
-.help-description{padding: 3px;text-align: center;color: #919191;}
-img.img {border: 1px solid #e9e9e9;margin-top: 15px;margin-bottom: 15px;box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);}
-
-.toxu ul {list-style-type: none;}
-.toxu ul li {
-    background-image: url(https://toxu.ru/uploads/default/original/2X/7/747400ddaf4843f169c2d5f5cc35bb0134f89480.png);
-    background-repeat: no-repeat;
-    background-position: 0px 9px;
-    padding-left: 15px;
-}
-html:not(.mobile-view) .search-header {margin-left: 134px;}
-@media (max-width: 955px) { 
-  .sidebar-menu, .no-mob, .search-header {display: none;} 
-  .telo {width:94%;margin:0;} .toxu {font-size: 0.9em;}
-}
+img {max-width: 95%;}
 </style>
+
 <div class="help">
-<div class="cont-stat">
-<div class="sidebar-menu"><br>
-<a class="menu" href="https://toxu.ru/help">Помощь</a>
-<a class="menu" href="https://toxu.ru/features">Возможности сайта</a>
-<a class="menu" href="https://toxu.ru/toxu"> Почему сайт назван Toxu?</a>
-<span class="menu">Для разработчиков</span>
+<div class="blog-list">
+<div class="sidebar"><div class="sidebar-fon"> 
+
+<a class="menu" href="https://toxu.ru/help">Помощь</a><br><br>
+<a class="menu" href="https://toxu.ru/features">Возможности сайта</a><br><br>
+<a class="menu" href="https://toxu.ru/toxu"> Почему сайт назван Toxu?</a><br><br>
+<span class="menu">Для разработчиков</span><br><br>
 {{mount-widget widget="page-my-menu"}}
 
-</div>
-<div class="telo toxu">
+</div></div>
+<div class="container list-container has-sidebar help-telo">  
 
-<h1 class="t1">Для разработчиков</h1>
+<h1>Для разработчиков</h1>
 
 <span style="color: #7a98a9;">Полезные инструменты по API, ссылки, материалы...</span>
 <br>
@@ -81,7 +33,7 @@ html:not(.mobile-view) .search-header {margin-left: 134px;}
 <br>
 <b>Код ссылки:</b> <i>https://yandex.ru/?add=193052&from=shared</i>
 
-<br><br><h3  class="t3">Поделиться ссылкой</h3>
+<br><br><h3>Поделиться ссылкой</h3>
 Будем благодарны, если разместите нашу ссылку/кнопку на вашей странице, это поможет другим попасть на наш сайт.
 <br><br>
 Вы можете пригласить друзей для регистрации из ВКонтакте.<br>
@@ -90,9 +42,9 @@ html:not(.mobile-view) .search-header {margin-left: 134px;}
 <img class="img" title="toxu.ru" alt="toxu.ru" src="https://toxu.ru/uploads/default/original/2X/8/826b0ed735f4f580e16f98c87735e0d930593b1a.png">
 
 <a rel="nofollow" href="http://vk.com/share.php?url=https://toxu.ru/&amp;title=Toxu+%E2%80%94+%D0%BC%D0%B5%D1%81%D1%82%D0%BE+%D0%B4%D0%BB%D1%8F+%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD%D0%B0+%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8.+%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B+%D0%B8+%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%8B.&amp;image=https://toxu.ru/uploads/default/original/2X/9/9e25a5d0f56cc3b0e1d71f21fcbad40b864d50ea.png&amp;noparse=1" target="_blank">
-<br><span style="color: red;">Опубликовать в ВКонтакте</span></a><br>
+<br>-> опубликовать в ВКонтакте</a><br><br>
 
-<h3 class="t3">Toxu в социальных сетях</h3>
+<h3>Toxu в социальных сетях</h3>
 
 <table border="0"><tbody><tr>
 <td style="width: 150px;"><a rel="nofollow" href="https://vk.com/toxu_ru" target="_blank">
@@ -104,14 +56,9 @@ html:not(.mobile-view) .search-header {margin-left: 134px;}
 <td style="width: 150px;"><a rel="nofollow" href="https://www.facebook.com/toxu.ru" target="_blank">
 <img width="48" class="dsh" src="https://toxu.ru/uploads/default/original/2X/d/d1b2b70d7aeff606a99c8dda3c2cf4fa9d04c881.png" alt="Facebook"> Facebook</a><br>
 </td>
-
-<td style="width: 150px;"><a rel="nofollow" href="https://telegram.me/toxuru" target="_blank">
-<img width="48" class="dsh" src="https://toxu.ru/uploads/default/original/2X/b/bfae5fc02934319ed2afd5fb25a70cc561c95f5c.jpg" alt="telegram"> Telegram</a><br>
-</td>
-
 </tr></tbody></table>
 <br>
-<h3 class="t3">Код для размещения на сайте может выглядеть так</h3>
+<h3>Код для размещения на сайте может выглядеть так</h3>
  
 <blockquote><small>&lt;a href="https://toxu.ru" target="_blank"&gt;Toxu — место для обмена знаниями. Вопросы и ответы.&lt;/a&gt;<br></small></blockquote>
 <br><i>Обратная связь с администрацией:</i> 
