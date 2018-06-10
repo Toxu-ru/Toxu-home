@@ -1,73 +1,45 @@
 <style type="text/css">
-.toxo-owl {float:left;margin: 4px 20px 2px 0px;width:160px;border:1px solid #CCC;padding:6px;}
-.toxu {margin-bottom: 20px;font-weight: 300; font-size: 1.03em;line-height: 24px;font-family: Verdana,Geneva,sans-serif;}
-h1.t1 {color: #555;margin-top: 15px;margin-bottom: 15px;font-weight: 300;font-size: 1.9em;}
-h2.t2 {color: #555;margin-top: 15px;font-weight: 300;font-size: 1.6em;}
-h3.t3 {color: #555;margin-top: 15px;font-weight: 300;font-size: 1.3em;}
-body {background: #f9f9f9;}
-a.gramota{background: #0095ff;padding: 6px 12px;color: #fff;}
-a.gramota:hover{background: #09c;;padding: 6px 12px;color: #fff !important;}
-.sidebar-menu {
-    float: left;
-    width: 225px;
-    position: fixed;
-    background: #f9f9f9;
-    padding: 1px 11px 10px 17px;
-    background-color: #fff;
-    border: 1px solid #e8e8e8;
-}
-.telo {
-    float: right;
-    width: 69%;
-    margin-left: 20px;
-    background-color: #fff;
-    border: 1px solid #e8e8e8;
-    padding: 5px 20px 3px 20px;
-}
-.menu {
-    margin-bottom: 10px;
-    font-size: 15px;
-    display: block;
-}
-span.menu {
-    color: #f56400;
-}
-img {max-width: 95%;}
-.help-box {width: 99%;margin: 0 1% 1.5em 1%;}
-.help-g {margin: 2em auto;text-align: left; -moz-column-count: 3;column-count: 3;}
-.help-box-heading{text-align: center;}
-.help-box-inner{width: 100%;padding: 0;border-width: 1px;border-style: solid;border-color: #e5e5e5;}
-.help-box-heading i.fa {font-size: 22px;color: #444;text-align: center;margin-top: 0.4em;}
-.help-box h3 {font-size: 1.3em;margin-bottom: 0.5em;margin-top: 0.25em;line-height: 1.1em;text-align: center;color: #444;}
-.help-box-inner {text-align: center;}
-.help-description{padding: 3px;text-align: center;color: #919191;}
 img.img {border: 1px solid #e9e9e9;margin-top: 15px;margin-bottom: 15px;box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);}
-.toxu ul {list-style-type: none;}
-.toxu ul li {
-    background-image: url(https://toxu.ru/uploads/default/original/2X/7/747400ddaf4843f169c2d5f5cc35bb0134f89480.png);
-    background-repeat: no-repeat;
-    background-position: 0px 9px;
-    padding-left: 15px;
+h3 {font-weight: 600;font-size:18px;}
+.help-telo {line-height: 1.5;font-size: 1.11em;}
+tbody {border-top: none;}
+tr {border-bottom: none;}
+img {max-width: 95%;}
+a.gramota{background: #0095ff;padding: 6px 12px;color: #fff;}
+a.gramota:hover{background: #09c;;padding: 6px 12px;color: #fff !important;}    
+.progress-bar {
+        background-color: #eee;
+        height: 25px;
+        padding: 5px;
+        max-width: 450px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+
 }
-html:not(.mobile-view) .search-header {margin-left: 134px;}
-@media (max-width: 955px) { 
-  .sidebar-menu, .no-mob, .search-header {display: none;} 
-  .telo {width:94%;margin:0;} .toxu {font-size: 0.9em;}
+
+.progress-bar span {
+        display: inline-block;
+        height: 25px;
+        max-width: 300px;
+background: #339900;
 }
+
 </style>
 
 <div class="help">
-<div class="cont-stat">
-<div class="sidebar-menu"><br>
-<a class="menu" href="https://toxu.ru/help">Помощь</a>
-<a class="menu" href="https://toxu.ru/features">Возможности сайта</a>
-<a class="menu" href="https://toxu.ru/toxu">Почему сайт назван Toxu?</a>
-<a class="menu" href="https://toxu.ru/dev">Для разработчиков</a>
+<div class="blog-list">
+<div class="sidebar"><div class="sidebar-fon"> 
+
+<a class="menu" href="https://toxu.ru/help">Помощь</a><br><br>
+<a class="menu" href="https://toxu.ru/features">Возможности сайта</a><br><br>
+<a class="menu" href="https://toxu.ru/toxu">Почему сайт назван Toxu?</a><br><br>
+<a class="menu" href="https://toxu.ru/dev">Для разработчиков</a><br><br>
  <span class="menu">Мои возможности</span>
  
 
-</div>
-<div class="telo toxu">
+</div></div>
+<div class="container list-container has-sidebar help-telo"> 
 
 {{mount-widget widget="page-stats"}}
 
