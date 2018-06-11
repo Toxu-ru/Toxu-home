@@ -99,7 +99,7 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
 <div class="prof-txt">просмотров</div>
 </div>
 
-</div><div class="bord new-str"></div><font style="color:#888;">дней читал - ${recent_time_read}</font></center></div>`})); 
+</div><div class="bord new-str"></div><font style="color:#888;">${recent_time_read} - полных дней читал</font></center></div>`})); 
   
   $.ajax({
   url: "/user-badges/"+ username +".json", 
