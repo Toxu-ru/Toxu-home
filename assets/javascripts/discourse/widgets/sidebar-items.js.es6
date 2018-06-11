@@ -17,8 +17,7 @@ export default createWidget('sidebar-items', {
       result.push(self.attach('sidebar-cat'));
 
 result.push( new RawHtml({ html: `<div class="soc"><a title="Писатели" rel="nofollow" href="https://toxu.ru/qa">
-<img src="https://toxu.ru/uploads/default/original/2X/8/8fa38f17789c441c42a87f977df3be09f7bcd970.png" alt="sova" width="15">
-</a></div>`}));
+<font color=red>П</font>исатели</a> • <a title="Помощь" rel="nofollow" href="https://toxu.ru/help">Помощь</a></div>`}));
 
       return result;
   },
