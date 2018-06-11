@@ -27,8 +27,9 @@ export default createWidget('qa-user', {
  var profile_view_count; 
  var bio_excerpt;
  var yes;
-    
-    
+ var time_read;
+ var recent_time_read;
+	  
   $.ajax({
   url: "/users/"+ username +".json", 
   dataType: 'json',
@@ -36,7 +37,8 @@ export default createWidget('qa-user', {
   success: function(data) {
   userid =  data.user.id;
   name =  data.user.name;
- 
+  ver time_read;
+	  
   trust_level = data.user.trust_level;
   badge_count = data.user.badge_count;
   profile_view_count = data.user.profile_view_count;
@@ -45,7 +47,9 @@ export default createWidget('qa-user', {
   str =  data.user.avatar_template;
   ava = str.replace('{size}', '120');	
   avasm = str.replace('{size}', '64');
-  
+  //Общее время чтение и за 60 дней ${time_read} ${recent_time_read}
+  time_read = data.user.time_read;
+  recent_time_read = data.user.recent_time_read;
   }
   });
  
