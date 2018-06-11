@@ -37,7 +37,6 @@ export default createWidget('qa-user', {
   success: function(data) {
   userid =  data.user.id;
   name =  data.user.name;
-  ver time_read;
 	  
   trust_level = data.user.trust_level;
   badge_count = data.user.badge_count;
