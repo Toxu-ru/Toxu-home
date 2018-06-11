@@ -47,8 +47,10 @@ export default createWidget('qa-user', {
   ava = str.replace('{size}', '120');	
   avasm = str.replace('{size}', '64');
   //Общее время чтение и за 60 дней ${time_read} ${recent_time_read}
-  time_read = data.user.time_read;
   recent_time_read = data.user.recent_time_read;
+  var tim = data.user.time_read;
+  var time = tim/86400;
+  recent_time_read = time.toFixed();
   }
   });
  
@@ -97,7 +99,7 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
 <div class="prof-txt">просмотров</div>
 </div>
 
-</div><div class="bord new-str"></div></center></div>`})); 
+</div><div class="bord new-str"></div><font style="color:#888;">дней читал - ${recent_time_read}</font></center></div>`})); 
   
   $.ajax({
   url: "/user-badges/"+ username +".json", 
