@@ -10,6 +10,14 @@
 .bbcodeleft img {float: left; margin: 8px 14px 2px 0;}
 .bbcoderight img {  float: right; margin: 9px 0 2px 12px;}
 
+
+ .soc{
+    display: inline-block;
+    float: right;
+    margin-right: 8px;
+    margin-top: -22px;
+}
+
 /*логин и регистрация фон*/
 html:not(.mobile-view) {
 #discourse-modal {
