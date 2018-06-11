@@ -11,9 +11,9 @@
 .bbcoderight img {  float: right; margin: 9px 0 2px 12px;}
 
 
-.soc{display: inline-block;float: right;margin-right: 8px;margin-top: -22px;}
-.soc a {opacity: 0.4;}
-.soc a:hover {opacity: 1;}
+.soc{margin-right: 9px;margin-top: 4px;background-color: #fff;padding: 5px;font-size: 13px;}
+.soc a {color: #4E82C2;}
+.soc a:hover {color: #f56400;}
 
 /*логин и регистрация фон*/
 html:not(.mobile-view) {
