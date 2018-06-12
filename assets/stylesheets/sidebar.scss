@@ -249,7 +249,7 @@ img.avatar {border-radius: 5%;}
 .topic-post {margin-bottom: 10px;} 
 .topic-body, .topic-avatar, .topic-status-info {border-top: none;}
 #suggested-topics .loading-container.ember-view  {display:block !important;}
-#topic-footer-buttons button.create, #reply-control .btn-primary, #topic-footer-buttons button.btn.btn-primary i.fa {color: white !important; background-color: #306f30 !important;}
+#topic-footer-buttons button.create, #reply-control .btn-primary {color: white !important; background-color: #306f30 !important;}
 #topic-footer-buttons button.create:hover, #reply-control .btn-primary:hover, #topic-footer-buttons button.btn.btn-primary i.fa:hover {color: white !important; background-color: #339900 !important;}
 .topic-post button.btn-primary.create:after  {content: "комм приватно";}
 .private-message-map h3:after { content: " (приватно)";} 
