@@ -188,7 +188,7 @@ a.info{font-size: 16px;}
 
 @media screen and (max-width : 1020px) {
 	.list-container.has-sidebar {width: 100%;}
-	.sidebar {display:none;} 
+	.sidebar {display:none !important;} 
 	#create-topic {display: inline-block !important;} 
 
 }
