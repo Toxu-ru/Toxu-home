@@ -30,7 +30,7 @@ export function navigateToTopic(topic, href) {
 export default Ember.Component.extend(bufferedRender({
   rerenderTriggers: ['bulkSelectEnabled', 'topic.pinned'],
   tagName: 'div',
-  classNameBindings: [':topic-list-item-sug', 'unboundClassNames', 'topic.visited'],
+  classNameBindings: [':topic-list-sug', 'unboundClassNames', 'topic.visited'],
   attributeBindings: ['data-topic-id'],
   'data-topic-id': Em.computed.alias('topic.id'),
 
