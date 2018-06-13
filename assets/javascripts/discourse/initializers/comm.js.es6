@@ -10,6 +10,17 @@ function attachComm(api) {
  return attrs.user_deleted ? ["del"] : ["nodel"]; 
 });  
  
+ 
+ api.addSharingSource({
+    id: "vk",
+    icon: "vk",
+    generateUrl: function(link, title) {
+      return "http://vk.com/share.php?url=" + encodeURIComponent(link)  + "&title=" + encodeURIComponent(title);
+    },
+    shouldOpenInPopup: true,
+    popupHeight: 265
+  });
+ 
 }
   
 export default {
