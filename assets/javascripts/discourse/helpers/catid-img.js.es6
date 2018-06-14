@@ -6,6 +6,13 @@ var get = Em.get,
 export function categoryBadgeHTML(category, opts) {
   opts = opts || {};
 
+   if ((!category) ||
+        (!opts.allowUncategorized &&
+         Ember.get(category, 'id') === Discourse.Site.currentProp("uncategorized_category_id") &&
+         Discourse.SiteSettings.suppress_uncategorized_badge
+        )
+   ) return "";   
+    
   let categoryID = escapeExpression(get(category, 'id'));
   let img = Discourse.Category.findById(categoryID).uploaded_logo.url;
   let categoryName = escapeExpression(get(category, 'name'));
