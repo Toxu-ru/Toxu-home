@@ -6,6 +6,14 @@ var get = Em.get,
 export function categoryBadgeHTML(category, opts) {
   opts = opts || {};
 
+    if ((!category) ||
+        (!opts.allowUncategorized &&
+         Ember.get(category, 'id') === Discourse.Site.currentProp("uncategorized_category_id") &&
+         Discourse.SiteSettings.suppress_uncategorized_badge
+        )
+    ) return "";  
+    
+    
   let categoryID = escapeExpression(get(category, 'id'));
   let categoryName = escapeExpression(get(category, 'name'));
   let url = opts.url ? opts.url : Discourse.getURL("/c/") + Discourse.Category.slugFor(category); 
@@ -16,12 +24,6 @@ export function categoryBadgeHTML(category, opts) {
 
 export function categoryLinkHTML(category, options) {
   var categoryOptions = {};
- 
-  // TODO: This is a compatibility layer with the old helper structure.
-  // Can be removed once we migrate to `registerUnbound` fully
-  if (options && options.hash) { options = options.hash; }
-
-  if (options) {   }
   return new Handlebars.SafeString(categoryBadgeHTML(category, categoryOptions));  
     
 }
