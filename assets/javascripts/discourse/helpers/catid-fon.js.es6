@@ -16,7 +16,14 @@ export function categoryBadgeHTML(category, opts) {
 
 export function categoryLinkHTML(category, options) {
   var categoryOptions = {};
-  return new Handlebars.SafeString(categoryBadgeHTML(category, categoryOptions));
+ 
+  // TODO: This is a compatibility layer with the old helper structure.
+  // Can be removed once we migrate to `registerUnbound` fully
+  if (options && options.hash) { options = options.hash; }
+
+  if (options) {   }
+  return new Handlebars.SafeString(categoryBadgeHTML(category, categoryOptions));  
+    
 }
 
 registerUnbound('catid-fon', categoryLinkHTML);
