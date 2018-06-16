@@ -19,7 +19,7 @@ export function categoryBadgeHTML(category, opts) {
   let url = opts.url ? opts.url : Discourse.getURL("/c/") + Discourse.Category.slugFor(category); 
   let color = escapeExpression(get(category, 'color'));
   
-  return `<a class="catid-fon" style="border-color:#${color};color:#${color};" title="${categoryName}" href="${url}">${categoryName}</a>`;
+  return `<a class="catid-fon" style="color:#${color};" title="${categoryName}" href="${url}">${categoryName}</a>`;
 }
 
 export function categoryLinkHTML(category, options) {
