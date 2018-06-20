@@ -14,6 +14,11 @@
 .soc a {color: #4E82C2;}
 .soc a:hover {color: #f56400;}
 
+html:not(.mobile-view) {
+.topic-meta-data .names {display: inline-block;}
+.topic-meta-data {align-items: flex-start;}
+}
+
 /*логин и регистрация фон*/
 html:not(.mobile-view) {
 #discourse-modal {
