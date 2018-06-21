@@ -211,6 +211,7 @@ a.info{font-size: 16px;}
 .badge-wrapper.bullet .badge-category-bg {border-radius: 10px;opacity: 0.6;}
 .title-wrapper .badge-wrapper.bullet {margin-bottom: 3px;}
 .badge-wrapper.bullet .badge-category-parent-bg {width: 9px;height: 9px;margin-right: 2px;border-radius: 10px;}
+.badge-wrapper.bullet .badge-category-parent-bg + .badge-category-bg {width: 9px;}
 /*комментарии*/
 .topic-post.comment { 
 margin-left: 53px;	
