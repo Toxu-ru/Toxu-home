@@ -159,6 +159,7 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 .d-icon.d-icon-d-tracking,.d-icon.d-icon-d-watching{color:#08c !important;}
 .d-icon.d-icon-d-regular, .d-icon.d-icon-d-muted, .d-icon.d-icon-d-watching-first, .d-icon.d-icon-d-watching-first-post {color: #919191 !important;}
 
+#login-buttons .btn  {text-align: left !important;}
 
 /*боковые категории*/
 html:not(.anon) {#main-outlet {padding-top: 75px;}}
