@@ -95,7 +95,7 @@ new RawHtml({ html: `<div class="id">
 <img src="https://toxu.ru/uploads/default/optimized/2X/2/2c1a9d268d50a3c02e9770b57e49a6ee0094d5bd_1_690x243.gif" alt="Category"><br>
 
 
-	  <il>Для этого настройте <a target="_blank" href="https://toxu.ru/u/${username}/preferences/interface">Главную страницу по умолчанию.</a></il></ul>
+<il>Для этого настройте <a target="_blank" href="https://toxu.ru/u/${username}/preferences/interface">Главную страницу по умолчанию.</a></il></ul>
 
 <br> <br>
 Вы можете публиковать (и видеть) дополнительные вопросы и ответы, при условии вступления в соответствующие <a target="_blank" href="https://toxu.ru/groups">Группы</a>. 
@@ -108,8 +108,8 @@ new RawHtml({ html: `<div class="id">
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
 <a target="_blank" href="https://toxu.ru/u/${username}/summary"><small><i>- посмотреть</i></small></a>
 <br>или<br>
-<span class="excerpt"><small>https://toxu.ru/profile/${username}</small></span>
-<a target="_blank" href="https://toxu.ru/profile/${username}"><small><i>- посмотреть</i></small></a><br>
+<span class="excerpt"><small>https://toxu.ru/qa/${username}</small></span>
+<a target="_blank" href="https://toxu.ru/qa/${username}"><small><i>- посмотреть</i></small></a><br>
 <i>В зависимости от сайта, ссылки будет выглядеть по разному. Второй вариант, это карточка профиля (урезанная версия).</i>
 <br><br>Или html (для html страниц)<br>
 <span class="excerpt"><small>&lt;a href="https://toxu.ru/u/${username}/summary" target="_blank"&gt;${name} (@${username}) — на Toxu.ru&lt;/a&gt;</small></span>
@@ -161,8 +161,8 @@ class="gramota">+ Получить грамоту</a></center><br> <br>
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
 <a target="_blank" href="https://toxu.ru/u/${username}/summary"><small><i>- посмотреть</i></small></a>
 <br>или<br>
-<span class="excerpt"><small>https://toxu.ru/profile/${username}</small></span>
-<a target="_blank" href="https://toxu.ru/profile/${username}"><small><i>- посмотреть</i></small></a><br>
+<span class="excerpt"><small>https://toxu.ru/qa/${username}</small></span>
+<a target="_blank" href="https://toxu.ru/qa/${username}"><small><i>- посмотреть</i></small></a><br>
 <i>В зависимости от сайта, ссылки будет выглядеть по разному. Второй вариант, это карточка профиля (урезанная версия).</i>
 <br><br>Или html (для html страниц)<br>
 <span class="excerpt"><small>&lt;a href="https://toxu.ru/u/${username}/summary" target="_blank"&gt;${name} (@${username}) — на Toxu.ru&lt;/a&gt;</small></span>
@@ -200,8 +200,8 @@ ${shcala}
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
 <a target="_blank" href="https://toxu.ru/u/${username}/summary"><small><i>- посмотреть</i></small></a>
 <br>или<br>
-<span class="excerpt"><small>https://toxu.ru/profile/${username}</small></span>
-<a target="_blank" href="https://toxu.ru/profile/${username}"><small><i>- посмотреть</i></small></a><br>
+<span class="excerpt"><small>https://toxu.ru/qa/${username}</small></span>
+<a target="_blank" href="https://toxu.ru/qa/${username}"><small><i>- посмотреть</i></small></a><br>
 <i>В зависимости от сайта, ссылки будет выглядеть по разному. Второй вариант, это карточка профиля (урезанная версия).</i>
 <br><br>Или html (для html страниц)<br>
 <span class="excerpt"><small>&lt;a href="https://toxu.ru/u/${username}/summary" target="_blank"&gt;${name} (@${username}) — на Toxu.ru&lt;/a&gt;</small></span>
@@ -237,8 +237,8 @@ ${shcala}
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
 <a target="_blank" href="https://toxu.ru/u/${username}/summary"><small><i>- посмотреть</i></small></a>
 <br>или<br>
-<span class="excerpt"><small>https://toxu.ru/profile/${username}</small></span>
-<a target="_blank" href="https://toxu.ru/profile/${username}"><small><i>- посмотреть</i></small></a><br>
+<span class="excerpt"><small>https://toxu.ru/qa/${username}</small></span>
+<a target="_blank" href="https://toxu.ru/qa/${username}"><small><i>- посмотреть</i></small></a><br>
 <i>В зависимости от сайта, ссылки будет выглядеть по разному. Второй вариант, это карточка профиля (урезанная версия).</i>
 <br><br>Или html (для html страниц)<br>
 <span class="excerpt"><small>&lt;a href="https://toxu.ru/u/${username}/summary" target="_blank"&gt;${name} (@${username}) — на Toxu.ru&lt;/a&gt;</small></span>
