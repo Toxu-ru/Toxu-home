@@ -102,7 +102,7 @@ new RawHtml({ html: `<div class="id">
  Вступайте в них!
 
 
-	 <br> 
+	 <br>  <br> 
 
 <h3 class="t3">Ссылка на мой профиль</h3>
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
@@ -155,7 +155,7 @@ class="gramota">+ Получить грамоту</a></center><br> <br>
 Во всплывающем окне: <b>пожаловаться</b> (под вопросом/ответом), появилась возможность обращаться к пользователю напрямую, минуя администрацию.  
 Для уточнения вопроса/ответа или продолжение личной беседы в почтовом разделе.<br>
 <img class="img" src="https://toxu.ru/uploads/default/optimized/2X/b/be1d524e3ebb32339bb14781c34a5c6eb1679bef_1_690x224.gif" alt="Личные-сообщения" width="590" height="200">
-<br>
+<br> <br> 
 
 <h3 class="t3">Ссылка на мой профиль</h3>
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
@@ -194,7 +194,7 @@ ${shcala}
 <img class="img" src="https://toxu.ru/uploads/default/original/2X/e/ebaabc2e2a3092fd609c886b3b9beb221da11cb5.gif" alt="Пригласить" width="590" height="100">
 <br>До уровня: <b>Постоялец (3)</b> 
 <div><div class="progress-bar"><span class="progress-bar-fill" style="width: ${days_visited}%"></span></div>
-<br>
+<br> <br> 
 
 <h3 class="t3">Ссылка на мой профиль</h3>
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
@@ -231,7 +231,7 @@ ${shcala}
 Писать в раздел <a href="https://toxu.ru/c/toxu/blog" target="_blank">блог</a><br><b>Обязательно ознакомьтесь</b> со следующими материалами: 
 <br> - <a target="_blank" href="https://toxu.ru/t/vojna-pravok-na-toxu/1281">война правок</a> на сайте; 
 <br> - <a target="_blank" href="https://toxu.ru/t/kakovy-rekomendaczii-i-politika-dlya-redaktirovaniya-voprosa-na-toxu-ru/934">каковы рекомендации и политика для 
- редактирования вопроса</a>.<br>
+ редактирования вопроса</a>.<br> <br> 
 
 <h3 class="t3">Ссылка на мой профиль</h3>
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
