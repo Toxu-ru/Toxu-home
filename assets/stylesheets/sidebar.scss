@@ -20,13 +20,14 @@ html:not(.mobile-view) {
 }
 
 /*награда под авой в профиле*/
-.qramota {text-align: center;max-width: 120px;}
 .bd {display: inline-block;}
 .bd.ots {margin-left: 3px; margin-right: 3px;}
 .bd.gr a {color:#ffb74d;}
-.bd a {font-weight: 600;color:#D68B4F;}
-.about.has-background .bd a {font-weight: 600;font-size: 17px;}
-.collapsed-info.about.has-background .bd a {font-weight: 600; font-size: 12px;}
+.bd a {color:#D68B4F;}
+.about.has-background .bd a {font-size: 17px;}
+.about.has-background .qramota {text-align: center;max-width: 120px;margin-left: 0px;}
+.collapsed-info.about.has-background .bd a {font-size: 12px;}
+.collapsed-info.about.has-background {text-align: left;max-width: 120px;margin-left: 6px;}
 
 /*логин и регистрация фон*/
 html:not(.mobile-view) {
