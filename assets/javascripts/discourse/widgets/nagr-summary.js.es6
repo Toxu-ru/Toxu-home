@@ -12,9 +12,9 @@ tagName: 'div.qramota',
     var trust_level = args.model.trust_level;
     var id;
     var granted_at;
-    var time_read = args.model.time_read;
-// var recent_time_read = args.model.recent_time_read;
-console.log(time_read);   
+ // var time_read = args.model.time_read;
+    var recent_time_read = args.model.recent_time_read;
+console.log(recent_time_read);   
 
  if (trust_level == 0) {   }
  if (trust_level == 1) { contents.push( new RawHtml({ html: `<div class="bd dov1"><a title="Уровень доверия" href="/qa/${username}">TL1</a></div>`}));   } else {  }
