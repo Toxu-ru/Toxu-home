@@ -22,10 +22,10 @@ tagName: 'div.qramota',
 	  
 
  if (trust_level == 0) {   }
- if (trust_level == 1) { contents.push( new RawHtml({ html: `<div class="bd dov1"><a title="Уровень доверия" href="/qa/${username}">1</a></div>`}));   } else {  }
- if (trust_level == 2) { contents.push( new RawHtml({ html: `<div class="bd dov2"><a title="Уровень доверия" href="/qa/${username}">2</a></div>`}));   } else {  } 
- if (trust_level == 3) { contents.push( new RawHtml({ html: `<div class="bd dov3"><a title="Уровень доверия" href="/qa/${username}">3</a></div>`}));   } else {  }
- if (trust_level == 4) { contents.push( new RawHtml({ html: `<div class="bd dov4"><a title="Уровень доверия" href="/qa/${username}">4</a></div>`}));   } else {  }
+ if (trust_level == 1) { contents.push( new RawHtml({ html: `<div class="bd ud dov1"><a title="Уровень доверия" href="/qa/${username}">1</a></div>`}));   } else {  }
+ if (trust_level == 2) { contents.push( new RawHtml({ html: `<div class="bd ud dov2"><a title="Уровень доверия" href="/qa/${username}">2</a></div>`}));   } else {  } 
+ if (trust_level == 3) { contents.push( new RawHtml({ html: `<div class="bd ud dov3"><a title="Уровень доверия" href="/qa/${username}">3</a></div>`}));   } else {  }
+ if (trust_level == 4) { contents.push( new RawHtml({ html: `<div class="bd ud dov4"><a title="Уровень доверия" href="/qa/${username}">4</a></div>`}));   } else {  }
 
 $.ajax({
   url: "/user-badges/"+ username +".json", 
