@@ -10,6 +10,7 @@ enabled_site_setting :userbar_enabled
 
 Discourse::Application.routes.append do
   get '/dev' => 'discourse_dev/dev#index'
+  get '/trust-level' => 'discourse_trust-level/trust-level#index'
   get '/toxu' => 'discourse_toxu/toxu#index'
   get '/features' => 'discourse_features/features#my_page'
   get '/help' => 'discourse_help/help#index'
