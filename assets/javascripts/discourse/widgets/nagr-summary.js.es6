@@ -13,8 +13,13 @@ tagName: 'div.qramota',
     var id;
     var granted_at;
  // var time_read = args.model.time_read;
-    var recent_time_read = args.model.recent_time_read;
-console.log(recent_time_read);   
+  
+    var tim = args.model.recent_time_read;
+    var time = tim/86400;
+    var recent_time_read = time.toFixed();
+	  
+	  
+	  
 
  if (trust_level == 0) {   }
  if (trust_level == 1) { contents.push( new RawHtml({ html: `<div class="bd dov1"><a title="Уровень доверия" href="/qa/${username}">1</a></div>`}));   } else {  }
@@ -40,7 +45,7 @@ $.ajax({
 }
 });
 
-contents.push( new RawHtml({ html: `<div class="bd time"><a title="Чтение за последние 60 дней: ${recent_time_read} секунд" href="/qa/${username}"><i class="fa fa-clock-o" aria-hidden="true"></i></a></div>`}));	  
+contents.push( new RawHtml({ html: `<div class="bd time"><a title="Чтение за последние 60 дней: ${recent_time_read} дней" href="/qa/${username}">${recent_time_read}</a></div>`}));	  
 	  
 	  
   return contents;
