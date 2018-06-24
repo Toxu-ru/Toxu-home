@@ -33,13 +33,16 @@ $.ajax({
   for (var t = 0; t < badges.length; t++) {
   id = badges[t].badge_id;
   granted_at = badges[t].granted_at;
-  if ( id == 104) { contents.push( new RawHtml({ html: `<div class="bd gr"><a title="Грамота" href="/qa/${username}"><i aria-hidden="true" class="fa fa-trophy"></i></a></div>`})); 
+  if ( id == 104) { contents.push( new RawHtml({ html: `<div class="bd ots gr"><a title="Грамота" href="/qa/${username}"><i aria-hidden="true" class="fa fa-trophy"></i></a></div>`})); 
   } else {  }
   }
 
 }
 });
-	
+
+contents.push( new RawHtml({ html: `<div class="bd time"><a title="Грамота" href="/qa/${username}">54v</a></div>`}));	  
+	  
+	  
   return contents;
 
 }
