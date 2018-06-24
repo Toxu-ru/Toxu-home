@@ -40,7 +40,7 @@ $.ajax({
 }
 });
 
-contents.push( new RawHtml({ html: `<div class="bd time"><a title="Чтение за последние 60 дней: ${recent_time_read}" href="/qa/${username}"><i class="fa fa-clock-o" aria-hidden="true"></i></a></div>`}));	  
+contents.push( new RawHtml({ html: `<div class="bd time"><a title="Чтение за последние 60 дней" href="/qa/${username}"><i class="fa fa-clock-o" aria-hidden="true"></i></a></div>`}));	  
 	  
 	  
   return contents;
