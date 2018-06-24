@@ -21,13 +21,14 @@ html:not(.mobile-view) {
 
 /*награда под авой в профиле*/
 .bd {display: inline-block;}
-.bd.ots {margin-left: 5px; margin-right: 5px;}
 .bd.gr a {color:#ffb74d;}
 .bd a {color:#D68B4F;}
 .about.has-background .bd a {font-size: 17px;}
 .about.has-background .qramota {text-align: center;max-width: 120px;margin-left: 0px;}
 .collapsed-info.about.has-background .bd a {font-size: 12px;}
 .collapsed-info.about.has-background .qramota {text-align: left;max-width: 120px;margin-left: 6px;}
+.bd.ud {margin-right: 5px;}
+.bd.time {margin-left: 5px;}
 
 /*логин и регистрация фон*/
 html:not(.mobile-view) {
