@@ -45,7 +45,7 @@ $.ajax({
 }
 });
 
-contents.push( new RawHtml({ html: `<div class="bd time"><a title="Чтение за последние 60 дней: ${recent_time_read} часов" href="/qa/${username}">${recent_time_read} ч.</a></div>`}));	  
+contents.push( new RawHtml({ html: `<div class="bd time"><a title="Чтение за последние 60 дней: ${recent_time_read} часов" href="/qa/${username}">${recent_time_read}</a></div>`}));	  
 	  
 	  
   return contents;
