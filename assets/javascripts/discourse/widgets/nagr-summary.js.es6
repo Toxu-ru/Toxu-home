@@ -1,7 +1,7 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
  
-export default createWidget('gramota-summary', {
+export default createWidget('nagr-summary', {
 tagName: 'div.qramota',
   buildKey: (args) => 'qramota',
 
@@ -25,7 +25,7 @@ $.ajax({
   id = badges[t].badge_id;
   granted_at = badges[t].granted_at;
   
-  if ( id == 104) { contents.push( new RawHtml({ html: `<div class="bd"><a class="btn title="Грамота" href="/qa/${username}"><i aria-hidden="true" class="fa fa-trophy"></i> Грамота</a></div>`})); 
+  if ( id == 104) { contents.push( new RawHtml({ html: `<div class="bd"><a class="btn" title="Грамота" href="/qa/${username}"><i aria-hidden="true" class="fa fa-trophy"></i> Грамота</a></div>`})); 
    
    } else {  }
 	  
