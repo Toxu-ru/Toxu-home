@@ -17,10 +17,10 @@ tagName: 'div.qramota',
 console.log(trust_level);
 
  if (trust_level == 0) {   }
- if (trust_level == 1) { contents.push( new RawHtml({ html: `<div class="bd dov1"><a title="Грамота" href="/qa/${username}">TL1</a></div>`}));   } else {  }
- if (trust_level == 2) { contents.push( new RawHtml({ html: `<div class="bd dov2"><a title="Грамота" href="/qa/${username}">TL2</a></div>`}));   } else {  } 
- if (trust_level == 3) { contents.push( new RawHtml({ html: `<div class="bd dov3"><a title="Грамота" href="/qa/${username}">TL3</a></div>`}));   } else {  }
- if (trust_level == 4) { contents.push( new RawHtml({ html: `<div class="bd dov4"><a title="Грамота" href="/qa/${username}">TL4</a></div>`}));   } else {  }
+ if (trust_level == 1) { contents.push( new RawHtml({ html: `<div class="bd dov1"><a title="Уровень доверия" href="/qa/${username}">TL1</a></div>`}));   } else {  }
+ if (trust_level == 2) { contents.push( new RawHtml({ html: `<div class="bd dov2"><a title="Уровень доверия" href="/qa/${username}">TL2</a></div>`}));   } else {  } 
+ if (trust_level == 3) { contents.push( new RawHtml({ html: `<div class="bd dov3"><a title="Уровень доверия" href="/qa/${username}">TL3</a></div>`}));   } else {  }
+ if (trust_level == 4) { contents.push( new RawHtml({ html: `<div class="bd dov4"><a title="Уровень доверия" href="/qa/${username}">TL4</a></div>`}));   } else {  }
 
 $.ajax({
   url: "/user-badges/"+ username +".json", 
