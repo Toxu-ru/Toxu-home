@@ -19,6 +19,14 @@ html:not(.mobile-view) {
 .topic-meta-data {align-items: flex-start;}
 }
 
+/*награда под авой в профиле*/
+.qramota {text-align: center;}
+.bd {display: inline-block;}
+.bd.gr a {color:#ffb74d;}
+.bd a {font-weight: 600;color:#D68B4F;}
+.about.has-background .bd a {font-weight: 600;  margin-right: 10px;font-size: 17px;}
+.collapsed-info.about.has-background .bd a {font-weight: 600; margin-right: 5px;   font-size: 12px;}
+
 /*логин и регистрация фон*/
 html:not(.mobile-view) {
 #discourse-modal {
