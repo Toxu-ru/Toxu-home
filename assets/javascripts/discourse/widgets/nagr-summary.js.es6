@@ -15,7 +15,7 @@ tagName: 'div.qramota',
  // var time_read = args.model.time_read;
   
     var tim = args.model.recent_time_read;
-    var time = tim/86400;
+    var time = tim/3600;
     var recent_time_read = time.toFixed();
 	  
 	  
@@ -45,7 +45,7 @@ $.ajax({
 }
 });
 
-contents.push( new RawHtml({ html: `<div class="bd time"><a title="Чтение за последние 60 дней: ${recent_time_read} дней" href="/qa/${username}">${recent_time_read}</a></div>`}));	  
+contents.push( new RawHtml({ html: `<div class="bd time"><a title="Чтение за последние 60 дней: ${recent_time_read} часов" href="/qa/${username}">${recent_time_read} ч.</a></div>`}));	  
 	  
 	  
   return contents;
