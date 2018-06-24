@@ -83,3 +83,15 @@ module DiscourseChess
     end
   end
 end
+
+module DiscourseLevel
+  class Engine < ::Rails::Engine
+    isolate_namespace DiscourseLevel
+
+    config.after_initialize do
+		Discourse::Application.routes.append do
+			mount ::DiscourseLevel::Engine, at: "/"
+		end
+    end
+  end
+end
