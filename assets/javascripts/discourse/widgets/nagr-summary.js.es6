@@ -40,9 +40,7 @@ $.ajax({
   granted_at = badges[t].granted_at;
   if ( id == 104) { 
 contents.push( new RawHtml({ html: `<div class="bd ots gr"><a title="Грамота" href="/qa/${username}"><i aria-hidden="true" class="fa fa-trophy"></i></a></div>`})); 
-  } else {  
-contents.push( new RawHtml({ html: `<div class="bd ots gr"><a title="Грамота" href="/qa/${username}"> - </a></div>`})); 
-  }
+  } else {  }
   }
 
 }
