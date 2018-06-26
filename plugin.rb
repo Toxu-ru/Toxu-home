@@ -12,7 +12,7 @@ Discourse::Application.routes.append do
   get '/dev' => 'discourse_dev/dev#index'
   get '/level' => 'discourse_level/level#index'
   get '/toxu' => 'discourse_toxu/toxu#index'
-  get '/features' => 'discourse_features/features#my_page'
+  get '/features' => 'discourse_features/features#index'
   get '/help' => 'discourse_help/help#index'
   get '/stats' => 'discourse_stats/stats#my_page'
   get '/chess' => 'discourse_chess/chess#my_page'
