@@ -5,7 +5,7 @@ module DiscourseFeatures
 
   skip_before_action :check_xhr, only: [:index]
 
-  def my_page
+  def index
  #  return redirect_to path('/login') if SiteSetting.login_required? && current_user.nil?
 
     @dev = About.new
