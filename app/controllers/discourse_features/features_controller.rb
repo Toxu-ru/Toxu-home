@@ -1,18 +1,25 @@
 module DiscourseFeatures
 	class FeaturesController < ApplicationController
 
-		def my_page
-			
-			
+#  requires_login only: [:live_post_counts]
 
-			
-			render :json => { name: "Возможности сайта Toxu.ru " }
-      rescue StandardError => e
-        render_json_error e.message
-   
-		end
+  skip_before_action :check_xhr, only: [:index]
 
-	end
+  def my_page
+ #  return redirect_to path('/login') if SiteSetting.login_required? && current_user.nil?
+
+    @dev = About.new
+    respond_to do |format|
+      format.html do
+        render :index
+      end
+     format.json do
+       render_serialized(@dev, AboutSerializer)
+     end
+    end
+  end
+
+
 end
-
-
+	
+end
