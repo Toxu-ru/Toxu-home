@@ -15,11 +15,11 @@ export function categoryBadgeHTML(category, opts) {
     
     
   let categoryID = escapeExpression(get(category, 'id'));
-  let categoryName = escapeExpression(get(category, 'name'));
-  let url = opts.url ? opts.url : Discourse.getURL("/c/") + Discourse.Category.slugFor(category); 
+//  let categoryName = escapeExpression(get(category, 'name'));
+//  let url = opts.url ? opts.url : Discourse.getURL("/c/") + Discourse.Category.slugFor(category); 
   let color = escapeExpression(get(category, 'color'));
   
-  return `<a class="catid-fon" style="color:#${color};" title="${categoryName}" href="${url}">${categoryName}</a>`;
+  return `${color}`;
 }
 
 export function categoryLinkHTML(category, options) {
