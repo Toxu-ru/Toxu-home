@@ -296,6 +296,7 @@ h2.tag-show-heading a {margin-top: -6px;}
 }
 a.tag-факты.discourse-tag.bullet::before {content: "\f0eb"; color: #F7941D;display: inline-block;font-family: FontAwesome;}
 
+a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-weight: normal;}
 
 /*блоги*/
 .category-blog { 
