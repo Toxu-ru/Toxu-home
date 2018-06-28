@@ -136,12 +136,12 @@ contents.push( new RawHtml({ html: `<div class="bd"> <center>
 	const myusername = currentUser.get('username');
 	if (myid != userid) {
 	contents.push( new RawHtml({ html: `<div class="bd"> <center>  
-	<br><br><a rel="nofollow" class="btn-primary-my create btn btn-icon-text ember-view" href="https://toxu.ru/qa/${myusername}">Посмотреть свой профиль</a> 
+	<br><br><a rel="nofollow" class="create btn btn-icon-text ember-view" href="https://toxu.ru/qa/${myusername}">Посмотреть свой профиль</a> 
 	</center></div>`}));	
 	}
 	}  else {
 	contents.push( new RawHtml({ html: `<div class="bd"> <center>  
-	<br><br><a rel="nofollow" class="btn-primary-my create btn btn-icon-text ember-view" href="https://toxu.ru/login">Войти</a> 
+	<br><br><a rel="nofollow" class="create btn btn-icon-text ember-view" href="https://toxu.ru/login">Войти</a> 
 	</center></div>`}));
 	} 
 
