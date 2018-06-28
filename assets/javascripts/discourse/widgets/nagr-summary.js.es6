@@ -22,10 +22,10 @@ tagName: 'div.qramota',
 	  
 
  if (trust_level == 0) {   }
- if (trust_level == 1) { contents.push( new RawHtml({ html: `<div class="bd ud dov1"><a title="Уровень доверия" href="/qa/${username}">1</a></div>`}));   } else {  }
- if (trust_level == 2) { contents.push( new RawHtml({ html: `<div class="bd ud dov2"><a title="Уровень доверия" href="/qa/${username}">2</a></div>`}));   } else {  } 
- if (trust_level == 3) { contents.push( new RawHtml({ html: `<div class="bd ud dov3"><a title="Уровень доверия" href="/qa/${username}">3</a></div>`}));   } else {  }
- if (trust_level == 4) { contents.push( new RawHtml({ html: `<div class="bd ud dov4"><a title="Уровень доверия" href="/qa/${username}">4</a></div>`}));   } else {  }
+ if (trust_level == 1) { contents.push( new RawHtml({ html: `<div class="bdp ud dov1"><a title="Уровень доверия" href="/qa/${username}">1</a></div>`}));   } else {  }
+ if (trust_level == 2) { contents.push( new RawHtml({ html: `<div class="bdp ud dov2"><a title="Уровень доверия" href="/qa/${username}">2</a></div>`}));   } else {  } 
+ if (trust_level == 3) { contents.push( new RawHtml({ html: `<div class="bdp ud dov3"><a title="Уровень доверия" href="/qa/${username}">3</a></div>`}));   } else {  }
+ if (trust_level == 4) { contents.push( new RawHtml({ html: `<div class="bdp ud dov4"><a title="Уровень доверия" href="/qa/${username}">4</a></div>`}));   } else {  }
 
 $.ajax({
   url: "/user-badges/"+ username +".json", 
@@ -39,14 +39,14 @@ $.ajax({
   id = badges[t].badge_id;
   granted_at = badges[t].granted_at;
   if ( id == 104) { 
-contents.push( new RawHtml({ html: `<div class="bd ots gr"><a title="Грамота" href="/qa/${username}"><i aria-hidden="true" class="fa fa-trophy"></i></a></div>`})); 
+contents.push( new RawHtml({ html: `<div class="bdp ots gr"><a title="Грамота" href="/qa/${username}"><i aria-hidden="true" class="fa fa-trophy"></i></a></div>`})); 
   } else {  }
   }
 
 }
 });
 
-contents.push( new RawHtml({ html: `<div class="bd time"><a title="Чтение за последние 60 дней: ${recent_time_read} часов" href="/qa/${username}">${recent_time_read}</a></div>`}));	  
+contents.push( new RawHtml({ html: `<div class="bdp time"><a title="Чтение за последние 60 дней: ${recent_time_read} часов" href="/qa/${username}">${recent_time_read}</a></div>`}));	  
 	  
 	  
   return contents;
