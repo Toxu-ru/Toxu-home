@@ -16,15 +16,16 @@
 
 
 /*награда под авой в профиле*/
-.bd.gr a {color:#ffb74d;}
-.bd a:hover {color:#f56400 !important;}
-.about.has-background .bd a {font-size: 17px; background-color: #eee;border-radius: 3px;padding: 3px;}
-.about.no-background .bd a {font-size: 13px;background-color: #eee;border-radius: 3px;padding:2px;}
+.bdp {display: inline-block;}
+.bdp.gr a {color:#ffb74d;}
+.bdp a:hover {color:#f56400 !important;}
+.about.has-background .bdp a {font-size: 17px; background-color: #eee;border-radius: 3px;padding: 3px;}
+.about.no-background .bdp a {font-size: 13px;background-color: #eee;border-radius: 3px;padding:2px;}
 .about.has-background .qramota {text-align: center;max-width: 120px;margin-left: 0px;}
-.collapsed-info.about.has-background .bd a {font-size: 12px;background-color: #eee;border-radius: 3px;padding: 2px;}
+.collapsed-info.about.has-background .bdp a {font-size: 12px;background-color: #eee;border-radius: 3px;padding: 2px;}
 .collapsed-info.about.has-background .qramota {text-align: left;max-width: 120px;}
-.bd.ud {margin-right: 5px;}
-.bd.time {margin-left: 5px;}
+.bdp.ud {margin-right: 5px;}
+.bdp.time {margin-left: 5px;}
 .user-main .about .details .user-profile-avatar .avatar-flair {bottom: 28px;}
 
 /*логин и регистрация фон*/
