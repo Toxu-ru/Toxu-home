@@ -9,10 +9,10 @@ tagName: 'div.qramota',
     const { currentUser } = this;
     let contents = []
 
-    const myusername = currentUser.get('username');
+ //   const myusername = currentUser.get('username');
     var username = args.model.username;
 	  
- if (myusername == username) {   	  
+// if (myusername == username) {   }	  
 	  
     var trust_level = args.model.trust_level;
     var id;
@@ -52,7 +52,7 @@ contents.push( new RawHtml({ html: `<div class="bdp time"><a title="Чтение
 
 return contents;
 
-}	 
+	 
 	 
 }
 });
