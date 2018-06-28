@@ -64,7 +64,7 @@ export default createWidget('page-stats', {
    rez = +my_loc + +my_bio  + +my_sig  + +my_bir;
     if (rez === 100) { shcala = '';    } else { 
 
-    shcala = ' Заполненность профиля: <span style="color: #f56400;">'+ rez +'% </span><br> <div class="progress-bar"><span class="progress-bar-fill" style="width:'+ rez +'%"></span></div> <small><a target="_blank" href="https://toxu.ru/u/'+ username +'/preferences/profile">Заполните профиль</a> и получите награду!<br>О себе, местоположение, день рождения и личные интересы.</small>   '; 
+    shcala = ' Заполненность профиля: <span style="color: #f56400;">'+ rez +'% </span><br> <div class="progress-bar"><span class="progress-bar-fill" style="width:'+ rez +'%"></span></div> <small><a target="_blank" href="https://toxu.ru/u/'+ username +'/preferences/profile">Заполните профиль</a> и получите награду!<br>О себе, местоположение, день рождения и личные интересы.</small><br><br>   '; 
     
     }
  
@@ -86,9 +86,9 @@ new RawHtml({ html: `<div class="id">
 </span>
   <br><br> ${shcala}
 
-   <br><br>Вы можете:
+ Вы можете:
 	  
-	  <br><ul><il>- Настроить дизайн под себя. У нас несколько вариантов дизайна.</il><br>
+<br><ul><il>- Настроить дизайн под себя. У нас несколько вариантов дизайна.</il><br>
 <il>- Выбрать собственную центральную страницу.</il><br>
 
 <br>Хотите такую?<br>
@@ -129,7 +129,7 @@ new RawHtml({ html: `<div class="id">
 <h1 class="t1">${username}</h1>
 Поздравляем, ваш уровень: <span style="color: #335599;"><b>Пользователь!</b></span><br><br>
 ${shcala}
-<br><br>Теперь Вы можете задавать вопросы и отвечать во всех разделах, а при условии вступления в <a target="_blank" href="https://toxu.ru/groups">Группы</a>, и в дополнительные!
+Теперь Вы можете задавать вопросы и отвечать во всех разделах, а при условии вступления в <a target="_blank" href="https://toxu.ru/groups">Группы</a>, и в дополнительные!
 Ознакомьтесь более подробно с главным нашим документом: <a target="_blank" href="https://toxu.ru/t/poleznye-i-bespoleznye-otvety/202">Политикой полезности.</a> 
 Это поможет вам приблизится к следующему уровню доверия и откроет новые возможности на сайте.
 <br><br>
@@ -182,7 +182,7 @@ new RawHtml({ html: `<div class="id">
 <h1 class="t1">${username}</h1>
 Поздравляем, ваш уровень: <span style="color: #4dc1c0;"><b>Участник!</b></span><br><br>
 ${shcala}
-<br><br>Теперь Вы можете писать во все разделы, а при условии вступления в <a target="_blank" href="https://toxu.ru/groups">Группы</a>, и в дополнительные!
+Теперь Вы можете писать во все разделы, а при условии вступления в <a target="_blank" href="https://toxu.ru/groups">Группы</a>, и в дополнительные!
 Вам стали доступны групповые и <a target="_blank" href="https://toxu.ru/u/${username}/messages">личные сообщения</a>, 
 <a target="_blank" href="https://toxu.ru/u/${username}/invited/pending">инвайт система</a>, приглашение пользователей в вопросы и некоторые другие возможности.
 <br><br>
@@ -222,7 +222,7 @@ new RawHtml({ html: `<div class="id">
 <h1 class="t1">${username}</h1>
 Поздравляем, ваш уровень: <span style="color: #f38844;"><b>Постоялец!</b></span><br><br>
 ${shcala}
-<br><br>Теперь Вы можете писать во все разделы, а при условии вступления в <a target="_blank" href="https://toxu.ru/groups">Группы</a>, и в дополнительные!
+Теперь Вы можете писать во все разделы, а при условии вступления в <a target="_blank" href="https://toxu.ru/groups">Группы</a>, и в дополнительные!
 Вам  стала доступна возможность <b>редактировать</b> вопросы, вносить и добавлять различные теги, менять категорию.<br>
 
 <img class="img" src="/uploads/default/original/2X/9/9f1380a89edd873b73fe8d7f4032151e27e93eb1.gif" alt="Редактирование-вопроса" width="650" height="100"><br>
@@ -260,7 +260,7 @@ new RawHtml({ html: `<div class="id">
 <h1 class="t1">${username}</h1>
 Поздравляем, ваш уровень: <span style="color: #f56400;"><b>Лидер!</b></span><br><br>
 ${shcala}
-<br>Вам стал доступен раздел: <a target="_blank" href="https://toxu.ru/c/moder">Модераторский</a>. Ознакомьтесь с материалом в нем.
+Вам стал доступен раздел: <a target="_blank" href="https://toxu.ru/c/moder">Модераторский</a>. Ознакомьтесь с материалом в нем.
 Теперь вам доступны практически все возможности системы и вы можете принимать активное участие в развитии сайта.<br><br>
 <b>Смелее предлагайте</b> свои идеи, и мы сделаем ресурс лучше!<br>
 <img class="img" src="https://toxu.ru/uploads/default/original/2X/6/6d31dd3cefe0a112c68dfbf60c6a66bd827df2f2.jpg" alt="Toxu" width="455" height="324"><br>
