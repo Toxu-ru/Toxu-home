@@ -230,8 +230,9 @@ a.info{font-size: 16px;}
 .topic-post.comment { 
 margin-left: 53px;	
 .names span.first {    font-weight: normal;}
-.topic-body .reply-to-tab {    float: left;    margin: 0;}
+.topic-body .reply-to-tab {    float: left;  margin: 0 10px 0 3px;}
 .topic-meta-data .post-info {    float: left;    margin-right: 10px;}
+.topic-meta-data .names { margin-right: 0;}	
 img.avatar { width: 16px; height: 16px;}
 .cooked img:not(.thumbnail) {max-width: 660px !important;}
 a.reply-to-tab img.avatar, .user-signature, .names span.full-name, .avatar-flair, .bookmarked, .unaccepted, .bookmark,  .names .user-title, .topic-post.comment .names span.full-name {display: none;}
