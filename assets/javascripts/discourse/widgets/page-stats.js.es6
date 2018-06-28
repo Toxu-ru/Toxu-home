@@ -269,7 +269,7 @@ ${shcala}
 <a href="https://toxu.ru/t/mobilnyj-dizajn-i-vse-chto-s-nim-svyazano/1635" target="_blank">мобильный</a> и 
 <a href="https://toxu.ru/t/oshibki-v-dizajne-pk-publikuem-tut/1862" target="_blank">ПК</a>, 
 <a href="https://toxu.ru/t/kategorii-udobstvo-dostup/1090" target="_blank">категории/удобство/доступ</a> или юзабилити и т.д. <br> <br> 
-А еще, <a target="_blank"  href="https://toxu.ru/chess"><b>играйте в шахматы!</b></a><br> 
+А еще, <a target="_blank"  href="https://toxu.ru/chess"><b>играйте в шахматы!</b></a><br> <br>
 
 
 <h3 class="t3">Ссылка на мой профиль</h3>
