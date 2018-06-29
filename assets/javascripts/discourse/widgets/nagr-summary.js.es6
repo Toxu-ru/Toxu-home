@@ -51,7 +51,7 @@ $.ajax({
  if (trust_level == 1) { var bw = 25; } 
  if (trust_level == 2) { var bw = 50; } 
  if (trust_level == 3) { var bw = 75; }
- if (trust_level == 4) { var bw = 97; }
+ if (trust_level == 4) { var bw = 100; }
  
 contents.push( new RawHtml({ html: `<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:6px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>`})); 
     
