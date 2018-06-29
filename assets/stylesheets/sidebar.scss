@@ -300,7 +300,7 @@ a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-we
 .container.posts, .container, .topic-category, .container .title-wrapper {margin: 0 auto;}
 .topic-category {margin-bottom:15px;}
 .container  .title-wrapper {text-align:center;}
-.sidebar-top, #post_1 .topic-avatar, #post_1 .second.full-name, #post_1 .user-title, #post_1 .user-signature {display:none;}
+.sidebar-top, #post_1 .topic-avatar, #post_1 .second.full-name, #post_1 .user-title, .user-signature {display:none;}
 #post_1  .topic-body .contents .cooked { font-size: 1.2em;}
 #topic-title h1 a { font-size: 33px;}
 .topic-body {float: none;margin: 0 auto;}
