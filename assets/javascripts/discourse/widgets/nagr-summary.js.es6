@@ -29,6 +29,13 @@ tagName: 'div.qramota',
  if (trust_level == 3) { contents.push( new RawHtml({ html: `<div class="bdp ud dov3"><a title="Уровень доверия" href="/qa/${username}">3</a></div>`}));   } else {  }
  if (trust_level == 4) { contents.push( new RawHtml({ html: `<div class="bdp ud dov4"><a title="Уровень доверия" href="/qa/${username}">4</a></div>`}));   } else {  }
 
+if (trust_level == 0) { var bw = 3; }	  
+if (trust_level == 1) { var bw = 25; }
+if (trust_level == 2) { var bw = 50; }
+if (trust_level == 3) { var bw = 75; }
+if (trust_level == 4) { var bw = 97; }
+contents.push( new RawHtml({ html: `<div class="pgbar"><div class="bar-b" style="height:24px;width:${bw}%"></div></div>`})); 
+	  
 $.ajax({
   url: "/user-badges/"+ username +".json", 
   dataType: 'json',
