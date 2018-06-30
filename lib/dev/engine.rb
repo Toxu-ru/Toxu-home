@@ -95,3 +95,15 @@ module DiscourseLevel
     end
   end
 end
+
+module DiscourseDonate
+  class Engine < ::Rails::Engine
+    isolate_namespace DiscourseDonate
+
+    config.after_initialize do
+		Discourse::Application.routes.append do
+			mount ::DiscourseDonate::Engine, at: "/"
+		end
+    end
+  end
+end
