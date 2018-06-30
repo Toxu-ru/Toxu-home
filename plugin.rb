@@ -14,6 +14,7 @@ Discourse::Application.routes.append do
   get '/toxu' => 'discourse_toxu/toxu#index'
   get '/features' => 'discourse_features/features#index'
   get '/help' => 'discourse_help/help#index'
+  get '/donate' => 'discourse_donate/donate#index'
   get '/stats' => 'discourse_stats/stats#my_page'
   get '/chess' => 'discourse_chess/chess#my_page'
   
