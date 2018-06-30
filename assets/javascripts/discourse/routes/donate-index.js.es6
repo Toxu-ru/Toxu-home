@@ -5,7 +5,7 @@ export default Discourse.Route.extend({
   },
 
       titleToken() {
-    return "Хотите помочь проекте?";
+    return "Хотите помочь проекту?";
 },
   
   setupController(controller, model) {
