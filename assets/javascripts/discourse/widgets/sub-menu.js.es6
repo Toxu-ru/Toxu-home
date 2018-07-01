@@ -130,13 +130,13 @@ new RawHtml({ html: `<div>
 <div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
 <br>
 <div class="mn">Просто попытка отрисовать статику - тест 20 дней. Видимость только для TL4. В других нет...</div><br>
-<div class="progress-circle p20">
+<center><div class="progress-circle p20">
    <span>20 дней</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
       <div class="value-bar day"></div>
    </div>
-</div>
+</div></center>
 
 <br>
 <div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
