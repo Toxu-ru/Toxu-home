@@ -2,28 +2,34 @@ import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
 
 export default createWidget('sub-menu', {
- // tagName: 'div.user-profile.widget-container',
-  buildKey: (attrs) => 'user-profile',
+  buildKey: (args) => 'user-profile',
 
-  html(attrs, state) {
+  html(args, state) {
     const { currentUser } = this;
     let contents = []
     if (currentUser) {
     const trust_level = currentUser.get('trust_level');
     const username = currentUser.get('username');
- 
+    
  if (trust_level == 0) { var bw = 3;  }
  if (trust_level == 1) { var bw = 25; } 
  if (trust_level == 2) { var bw = 50; } 
  if (trust_level == 3) { var bw = 75; }
  if (trust_level == 4) { var bw = 100; } 
-     
- var badge_count  = currentUser.get('badge_count');
- var badge_num = badge_count*2;    
  
-    console.log(attrs); 
-     console.log(currentUser.get); 
-     
+ 
+ 
+ 
+ $.ajax({
+  url: "/u/"+ username +".json", 
+  dataType: 'json',
+  async: false,
+  success: function(data) {
+	
+  const badge_count = data.user.badge_count;
+  var badge_num = badge_count*2;   
+
+ 
 if (trust_level === 0) { 
 
 contents.push(
@@ -92,13 +98,15 @@ new RawHtml({ html: `<div>
 
 <br><br>Уровень доверия<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
-<br><br>Количество наград<br>
+<br>Количество наград<br>
 <div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
 
 
 </div>`}));
 }   
-   
+
+ }
+ });
    
 } else {
 
@@ -107,8 +115,8 @@ new RawHtml({ html: `<div>
 <div class="title">Другое<span id="toxu"></div>
 
 <div class="mn"> <i aria-hidden="true" class="fa fa-trophy"></i> Про уровень доверия - <b>лидер</b>. Узнайте <a class="cvet" href="https://toxu.ru/t/uroven-doveriya-na-sajte-toxu-ru/61">больше.</a></div>
-<div class="mn"><i class="fa fa-star-o"></i> Посмотреть <a class="cvet" href="https://toxu.ru/help">раздел помощь.</a></div>
-<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас есть предложения по сайту? <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">Напишите</a> про них.</div>
+<div class="mn"> <i class="fa fa-star-o"></i> Посмотреть <a class="cvet" href="https://toxu.ru/help">раздел помощь.</a></div>
+<div class="mn"> <i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас есть предложения по сайту? <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">Напишите</a> про них.</div>
 
 </div>`}) );
   
