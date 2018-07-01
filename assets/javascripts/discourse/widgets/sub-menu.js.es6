@@ -28,7 +28,7 @@ export default createWidget('sub-menu', {
 	
   const badge_count = data.user.badge_count;
   var badge_num = badge_count*2;   
-
+  var profile_view_count = data.user.profile_view_count;
  
 if (trust_level === 0) { 
 
@@ -40,6 +40,13 @@ new RawHtml({ html: `<div>
 <div class="mn"> <i class="fa fa-star-o"></i> Ваш уровень доверия - <b>посетитель</b>. Узнайте <a class="cvet" href="https://toxu.ru/stats">больше.</a></div>
 <br>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+
+<br><br>Уровень доверия<br>
+<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<br>Количество наград<br>
+<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<br>
+<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
 
 </div>`}));
 
@@ -53,6 +60,13 @@ new RawHtml({ html: `<div>
 <div class="mn"> <i class="fa fa-star-o"></i> Ваш уровень доверия - <b>пользователь</b>. Узнайте <a class="cvet" href="https://toxu.ru/stats">больше.</a></div>
 <div class="mn"><i aria-hidden="true" class="fa fa-trophy"></i> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+
+<br><br>Уровень доверия<br>
+<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<br>Количество наград<br>
+<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<br>
+<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
 
 </div>`}));
 
@@ -68,6 +82,13 @@ new RawHtml({ html: `<div>
 <div class="mn"><i aria-hidden="true" class="fa fa-trophy"></i> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 
+<br><br>Уровень доверия<br>
+<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<br>Количество наград<br>
+<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<br>
+<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
+
 </div>`}));
 
 }
@@ -81,6 +102,13 @@ new RawHtml({ html: `<div>
 <div class="mn"> <i class="fa fa-star-o"></i> Ваш уровень доверия - <b>постоялец</b>. Узнайте <a class="cvet" href="https://toxu.ru/stats">больше.</a></div>
 <div class="mn"><i aria-hidden="true" class="fa fa-trophy"></i> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+
+<br><br>Уровень доверия<br>
+<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<br>Количество наград<br>
+<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<br>
+<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
 
 </div>`}));
 
@@ -100,7 +128,8 @@ new RawHtml({ html: `<div>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
 <br>Количество наград<br>
 <div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
-
+<br>
+<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
 
 </div>`}));
 }   
