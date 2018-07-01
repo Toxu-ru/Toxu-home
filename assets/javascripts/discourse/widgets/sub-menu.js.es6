@@ -36,7 +36,7 @@ contents.push(
 new RawHtml({ html: `<div>  
 
 <div class="title">Мой профиль<span id="toxu">
-<a class="link" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
+<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 <div class="mn"> <i class="fa fa-star-o"></i> Ваш уровень доверия - <b>посетитель</b>. Узнайте <a class="cvet" href="https://toxu.ru/stats">больше.</a></div>
 <br>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
@@ -56,7 +56,7 @@ contents.push(
 new RawHtml({ html: `<div>  
 
 <div class="title">Мой профиль<span id="toxu">
-<a class="link" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
+<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 <div class="mn"> <i class="fa fa-star-o"></i> Ваш уровень доверия - <b>пользователь</b>. Узнайте <a class="cvet" href="https://toxu.ru/stats">больше.</a></div>
 <div class="mn"><i aria-hidden="true" class="fa fa-trophy"></i> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
@@ -77,7 +77,7 @@ contents.push(
 new RawHtml({ html: `<div>  
 
 <div class="title">Мой профиль<span id="toxu">
-<a class="link" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
+<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 <div class="mn"> <i class="fa fa-star-o"></i> Ваш уровень доверия - <b>участник</b>. Узнайте <a class="cvet" href="https://toxu.ru/stats">больше.</a></div>
 <div class="mn"><i aria-hidden="true" class="fa fa-trophy"></i> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
@@ -98,7 +98,7 @@ contents.push(
 new RawHtml({ html: `<div>  
 
 <div class="title">Мой профиль<span id="toxu">
-<a class="link" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
+<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 <div class="mn"> <i class="fa fa-star-o"></i> Ваш уровень доверия - <b>постоялец</b>. Узнайте <a class="cvet" href="https://toxu.ru/stats">больше.</a></div>
 <div class="mn"><i aria-hidden="true" class="fa fa-trophy"></i> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
@@ -117,7 +117,7 @@ new RawHtml({ html: `<div>
 if (trust_level === 4) { 
 contents.push(
 new RawHtml({ html: `<div>  
-<div class="title">Мой профиль<span id="toxu"><a class="link" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i>
+<div class="title">Мой профиль<span id="toxu"><a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i>
 </a></span></div>
 <div class="mn"> <i class="fa fa-star-o"></i> Ваш уровень доверия - <b>лидер</b>. Узнайте <a class="cvet" href="https://toxu.ru/stats">больше.</a></div>
 <div class="mn"><i aria-hidden="true" class="fa fa-trophy"></i> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
