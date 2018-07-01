@@ -616,7 +616,7 @@ border-radius: 0px;
 
 /*временной бар*/
 .progress-circle {
-   font-size: 30px;
+   font-size: 35px;
    margin: 20px;
    position: relative; 
    padding: 0;
@@ -643,12 +643,13 @@ border-radius: 0px;
 /* Текст внутри элемента управления */
 .progress-circle span {
     position: absolute;
-    line-height: 5em;
-    width: 5em;
+    line-height: 8em;
+    width: 8em;
     text-align: center;
     display: block;
     color: #53777A;
     z-index: 2;
+    font-size: 0.6em;
 }
 .left-half-clipper { 
    /* a round circle */
