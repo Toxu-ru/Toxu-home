@@ -140,6 +140,15 @@ new RawHtml({ html: `<div>
       <div class="value-bar day"></div>
    </div>
 </div>30 минут</center>
+<br><br>
+<center>0<div class="progress-circle p30">
+   <span>12 часов</span>
+   <div class="left-half-clipper">
+      <div class="first50-bar"></div>
+      <div class="value-bar minute"></div>
+   </div>
+</div>12 часов</center>
+
 
 <br><div class="mn">Просто попытка отрисовать статику - тест 20 минут. Видимость только для TL4. В других нет... Осталось перести минуты, часы
 в градусы, чтобы было соответствие. И еще... Посмотрите преимущества не фиксированныз колонок. Можно листать вниз, и будет все новая информаци.</div><br>
