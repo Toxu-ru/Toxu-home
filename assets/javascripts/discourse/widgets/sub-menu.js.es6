@@ -11,6 +11,15 @@ export default createWidget('sub-menu', {
     if (currentUser) {
     const trust_level = currentUser.get('trust_level');
     const username = currentUser.get('username');
+ 
+ if (trust_level == 0) { var bw = 3;  }
+ if (trust_level == 1) { var bw = 25; } 
+ if (trust_level == 2) { var bw = 50; } 
+ if (trust_level == 3) { var bw = 75; }
+ if (trust_level == 4) { var bw = 100; } 
+     
+ var badge_count  = currentUser.get('badge_count');
+ var badge_num = badge_count*2;    
      
 if (trust_level === 0) { 
 
@@ -77,6 +86,13 @@ new RawHtml({ html: `<div>
 <div class="mn"><i aria-hidden="true" class="fa fa-trophy"></i> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/dev">dev</a> - это место, где можно говорить о таких вещах.</div>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+
+<br>
+<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:6px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<br>
+<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:6px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+
+
 </div>`}));
 }   
    
