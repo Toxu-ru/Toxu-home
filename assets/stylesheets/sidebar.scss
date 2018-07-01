@@ -298,7 +298,7 @@ button.btn-primary.create:after { content: " Ответить приватно";
 /*теги*/
 html:not(.mobile-view) { .discourse-tag.bullet {
     font-size: 13px;    font-weight: normal;    display: inline-block;
-    color: #07c !important;	    background: rgba(82,186,213,0.1);    text-decoration: none;
+    background: rgba(82,186,213,0.1);    text-decoration: none;
     white-space: nowrap;    overflow: visible;    margin-right: 2px;
     padding: .2em .8em;    line-height: 1.2;    border-radius: 15px;    border-image: initial;}
 .discourse-tag.bullet:before {display: none;}
