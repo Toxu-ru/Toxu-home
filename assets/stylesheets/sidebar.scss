@@ -26,8 +26,11 @@
 
 .collapsed-info.about.no-background .pgbar {width: 63%;}
 
-.sidebar-m .pgbar {width: 85%;}
-.sidebar-m .n-bar {margin-top: -13px;}
+.sidebar-m {
+.pgbar {width: 85%;}
+.n-bar {margin-top: -16px;font-size: 16px;}
+.pr-view {color: #F7941D;font-size: 16px;}
+}
 
 .collapsed-info.about.has-background {
 .pgbar {width: 63%;}
