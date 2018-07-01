@@ -20,6 +20,9 @@ export default createWidget('sub-menu', {
      
  var badge_count  = currentUser.get('badge_count');
  var badge_num = badge_count*2;    
+ 
+    console.log(attrs); 
+     console.log(currentUser.get); 
      
 if (trust_level === 0) { 
 
@@ -87,10 +90,10 @@ new RawHtml({ html: `<div>
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/dev">dev</a> - это место, где можно говорить о таких вещах.</div>
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 
-<br>
-<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:6px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
-<br>
-<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:6px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<br><br>Уровень доверия<br>
+<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<br><br>Количество наград<br>
+<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
 
 
 </div>`}));
