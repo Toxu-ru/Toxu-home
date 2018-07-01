@@ -128,8 +128,11 @@ new RawHtml({ html: `<div>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
 <br>Количество наград<br>
 <div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+
 <br>
-<div class="mn">Просто попытка отрисовать статику - тест 20 минут. Видимость только для TL4. В других нет...</div><br>
+<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
+
+<br>
 <center>0<div class="progress-circle p20">
    <span>20 минут</span>
    <div class="left-half-clipper">
@@ -137,8 +140,8 @@ new RawHtml({ html: `<div>
       <div class="value-bar day"></div>
    </div>
 </div>30 минут</center>
-<br>
-<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
+
+<div class="mn">Просто попытка отрисовать статику - тест 20 минут. Видимость только для TL4. В других нет...</div><br>
 
 </div>`}));
 }   
