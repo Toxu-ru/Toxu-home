@@ -66,7 +66,7 @@ new RawHtml({ html: `<div>
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важнм показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -109,7 +109,7 @@ new RawHtml({ html: `<div>
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важнм показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -153,7 +153,7 @@ new RawHtml({ html: `<div>
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важнм показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -199,7 +199,7 @@ new RawHtml({ html: `<div>
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важнм показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -244,7 +244,7 @@ new RawHtml({ html: `<div>
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важнм показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -271,7 +271,7 @@ new RawHtml({ html: `<div>
 
 <div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
  
-<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
+<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Раздел <a href="https://toxu.ru/c/dev">dev</a> - для разработки...</div>
  
  
 <a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
