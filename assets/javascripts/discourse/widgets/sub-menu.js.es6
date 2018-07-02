@@ -17,7 +17,7 @@ export default createWidget('sub-menu', {
  if (trust_level == 3) { var bw = 75; }
  if (trust_level == 4) { var bw = 100; } 
  
- 
+ var my_bio;
  
  
  $.ajax({
