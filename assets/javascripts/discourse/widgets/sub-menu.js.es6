@@ -30,7 +30,7 @@ export default createWidget('sub-menu', {
   var badge_num = badge_count*2;   
   var profile_view_count = data.user.profile_view_count;
 	  
-	  
+//10минут = 600 сек, 1 часе = 3600 сек, 1 дне = 86400 сек 	  
 //"time_read":85202,"recent_time_read":36457
 
 var tim = data.user.time_read;
