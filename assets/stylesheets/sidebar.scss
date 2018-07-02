@@ -2,6 +2,71 @@
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
+/*колонки*/
+
+.wrap {max-width: 1280px;}
+
+.blog-list {position: relative;}
+ li.nav-item-guidelines {display: none;}
+
+.sidebar {width: 21%;float: left;}
+.telo-qa {width: 79%;float: left;}
+
+.sidebar-fon {padding: 7px 0 7px 12px;}
+.cat-info {font-size: 13px;color: #666;}
+.container-telo {width: 70%;float: left;}
+.container-bar {width: 30%;float: right;}
+.sidebar-top {margin-left: 46px;}
+.sidebar-top {max-width: 285px;position: fixed;}
+h1, h2, h3, h4, h5, h6 {font-weight: 400;}
+a:hover {color: #f56400;}
+
+.sidebar-m {
+.pgbar {width: 85%;}
+.n-bar {margin-top: -16px;font-size: 16px;}
+.pr-view {color: #F7941D;font-size: 16px;}
+.mn i.fa {color: #ffb74d;}
+display: block;
+    float: right;
+    width: 20%;
+    background: #fafafa;
+    padding: 10px;
+    color: #666;
+    height: 100%;
+a.link{color: #999;}
+a.link:hover{color: #f56400;}
+.title {margin-bottom: 13px;color: #888;font-size: 16px;} 
+.mn {margin-bottom: 14px;    font-size: 13px;}
+.mn i.fa {color: #d68b4f;}
+}
+
+.sidebar-qa {padding-top: 10px;font-size:13px;color: #666;
+.fa{margin-right: 4px;color: #339900;}
+}
+
+
+@media screen and (max-width : 1200px) {
+#scroll-top  {display: none !important;}
+}
+
+@media screen and (max-width : 1150px) {
+.topic-body {max-width: 650px;}
+}
+@media screen and (max-width : 1055px) {
+.container-telo {width: 100%;}
+.container-bar {display: none;}
+}
+
+tr.category-other .no-no.centr::after {
+    display: inline-block;
+    content: '\f27b';
+    font-family: FontAwesome;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+
+
 .topic-body .contents .cooked, .help {
     line-height: 1.5;
     font-size: 1.17em;
@@ -26,12 +91,7 @@
 
 .collapsed-info.about.no-background .pgbar {width: 63%;}
 
-.sidebar-m {
-.pgbar {width: 85%;}
-.n-bar {margin-top: -16px;font-size: 16px;}
-.pr-view {color: #F7941D;font-size: 16px;}
-.mn i.fa {color: #ffb74d;}
-}
+
 
 .collapsed-info.about.has-background {
 .pgbar {width: 63%;}
@@ -134,44 +194,6 @@ text-align: center;
 .anon #banner {display: none;}
 #banner .close .fa-times:hover  {color: #f56400 !important;}
 #banner {background: #FFF8DC;font-size: 15px;margin-bottom: 10px;}
-
-/*колонки*/
-.blog-list {position: relative;}
-.sidebar-m, li.nav-item-guidelines {display: none;}
-.sidebar {width: 23%;float: left;}
-.sidebar-fon {padding: 7px 0 7px 12px;}
-.cat-info {font-size: 13px;color: #666;}
-.container-telo {width: 70%;float: left;}
-.container-bar {width: 30%;float: right;}
-.sidebar-top {margin-left: 46px;}
-.sidebar-top {max-width: 285px;position: fixed;}
-h1, h2, h3, h4, h5, h6 {font-weight: 400;}
-a:hover {color: #f56400;}
-
-.sidebar-qa {padding-top: 10px;font-size:13px;color: #666;
-.fa{margin-right: 4px;color: #339900;}
-}
-
-
-@media screen and (max-width : 1200px) {
-#scroll-top  {display: none !important;}
-}
-
-@media screen and (max-width : 1150px) {
-.topic-body {max-width: 650px;}
-}
-@media screen and (max-width : 1055px) {
-.container-telo {width: 100%;}
-.container-bar {display: none;}
-}
-
-tr.category-other .no-no.centr::after {
-    display: inline-block;
-    content: '\f27b';
-    font-family: FontAwesome;
-    margin-left: 5px;
-    font-size: 14px;
-}
 
 /*верхнее меню*/
 .nav-pills>li.active>a, .nav-pills>li>a.active {color: #999;font-weight: 500;background-color: #fff;border-bottom: 2px solid #f56400;}
@@ -807,7 +829,7 @@ border: 0.45em solid #f56400;
 /*add mobile*/
 html.mobile-view {
 .sidebar, .user-signature, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
- #scroll-bottom, #scroll-top, .category-list  .category-description,  .container-bar {display: none !important;}
+ #scroll-bottom, #scroll-top, .sidebar-m, .category-list  .category-description,  .container-bar {display: none !important;}
 .navigation-categories {th.latest, td.latest {display: none;}.category {width: 99%;}}
 .topic-post.comment .topic-avatar {padding-top: 0;}
 .list-container.has-sidebar, .container-telo {width: 100%;}
