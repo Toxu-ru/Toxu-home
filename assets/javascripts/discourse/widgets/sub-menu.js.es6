@@ -29,6 +29,25 @@ export default createWidget('sub-menu', {
   const badge_count = data.user.badge_count;
   var badge_num = badge_count*2;   
   var profile_view_count = data.user.profile_view_count;
+	  
+	  
+//"time_read":85202,"recent_time_read":36457
+
+var tim = data.user.time_read;
+
+var time_m = tim/60;
+var time_minut = time.toFixed();
+
+var time_c =  tim/3600;
+var time_hour = time_c.toFixed();
+
+var time_d =  tim/86400;
+var time_day = time_d.toFixed();
+
+If (time_minut <= 60) { var vrema = minute; var vrema_t = time_minut;  var t_op = 'мин.'; }
+If (time_hour > 0) { var vrema = hour; var vrema_t = time_hour; var t_op = 'час.'; }
+If (time_day > 0) { var vrema = day; var vrema_t = time_day; var t_op = 'дн.'; }	  
+	  
  
 if (trust_level === 0) { 
 
@@ -133,21 +152,13 @@ new RawHtml({ html: `<div>
 <div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
 
 <br>
-<center>0<div class="progress-circle p20">
-   <span>20 минут</span>
+<center>0<div class="progress-circle p${vrema_t}">
+   <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
-      <div class="value-bar day"></div>
+      <div class="value-bar ${vrema}"></div>
    </div>
 </div>30 минут</center>
-<br><br>
-<center>0<div class="progress-circle p30">
-   <span>12 часов</span>
-   <div class="left-half-clipper">
-      <div class="first50-bar"></div>
-      <div class="value-bar minute"></div>
-   </div>
-</div>12 часов</center>
 
 
 <br><div class="mn">Просто попытка отрисовать статику - тест 20 минут. Видимость только для TL4. В других нет... Осталось перести минуты, часы
