@@ -29,6 +29,17 @@ export default createWidget('sub-menu', {
   const badge_count = data.user.badge_count;
   var badge_num = badge_count*2;   
   var profile_view_count = data.user.profile_view_count;
+
+  var  bio_excerpt = data.user.bio_excerpt;	  
+ 
+  if (bio_excerpt) { 
+		   
+  my_bio = ' <div class="mn"> <i class="fa fa-exclamation" aria-hidden="true"></i> <a target="_blank" href="https://toxu.ru/u/'+ username +'/preferences/profile">Заполните свой профиль</a>, это поможет другим читать вас. </div>';		    
+		   } else { 
+			   
+  my_bio = ' ';			  
+		   }	  
+	  
 	  
 //10минут = 600 сек, 1 часе = 3600 сек, 1 дне = 86400 сек 	  
 //"time_read":85202,"recent_time_read":36457
@@ -65,6 +76,7 @@ new RawHtml({ html: `<div>
 <div class="title">Мой профиль<span id="toxu">
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
+${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
@@ -108,6 +120,7 @@ new RawHtml({ html: `<div>
 <div class="title">Мой профиль<span id="toxu">
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
+${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
@@ -152,6 +165,7 @@ new RawHtml({ html: `<div>
 <div class="title">Мой профиль<span id="toxu">
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
+${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
@@ -198,6 +212,7 @@ new RawHtml({ html: `<div>
 <div class="title">Мой профиль<span id="toxu">
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
+${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
