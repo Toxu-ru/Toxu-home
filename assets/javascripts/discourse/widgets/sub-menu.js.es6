@@ -256,6 +256,7 @@ new RawHtml({ html: `<div>
 <div class="title">Мой профиль<span id="toxu">
 <a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/account"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
 
+${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
 
