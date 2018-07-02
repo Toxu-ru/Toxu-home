@@ -32,13 +32,11 @@ export default createWidget('sub-menu', {
 
   var  bio_excerpt = data.user.bio_excerpt;	  
  
-  if (bio_excerpt) { 
-		   
+  if (bio_excerpt) {   
+	  my_bio = ' ';	  
+  } else { 
   my_bio = ' <div class="mn"> <i class="fa fa-exclamation" aria-hidden="true"></i> <a target="_blank" href="https://toxu.ru/u/'+ username +'/preferences/profile">Заполните свой профиль</a>, это поможет другим читать вас. </div>';		    
-		   } else { 
-			   
-  my_bio = ' ';			  
-		   }	  
+  }	  
 	  
 	  
 //10минут = 600 сек, 1 часе = 3600 сек, 1 дне = 86400 сек 	  
