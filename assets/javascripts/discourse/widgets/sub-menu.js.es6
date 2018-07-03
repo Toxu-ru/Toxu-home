@@ -76,7 +76,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -88,7 +88,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Ваш уровень доверия - <a class="cvet" href="https://toxu.ru/stats"><i>посетитель</i>.</a></div>
+<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">посетитель.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
@@ -120,7 +120,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -132,7 +132,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Ваш уровень доверия - <a class="cvet" href="https://toxu.ru/stats"><i>пользователь</i>.</a></div>
+<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">пользователь.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
@@ -165,7 +165,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -177,7 +177,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Ваш уровень доверия - <a class="cvet" href="https://toxu.ru/stats"><i>участник</i>.</a></div>
+<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">участник.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
@@ -212,7 +212,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -224,7 +224,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Ваш уровень доверия - <a class="cvet" href="https://toxu.ru/stats"><i>постоялец</i>.</a></div>
+<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">постоялец.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
@@ -258,7 +258,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> является важным показателем на сайте.</div>
+<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
 <center>0<div class="progress-circle p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -270,7 +270,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Ваш уровень доверия - <a class="cvet" href="https://toxu.ru/stats"><i>лидер</i>.</a></div>
+<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">лидер.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
