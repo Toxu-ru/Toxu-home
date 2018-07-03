@@ -3,19 +3,17 @@
 }
 
 /*колонки*/
-
+html:not(.mobile-view) {
+	
 .wrap {max-width: 90em;}
-
 .blog-list {position: relative;}
  li.nav-item-guidelines {display: none;}
 
-html:not(.mobile-view) {
 .sidebar {width: 20%;float: left;}
 .telo-qa {width: 79%;float: right;}
 .list-container.has-sidebar { width: 70%;    float: left;}
 .list-container.has-sidebar.test {width: 99%;}
 .sidebar-m.test {display: none;}
-}
 	
 .sidebar-fon {padding: 7px 0 7px 12px;}
 .cat-info {font-size: 13px;color: #666;}
@@ -47,7 +45,8 @@ a.link:hover{color: #f56400;}
 .sidebar-qa {padding-top: 10px;font-size:13px;color: #666;
 .fa{margin-right: 4px;color: #339900;}
 }
-
+	
+}
 
 @media screen and (max-width : 1200px) {
 #scroll-top  {display: none !important;}
