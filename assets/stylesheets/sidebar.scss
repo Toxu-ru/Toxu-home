@@ -6,18 +6,21 @@
 
 	
 .wrap {max-width: 90em;}
-.blog-list {position: relative;}
- li.nav-item-guidelines {display: none;}
 
 html:not(.mobile-view) {
-
+	
+.blog-list {position: relative;}
+ li.nav-item-guidelines {display: none;}
 .sidebar {width: 20%;float: left;}
 .telo-qa {width: 79%;float: right;}
 .list-container.has-sidebar {float: left;}
 .list-container.has-sidebar.test {width: 99%;}
 .sidebar-m.test {display: none;}
-
+	
+@media screen and (max-width : 1150px) {.topic-body {max-width: 650px;}}	
+	
 }	
+	
 	
 .sidebar-fon {padding: 7px 0 7px 12px;}
 .cat-info {font-size: 13px;color: #666;}
@@ -54,9 +57,7 @@ a.link:hover{color: #f56400;}
 #scroll-top  {display: none !important;}
 }
 
-@media screen and (max-width : 1150px) {
-.topic-body {max-width: 650px;}
-}
+
 @media screen and (max-width : 1055px) {
 .container-telo {width: 100%;}
 .container-bar {display: none;}
