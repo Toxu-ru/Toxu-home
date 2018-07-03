@@ -46,8 +46,6 @@ a.link:hover{color: #f56400;}
 .fa{margin-right: 4px;color: #339900;}
 }
 	
-}
-
 @media screen and (max-width : 1200px) {
 #scroll-top  {display: none !important;}
 }
@@ -60,6 +58,9 @@ a.link:hover{color: #f56400;}
 .container-bar {display: none;}
 }
 
+}	
+	
+	
 tr.category-other .no-no.centr::after {
     display: inline-block;
     content: '\f27b';
