@@ -833,7 +833,7 @@ border: 0.45em solid #f56400;
 /*add mobile*/
 html.mobile-view {
 .sidebar, .user-signature, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
- #scroll-bottom, #scroll-top, .sidebar-m, .category-list  .category-description,  .container-bar {display: none !important;}
+ #scroll-bottom, #scroll-top, .sidebar-m, .sidebar-m.test, .category-list  .category-description,  .container-bar {display: none !important;}
 .navigation-categories {th.latest, td.latest {display: none;}.category {width: 99%;}}
 .topic-post.comment .topic-avatar {padding-top: 0;}
 .list-container.has-sidebar, .container-telo {width: 100%;}
