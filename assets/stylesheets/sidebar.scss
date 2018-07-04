@@ -23,7 +23,6 @@ html:not(.mobile-view) {
 	
 	
 .sidebar-fon {padding: 7px 0 7px 12px;}
-.cat-info {font-size: 13px;color: #666;}
 .container-telo {width: 70%;float: left;}
 .container-bar {width: 30%;float: right;}
 .sidebar-top {margin-left: 46px;}
@@ -237,10 +236,11 @@ a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
 .badge-wrapper.bullet:hover, .badge-wrapper.bullet span.badge-category:hover, a.cvet:hover {color: #f56400;}
 .cat-link .topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 6px;margin-right: 6px;}
 .cat-link.category-blog {margin-bottom: 10px;}
-a.info{font-size: 16px;}
+a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
 .catimg {    margin: 0 auto;    width: 65px;}
 .avahome img {width: 40px;height:40px;}
 .cat-ava {margin-bottom: 10px;height: 50px;}
+.cat-info {font-size: 13px;color: #666; margin-top: 15px;}
 .avahome {float: left;margin-right: 12px;margin-top: 3px;}
 .badge-wrapper {font-size: 1.01em;}
 #create-topic {background: #e7672e;color: #fff;margin-bottom: 10px;width: 99%;}
