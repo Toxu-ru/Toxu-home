@@ -253,13 +253,6 @@ a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
 
 .nav-pills > li > a {color: #667d99;}
 
-@media screen and (max-width : 1020px) {
-	.list-container.has-sidebar {width: 100%;}
-	.sidebar {display:none !important;} 
-	#create-topic {display: inline-block !important;} 
-
-}
-
 /*детали в колонках*/
 .topic-list-item-sug {margin-bottom: 5px;clear: both;min-height: 31px;}
 .topic-list-sug {margin-bottom: 10px;}
