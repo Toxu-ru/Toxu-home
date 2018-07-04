@@ -14,8 +14,6 @@ html:not(.mobile-view) {
 .sidebar {width: 20%;float: left;}
 .telo-qa {width: 79%;float: right;}
 .list-container.has-sidebar {float: left;margin-left: 20px;}
-.list-container.has-sidebar.test {width: 99%;}
-.sidebar-m.test {display: none;}
 	
 @media screen and (max-width : 1150px) {.topic-body {max-width: 650px;}}	
 	
