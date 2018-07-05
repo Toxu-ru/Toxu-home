@@ -236,8 +236,8 @@ a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
 .cat-link.category-blog {margin-bottom: 10px;}
 a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
 .catimg {    margin: 0 auto;    width: 65px;}
-.avahome img {width: 40px;height:40px;}
-.cat-ava {margin-bottom: 10px;height: 50px;}
+.avahome img {width: 38px;height:38px;}
+.cat-ava {margin-bottom: 15px;height: 50px;}
 .cat-info {font-size: 13px;color: #666; margin-top: 15px;}
 .avahome {float: left;margin-right: 12px;margin-top: 3px;}
 .badge-wrapper {font-size: 1.01em;}
@@ -361,7 +361,7 @@ a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-we
    .badge-wrapper.bullet span.badge-category:hover, .rss-link-top a:hover {color:#f56400;}
 }
 .cat-pods-cat {
-background: #f2f7fe; border-color: #DDE7F5;color: #555;font-size: 13px;padding: 13px 13px 0 13px;
+background: #f2f7fe; border-color: #DDE7F5;color: #555;font-size: 13px;padding: 13px 13px 0 13px; overflow: hidden;
 .topic-list-link-top {font-size: 14px;color:#555;margin-bottom: 10px;}
 }
 
