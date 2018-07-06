@@ -16,15 +16,12 @@ export default createWidget('sidebar-items', {
 
     result.push(self.attach('sidebar-cat'));
 
-if (coll == true) {  
+if (currentUser) {	  
+if (coll == true) {  } else { 
 
-result.push( new RawHtml({ html: `<div></div>`})); 
+result.push( new RawHtml({ html: `<div class="kollonka">Добавьте информацию о себе</div>`})); 
 
-} else { 
-
-result.push( new RawHtml({ html: `<div class="kollonka">${col}</div>`})); 
-
-}	  
+}}	  
 	  
 result.push( new RawHtml({ html: `<div class="soc"><a class="pren" title="Писатели" rel="nofollow" href="https://toxu.ru/qa">
 писатели</a> • <a title="Помощь" class="pren" rel="nofollow" href="https://toxu.ru/help">помощь</a>
