@@ -12,18 +12,18 @@ export default createWidget('sidebar-items', {
     const result = [];
     var self = this;
     const { currentUser } = this; 
-    var coll =  currentUser.custom_fields.userbar_cat;
+    
 
     result.push(self.attach('sidebar-cat'));
 
-if (currentUser) {	  
+if (currentUser) {	
+var coll =  currentUser.custom_fields.userbar_cat;	
 if (coll == true) {  } else { 
 
 result.push( new RawHtml({ html: `<div class="kollonka">Добавьте информацию о себе</div>`})); 
 
 }
-
-} else { }	  
+}	  
 	  
 result.push( new RawHtml({ html: `<div class="soc"><a class="pren" title="Писатели" rel="nofollow" href="https://toxu.ru/qa">
 писатели</a> • <a title="Помощь" class="pren" rel="nofollow" href="https://toxu.ru/help">помощь</a>
