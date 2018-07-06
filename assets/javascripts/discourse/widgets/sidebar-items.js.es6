@@ -13,7 +13,7 @@ export default createWidget('sidebar-items', {
     var self = this;
     const { currentUser } = this; 
   
- if (currentUser.custom_fields.userbar_cat == "true") { var col = '+'; }else{ var col = ''; }
+ if (currentUser.custom_fields.userbar_cat === 'true') { var col = '+'; }else{ var col = ''; }
  console.log(currentUser);	  
 
 result.push(self.attach('sidebar-cat'));
