@@ -13,6 +13,8 @@ export default createWidget('sidebar-items', {
     var self = this;
     const { currentUser } = this; 
   
+ console.log(currentUser.custom_fields.userbar_cat);
+ console.log(currentUser);	  
 
       result.push(self.attach('sidebar-cat'));
 
