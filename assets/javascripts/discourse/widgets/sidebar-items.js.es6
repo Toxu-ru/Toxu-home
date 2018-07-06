@@ -13,12 +13,12 @@ export default createWidget('sidebar-items', {
     var self = this;
     const { currentUser } = this; 
   
- console.log(currentUser.custom_fields.userbar_cat);
+ if (currentUser.custom_fields.userbar_cat == "true") { var col = '+'; }else{ var col = ''; }
  console.log(currentUser);	  
 
-      result.push(self.attach('sidebar-cat'));
+result.push(self.attach('sidebar-cat'));
 
-result.push( new RawHtml({ html: `<div class="soc"><a class="pren" title="Писатели" rel="nofollow" href="https://toxu.ru/qa">
+result.push( new RawHtml({ html: `<div class="col">${col}</div><div class="soc"><a class="pren" title="Писатели" rel="nofollow" href="https://toxu.ru/qa">
 писатели</a> • <a title="Помощь" class="pren" rel="nofollow" href="https://toxu.ru/help">помощь</a>
 • <a title="Связь" class="pren" rel="nofollow" href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">связь</a>
 </div>`})); 
