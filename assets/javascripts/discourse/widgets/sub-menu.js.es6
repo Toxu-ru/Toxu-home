@@ -65,7 +65,7 @@ var oct = vtt_c.toFixed();
 	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
 if (t_hour > 0) { var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';}
-if (t_day > 0) { var vrema = 'day'; var vrema_t = t_day; var grad = t_day; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> часа ~ ' + oct +' ч.<br>';}	  
+if (t_day > 0) { var vrema = 'day'; var vrema_t = t_day; var grad = t_day; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';}	  
 	
 if (trust_level === 0) { 
 
