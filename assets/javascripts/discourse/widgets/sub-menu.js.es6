@@ -57,15 +57,17 @@ var t_h_gr = (t_hour*100)/24;
 var t_hh_gr = t_h_gr.toFixed();     
 
 var t_d =  tim/86400;
-var t_ddd =  t_d.toFixed( 3 ).slice( 0, -1 );
-var t_day = t_d.toFixed();
+var var t_day = t_d.toFixed();
+var t_ostalos = 1 - t_d;
+var rrr = (60*t_ostalos/100)*24;
+var oct = rrr.toFixed();
 
 console.log(currentUser.badge_count);
 
 	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
 if (t_hour > 0) { var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';}
-if (t_day > 0) { var vrema = 'day'; var vrema_t = t_day; var grad = t_day; var t_op = 'д.';  var t_ops = 'всего ' + t_ddd + ' дней';}	  
+if (t_day > 0) { var vrema = 'day'; var vrema_t = t_day; var grad = t_day; var t_op = 'д.';  var t_ops = 'осталось ~ ' + oct +' ч.';}	  
 	
 if (trust_level === 0) { 
 
