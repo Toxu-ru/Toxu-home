@@ -60,7 +60,7 @@ var t_d =  tim/86400;
 var t_ddd =  t_d.toFixed( 3 ).slice( 0, -1 );
 var t_day = t_d.toFixed();
 
-console.log(currentUser.get.badge_count);
+console.log(currentUser.badge_count);
 
 	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
