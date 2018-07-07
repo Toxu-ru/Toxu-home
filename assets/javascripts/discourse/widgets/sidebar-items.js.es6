@@ -20,8 +20,7 @@ if (currentUser) {
 var coll =  currentUser.custom_fields.userbar_cat;	
 if (coll == true) {  } else { 
 
-comsole.log(currentUser.trust_level);	
-comsole.log(currentUser.badges[104]);
+comsole.log(currentUser);
 	
 result.push( new RawHtml({ html: `<div class="kollonka"><a title="Добавить боковую колонку с личными данными" href="https://toxu.ru/my/preferences/profile"><font color=red>д</font>обавить личные данные</a></div>`})); 
 
