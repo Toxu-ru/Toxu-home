@@ -59,10 +59,12 @@ var t_hh_gr = t_h_gr.toFixed();
 var t_d =  tim/86400;
 var t_day = t_d.toFixed();
 
-
+console.log(currentUser.get);
+console.log(currentUser);
+	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
 if (t_hour > 0) { var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';}
-if (t_day > 0) { var vrema = 'day'; var vrema_t = t_day; var grad = t_day; var t_op = 'д.';  var t_ops = 'всего ' + t_h_gr + ' частов';}	  
+if (t_day > 0) { var vrema = 'day'; var vrema_t = t_day; var grad = t_day; var t_op = 'д.';  var t_ops = 'всего ' + t_d + ' часов';}	  
 	
 if (trust_level === 0) { 
 
