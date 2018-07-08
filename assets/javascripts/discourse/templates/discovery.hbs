@@ -32,7 +32,7 @@
 
 <div class="telo-qa">
 
-<div class="container list-container {{if siteSettings.sidebar_enable "has-sidebar"}} {{if currentUser.custom_fields.userbar_cat "test"}}">
+<div class="container list-container has-sidebar">
  
 {{discourse-banner user=currentUser banner=site.banner}} 
  
@@ -70,7 +70,7 @@
 
 
 
- <div class="sidebar-m {{if currentUser.custom_fields.userbar_cat "test"}}">
+ <div class="sidebar-m">
  {{mount-widget widget="sub-menu"}}
  </div>
 
