@@ -107,3 +107,15 @@ module DiscourseDonate
     end
   end
 end
+
+module DiscourseRules
+  class Engine < ::Rails::Engine
+    isolate_namespace DiscourseRules
+
+    config.after_initialize do
+		Discourse::Application.routes.append do
+			mount ::DiscourseRules::Engine, at: "/"
+		end
+    end
+  end
+end
