@@ -106,8 +106,10 @@ tr.category-other .no-no.centr::after {
 
 .collapsed-info.about.no-background .pgbar {width: 63%;}
 
-
-
+.about.no-background { 
+.pgbar {width: 70%;} 	
+.details .user-profile-avatar .avatar-flair {bottom: 50px;} 
+}
 .collapsed-info.about.has-background {
 .pgbar {width: 63%;}
 .n-bar {margin-right: 7px;}
@@ -122,7 +124,7 @@ tr.category-other .no-no.centr::after {
 .details .user-profile-avatar .avatar-flair {bottom: 68px;}
 }
 
-.about.no-background  .pgbar {width: 70%;} 
+ 
 
 
 /*логин и регистрация фон*/
