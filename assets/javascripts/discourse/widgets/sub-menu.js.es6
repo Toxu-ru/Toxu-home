@@ -59,7 +59,7 @@ var t_hh_gr = t_h_gr.toFixed();
 var t_d =  tim/86400;
 var t_day = t_d.toFixed();
 
-var vt_c = t_day - t_d;
+var vt_c = t_d - t_day;
 var vtt_c = vt_c*24;
 var oct = vtt_c.toFixed(); 
 	  
