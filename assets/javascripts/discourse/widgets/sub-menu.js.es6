@@ -60,7 +60,8 @@ var t_d =  tim/86400;
 var t_day = t_d.toFixed();
 
 var vt_c = t_d - t_day;
-var vtt_c = vt_c*24;
+var vtt_g = vt_c*24;
+var vtt_c = 24 - vtt_g;	  
 var oct = vtt_c.toFixed(); 
 	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
