@@ -155,7 +155,7 @@ ${my_bio}
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
  
  
-<div class="mn"><a title="" href="https://toxu.ru/stats"><font color="red">П</font>почитать</a> о моих новых возможностях, и получить грамоту.</div>
+<div class="mn"><a title="" href="https://toxu.ru/stats"><font color="red">П</font>очитать</a> о новых возможностях, и получить грамоту.</div>
 
 </div>`}));
 
