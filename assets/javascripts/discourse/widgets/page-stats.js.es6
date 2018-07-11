@@ -142,7 +142,7 @@ ${shcala}
 
 
 
-<a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20справка%20Привет,%20давай%20общаться?" 
+<a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" 
 class="gramota">+ Получить грамоту</a></center><br> <br>
 
 
