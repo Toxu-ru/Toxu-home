@@ -31,7 +31,7 @@
       <% @subcategories.each do |subcategory| %>
         <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
           <meta itemprop='url' content='<%= subcategory.url %>'>
-          <a href='<%= subcategory.url %>' itemprop='item'>
+          <a href='<%= subcategory.url %>'>
             <span itemprop='name'><%= subcategory.name %></span>
           </a>
           <% if subcategory.description.present? %>
