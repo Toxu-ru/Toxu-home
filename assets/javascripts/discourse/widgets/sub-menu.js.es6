@@ -66,7 +66,7 @@ var t_daym = Math.floor(t_d);
 	  
 var vt_c = t_d - t_daym;	  
 
-var vtt_g = vt_c*24;
+var vtt_g = vt_c*100/24;
 var vtt_c = 24 - vtt_g;	  
 var oct = vtt_c.toFixed(); 
 	  
