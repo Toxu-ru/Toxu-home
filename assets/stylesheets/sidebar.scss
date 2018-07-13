@@ -346,6 +346,12 @@ a.tag-факты.discourse-tag.bullet::before {content: "\f0eb"; color: #F7941D;
 a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-weight: normal;}
 
 /*блоги*/
+.archetype-regular.category-blog { 
+.topic-body .contents .cooked, .help {font-size: 1.23em;}
+.cat-pods, .topic-list-link-top, a.add.create-topic, .sidebar-top {display: none;} 
+#suggested-topics h3.suggested-topics-title, #suggested-topics .topics .loading-container {display: block !important;}
+.topic-list .topic-excerpt {    font-size: 1em;}
+}
 
 .sidebar-top .ser.cvet{text-decoration: underline;}
 .cat-pods { 
