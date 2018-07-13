@@ -279,8 +279,8 @@ a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
 .topic-post.comment { 
 margin-left: 53px;	
 .names span.first {    font-weight: normal;}
-.topic-body .reply-to-tab {    float: left;  margin: 0 10px 0 3px;}
-.topic-meta-data .post-info {    float: left;    margin-right: 10px;}
+.topic-body .reply-to-tab {    float: left;  margin: 0 10px 2px 3px;}
+.topic-meta-data .post-info {    float: left;    margin-right: 10px;margin-top: 2px;}
 .topic-meta-data .names { margin-right: 0;}	
 img.avatar { width: 16px; height: 16px;}
 .cooked img:not(.thumbnail) {max-width: 660px !important;}
