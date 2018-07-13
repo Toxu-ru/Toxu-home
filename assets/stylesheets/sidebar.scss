@@ -284,7 +284,8 @@ margin-left: 53px;
 img.avatar { width: 16px; height: 16px;}
 .cooked img:not(.thumbnail) {max-width: 660px !important;}
 a.reply-to-tab img.avatar, .user-signature, .names span.full-name, .avatar-flair, .bookmarked, .unaccepted, .bookmark,  .names .user-title, .topic-post.comment .names span.full-name {display: none;}
-.topic-avatar { padding-top: 3px;}
+.topic-avatar { padding-top: 5px;}
+.names span, .topic-meta-data .post-infos { font-size: 0.9em;}	
 .topic-avatar { width: 20px;}
 .topic-body .regular {margin-top: 1px;}
 .topic-body { max-width: 657px;border-right: none;padding: 5px 0 0 6px}
