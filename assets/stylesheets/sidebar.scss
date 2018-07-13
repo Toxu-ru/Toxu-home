@@ -1,3 +1,8 @@
+/*шрифты*/
+html {font-family: Roboto,Helvetica,Arial,sans-serif;}
+.topic-body .contents .cooked, .help {line-height: 1.7;font-size: 1.19em;font-weight: 300;}
+.topic-post.comment .topic-body .contents .cooked {font-size: 1.1em;}
+
 /*mini header*/
 #top-navbar-links {background: #f6f8fe}
 /* #top-navbar-links {background: rgba(82,186,213,0.1);} */
@@ -6,8 +11,6 @@
 .right-h{float: right;margin-right: 5px;}
 
 /*колонки*/
-
-	
 .wrap {max-width: 90em;}
 
 html:not(.mobile-view) {
