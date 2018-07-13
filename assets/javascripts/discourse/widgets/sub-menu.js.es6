@@ -60,9 +60,12 @@ var t_d =  tim/86400;
 var t_day = t_d.toFixed();
 var t_daym = Math.floor(t_d);
 
+//console.log(t_d);	993946 - всего  
+//console.log(t_day);	
+//console.log(t_daym);		  
+	  
 var vt_c = t_d - t_daym;	  
 
-//var vt_c = t_d - t_day;
 var vtt_g = vt_c*24;
 var vtt_c = 24 - vtt_g;	  
 var oct = vtt_c.toFixed(); 
