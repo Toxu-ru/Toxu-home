@@ -262,7 +262,8 @@ a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
 .nav-pills > li > a {color: #667d99;}
 
 /*детали в колонках*/
-.topic-list-item-sug {margin-bottom: 5px;clear: both;min-height: 31px;}
+.topic-list-item-sug {margin-bottom: 10px;clear: both;min-height: 31px;}
+.cat-pods, .topic-meta-data .post-infos {font-size: 15px;font-weight: 300;}
 .topic-list-sug {margin-bottom: 10px;}
 .user-profile.widget-container {color: #919191;}
 .werng, #banner-nul {padding: 10px 10px 10px 10px;border: solid 1px #ddd;border-radius: 3px;margin-bottom: 15px;margin-top: 7px;
@@ -415,7 +416,7 @@ body[class*="navigation-categories"] #main-outlet .container.list-container.has-
 
 /*мелкие детали*/
 img.emoji.emoji-custom {width: auto;height: 100%;vertical-align: middle;}
-.sidebar-fon, .btn, .sidebar-m, .sidebar #create-topic {border-radius: 4px;}
+.sidebar-fon, .cat-pods, .sidebar-m, .sidebar #create-topic {border-radius: 3px;}
 .topic-list {
 th.activity:before {display: inline-block;content: '\f017';font-family: FontAwesome;}
 th.posts:before {display: inline-block;content: '\f27b';font-family: FontAwesome;}
@@ -431,7 +432,7 @@ th.views:before {display: inline-block;content: '\f06e';font-family: FontAwesome
 .category-heading .category-logo {width: 31px;}
 .category-heading p {font-size: 1.24em;color: #39739d;background-color: #eff5fa;border-color: transparent;padding: .2em .3em;}
 
-h3.sidebar-sug {color:  #667d99;
+h3.sidebar-sug {color:  #667d99; font-weight: 300;
 position: relative;
 margin-bottom: 10px;
 font-size: 16px;
