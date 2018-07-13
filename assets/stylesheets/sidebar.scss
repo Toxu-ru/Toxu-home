@@ -220,7 +220,7 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 
 #create-topic {background: transparent !important;color: #f56400 !important;font-size: 1.2487em;margin-top: -3px;}
 #create-topic:hover, #create-topic:active {color: #fff !important;background-color: #f56400 !important;}
-.add.create-topic{margin-bottom: 13px;display: block;font-weight: 600;margin-top: 12px;}
+.add.create-topic{margin-bottom: 13px;display: block;font-weight: 500;margin-top: 12px;font-size: 15px;}
 .d-icon.d-icon-d-tracking,.d-icon.d-icon-d-watching{color:#08c !important;}
 .d-icon.d-icon-d-regular, .d-icon.d-icon-d-muted, .d-icon.d-icon-d-watching-first, .d-icon.d-icon-d-watching-first-post {color: #919191 !important;}
 
@@ -362,8 +362,8 @@ a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-we
     img.cat-small {margin-right: 10px;margin-top: 5px;float: left;width: 24px;height: 24px;}	
     hr.link{margin: 8px 0;border-top: 1px solid #D5E5EC;}
     .rss-link-top{display: inline-block;float:right;}
-    .topic-list-link-top{display: inline-block;}
-    .rss-link-top a  {color: #222;}
+    .topic-list-link-top{display: inline-block;color: #667d99;}
+    .rss-link-top a  {color: #667d99;}
    .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {display: none !important;}
    .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {display: block;margin-top: 15px;}
    .badge-wrapper.bullet span.badge-category {color:#07c;font-size:13px;}
@@ -430,11 +430,10 @@ th.views:before {display: inline-block;content: '\f06e';font-family: FontAwesome
 .category-heading .category-logo {width: 31px;}
 .category-heading p {font-size: 1.24em;color: #39739d;background-color: #eff5fa;border-color: transparent;padding: .2em .3em;}
 
-h3.sidebar-sug {color: #333;
-font-weight: 500;
+h3.sidebar-sug {color:  #667d99;
 position: relative;
 margin-bottom: 10px;
-font-size: 15px;
+font-size: 16px;
 letter-spacing: 0;
 text-transform: none;}
 
