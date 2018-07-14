@@ -14,6 +14,8 @@ export default createWidget('topic-cat-info', {
   
   var qaid =  args.model.id;
   var catid =  args.model.category_id;
+  var gya =  args.model.currentPost;
+  var pcont =  args.model.posts_count;
    
     console.log(args.model);
     
@@ -30,7 +32,7 @@ if (qaid === 129 || qaid === 2760) {  contents.push( new RawHtml({ html: `<div c
 <a class="tag" href="/tags/instagram">Instagram</a> <a class="tag" href="/tags/telegram">Telegram</a> 
 </div>`}));  }     
     
-contents.push( new RawHtml({ html: `<div>  </div>`}));
+contents.push( new RawHtml({ html: `<div> ${gya} / ${pcont} </div>`}));
     
 return contents;
 }});
