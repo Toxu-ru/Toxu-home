@@ -1,6 +1,6 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
-import { ajax } from 'discourse/lib/ajax';
+
 
 export default createWidget('topic-cat-info', {
   buildKey: (args) => 'topic-cat',
@@ -33,7 +33,10 @@ if (qaid === 129 || qaid === 2760) {  contents.push( new RawHtml({ html: `<div c
 <a class="tag" href="/tags/instagram">Instagram</a> <a class="tag" href="/tags/telegram">Telegram</a> 
 </div>`}));  }     
     
-contents.push( new RawHtml({ html: `<div> ${gya} / ${pcont} </div>`}));
+contents.push( new RawHtml({ html: `<div class='messag2'>
+<a class="cvet" href="https://toxu.ru/t/${qaid}/${pcont}" id="scroll-bottom" style="display: inline;"><i class="fa fa-arrow-down"></i></a>
+<a class="cvet" href="https://toxu.ru/t/${qaid}" id="scroll-top" style="display: inline;"><i class="fa fa-arrow-up"></i></a>
+</div>`}));
     
 return contents;
 }});
