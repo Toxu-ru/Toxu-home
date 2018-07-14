@@ -309,10 +309,11 @@
     <noindex>
     <div class="sidebar-top">
     {{suggested-topics-sug topic=model url=model.url}} 
+    {{plugin-outlet name="topic-cat-info" args=(hash model=model)}}
     </div>
     </noindex>
     
-    {{plugin-outlet name="topic-cat-info" args=(hash model=model)}}
+   
 </div>
   
     {{#if model.suggestedTopics.length}}
