@@ -1,6 +1,6 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
-
+import { h } from "virtual-dom";
 
 export default createWidget('topic-cat-info', {
   buildKey: (args) => 'topic-cat',
