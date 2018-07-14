@@ -10,7 +10,7 @@ export default createWidget('topic-cat-info', {
     
     if (currentUser) { } else {}
     //33 - блоги
-    console.log(args.category_id);
+    console.log(args.model.category_id);
   //  var catid =  args.category_id;
   // if (catid === 33) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> Это блоги </div>`}));
   //                   } 
