@@ -1,5 +1,6 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
+import { ajax } from 'discourse/lib/ajax';
 
 export default createWidget('topic-cat-info', {
   buildKey: (args) => 'topic-cat',
