@@ -14,6 +14,9 @@ export default createWidget('topic-cat-info', {
   
   var qaid =  args.model.id;
   var catid =  args.model.category_id;
+   
+    console.log(args.model);
+    
     
 if (catid === 33) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> Это блоги </div>`}));  } 
 if (catid === 20) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> Это раздел <a href="https://toxu.ru/c/test">для тестирования...</a> </div>`}));  }   
