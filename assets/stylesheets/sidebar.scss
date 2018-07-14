@@ -334,12 +334,12 @@ button.btn-primary.create:after { content: " Ответить приватно";
 
 /*теги*/
 .tag{
-    font-size: 13px;
-    background: #fff;
-    margin: 2px;
-    padding: .2em .8em;
-    border-radius: 3px;
-   
+font-size: 13px;
+background: rgba(82,186,213,0.1);
+margin: 2px 3px 4px 0;
+padding: .2em .8em;
+border-radius: 3px;
+display: inline-block;
 }
 
 html:not(.mobile-view) { .discourse-tag.bullet {
