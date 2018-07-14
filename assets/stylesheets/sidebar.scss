@@ -333,6 +333,15 @@ button.btn-primary.create:after { content: " Ответить приватно";
 
 
 /*теги*/
+.tag{
+    font-size: 13px;
+    background: #fff;
+    margin: 2px;
+    padding: .2em .8em;
+    border-radius: 3px;
+   
+}
+
 html:not(.mobile-view) { .discourse-tag.bullet {
     font-size: 13px;    font-weight: normal;    display: inline-block;
     background: rgba(82,186,213,0.1);    text-decoration: none; 
