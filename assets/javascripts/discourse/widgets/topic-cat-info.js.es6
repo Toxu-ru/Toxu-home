@@ -21,10 +21,10 @@ if (catid === 7) {  contents.push( new RawHtml({ html: `<div class="cat-blo"><fo
 
 if (qaid === 4117 || qaid === 4569) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> Это вопрос про общение. </div>`}));  } 
 
-if (qaid === 129 || qaid === 2760) {  contents.push( new RawHtml({ html: `<div class="cat-blo">Теги: 
-<a class="tag" href="tags/вконтакте">ВКонтакте</a> <a class="tag" href="tags/одноклассники">Одноклассники</a> 
-<a class="tag" href="tags/facebook">Facebook</a> <a class="tag" href="tags/twitter">Twitter</a> 
-<a class="tag" href="tags/instagram">Instagram</a> <a class="tag" href="tags/telegram">Еelegram</a> 
+if (qaid === 129 || qaid === 2760) {  contents.push( new RawHtml({ html: `<div class="cat-tag">
+<a class="tag" href="/tags/вконтакте">ВКонтакте</a> <a class="tag" href="/tags/одноклассники">Одноклассники</a> 
+<a class="tag" href="/tags/facebook">Facebook</a> <a class="tag" href="/tags/twitter">Twitter</a> 
+<a class="tag" href="/tags/instagram">Instagram</a> <a class="tag" href="/tags/telegram">Telegram</a> 
 </div>`}));  }     
     
 contents.push( new RawHtml({ html: `<div>  </div>`}));
