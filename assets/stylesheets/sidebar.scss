@@ -434,7 +434,17 @@ th.views:before {display: inline-block;content: '\f06e';font-family: FontAwesome
 .topic-post.del { opacity: 0.3; .topic-body { max-width: 690px;} p { margin: 0; }}
 .activity.sortable {text-align: center;}
 #scroll-top{position:fixed;opacity: 0.6;bottom:80px;padding:5px;border-radius:5px;z-index:9999;right:20px;color:#888;font-size:25px;display:none;}
-#scroll-bottom{opacity: 0.6;color:#888;font-size:20px;}
+#scroll-bottom{
+color: #888;
+position: fixed;
+opacity: 0.6;
+bottom: 100px;
+padding: 5px;
+border-radius: 5px;
+z-index: 9999;
+right: 20px;
+font-size: 25px;
+}
 #scroll-top:hover, #scroll-bottom:hover {opacity: 1;}
 .cooked ol li::-moz-list-number {font-weight: bold;}
 .category-heading .category-logo {width: 31px;}
