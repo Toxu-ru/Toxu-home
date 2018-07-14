@@ -36,12 +36,10 @@ if (qaid === 129 || qaid === 2760) {  contents.push( new RawHtml({ html: `<div c
    
 contents.push( new RawHtml({ html: `<div class='messag2'>
 <a class="cvet" href="https://toxu.ru/t/${qaid}/${pcont}" id="scroll-bottom" style="display: inline;"><i class="fa fa-arrow-down"></i></a>
-</div>`}));
-
-if (gya > 5) { contents.push( new RawHtml({ html: `<div class='messag2'>
 <a class="cvet" href="https://toxu.ru/t/${qaid}" id="scroll-top" style="display: inline;"><i class="fa fa-arrow-up"></i></a>
 </div>`}));
-}    
+
+ 
     
 return contents;
 }});
