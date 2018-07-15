@@ -6,6 +6,9 @@
  {{mount-widget widget="link-top"}}
 </div>
 
+
+{{mount-widget widget="topic-cat-info" args=(hash model=model)}}
+
 <div class='messag'>
 <h3 class="sidebar-sug">Рекомендованные</h3>
 {{#if topics}} {{else}} 
@@ -13,7 +16,6 @@
 <center><small style="color:#888">формируется список...<br><br></small></center>
 {{/unless}}
 {{/if}}
-
 
 
 {{topic-list-sug showParticipants=showParticipants
@@ -25,5 +27,12 @@
                  canBulkSelect=canBulkSelect
                  selected=selected
                  skipHeader=skipHeader}}
+
+</div>
+
+<div class='qa-add'>
+{{create-topic currentUser=currentUser createTopic=createTopic}}
+
+<a href="https://toxu.ru{{unbound url}}.rss" title="лента для данного вопроса и его ответов" class="ser cvet">RSS лента вопроса...</a>
 
 </div>
