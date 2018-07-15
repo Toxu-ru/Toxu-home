@@ -319,7 +319,7 @@ background: #fdfdfd url(https://toxu.ru/uploads/default/original/2X/5/57dc9ca1e3
 .boxed.onscreen-post {background-color: #fff;padding: 5px;}
 img.avatar {border-radius: 5%;}
 .d-header-icons .icon img.avatar {border-radius: 50%;}
-.cat-pods, .messag  {display:none;}   
+.cat-pods, .qa-add  {display:none;}   
 .topic-post {margin-bottom: 10px;} 
 .topic-body, .topic-avatar, .topic-status-info {border-top: none;}
 #suggested-topics .loading-container.ember-view  {display:block !important;}
@@ -852,7 +852,7 @@ border: 0.45em solid #f56400;
 /*add mobile*/
 html.mobile-view {
 .sidebar, .user-signature, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
- #scroll-bottom, #scroll-top, .sidebar-m, .category-list  .category-description,  .container-bar {display: none !important;}
+ #scroll-bottom, #scroll-top, .sidebar-m, .category-list  .category-description,  .container-bar, .topic-excerpt {display: none !important;}
 .navigation-categories {th.latest, td.latest {display: none;}.category {width: 99%;}}
 .topic-post.comment .topic-avatar {padding-top: 0;}
 .list-container.has-sidebar, .container-telo {width: 100%;}
