@@ -1,5 +1,7 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
+import { h } from "virtual-dom";
+import { ajax } from "discourse/lib/ajax";
 
  export default createWidget('search-insertion', {
   buildKey: (args) => 'search-insertion',
@@ -37,5 +39,9 @@ contents.push( new RawHtml({ html: `<div class="search-ins">
 }   
    
 contents.push( new RawHtml({ html: `<div> </div>`})); 
-return contents;
+   
+return h("div.rrr", "ываываыва ыва ыва ыва ыва ыва ыва ыва");   
+ 
+   
+//return contents;
 }});
