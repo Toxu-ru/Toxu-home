@@ -3,6 +3,14 @@ html {font-family: Roboto,Helvetica,Arial,sans-serif;}
 .topic-body .contents .cooked, .help {line-height: 1.7;font-size: 1.12em;font-weight: 400;}
 .topic-post.comment .topic-body .contents .cooked {font-size: 1em;line-height: 1.4;}
 
+
+.search-ins{
+    margin-bottom: 30px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    border-radius: 2px;
+    padding: 20px;
+}
+
 /*mini header*/
 #top-navbar-links {background: #f6f8fe}
 /* #top-navbar-links {background: rgba(82,186,213,0.1);} */
