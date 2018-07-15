@@ -307,16 +307,8 @@
 
 <div class="container-bar">
     <noindex>
-    <div class="sidebar-top">
-    <div class="sidebar-blog-one">
     {{suggested-topics-sug topic=model url=model.url}} 
-    </div>
-    <div class="sidebar-blog-too">
-    {{plugin-outlet name="topic-cat-info" args=(hash model=model)}}</div>
-    </div>
     </noindex>
-    
-   
 </div>
   
     {{#if model.suggestedTopics.length}}
