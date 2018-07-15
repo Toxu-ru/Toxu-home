@@ -17,8 +17,9 @@ export default createWidget('topic-cat-info', {
   var catid =  args.model.category_id;
   var gya =  args.model.currentPost;
   var pcont =  args.model.posts_count;
-   
-    console.log(args.model);
+  var slug =  args.model.slug;
+  
+  //console.log(args.model);
     
     
 if (catid === 33) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> Это блоги </div>`}));  } 
@@ -33,13 +34,14 @@ if (qaid === 129 || qaid === 2760) {  contents.push( new RawHtml({ html: `<div c
 <a class="tag" href="/tags/instagram">Instagram</a> <a class="tag" href="/tags/telegram">Telegram</a> 
 </div>`}));  }     
 
-   
+if (pcont > 3) {
 contents.push( new RawHtml({ html: `<div class='messag2'>
-<a class="cvet" href="https://toxu.ru/t/${qaid}/${pcont}" id="scroll-bottom" style="display: inline;"><i class="fa fa-arrow-down"></i></a>
-<a class="cvet" href="https://toxu.ru/t/${qaid}" id="scroll-top" style="display: inline;"><i class="fa fa-arrow-up"></i></a>
+<a class="cvet" href="https://toxu.ru/t/${slug}/${qaid}/${pcont}" id="scroll-bottom" style="display: inline;"><i class="fa fa-arrow-down"></i></a>
+<a class="cvet" href="https://toxu.ru/t/${slug}/${qaid}" id="scroll-top" style="display: inline;"><i class="fa fa-arrow-up"></i></a>
 </div>`}));
-
- 
+ }   
+   
+contents.push( new RawHtml({ html: `<div> </div>`}));
     
 return contents;
 }});
