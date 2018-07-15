@@ -16,7 +16,7 @@
         </div>
       {{/if}}
     </div>
-1= {{{searchTerm}}} =2
+
     <div class="search-context">
       {{#if context}}
         <div class='fps-search-context'>
@@ -58,6 +58,8 @@
         </div>
       </div>
     {{/if}}
+
+{{plugin-outlet name="search-insertion" args=(hash search=searchTerm)}}
 
     <div class="search-results">
       {{#load-more selector=".fps-result" action="loadMore"}}
