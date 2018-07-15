@@ -24,7 +24,7 @@ html:not(.mobile-view) {
 @media screen and (max-width : 1150px) {.topic-body {max-width: 650px;}}	
 	
 }	
-	
+
 	
 .sidebar-fon {padding: 7px 0 7px 12px;}
 .container-telo {width: 70%;float: left;}
@@ -333,6 +333,7 @@ button.btn-primary.create:after { content: " Ответить приватно";
 
 
 /*теги*/
+.cat-tag{margin-bottom: 10px;}
 .tag{
 font-size: 13px;
 background: rgba(82,186,213,0.1);
