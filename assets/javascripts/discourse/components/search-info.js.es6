@@ -10,7 +10,8 @@ export default Ember.Component.extend({
   searchHelp(search) {
   var results='';
   
-  if (search === '2221'){ results =   '<div class="search-ins">Вот что такое обновление на странице. Меняем последнюю цифру на 2, т.е. 2222</div>';} 
+  if (search === 'discourse'){ results =   '<div class="search-ins">We connect the dictionary. Dial number: <b>2221</b></a>';}
+  if (search === '2221'){ results =   '<div class="search-ins">Вот что такое обновление на странице. Меняем последнюю цифру на 2, т.е. <b>2222</b></div>';} 
   if (search === '2222'){ results =   '<div class="search-ins">sdfsdfsdf<a href="ee">sdf</a> sdfsdf. Меняем на 2223</div>';}
   if (search === '2223'){ results =   '<div class="search-ins">Все! Это весь словарь. УРА! :)</a>';}
   
