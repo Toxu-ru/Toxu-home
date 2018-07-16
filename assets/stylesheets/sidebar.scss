@@ -379,19 +379,19 @@ a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-we
 
 .sidebar-top .ser.cvet{text-decoration: underline;}
 .cat-pods { 
-    padding: 13px 10px 10px 10px;
-    background: rgba(82,186,213,.1);
+    padding: 3px 3px 10px 0px;
     margin-bottom: 20px;
     img.cat-small {margin-right: 10px;margin-top: 5px;float: left;width: 24px;height: 24px;}	
-    hr.link{margin: 8px 0;border-top: 1px solid #D5E5EC;}
     .rss-link-top{display: inline-block;float:right;}
-    .topic-list-link-top{display: inline-block;color: #667d99;}
-    .rss-link-top a  {color: #667d99;}
+    .rss-link-top a  {color: #667d99;font-size:14px;}
    .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {display: none !important;}
    .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {display: block;margin-top: 15px;}
    .badge-wrapper.bullet span.badge-category {color:#07c;font-size:13px;}
    .badge-wrapper.bullet span.badge-category:hover, .rss-link-top a:hover {color:#f56400;}
 }
+
+h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 14px;font-weight: 300;}
+
 .cat-pods-cat {
 background: #f2f7fe; border-color: #DDE7F5;color: #555;font-size: 13px;padding: 13px 13px 0 13px; overflow: hidden;
 .topic-list-link-top {font-size: 14px;color:#555;margin-bottom: 10px;}
@@ -462,13 +462,6 @@ font-size: 25px;
 .cooked ol li::-moz-list-number {font-weight: bold;}
 .category-heading .category-logo {width: 31px;}
 .category-heading p {font-size: 1.24em;color: #39739d;background-color: #eff5fa;border-color: transparent;padding: .2em .3em;}
-
-h3.sidebar-sug {color:  #667d99; font-weight: 300;
-position: relative;
-margin-bottom: 10px;
-font-size: 16px;
-letter-spacing: 0;
-text-transform: none;}
 
 .post-links-container ul li a[href] {color: #07C;}
 .post-links-container ul li a[href]:hover {color: #f56400;}
