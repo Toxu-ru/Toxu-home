@@ -3,7 +3,7 @@
 <div class="rss-link-top"><a  href="https://toxu.ru/top">Все</a></div>
 
  
- {{mount-widget widget="link-top"}}
+ <div class="blogcvet">{{mount-widget widget="link-top"}}</div>
 </div>
 
 {{mount-widget widget="topic-cat-info" args=(hash model=topic)}}
@@ -16,7 +16,7 @@
 {{/unless}}
 {{/if}}
 
-
+<div class="blogcvet">
 {{topic-list-sug showParticipants=showParticipants
                  showPosters=showPosters
                  hideCategory=hideCategory
@@ -26,7 +26,7 @@
                  canBulkSelect=canBulkSelect
                  selected=selected
                  skipHeader=skipHeader}}
-
+</div>
 </div>
 
 <div class='qa-add'>
