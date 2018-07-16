@@ -391,7 +391,7 @@ a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-we
 }
 
 h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-weight: 400;margin-bottom: 6px;}
-.blogcvet{background: rgba(82,186,213,.1);padding: 8px 3px 2px 8px;}
+.blogcvet{background: rgba(82,186,213,.1);padding: 8px 11px 2px 12px;}
 
 .cat-pods-cat {
 background: #f2f7fe; border-color: #DDE7F5;color: #555;font-size: 13px;padding: 13px 13px 0 13px; overflow: hidden;
@@ -438,7 +438,7 @@ body[class*="navigation-categories"] #main-outlet .container.list-container.has-
 
 /*мелкие детали*/
 img.emoji.emoji-custom {width: auto;height: 100%;vertical-align: middle;}
-.sidebar-fon, .cat-pods, .sidebar-m, .sidebar #create-topic {border-radius: 3px;}
+.sidebar-fon, .cat-pods, .sidebar-m, .sidebar #create-topic, .blogcvet {border-radius: 3px;}
 .topic-list {
 th.activity:before {display: inline-block;content: '\f017';font-family: FontAwesome;}
 th.posts:before {display: inline-block;content: '\f27b';font-family: FontAwesome;}
