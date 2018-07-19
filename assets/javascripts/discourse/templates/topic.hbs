@@ -81,7 +81,7 @@
         {{partial "selected-posts"}}
       </div>
 
-      {{#topic-navigation topic=model jumpToIndex=(action "jumpToIndex") as |info|}}
+      {{#topic-navigation topic=model jumpToDate=(action "jumpToDate") jumpToIndex=(action "jumpToIndex") as |info|}}
         {{#if info.renderTimeline}}
 
           {{topic-timeline
