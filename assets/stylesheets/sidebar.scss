@@ -3,6 +3,14 @@ html {font-family: Roboto,Helvetica,Arial,sans-serif;}
 .topic-body .contents .cooked, .help {line-height: 1.7;font-size: 1.12em;font-weight: 400;}
 .topic-post.comment .topic-body .contents .cooked {font-size: 1em;line-height: 1.4;}
 
+/*-comm post_1 + none signature hidden */
+.post-hidden .user-signature {
+    display: none;
+}
+#post_1 .widget-button.reply.create.fade-out.btn-icon-text {
+    display: none;
+}
+
 
 .search-ins{
     margin-bottom: 30px;
@@ -500,14 +508,7 @@ blockquote, aside.quote .title {border-left: 2px solid #ffeb8e;}
 
 /*Катерория Toxu-правила*/
 .custom-cat-header-toxu-regulations {display: none;}
-body.category-toxu-regulations { overflow-x: hidden;
-.custom-cat-header {background: #e7672e; display: block;	margin-left: -9999px!important;	padding-left: 9999px!important;
-	margin-right: -9999px!important;padding-right: 9999px!important;text-align: center;margin-top: -18px;}
-.custom-cat-header p {color: #fff; font-size:17px;padding-bottom: 10px;}
-.custom-cat-header h1 {display: inline-block;margin-top: 20px;color: #fff;border-radius: 5px;width: inherit;}	
-.category-heading {display: none;}
-.avahome {display: inline-block !important;margin-top: 1px;}
-}
+
 
 /*поиск*/
 .d-header .title {
