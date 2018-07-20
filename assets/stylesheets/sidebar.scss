@@ -7,7 +7,7 @@ html {font-family: Roboto,Helvetica,Arial,sans-serif;}
 .post-hidden .user-signature {
     display: none;
 }
-#post_1 .widget-button.reply.create.fade-out.btn-icon-text {
+#post_1 .widget-button.reply.create.fade-out.btn-icon-text, #post_1 .topic-post nav.post-controls button.reply {
     display: none;
 }
 
