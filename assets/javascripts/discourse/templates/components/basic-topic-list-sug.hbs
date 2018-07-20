@@ -1,13 +1,12 @@
 <div class='cat-pods'>
 <h3 class='topic-list-link top'>Популярные за сегодня</h3>
 <div class="rss-link-top"><a  href="https://toxu.ru/top">Все</a></div>
-
- 
- <div class="blogcvet">{{mount-widget widget="link-top"}}</div>
+<div class="blogcvet">{{mount-widget widget="link-top"}}</div>
 </div>
-<div id='ostan'>
+
 {{mount-widget widget="topic-cat-info" args=(hash model=topic)}}
 
+<div id='ostan'>
 <div class='messag'>
 <h3 class="topic-list-link recom">Рекомендованные</h3>
 {{#if topics}} {{else}} 
