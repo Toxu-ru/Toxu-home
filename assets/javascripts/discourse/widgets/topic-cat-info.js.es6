@@ -19,7 +19,7 @@ export default createWidget('topic-cat-info', {
   var pcont =  args.model.posts_count;
   var slug =  args.model.slug;
   
-  //console.log(args.model);
+  console.log(args.model);
     
     
 if (catid === 33) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> Это блоги </div>`}));  } 
