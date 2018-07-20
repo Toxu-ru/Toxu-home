@@ -10,7 +10,7 @@ export default Ember.Component.extend({
   searchHelp(search) {
   var results='';
   
-  comsole.log(search);
+  console.log(search);
   
   var snum = search.posts_count;
   
