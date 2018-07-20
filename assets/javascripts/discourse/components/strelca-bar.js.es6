@@ -9,6 +9,9 @@ export default Ember.Component.extend({
  @computed('strelca')
   searchHelp(strelca) {
   var results='';
+  
+  comsole.log(strelca);
+  
   var snum = strelca.posts_count;
   
   results =   '<div class="strelca">${snum}</div>'; 
