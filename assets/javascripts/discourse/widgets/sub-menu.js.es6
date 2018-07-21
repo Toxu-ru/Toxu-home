@@ -48,12 +48,15 @@ var tim = data.user.time_read;
     
 var t_m = tim/60;
 var t_minut = t_m.toFixed();
-var t_m_gr = (t_hour*100)/60; 
-var t_mm_gr = t_m_gr.toFixed();    
+  
     
 var t_c =  tim/3600;
 var t_hour = t_c.toFixed();
 var t_h_gr = (t_hour*100)/24; 
+	  
+var t_m_gr = (t_hour*100)/60; 
+var t_mm_gr = t_m_gr.toFixed();  	  
+	  
 var t_hh_gr = t_h_gr.toFixed();     
 
 var t_d =  tim/86400;
