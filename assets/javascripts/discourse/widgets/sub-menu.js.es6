@@ -68,17 +68,17 @@ var t_daym = Math.floor(t_d);
 //console.log(t_daym);		  
 
 //add test
-var t_d_t = 1037373/86400;
-var t_day_t = t_d_t.toFixed();
-var t_daym_t = Math.floor(t_d_t);	  
-var vt_c_t = t_d_t - t_daym_t;	  
-var vtt_g_t = vt_c_t*100/24;
+//var t_d_t = 1037373/86400;
+//var t_day_t = t_d_t.toFixed();
+//var t_daym_t = Math.floor(t_d_t);	  
+//var vt_c_t = t_d_t - t_daym_t;	  
+//var vtt_g_t = vt_c_t*100/24;
 	  
-console.log(t_d_t);	console.log('-');
-console.log(t_day_t);	console.log('-');  
-console.log(t_daym_t); console.log('-');
-console.log(vt_c_t); console.log('-');
-console.log(vtt_g_t);
+//console.log(t_d_t);	console.log('-');
+//console.log(t_day_t);	console.log('-');  
+//console.log(t_daym_t); console.log('-');
+//console.log(vt_c_t); console.log('-');
+//console.log(vtt_g_t);
 //end test	  
 	  
 var vt_c = t_d - t_daym;	  
