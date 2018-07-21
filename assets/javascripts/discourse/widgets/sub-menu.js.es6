@@ -82,7 +82,7 @@ var vt_c = t_d - t_daym;
 
 //add new
 var ugol =  vt_c*100;
-var ugol_c = ugol*3600;	  
+var ugol_c = ugol/3600;	  
 var ugol_t = Math.floor(ugol_c);	
 	  
 var vtt_g = vt_c*100/24;
