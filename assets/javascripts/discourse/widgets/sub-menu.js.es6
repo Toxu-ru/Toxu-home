@@ -82,16 +82,16 @@ var vt_c = t_d - t_daym;
 
  
 var vtt_g = vt_c*100/24;
-var vtt_g_q = vtt_g.toFixed();
 var vtt_c = 24 - vtt_g;	  
 var oct = vtt_c.toFixed(); 
-var ugol =  vtt_g_q*100;
-  
+	  
+var ugol_t = vt_c*2;
+var ugol = ugol_t.toFixed();
 	  
 	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
 if (t_hour > 0) { var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';}
-if (t_day > 0) { var vrema = 'day'; var vrema_t = vtt_g_q; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';}	  
+if (t_day > 0) { var vrema = 'day'; var vrema_t = t_day; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';}	  
 	
 if (trust_level === 0) { 
 
