@@ -59,6 +59,7 @@ var t_hh_gr = t_h_gr.toFixed();
 var t_d =  tim/86400;
 var t_daym = Math.floor(t_d); //math.ceil Math.floor
 var vt_c = t_d - t_daym;
+var cas = vt_c*24; //новых часов
 
 console.log(t_d); console.log('общее');	  
 console.log(t_daym); console.log('округление в меньшую');
@@ -73,7 +74,7 @@ console.log(ugol); console.log('округление угла');
 //var vtt_g = vt_c*100/24;
 //console.log(vtt_g); console.log('форумула');
 	  
-var vtt_c = 24 - vt_c;	  
+var vtt_c = 24 - cas;	  
 console.log(vtt_c); console.log('24 - форумула =  сколько осталось');
 	  
 var oct = vtt_c.toFixed(); 
