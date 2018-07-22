@@ -61,8 +61,16 @@ var t_hh_gr = t_h_gr.toFixed();
 
 var t_d =  tim/86400;
 var t_day = t_d.toFixed();
+	  
+	  
+	  
+	  
+	  
 var t_daym = Math.floor(t_d); //math.ceil Math.floor
 
+	 
+	  
+	  
 	  
 console.log(t_d); console.log('-');	  
 console.log(t_day); console.log('-');	  
@@ -89,7 +97,9 @@ console.log(t_pr); console.log('===');
 	  
 var vt_c = t_d - t_daym;	  
 
-	  console.log(vt_c); console.log('-');
+	  console.log(vt_c); console.log('-/-');
+//add	  
+var ugols = (vt_c/9.9999)*100; 
  
 var vtt_g = vt_c*100/24;
 	  
@@ -106,7 +116,7 @@ var oct = vtt_c.toFixed();
 var ugol_t = vt_c*2;
 	  console.log(ugol_t); console.log('-');
 	  
-var ugol = ugol_t.toFixed();
+var ugol = ugols.toFixed();
 	  console.log(ugol); console.log('end');
 	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
