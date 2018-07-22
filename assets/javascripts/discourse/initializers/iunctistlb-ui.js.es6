@@ -8,7 +8,7 @@ function initializePlugin(api)
         toolbar.addButton({
           id: "adm_ui_button",
           group: "extras",
-          icon: "indent",
+          icon: "exclamation",
           perform: e => e.applySurround('[adm]', '[/adm]', 'floatl_ui_default_text')
         });
       });
