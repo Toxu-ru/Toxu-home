@@ -9,7 +9,7 @@ function initializePlugin(api)
           id: "floatl_ui_button",
           group: "extras",
           icon: "indent",
-          perform: e => e.applySurround('[adm]', '[/adm]', 'adm вставка')
+          perform: e => e.applySurround('[adm]', '[/adm]', 'floatl_ui_default_text')
         });
       });
 
