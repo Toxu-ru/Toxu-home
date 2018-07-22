@@ -46,22 +46,22 @@ var tim = data.user.time_read;
     
 var t_m = tim/60;
 var t_minut = t_m.toFixed();
-  
-    
-var t_c =  tim/3600;
-var t_hour = t_c.toFixed();
-var t_h_gr = t_hour*100/24; 
+var t_m_c = t_m - t_minut;  
+var t_m_gr = (t_m_c/0.9999)*100;    
+var t_mm_gr = Math.floor(t_m_gr);
 	  
-var t_m_gr = t_minut*100/60; 
-var t_mm_gr = t_m_gr.toFixed();  	  
-var t_hh_gr = t_h_gr.toFixed();     
-
+var t_c =  tim/3600;
+var t_hour = Math.floor(t_c);
+var t_h_c = t_c - t_hour;	  
+var t_h_gr = (t_h_c/0.9999)*100; 
+var t_hh_gr = Math.floor(t_h_gr);  	  
+	  
 var t_d =  tim/86400;
 var t_daym = Math.floor(t_d); //math.ceil Math.floor
 var vt_c = t_d - t_daym;
 var cas = vt_c*24; //новых часов
 
-console.log(t_d); console.log('общее');	  
+console.log(t_d); console.log('общее Дни');	  
 console.log(t_daym); console.log('округление в меньшую');
 console.log(vt_c); console.log('новое время отчет');
  
