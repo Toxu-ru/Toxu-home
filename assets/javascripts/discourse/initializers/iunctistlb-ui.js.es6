@@ -6,7 +6,7 @@ function initializePlugin(api)
 
     api.onToolbarCreate(toolbar => {
         toolbar.addButton({
-          id: "floatl_ui_button",
+          id: "adm_ui_button",
           group: "extras",
           icon: "indent",
           perform: e => e.applySurround('[adm]', '[/adm]', 'floatl_ui_default_text')
