@@ -42,8 +42,6 @@ export default createWidget('sub-menu', {
 //10минут = 600 сек, 1 часе = 3600 сек, 1 дне = 86400 сек 	  
 //"time_read":85202,"recent_time_read":36457
 
-//9100 секунд это 3 часа. 24 часа это 100 процентов, сколько будет 3 часа
-
 var tim = data.user.time_read;
     
 var t_m = tim/60;
@@ -56,13 +54,12 @@ var t_h_gr = t_hour*100/24;
 	  
 var t_m_gr = t_minut*100/60; 
 var t_mm_gr = t_m_gr.toFixed();  	  
-	  
 var t_hh_gr = t_h_gr.toFixed();     
 
 var t_d =  tim/86400;
 var t_daym = Math.floor(t_d); //math.ceil Math.floor
-var vt_c = t_d - t_daym;	  
-  
+var vt_c = t_d - t_daym;
+
 console.log(t_d); console.log('общее');	  
 console.log(t_daym); console.log('округление в меньшую');
 console.log(vt_c); console.log('новое время отчет');
@@ -73,17 +70,14 @@ console.log(ugols); console.log('угол');
 var ugol = ugols.toFixed();
 console.log(ugol); console.log('округление угла');	  
 	  
-var vtt_g = vt_c*100/24;
-console.log(vtt_g); console.log('форумула');
+//var vtt_g = vt_c*100/24;
+//console.log(vtt_g); console.log('форумула');
 	  
-var vtt_c = 24 - vtt_g;	  
-console.log(vtt_c); console.log('24 - форумула');
+var vtt_c = 24 - vt_c;	  
+console.log(vtt_c); console.log('24 - форумула =  сколько осталось');
 	  
 var oct = vtt_c.toFixed(); 
 console.log(oct); console.log('надпись сколько осталась округление');
-	  
-var ugol_t = vt_c*2;
-console.log(ugol_t); console.log('-');
 	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
 if (t_hour > 0) { var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';}
