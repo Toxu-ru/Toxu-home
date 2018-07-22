@@ -15,6 +15,9 @@ html {font-family: Roboto,Helvetica,Arial,sans-serif;}
     border-radius: 2px;
     padding: 20px;
 }
+/*icon sraff*/
+button.adm_ui_button {display: none;}
+body.staff button.adm_ui_button {display: inline-block;}
 
 /*mini header*/
 #top-navbar-links {background: #f6f8fe}
