@@ -3,9 +3,6 @@ import { onToolbarCreate } from 'discourse/components/d-editor';
 
 function initializePlugin(api)
 {
-  const siteSettings = api.container.lookup('site-settings:main');
-
-  if (siteSettings.iunctistlb_ui_enabled) {
 
     api.onToolbarCreate(toolbar => {
         toolbar.addButton({
@@ -17,7 +14,6 @@ function initializePlugin(api)
       });
 
 
-  }
 }
 
 export default
