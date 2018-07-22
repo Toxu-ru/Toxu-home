@@ -31,6 +31,11 @@ function setupMarkdownIt(md) {
     wrap: wrap('div', 'class', ()=>'bbcoderight')
   });
 
+  
+  ruler.push('adm', {
+    tag: 'adm',
+    wrap: wrap('div', 'class', ()=>'bbcodeadm')
+  });
 
 }
 
@@ -38,8 +43,8 @@ export function setup(helper) {
 
   helper.whiteList([
     'div.bbcodeleft',
-    'div.bbcoderight'
-
+    'div.bbcoderight',
+    'div.bbcodeadm'
   ]);
 
   if (helper.markdownIt) {
@@ -52,5 +57,6 @@ export function setup(helper) {
 
   replaceBBCode("left", contents => ['div', {'class': 'bbcodeleft'}].concat(contents));
   replaceBBCode("right", contents => ['div', {'class': 'bbcoderight'}].concat(contents));
+  replaceBBCode("adm", contents => ['div', {'class': 'bbcodeadm'}].concat(contents));
 
 }
