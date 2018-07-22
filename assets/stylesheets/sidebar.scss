@@ -724,21 +724,8 @@ border-radius: 0px;
    height: 5em;
    border-radius: 50%;
    box-sizing: border-box;
-  
+  border: 0.45em solid #ffb74d;
 }
-
-.value-bar.minute {
-border: 0.45em solid #339900;
-}
-
-.value-bar.hour {
-border: 0.45em solid #ffb74d;
-}
-
-.value-bar.day {
-border: 0.45em solid #f56400;
-}
-
 
 /* когда p>50, не закрепите левую половину*/
 .progress-circle.over50 .left-half-clipper {clip: rect(auto, auto, auto, auto);}
@@ -758,7 +745,7 @@ border: 0.45em solid #f56400;
    /*Progress bar for the first 50%, filling the whole right half*/
    position: absolute; /*needed for clipping*/
    clip: rect(0, 5em, 5em, 2.5em);
-   background-color: #f56400;
+   background-color: #ffb74d;
    border-radius: 50%;
    width: 5em;
    height: 5em;
