@@ -73,7 +73,7 @@ var ugol = ugols.toFixed();
 console.log(ugol); console.log('округление угла');
 	  
 //исправление >50
-if (ugol >= 50) { isprav = 'over50'; };
+if (ugol > 49) { isprav = 'over50'; }
 	  
 var vtt_c = 24 - cas;	  
 console.log(vtt_c); console.log('24 - форумула =  сколько осталось');
