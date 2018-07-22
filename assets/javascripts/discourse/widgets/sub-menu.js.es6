@@ -60,41 +60,30 @@ var t_mm_gr = t_m_gr.toFixed();
 var t_hh_gr = t_h_gr.toFixed();     
 
 var t_d =  tim/86400;
-var t_day = t_d.toFixed(); //в большую
 var t_daym = Math.floor(t_d); //math.ceil Math.floor
-
- 
-console.log(t_d); console.log('общее');	  
-console.log(t_day); console.log('округление в большую');	  
-console.log(t_daym); console.log('округление в меньшую');
-	  
-var t_pr = Math.ceil(t_d);
-	  
-console.log(t_pr); console.log('округление в большую');	 
-	  
 var vt_c = t_d - t_daym;	  
+  
+console.log(t_d); console.log('общее');	  
+console.log(t_daym); console.log('округление в меньшую');
 console.log(vt_c); console.log('новое время отчет');
-
-//add	  
-var ugols = (vt_c/9.9999)*100; 
+ 
+var ugols = (vt_c/0.9999)*100; 
 console.log(ugols); console.log('угол');
 
 var ugol = ugols.toFixed();
 console.log(ugol); console.log('округление угла');	  
 	  
 var vtt_g = vt_c*100/24;
-console.log(vtt_g); console.log('-');
+console.log(vtt_g); console.log('форумула vt_c*100/24');
 	  
 var vtt_c = 24 - vtt_g;	  
-console.log(vtt_c); console.log('-');
+console.log(vtt_c); console.log('24 - форумула');
 	  
 var oct = vtt_c.toFixed(); 
-console.log(oct); console.log('надпись сколько осталась');
+console.log(oct); console.log('надпись сколько осталась округление');
 	  
 var ugol_t = vt_c*2;
 console.log(ugol_t); console.log('-');
-	  
-
 	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
 if (t_hour > 0) { var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';}
