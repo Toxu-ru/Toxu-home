@@ -38,7 +38,7 @@ export default createWidget('sub-menu', {
   my_bio = ' <div class="mn"> <i class="fa fa-exclamation" aria-hidden="true"></i> <a target="_blank" href="https://toxu.ru/u/'+ username +'/preferences/profile">Заполните свой профиль</a>, это поможет другим читать вас. </div>';		    
   }	  
 
-var isprav = '';	  
+var isprav;	  
 	  
 //10минут = 600 сек, 1 часе = 3600 сек, 1 дне = 86400 сек 	  
 //"time_read":85202,"recent_time_read":36457
