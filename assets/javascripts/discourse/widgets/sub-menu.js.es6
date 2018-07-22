@@ -74,7 +74,7 @@ var ugol = ugols.toFixed();
 console.log(ugol); console.log('округление угла');	  
 	  
 var vtt_g = vt_c*100/24;
-console.log(vtt_g); console.log('форумула vt_c*100/24');
+console.log(vtt_g); console.log('форумула');
 	  
 var vtt_c = 24 - vtt_g;	  
 console.log(vtt_c); console.log('24 - форумула');
@@ -87,7 +87,7 @@ console.log(ugol_t); console.log('-');
 	  
 if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
 if (t_hour > 0) { var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';}
-if (t_day > 0) { var vrema = 'day'; var vrema_t = t_day; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';}	  
+if (t_daym > 0) { var vrema = 'day'; var vrema_t = t_daym; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';}	  
 	
 if (trust_level === 0) { 
 
