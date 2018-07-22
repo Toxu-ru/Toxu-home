@@ -16,3 +16,5 @@ ru:
       d2-you: "участник"
       d3-you: "постоялец"
       d4-you: "лидер"
+    composer:
+      floatl_ui_button_title: "Выделение вставки для админов"
