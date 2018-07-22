@@ -37,7 +37,8 @@ export default createWidget('sub-menu', {
   } else { 
   my_bio = ' <div class="mn"> <i class="fa fa-exclamation" aria-hidden="true"></i> <a target="_blank" href="https://toxu.ru/u/'+ username +'/preferences/profile">Заполните свой профиль</a>, это поможет другим читать вас. </div>';		    
   }	  
-	  
+
+var isprav = '';	  
 	  
 //10минут = 600 сек, 1 часе = 3600 сек, 1 дне = 86400 сек 	  
 //"time_read":85202,"recent_time_read":36457
@@ -69,10 +70,10 @@ var ugols = (vt_c/0.9999)*100;
 console.log(ugols); console.log('угол');
 
 var ugol = ugols.toFixed();
-console.log(ugol); console.log('округление угла');	  
+console.log(ugol); console.log('округление угла');
 	  
-//var vtt_g = vt_c*100/24;
-//console.log(vtt_g); console.log('форумула');
+//исправление >50
+if (ugol >= 50) { isprav = 'over50'; };
 	  
 var vtt_c = 24 - cas;	  
 console.log(vtt_c); console.log('24 - форумула =  сколько осталось');
@@ -96,7 +97,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle p${grad}">
+<center>0<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
