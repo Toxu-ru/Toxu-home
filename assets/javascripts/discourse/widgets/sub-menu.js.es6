@@ -147,7 +147,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle p${grad}">
+<center>0<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -192,7 +192,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle p${grad}">
+<center>0<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -239,7 +239,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle p${grad}">
+<center>0<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -285,7 +285,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle p${grad}">
+<center>0<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
