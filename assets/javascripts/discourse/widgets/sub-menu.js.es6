@@ -61,7 +61,7 @@ var t_hh_gr = t_h_gr.toFixed();
 
 var t_d =  tim/86400;
 var t_day = t_d.toFixed();
-var t_daym = Math.floor(t_d);
+var t_daym = Math.ceil(t_d); //math.ceil Math.floor
 
 //console.log(t_d);	993946 - всего  
 //console.log(t_day);	
