@@ -38,7 +38,6 @@ export default createWidget('sub-menu', {
   my_bio = ' <div class="mn"> <i class="fa fa-exclamation" aria-hidden="true"></i> <a target="_blank" href="https://toxu.ru/u/'+ username +'/preferences/profile">Заполните свой профиль</a>, это поможет другим читать вас. </div>';		    
   }	  
 
-var isprav;	  
 	  
 //10минут = 600 сек, 1 часе = 3600 сек, 1 дне = 86400 сек 	  
 //"time_read":85202,"recent_time_read":36457
@@ -72,18 +71,25 @@ console.log(ugols); console.log('угол');
 var ugol = ugols.toFixed();
 console.log(ugol); console.log('округление угла');
 	  
-//исправление >50
-if (ugol > 49) { isprav = 'over50'; }
-	  
+ 
 var vtt_c = 24 - cas;	  
 console.log(vtt_c); console.log('24 - форумула =  сколько осталось');
 	  
 var oct = vtt_c.toFixed(); 
 console.log(oct); console.log('надпись сколько осталась округление');
 	  
-if (t_minut < 60) { var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';}
-if (t_hour > 0) { var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';}
-if (t_daym > 0) { var vrema = 'day'; var vrema_t = t_daym; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';}	  
+if (t_minut < 60) { 
+var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';
+if (t_mm_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }
+}
+if (t_hour > 0) { 
+var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';
+if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }	
+}
+if (t_daym > 0) { 
+var vrema = 'day'; var vrema_t = t_daym; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';
+if (ugol > 49) { var isprav = 'over50'; } else { var isprav = '111'; }
+}	  
 	
 if (trust_level === 0) { 
 
