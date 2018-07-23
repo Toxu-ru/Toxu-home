@@ -3,11 +3,11 @@ html {font-family: Roboto,Helvetica,Arial,sans-serif;}
 .topic-body .contents .cooked, .help {line-height: 1.7;font-size: 1.12em;font-weight: 400;}
 .topic-post.comment .topic-body .contents .cooked {font-size: 1em;line-height: 1.4;}
 
-/*-comm post_1 + none signature hidden */
-#post_1 nav.post-controls button.reply, .post-hidden .user-signature {
+/*-comm post_1 + none signature hidden и для общения нет подробного */
+#post_1 nav.post-controls button.reply, .post-hidden .user-signature, .category-other .sidebar-fon .dis-info-more {
     display: none;
 }
-
+.dis-info-rss {display: block;margin-top: 10px;}
 
 .search-ins{
     margin-bottom: 30px;
