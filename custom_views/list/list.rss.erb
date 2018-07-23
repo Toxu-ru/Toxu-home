@@ -18,6 +18,7 @@
           <title><%= topic.title %></title>
           <dc:creator><![CDATA[<%= "@#{username}#{" #{name}" if (name.present? && SiteSetting.enable_names?)}" -%>]]></dc:creator>
           <category><%= topic.category.name %></category>
+          <turbo:content>
           <description><![CDATA[
             <% if username.present? %>
             <p><%= t('author_wrote', author: link_to("@#{username}", "#{Discourse.base_url}/u/#{topic.user.username_lower}")).html_safe %></p>
@@ -36,6 +37,7 @@
           <discourse:topicArchived><%= topic.archived ? 'Yes' : 'No' %></discourse:topicArchived>
           <guid isPermaLink="false"><%= Discourse.current_hostname %>-topic-<%= topic.id %></guid>
           <source url="<%= topic_url %>.rss"><%= topic.title %></source>
+        </turbo:content>
         </item>
       <% end %>
     <% end %>
