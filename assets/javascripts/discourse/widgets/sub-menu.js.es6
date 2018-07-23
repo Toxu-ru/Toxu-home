@@ -80,16 +80,17 @@ var oct = vtt_c.toFixed();
 console.log(oct); console.log('надпись сколько осталась округление');
 	  
 if (t_minut < 60) { 
-var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = 'время до часа';
+var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = 'время до часа'; var verh = '1 час';
 if (t_mm_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }
 }
 if (t_hour > 0) { 
-var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = 'до следующего часа';
+var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = 'до следующего часа'; var verh = '1 день';
 if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }	
 }
 if (t_daym > 0) { 
 var vrema = 'day'; var vrema_t = t_d_centr; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';
 if (ugol > 49) { var isprav = 'over50'; } else { var isprav = '111'; }
+var verh = '100 дней';
 }	  
 	
 if (trust_level === 0) { 
@@ -104,7 +105,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle ${isprav} p${grad}">
+<center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -148,7 +149,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle ${isprav} p${grad}">
+<center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -193,7 +194,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle ${isprav} p${grad}">
+<center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -240,7 +241,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle ${isprav} p${grad}">
+<center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -286,7 +287,7 @@ ${my_bio}
 
 <div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
 
-<center>0<div class="progress-circle ${isprav} p${grad}">
+<center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
