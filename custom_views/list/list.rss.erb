@@ -15,10 +15,11 @@
         <% username = topic.user ? topic.user.username : "" %>
         <% name = topic.user ? topic.user.name : "" %>
         <item turbo="true">
+          <turbo:content> <![CDATA[
           <title><%= topic.title %></title>
           <dc:creator><![CDATA[<%= "@#{username}#{" #{name}" if (name.present? && SiteSetting.enable_names?)}" -%>]]></dc:creator>
           <category><%= topic.category.name %></category>
-          <description><turbo:content><![CDATA[
+          <description><![CDATA[
             <% if username.present? %>
             <p><%= t('author_wrote', author: link_to("@#{username}", "#{Discourse.base_url}/u/#{topic.user.username_lower}")).html_safe %></p>
             <% end %>
@@ -28,7 +29,7 @@
             <p><%= t 'num_posts' %> <%= topic.posts_count %></p>
             <p><%= t 'num_participants' %> <%= topic.participant_count %></p>
             <p><%= link_to t('read_full_topic'), topic_url %></p>
-          ]]></turbo:content></description>
+          ]]></description>
           <link><%= topic_url %></link>
           <pubDate><%= topic.created_at.rfc2822 %></pubDate>
           <discourse:topicPinned><%= topic.pinned_at ? 'Yes' : 'No' %></discourse:topicPinned>
@@ -36,7 +37,8 @@
           <discourse:topicArchived><%= topic.archived ? 'Yes' : 'No' %></discourse:topicArchived>
           <guid isPermaLink="false"><%= Discourse.current_hostname %>-topic-<%= topic.id %></guid>
           <source url="<%= topic_url %>.rss"><%= topic.title %></source>
-        </item>
+        ]]> </turbo:content> 
+       </item>
       <% end %>
     <% end %>
   </channel>
