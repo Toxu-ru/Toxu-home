@@ -7,7 +7,6 @@ html {font-family: Roboto,Helvetica,Arial,sans-serif;}
 #post_1 nav.post-controls button.reply, .post-hidden .user-signature, .category-other .sidebar-fon .dis-info-more {
     display: none;
 }
-.dis-info-rss {display: block;margin-top: 10px;}
 
 .search-ins{
     margin-bottom: 30px;
@@ -275,7 +274,7 @@ a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
 .dis-info {color: #666;font-size: 13px;clear: both;display: block;}
 .dis-info-more{font-size: 13px;margin-top: 3px;display: block;}
 .dis-info-name {color: #333;font-size: 18px;display: block;padding-top: 5px;padding-bottom: 5px;text-align: center;}	
-	
+.dis-info-rss {display: block;margin-top: 10px;font-size: 13px;}	
 }
 
 .nav-pills > li > a {color: #667d99;}
