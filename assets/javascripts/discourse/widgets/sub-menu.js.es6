@@ -80,11 +80,11 @@ var oct = vtt_c.toFixed();
 console.log(oct); console.log('надпись сколько осталась округление');
 	  
 if (t_minut < 60) { 
-var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = '30 минут';
+var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = 'время до часа';
 if (t_mm_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }
 }
 if (t_hour > 0) { 
-var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = '12 часов';
+var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = 'до следующего часа';
 if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }	
 }
 if (t_daym > 0) { 
