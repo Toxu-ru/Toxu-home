@@ -16,8 +16,9 @@ html {font-family: Roboto,Helvetica,Arial,sans-serif;}
     padding: 20px;
 }
 /*icon sraff*/
-button.adm_ui_button {display: none;}
-body.staff button.adm_ui_button {display: inline-block;}
+button.adm_ui_button {display: none !important;}
+body.staff button.adm_ui_button {display: inline-block !important;}
+.adm {font-size: 14px;border-left: 1px dotted #919191;padding-left: 12px;color: #666;}
 
 /*mini header*/
 #top-navbar-links {background: #f6f8fe}
