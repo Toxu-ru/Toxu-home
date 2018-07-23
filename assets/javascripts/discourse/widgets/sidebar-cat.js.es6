@@ -3,7 +3,7 @@ import { h } from 'virtual-dom';
 import DiscourseURL from 'discourse/lib/url';
 import { ajax } from 'discourse/lib/ajax';
 
-// new versian
+// new version 0.1...
 // discourse/app/assets/javascripts/discourse/widgets/hamburger-menu.js.es6
 // import Category from 'discourse/models/category';
 // и далее с 179 строки:  listCategories() {
