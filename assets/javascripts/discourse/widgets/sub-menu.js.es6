@@ -90,7 +90,7 @@ if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }
 if (t_daym > 0) { 
 var vrema = 'day'; var vrema_t = t_d_centr; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';
 if (ugol > 49) { var isprav = 'over50'; } else { var isprav = '111'; }
-var verh = '100 дней';
+var verh = '1 день';
 }	  
 	
 if (trust_level === 0) { 
