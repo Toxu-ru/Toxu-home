@@ -3,15 +3,94 @@ import { h } from 'virtual-dom';
 import DiscourseURL from 'discourse/lib/url';
 import { ajax } from 'discourse/lib/ajax';
 
-// new version 0.1...
-// discourse/app/assets/javascripts/discourse/widgets/hamburger-menu.js.es6
-// import Category from 'discourse/models/category';
-// и далее с 179 строки:  listCategories() {
 
 const flatten = array => [].concat.apply([], array);
 
 export default createWidget('sidebar-cat', {
   tagName: 'div.cat-panel',
+
+  lookupCount(type) {
+    const tts = this.register.lookup("topic-tracking-state:main");
+    return tts ? tts.lookupCount(type) : 0;
+  },
+
+  showUserDirectory() {
+    if (!this.siteSettings.enable_user_directory) return false;
+    if (this.siteSettings.hide_user_profiles_from_public && !this.currentUser)
+      return false;
+    return true;
+  },
+
+  generalLinks() {
+    const { siteSettings } = this;
+    const links = [];
+
+
+    links.push({
+      route: "discovery.latest",
+      className: "latest-topics-link",
+      label: "filters.latest.title",
+      title: "filters.latest.help",
+      icon: "newspaper-o"
+    });
+
+    if (this.currentUser) {
+      links.push({
+        route: "discovery.new",
+        className: "new-topics-link",
+        labelCount: "filters.new.title_with_count",
+        label: "filters.new.title",
+        title: "filters.new.help",
+        count: this.lookupCount("new"),
+      icon: "braille"
+      });
+
+      links.push({
+        route: "discovery.unread",
+        className: "unread-topics-link",
+        labelCount: "filters.unread.title_with_count",
+        label: "filters.unread.title",
+        title: "filters.unread.help",
+        count: this.lookupCount("unread"),
+      icon: "object-ungroup"
+      });
+    }
+
+    links.push({
+      route: "discovery.top",
+      className: "top-topics-link",
+      label: "filters.top.title",
+      title: "filters.top.help",
+      icon: "free-code-camp"
+      
+    });
+
+ 
+
+    const extraLinks = flatten(
+      applyDecorators(this, "generalLinks", this.attrs, this.state)
+    );
+    return links.concat(extraLinks).map(l => this.attach("link", l));
+},
+ 
+  panelContents() {
+    const { currentUser } = this;
+    const results = [];
+
+  
+    results.push(
+      this.attach("cat-panel", {
+        name: "general-links",
+        contents: () => this.generalLinks()
+      })
+    );
+
+
+results.push(this.listCategories());
+
+    return results;
+  },
+ 
 
   listCategories() {
     const hideUncategorized = !this.siteSettings.allow_uncategorized_topics;
@@ -28,14 +107,7 @@ export default createWidget('sidebar-cat', {
   },
 
 
-  panelContents() {
-    const { currentUser } = this;
-    const results = [];
 
-    results.push(this.listCategories());
-    
-    return results;
-  },
 
 
   html() {
