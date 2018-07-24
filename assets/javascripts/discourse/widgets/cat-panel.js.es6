@@ -1,16 +1,29 @@
 import { createWidget } from 'discourse/widgets/widget';
 import { h } from 'virtual-dom';
 
+
 createWidget('cat-panel', {
   tagName: 'div.cat-panel',
 
-  buildAttributes(attrs) {
-    if (attrs.maxWidth) {
-      return { 'data-max-width': attrs.maxWidth };
-    }
-  },
 
   html(attrs) {
-    return h('div.panel-body', h('div.panel-body-contents.clearfix', attrs.contents()));
+  
+    const links = [].concat(attrs.contents());
+    const liOpts = {};
+
+    if (attrs.heading) {
+      liOpts.className = "header";
+    }
+
+    const result = [];
+        
+     
+    result.push(
+      h("div.menu-link", links.map(l => h("div", liOpts, l)))
+    );
+  
+  
+    return h('div.menu-body', h('div.my-menu', attrs.contents()));
+
   }
 });
