@@ -253,11 +253,10 @@ html:not(.anon) {#main-outlet {padding-top: 75px;}}
 .sidebar {    
 .vid {color: #919191;}
 .badge-wrapper.bullet .badge-category-parent-bg, .category-other2 {display: none;}
-a.badge-notification{float: right;}
 .badge-wrapper.bullet .badge-category-bg {margin-right: 10px;}
 a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
 .badge-wrapper.bullet .badge-category-bg:hover {opacity: 1;}
-.badge-notification {color: #f56400 !important;margin-top: 2px;margin-right: 3px;font-size: 13px;background-color: #fff;}
+.badge-notification {color: #f56400 !important;font-size: 13px;background-color: #fff;}
 .badge-wrapper.bullet {padding: 4px 0 4px 0;}
 .badge-wrapper.bullet:hover, .badge-wrapper.bullet span.badge-category:hover, a.cvet:hover {color: #f56400;}
 .cat-link .topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 2px;margin-right: 6px;}
