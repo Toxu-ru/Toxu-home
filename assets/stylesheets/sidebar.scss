@@ -252,7 +252,7 @@ html:not(.anon) {#main-outlet {padding-top: 75px;}}
 
 .sidebar {    
 .vid {color: #919191;}
-.badge-wrapper.bullet .badge-category-bg {width: 8px;height: 8px;}	
+.badge-wrapper.bullet .badge-category-bg {width: 6px;height: 6px;margin-bottom: 2px;}	
 .badge-wrapper.bullet .badge-category-parent-bg, .category-other2 {display: none;}
 .badge-wrapper.bullet .badge-category-bg {margin-right: 10px;}
 a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
@@ -268,7 +268,7 @@ a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
 .cat-ava {margin-bottom: 15px;height: 50px;}
 .cat-info {font-size: 13px;color: #666; margin-top: 15px;}
 .avahome {float: left;margin-right: 12px;margin-top: 3px;}
-.badge-wrapper {font-size: 1em;}
+.badge-wrapper {font-size: 14px;}
 #create-topic {background: #e7672e;color: #fff;margin-bottom: 10px;width: 99%;}
 #create-topic:hover {background: #f56400;color:#fff;}	
 .dis-info {color: #666;font-size: 13px;clear: both;display: block;}
