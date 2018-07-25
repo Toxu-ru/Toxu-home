@@ -15,12 +15,7 @@ createWidget('cat-category', {
  
     this.tagName += '.category-' + Discourse.Category.slugFor(c, '-');
 
- // const results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ];
- //   for (var t = 0; t < c.notification_level; t++) { 
- //     results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ];
- //   }   
-    
-if (c.notification_level !== 0) { results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ]; }
+    if (c.notification_level !== 0) { results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ]; }
     
     const unreadTotal = parseInt(c.get('unreadTopics'), 10) + parseInt(c.get('newTopics'), 10);
     if (unreadTotal) {
@@ -41,11 +36,9 @@ export default createWidget('cat-categories', {
   tagName: 'div.category-links.clearfix',
 
   html(attrs) {
-   const href = Discourse.getURL('/categories');
-   //  const result = [h('div.qa-cat', I18n.t('filters.categories.title') )]; icon: "free-code-camp" - widget-link
-   const result = [h('div.qa-cat',
-                      h('a.qa-link', { attributes: { href } }, I18n.t('filters.categories.title'))
-                   )];
+   // const href = Discourse.getURL('/categories');
+   // const result = [h('div.qa-cat', I18n.t('filters.categories.title') )]; icon: "free-code-camp" - widget-link
+   const result = [];
     
     const categories = attrs.categories;
     if (categories.length === 0) { return; }
