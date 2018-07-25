@@ -20,7 +20,8 @@ export default createWidget('sub-menu', {
  var my_bio;
  
  console.log(currentUser);
- console.log(args);	    
+ console.log(args.post);
+
 	    
  $.ajax({
   url: "/u/"+ username +".json", 
@@ -64,22 +65,22 @@ var t_d_centr = t_d.toFixed(); 	//в центр уркга
 var vt_c = t_d - t_daym;
 var cas = vt_c*24; //новых часов
 
-console.log(t_d); console.log('общее Дни');	  
-console.log(t_daym); console.log('округление в меньшую');
-console.log(vt_c); console.log('новое время отчет');
+//console.log(t_d); console.log('общее Дни');	  
+//console.log(t_daym); console.log('округление в меньшую');
+//console.log(vt_c); console.log('новое время отчет');
  
 var ugols = (vt_c/0.9999)*100; 
-console.log(ugols); console.log('угол');
+//console.log(ugols); console.log('угол');
 
 var ugol = ugols.toFixed();
-console.log(ugol); console.log('округление угла');
+//console.log(ugol); console.log('округление угла');
 	  
  
 var vtt_c = 24 - cas;	  
-console.log(vtt_c); console.log('24 - форумула =  сколько осталось');
+//console.log(vtt_c); console.log('24 - форумула =  сколько осталось');
 	  
 var oct = vtt_c.toFixed(); 
-console.log(oct); console.log('надпись сколько осталась округление');
+//console.log(oct); console.log('надпись сколько осталась округление');
 	  
 if (t_minut < 60) { 
 var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'мин.'; var t_ops = 'время до часа'; var verh = 'шкала 1 час';
