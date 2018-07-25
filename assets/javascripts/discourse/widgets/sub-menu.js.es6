@@ -19,7 +19,9 @@ export default createWidget('sub-menu', {
  
  var my_bio;
  
- 
+ console.log(currentUser);
+ console.log(args);	    
+	    
  $.ajax({
   url: "/u/"+ username +".json", 
   dataType: 'json',
