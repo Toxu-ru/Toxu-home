@@ -65,7 +65,14 @@ export default createWidget('sidebar-cat', {
       
     });
 
- 
+     links.push({
+      route: "discovery.categories",
+      className: "top-cat",
+      label: "filters.categories.title",
+      title: "filters.categories.title",
+      icon: "object-group "
+      
+    });
 
     const extraLinks = flatten(
       applyDecorators(this, "generalLinks", this.attrs, this.state)
