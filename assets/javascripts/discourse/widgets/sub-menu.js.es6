@@ -20,7 +20,7 @@ export default createWidget('sub-menu', {
  var my_bio;
  
  console.log(currentUser);
- console.log(args.post);
+ console.log(args);
 
 	    
  $.ajax({
