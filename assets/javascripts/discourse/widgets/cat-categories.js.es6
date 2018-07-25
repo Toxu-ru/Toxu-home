@@ -42,7 +42,7 @@ export default createWidget('cat-categories', {
 
   html(attrs) {
    const href = Discourse.getURL('/categories');
-   //  const result = [h('div.qa-cat', I18n.t('filters.categories.title') )];
+   //  const result = [h('div.qa-cat', I18n.t('filters.categories.title') )]; icon: "free-code-camp" - widget-link
    const result = [h('div.qa-cat',
                       h('a.qa-link', { attributes: { href } }, I18n.t('filters.categories.title'))
                    )];
