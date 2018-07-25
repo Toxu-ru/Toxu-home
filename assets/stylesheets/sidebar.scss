@@ -368,7 +368,7 @@ display: inline-block;
 }
 
 html:not(.mobile-view) { .discourse-tag.bullet {
-    font-size: 13px;    font-weight: normal;    display: inline-block;
+    font-size: 13px;    display: inline-block;
     background: rgba(82,186,213,0.1);    text-decoration: none; 
     white-space: nowrap;    overflow: visible;    margin-right: 2px;
     padding: .2em .8em;    line-height: 1.2;    border-radius: 3px;    border-image: initial;}
