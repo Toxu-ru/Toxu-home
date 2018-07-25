@@ -118,7 +118,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">посетитель.</a></div>
+<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">посетитель.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
@@ -162,7 +162,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">пользователь.</a></div>
+<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">пользователь.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
@@ -207,7 +207,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">участник.</a></div>
+<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">участник.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
@@ -254,7 +254,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">постоялец.</a></div>
+<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">постоялец.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
@@ -300,7 +300,7 @@ ${my_bio}
 
 
 
-<div class="mn"> Мой уровень доверия - <a class="cvet" href="https://toxu.ru/stats">лидер.</a></div>
+<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">лидер.</a></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
