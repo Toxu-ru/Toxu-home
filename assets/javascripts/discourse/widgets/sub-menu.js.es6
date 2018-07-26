@@ -136,8 +136,8 @@ ${my_bio}
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
  
  
-<a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
 </div>`}));
 
@@ -183,8 +183,8 @@ ${my_bio}
  
 <div class="mn"><a title="" href="https://toxu.ru/stats"><font color="red">П</font>очитать</a> о новых возможностях, и получить грамоту.</div>
 
-<a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 
 <div class="img-my-menu"></div>
 </div>`}));
@@ -230,8 +230,8 @@ ${my_bio}
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
  
  
-<a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 
 <div class="img-my-menu"></div>
 
@@ -278,8 +278,8 @@ ${my_bio}
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
  
  
-<a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
 </div>`}));
 
@@ -324,9 +324,8 @@ ${my_bio}
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Раздел <a href="https://toxu.ru/c/dev">dev</a> - для разработки...</div>
  
- 
-<a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
 
 </div>`}));
