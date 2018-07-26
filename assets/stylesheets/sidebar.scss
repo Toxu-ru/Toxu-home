@@ -247,7 +247,8 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 #login-buttons .btn  {text-align: left !important;}
 
 /*боковые категории*/
-.anon .sidebar-add-qa {display: none;}
+.anon .sidebar-add-qa, .fon .sidebar-add-qa  {display: none;}
+.fon.test .sidebar-add-qa  {display: inline-block;}
 
 .sidebar {    
 .vid {color: #919191;}
