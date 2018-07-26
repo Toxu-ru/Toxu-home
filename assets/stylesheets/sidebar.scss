@@ -238,7 +238,7 @@ button.btn-primary:hover, button.login-button:hover, button.btn.btn-primary i.fa
 button.btn-danger {background: #f2350f !important;color: #fff !important;}
 button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !important;color: #fff !important;}
 
-#create-topic {background: transparent !important;color: #f56400 !important;font-size: 1.2487em;margin-top: -3px;}
+#create-topic {background: transparent !important;color: #f56400 !important;font-size: 1.2487em;}
 #create-topic:hover, #create-topic:active {color: #fff !important;background-color: #f56400 !important;}
 .add.create-topic{margin-bottom: 13px;display: block;font-weight: 500;margin-top: 12px;font-size: 15px;}
 .d-icon.d-icon-d-tracking,.d-icon.d-icon-d-watching{color:#08c !important;}
@@ -247,7 +247,6 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 #login-buttons .btn  {text-align: left !important;}
 
 /*боковые категории*/
-html:not(.anon) {#main-outlet {padding-top: 75px;}}
 .anon .sidebar { margin-top: 10px;
 #create-topic {width: 90%;}
 }
