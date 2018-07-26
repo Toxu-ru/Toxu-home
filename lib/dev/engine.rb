@@ -108,13 +108,13 @@ module DiscourseDonate
   end
 end
 
-module DiscourseRules
+module DiscoursePravila
   class Engine < ::Rails::Engine
-    isolate_namespace DiscourseRules
+    isolate_namespace DiscoursePravila
 
     config.after_initialize do
 		Discourse::Application.routes.append do
-			mount ::DiscourseRules::Engine, at: "/"
+			mount ::DiscoursePravila::Engine, at: "/"
 		end
     end
   end
