@@ -138,7 +138,7 @@ ${my_bio}
  
 <center><a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a></center>
-
+<div class="img-my-menu"></div>
 </div>`}));
 
 }
@@ -183,6 +183,10 @@ ${my_bio}
  
 <div class="mn"><a title="" href="https://toxu.ru/stats"><font color="red">П</font>очитать</a> о новых возможностях, и получить грамоту.</div>
 
+<center><a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
+<a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a></center>
+
+<div class="img-my-menu"></div>
 </div>`}));
 
 }
@@ -229,7 +233,7 @@ ${my_bio}
 <center><a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a></center>
 
-
+<div class="img-my-menu"></div>
 
 </div>`}));
 
@@ -276,7 +280,7 @@ ${my_bio}
  
 <center><a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a></center>
-
+<div class="img-my-menu"></div>
 </div>`}));
 
 }
@@ -323,7 +327,7 @@ ${my_bio}
  
 <center><a href="/tags" class="tag-факты discourse-tag bullet">все теги</a> 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a></center>
-
+<div class="img-my-menu"></div>
 
 </div>`}));
 }   
