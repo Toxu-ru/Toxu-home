@@ -103,9 +103,8 @@ results.push(this.listCategories());
   // const hideUncategorized = !this.siteSettings.allow_uncategorized_topics;
   // const isStaff = Discourse.User.currentProp('staff');
 
-  const maxCategoriesToDisplay = 10;
-  const categoriesList = this.site
-  .get("categoriesByCount")
+  const maxCategoriesToDisplay = 6;
+  const categoriesList = this.site.get("categoriesByCount")
    let categories = [];
    let showMore = categoriesList.length > maxCategoriesToDisplay;
 
