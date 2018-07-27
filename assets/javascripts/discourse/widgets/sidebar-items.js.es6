@@ -6,8 +6,8 @@ export default createWidget('sidebar-items', {
   buildKey: () => 'sidebar-items',
 
   html(attrs, state) {
-  	//if (!this.siteSettings.sidebar_enable || this.site.mobileView)
-  	//return;
+  	if (!this.siteSettings.sidebar_enable || this.site.mobileView)
+  	return;
 	  
     const result = [];
     var self = this;
