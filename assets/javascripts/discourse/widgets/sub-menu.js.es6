@@ -327,7 +327,7 @@ ${my_bio}
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
-
+А вот тут ссылка на профиль. Кстати в самом профиле должна быть ссылка - поделиться.
 </div>`}));
 }   
 
