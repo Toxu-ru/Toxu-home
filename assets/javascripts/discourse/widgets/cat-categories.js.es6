@@ -35,13 +35,41 @@ createWidget('cat-category', {
 export default createWidget('cat-categories', {
   tagName: 'div.category-links.clearfix',
 
-  html(attrs) {
-   // const href = Discourse.getURL('/categories');
-   // const result = [h('div.qa-cat', I18n.t('filters.categories.title') )]; icon: "free-code-camp" - widget-link
-   const result = [];
-    
+   html(attrs) {
+   const href = Discourse.getURL("/categories");
+   let  result = [];
+  //    h(
+  //      "li.heading",
+  //      h(
+  //        "a.d-link.categories-link",
+  //        { attributes: { href } },
+  //        I18n.t("filters.categories.title")
+  //      )
+  //    )
+     
+
     const categories = attrs.categories;
-    if (categories.length === 0) { return; }
-    return result.concat(categories.map(c => this.attach('cat-category', c)));
+    if (categories.length === 0) {
+      return;
+    }
+    result = result.concat(
+      categories.map(c => this.attach("cat-category", c))
+    );
+
+    if (attrs.showMore) {
+      result = result.concat(
+        h(
+          "div.footer",
+          h(
+            "a.d-link.more-link",
+            { attributes: { href } },
+            //I18n.t("categories.more")
+            "Посмотреть всё..."
+          )
+        )
+      );
+    }
+
+    return result;
   }
 });
