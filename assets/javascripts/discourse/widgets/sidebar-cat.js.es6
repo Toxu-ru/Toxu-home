@@ -104,7 +104,7 @@ results.push(this.listCategories());
   // const isStaff = Discourse.User.currentProp('staff');
 
   const maxCategoriesToDisplay = 6;
-  const categoriesList = this.site.get("categoriesByCount")
+  const categoriesList = this.site.get("categoriesByCount");
    let categories = [];
    let showMore = categoriesList.length > maxCategoriesToDisplay;
 
