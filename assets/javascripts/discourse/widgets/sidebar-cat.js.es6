@@ -105,20 +105,10 @@ results.push(this.listCategories());
     let categories = [];
     let showMore = categoriesList.length > maxCategoriesToDisplay;
 
-    if (this.currentUser) {
-      let categoryIds = this.currentUser.get("top_category_ids") || [];
-      categoryIds = categoryIds.concat(categoriesList.map(c => c.id)).uniq();
-
-      showMore = categoryIds.length > maxCategoriesToDisplay;
-      categoryIds = categoryIds.slice(0, maxCategoriesToDisplay);
-
-      categories = categoryIds.map(id => {
-        return categoriesList.find(c => c.id === id);
-      });
-    } else {
+ 
       showMore = categoriesList.length > maxCategoriesToDisplay;
       categories = categoriesList.slice(0, maxCategoriesToDisplay);
-    }
+
 
 
 
