@@ -100,18 +100,44 @@ results.push(this.listCategories());
  
 
   listCategories() {
-    const hideUncategorized = !this.siteSettings.allow_uncategorized_topics;
-    const isStaff = Discourse.User.currentProp('staff');
+  // const hideUncategorized = !this.siteSettings.allow_uncategorized_topics;
+  // const isStaff = Discourse.User.currentProp('staff');
 
-    const categories = Discourse.Category.list().reject((c) => {
-      if (c.get('parentCategory.show_subcategory_list')) { return true; }
-      if (hideUncategorized && c.get('isUncategorizedCategory') && !isStaff) { return true; }
-      return false;
-    });
+  const maxCategoriesToDisplay = 6;
+  const categoriesList = this.site
+  .get("categoriesByCount")
+   let categories = [];
+   let showMore = categoriesList.length > maxCategoriesToDisplay;
 
-    return this.attach('cat-categories', { categories });
 
-  },
+
+ // const categories = Discourse.Category.list().reject((c) => {
+ //     if (c.get('parentCategory.show_subcategory_list')) { return true; }
+ //     if (hideUncategorized && c.get('isUncategorizedCategory') && !isStaff) { return true; }
+ //     return false;
+ //  });
+
+
+ if (this.currentUser) {
+      let categoryIds = this.currentUser.get("top_category_ids") || [];
+      categoryIds = categoryIds.concat(categoriesList.map(c => c.id)).uniq();
+
+      showMore = categoryIds.length > maxCategoriesToDisplay;
+      categoryIds = categoryIds.slice(0, maxCategoriesToDisplay);
+
+      categories = categoryIds.map(id => {
+        return categoriesList.find(c => c.id === id);
+      });
+    } else {
+      showMore = categoriesList.length > maxCategoriesToDisplay;
+      categories = categoriesList.slice(0, maxCategoriesToDisplay);
+    }
+
+
+
+    return this.attach('cat-categories', { categories, showMore });
+
+    },
 
 
 
