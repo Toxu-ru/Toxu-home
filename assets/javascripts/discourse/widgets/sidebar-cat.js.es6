@@ -106,7 +106,7 @@ results.push(this.listCategories());
   const maxCategoriesToDisplayT = 6;
   const categoriesListT = this.site.get("categoriesByCount");
    let categories = [];
-   let showMore = categoriesListT.length > maxCategoriesToDisplayT;
+   let showMoreT = categoriesListT.length > maxCategoriesToDisplayT;
 
 
 
@@ -118,28 +118,29 @@ results.push(this.listCategories());
 
 
  if (this.currentUser) {
-   //   let categoryIds = this.currentUser.get("top_category_ids") || [];
-   //   categoryIds = categoryIds.concat(categoriesList.map(c => c.id)).uniq();
+    const maxCategoriesToDisplayT = 6;
+    const categoriesListT = this.site.get("categoriesByCount");
+    let categories = [];
+    let showMoreT = categoriesListT.length > maxCategoriesToDisplayT;
 
-   //   showMore = categoryIds.length > maxCategoriesToDisplay;
-   //   categoryIds = categoryIds.slice(0, maxCategoriesToDisplay);
+    if (this.currentUser) {
+      let categoryIds = this.currentUser.get("top_category_ids") || [];
+      categoryIds = categoryIds.concat(categoriesListT.map(c => c.id)).uniq();
 
-   //   categories = categoryIds.map(id => {
-   //     return categoriesList.find(c => c.id === id);
-    //  });
-   
-     showMore = categoriesListT.length > maxCategoriesToDisplayT;
-     categories = categoriesListT.slice(0, maxCategoriesToDisplayT);
-   
-   
+      showMore = categoryIds.length > maxCategoriesToDisplayT;
+      categoryIds = categoryIds.slice(0, maxCategoriesToDisplayT);
+
+      categories = categoryIds.map(id => {
+        return categoriesListT.find(c => c.id === id);
+      });
     } else {
-      showMore = categoriesListT.length > maxCategoriesToDisplayT;
+      showMoreT = categoriesListT.length > maxCategoriesToDisplayT;
       categories = categoriesListT.slice(0, maxCategoriesToDisplayT);
     }
 
 
 
-    return this.attach('cat-categories', { categories, showMore });
+    return this.attach('cat-categories', { categories, showMoreT });
 
     },
 
