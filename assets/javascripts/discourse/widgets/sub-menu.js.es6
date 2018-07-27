@@ -118,16 +118,16 @@ ${my_bio}
 
 
 
-<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">посетитель.</a></div>
+<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/level">посетитель.</a></div>
 
 Уровень доверия (из 4)<br>
-<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
 
 <br>Количество наград (из 50)<br>
-<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
 <br>
 
-<div class="mn"> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
+<div class="mn"> Посмотреть <a class="cvet" href="/u/${username}/badges">мои награды.</a></div>
 
 
 
@@ -163,13 +163,13 @@ ${my_bio}
 
 
 
-<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">пользователь.</a></div>
+<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/level">пользователь.</a></div>
 
 Уровень доверия (из 4)<br>
-<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
 
 <br>Количество наград (из 50)<br>
-<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
 <br>
 
 <div class="mn"> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
@@ -212,13 +212,13 @@ ${my_bio}
 
 
 
-<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">участник.</a></div>
+<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/level">участник.</a></div>
 
 Уровень доверия (из 4)<br>
-<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
 
 <br>Количество наград (из 50)<br>
-<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
 <br>
 
 <div class="mn"> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
@@ -260,13 +260,13 @@ ${my_bio}
 
 
 
-<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">постоялец.</a></div>
+<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/level">постоялец.</a></div>
 
 Уровень доверия (из 4)<br>
-<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
 
 <br>Количество наград (из 50)<br>
-<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
 <br>
 
 <div class="mn"> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
@@ -307,15 +307,15 @@ ${my_bio}
 
 
 
-<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/stats">лидер.</a></div>
+<div class="mn"><center><span class="pr-view">постоялец</span></center></div>
 
 Уровень доверия (из 4)<br>
-<div class="all-bar"><a title="Уровень доверия" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
+<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
 
 <br>Количество наград (из 50)<br>
-<div class="all-bar"><a title="Награды" href="/qa/${username}"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
 <br>
-
+ 
 <div class="mn"> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
 
 
