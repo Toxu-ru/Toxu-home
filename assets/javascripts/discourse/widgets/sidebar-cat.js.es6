@@ -100,42 +100,24 @@ results.push(this.listCategories());
  
 
   listCategories() {
-  // const hideUncategorized = !this.siteSettings.allow_uncategorized_topics;
-  // const isStaff = Discourse.User.currentProp('staff');
-
-  const maxCategoriesToDisplayT = 6;
-  const categoriesListT = this.site.get("categoriesByCount");
-   let categories = [];
-   let showMoreT = categoriesListT.length > maxCategoriesToDisplayT;
-
-
-
- // const categories = Discourse.Category.list().reject((c) => {
- //     if (c.get('parentCategory.show_subcategory_list')) { return true; }
- //     if (hideUncategorized && c.get('isUncategorizedCategory') && !isStaff) { return true; }
- //     return false;
- //  });
-
-
- if (this.currentUser) {
-    const maxCategoriesToDisplayT = 6;
-    const categoriesListT = this.site.get("categoriesByCount");
+    const maxCategoriesToDisplay = 6;
+    const categoriesList = this.site.get("categoriesByCount");
     let categories = [];
-    let showMoreT = categoriesListT.length > maxCategoriesToDisplayT;
+    let showMore = categoriesList.length > maxCategoriesToDisplay;
 
     if (this.currentUser) {
       let categoryIds = this.currentUser.get("top_category_ids") || [];
-      categoryIds = categoryIds.concat(categoriesListT.map(c => c.id)).uniq();
+      categoryIds = categoryIds.concat(categoriesList.map(c => c.id)).uniq();
 
-      showMore = categoryIds.length > maxCategoriesToDisplayT;
-      categoryIds = categoryIds.slice(0, maxCategoriesToDisplayT);
+      showMore = categoryIds.length > maxCategoriesToDisplay;
+      categoryIds = categoryIds.slice(0, maxCategoriesToDisplay);
 
       categories = categoryIds.map(id => {
-        return categoriesListT.find(c => c.id === id);
+        return categoriesList.find(c => c.id === id);
       });
     } else {
-      showMoreT = categoriesListT.length > maxCategoriesToDisplayT;
-      categories = categoriesListT.slice(0, maxCategoriesToDisplayT);
+      showMore = categoriesList.length > maxCategoriesToDisplay;
+      categories = categoriesList.slice(0, maxCategoriesToDisplay);
     }
 
 
