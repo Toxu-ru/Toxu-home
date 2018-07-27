@@ -100,7 +100,7 @@ results.push(this.listCategories());
  
 
   listCategories() {
-    const maxCategoriesToDisplay = 6;
+    const maxCategoriesToDisplay = 10;
     const categoriesList = this.site.get("categoriesByCount");
     let categories = [];
     let showMore = categoriesList.length > maxCategoriesToDisplay;
