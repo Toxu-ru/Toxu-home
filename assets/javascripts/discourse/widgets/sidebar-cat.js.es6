@@ -112,7 +112,7 @@ results.push(this.listCategories());
 
 
 
-    return this.attach('cat-categories', { categories, showMoreT });
+    return this.attach('cat-categories', { categories, showMore });
 
     },
 
