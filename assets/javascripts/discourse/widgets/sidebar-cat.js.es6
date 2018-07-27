@@ -103,10 +103,10 @@ results.push(this.listCategories());
   // const hideUncategorized = !this.siteSettings.allow_uncategorized_topics;
   // const isStaff = Discourse.User.currentProp('staff');
 
-  const maxCategoriesToDisplay = 6;
-  const categoriesList = this.site.get("categoriesByCount");
+  const maxCategoriesToDisplayT = 6;
+  const categoriesListT = this.site.get("categoriesByCount");
    let categories = [];
-   let showMore = categoriesList.length > maxCategoriesToDisplay;
+   let showMore = categoriesListT.length > maxCategoriesToDisplayT;
 
 
 
@@ -128,13 +128,13 @@ results.push(this.listCategories());
    //     return categoriesList.find(c => c.id === id);
     //  });
    
-     showMore = categoriesList.length > maxCategoriesToDisplay;
-     categories = categoriesList.slice(0, maxCategoriesToDisplay);
+     showMore = categoriesListT.length > maxCategoriesToDisplayT;
+     categories = categoriesListT.slice(0, maxCategoriesToDisplayT);
    
    
     } else {
-      showMore = categoriesList.length > maxCategoriesToDisplay;
-      categories = categoriesList.slice(0, maxCategoriesToDisplay);
+      showMore = categoriesListT.length > maxCategoriesToDisplayT;
+      categories = categoriesListT.slice(0, maxCategoriesToDisplayT);
     }
 
 
