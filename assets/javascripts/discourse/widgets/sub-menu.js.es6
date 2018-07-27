@@ -307,7 +307,7 @@ ${my_bio}
 
 
 
-<div class="mn"><center><span class="pr-view">постоялец</span></center></div>
+<div class="mn"><center><span class="pr-view">лидер</span></center></div>
 
 Уровень доверия (из 4)<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
