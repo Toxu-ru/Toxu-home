@@ -305,14 +305,10 @@ ${my_bio}
    </div>
 </div> ${t_ops} </center><br>
 
-
-
-<div class="mn"><center><span class="pr-view">лидер</span></center></div>
-
-Уровень доверия (из 4)<br>
+Лидер: 4 из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
 
-<br>Количество наград (из 50)<br>
+<br>Количество наград: ${badge_count} из 50<br>
 <div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
 <br>
  
@@ -324,10 +320,14 @@ ${my_bio}
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Раздел <a href="https://toxu.ru/c/dev">dev</a> - для разработки...</div>
  
+
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>...</div>
+ 
+
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
-А вот тут ссылка на профиль. Кстати в самом профиле должна быть ссылка - поделиться.
+
 </div>`}));
 }   
 
