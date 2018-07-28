@@ -69,7 +69,7 @@ export default createWidget('cat-categories', {
             "a.d-link.more-link",
             { attributes: { href } },
             //I18n.t("categories.more")
-            "Посмотреть всё..."
+            "Посмотреть все..."
           )
         )
       );
