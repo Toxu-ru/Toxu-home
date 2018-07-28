@@ -145,9 +145,9 @@ contents.push( new RawHtml({ html: `<div class="bd"> <center>
 	</center></div>`}));
 	} 
 
-//contents.push( new RawHtml({ html: `<div class="bd"><br><br>
-//<a href="https://vk.com/share.php?url=https://toxu.ru/qa/${username}&title=${username}%20%D0%BD%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B5%20Toxu%20-%20%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD%20%D0%B7%D0%BD%D0%B0%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8%20%D0%B8%20%D0%BE%D0%BF%D1%8B%D1%82%D0%BE%D0%BC&image=https://toxu.ru${avasm}"><i class="fa fa-vk" aria-hidden="true"></i></a>
-//</div>`}));	
+contents.push( new RawHtml({ html: `<div class="excerpt">
+https://toxu.ru/qa/${username}
+</div>`}));	
 
 } else { contents.push( new RawHtml({ html: `<div><br><br><center><h1 class="prof">Такого пользователя не существует</h1><br> <a href="https://toxu.ru">Перейди на центральную страницу сайта</a><center></div>`})); }		
 	
