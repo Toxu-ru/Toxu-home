@@ -106,7 +106,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
+<div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
 <center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -187,7 +187,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
+<div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
 <center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -228,7 +228,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
+<div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
 <center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -268,7 +268,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
+<div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
 <center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
