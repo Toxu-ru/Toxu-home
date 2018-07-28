@@ -116,26 +116,21 @@ ${my_bio}
    </div>
 </div>${t_ops} </center><br>
 
+Посетитель: <span class="numer">4</span> из 4<br>
+<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
-
-<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/level">посетитель.</a></div>
-
-Уровень доверия (из 4)<br>
-<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
-
-<br>Количество наград (из 50)<br>
-<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
+<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
 
 <div class="mn"> Посмотреть <a class="cvet" href="/u/${username}/badges">мои награды.</a></div>
 
-
-
-<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
+<div class="mn">Мой профиль смотрели: <span class="numer">${profile_view_count}</span> раз</div>
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
  
- 
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
+  
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
@@ -161,28 +156,20 @@ ${my_bio}
    </div>
 </div>${t_ops} </center><br>
 
+Пользователь: <span class="numer">4</span> из 4<br>
+<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
-
-<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/level">пользователь.</a></div>
-
-Уровень доверия (из 4)<br>
-<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
-
-<br>Количество наград (из 50)<br>
-<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
+<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
 
-<div class="mn"> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
 
-
-
-<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
- 
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
- 
- 
+
 <div class="mn"><a title="" href="https://toxu.ru/stats"><font color="red">П</font>очитать</a> о новых возможностях, и получить грамоту.</div>
 
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
+ 
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 
@@ -210,26 +197,19 @@ ${my_bio}
    </div>
 </div>${t_ops} </center><br>
 
+Участник: <span class="numer">4</span> из 4<br>
+<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
-
-<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/level">участник.</a></div>
-
-Уровень доверия (из 4)<br>
-<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
-
-<br>Количество наград (из 50)<br>
-<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
+<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
 
-<div class="mn"> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
-
-
-
-<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
+<div class="mn">Мой профиль смотрели: <span class="numer">${profile_view_count}</span> раз</div>
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
- 
- 
+
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
+  
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 
@@ -258,26 +238,19 @@ ${my_bio}
    </div>
 </div>${t_ops} </center><br>
 
+Постоялец: <span class="numer">3</span> из 4<br>
+<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
-
-<div class="mn"> Уровень доверия - <a class="cvet" href="https://toxu.ru/level">постоялец.</a></div>
-
-Уровень доверия (из 4)<br>
-<div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div> <div class="n-bar">${trust_level}</div></a></div>
-
-<br>Количество наград (из 50)<br>
-<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div> <div class="n-bar">${badge_count}</div></a></div>
+<br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
+<div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
 
-<div class="mn"> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
-
-
-
-<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
+<div class="mn">Мой профиль смотрели: <span class="numer">${profile_view_count}</span> раз</div>
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
  
- 
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
+  
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
@@ -312,18 +285,12 @@ ${my_bio}
 <div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
  
-<div class="mn"> Посмотреть <a class="cvet" href="https://toxu.ru/u/${username}/badges">мои награды.</a></div>
-
-
-
-<div class="mn">Мой профиль смотрели: <span class="pr-view">${profile_view_count}</span> раз</div>
+<div class="mn">Мой профиль смотрели: <span class="numer">${profile_view_count}</span> раз</div>
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Раздел <a href="https://toxu.ru/c/dev">dev</a> - для разработки...</div>
  
-
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
  
-
 <a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
