@@ -145,9 +145,7 @@ contents.push( new RawHtml({ html: `<div class="bd"> <center>
 	</center></div>`}));
 	} 
 
-contents.push( new RawHtml({ html: `<div class="excerpt">
-https://toxu.ru/qa/${username}
-</div>`}));	
+contents.push( new RawHtml({ html: `<div><span class="excerpt">https://toxu.ru/qa/${username}</span></div>`}));	
 
 } else { contents.push( new RawHtml({ html: `<div><br><br><center><h1 class="prof">Такого пользователя не существует</h1><br> <a href="https://toxu.ru">Перейди на центральную страницу сайта</a><center></div>`})); }		
 	
