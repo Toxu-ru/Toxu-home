@@ -9,7 +9,7 @@ html {font-family: Roboto,Helvetica,Arial,sans-serif; font-weight: 300;}
 }
 
 tr {    border-bottom: 1px solid #e7edf3;}
-
+.d-header #site-logo {    max-width: 8.2857em;}
 .search-ins{
     margin-bottom: 30px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
@@ -574,7 +574,7 @@ blockquote, aside.quote .title {border-left: 2px solid #ffeb8e;}
 
 .title .search-header {
   width: 450px;
-  margin-left: 155px;
+  margin-left: 165px;
   margin-top: 4px;
   position: relative;
   white-space: nowrap;
