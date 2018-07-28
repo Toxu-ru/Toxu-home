@@ -51,9 +51,9 @@ html:not(.mobile-view) {
 h1, h2, h3, h4, h5, h6 {font-weight: 400;}
 a:hover {color: #f56400;}
 
-.sidebar-m { font-size: 0.96em;
-.pgbar {width: 85%;}
-.n-bar {max-width: 20px;margin-right: 3px;width: 19%;display: block;float: right;color: #F7941D;margin-top: -17px;font-size: 15px;}
+.sidebar-m { font-size: 0.97em;
+.pgbar {width: 95%;margin-top: 2px;}
+/*.n-bar {max-width: 20px;margin-right: 3px;width: 19%;display: block;float: right;color: #F7941D;margin-top: -17px;font-size: 15px;}*/
 .pr-view {color: #F7941D;font-size: 16px;}
 .mn i.fa {color: #ffb74d;}
 display: block;
@@ -68,6 +68,8 @@ a.link:hover{color: #f56400;}
 .title {color: #667d99;margin-bottom: 12px;font-size: 1.12em;} 
 .mn {margin-bottom: 14px; }
 .mn i.fa {color: #F7941D;}
+.numer{ color: #F7941D;font-weight: 400;}
+	
 }
 
 .sidebar-qa {padding-top: 10px;font-size:13px;color: #666;
