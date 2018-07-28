@@ -131,7 +131,7 @@ ${my_bio}
  
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
   
-<a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
 </div>`}));
@@ -146,7 +146,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn"> <i class="fa fa-clock-o" aria-hidden="true"></i> <i>Общее время чтения</i> - важный показатель на сайте.</div>
+<div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
 <center>${verh}<div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -170,7 +170,7 @@ ${my_bio}
 
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
  
-<a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 
 <div class="img-my-menu"></div>
@@ -210,7 +210,7 @@ ${my_bio}
 
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
   
-<a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 
 <div class="img-my-menu"></div>
@@ -251,7 +251,7 @@ ${my_bio}
  
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
   
-<a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
 </div>`}));
@@ -291,7 +291,7 @@ ${my_bio}
  
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
  
-<a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
 
