@@ -42,16 +42,9 @@ export default createWidget('cat-categories', {
 
    html(attrs) {
    const href = Discourse.getURL("/categories");
-   let  result = [];
-  //    h(
-  //      "li.heading",
-  //      h(
-  //        "a.d-link.categories-link",
-  //        { attributes: { href } },
-  //        I18n.t("filters.categories.title")
-  //      )
-  //    )
+   const hrefmy = Discourse.getURL("/my/preferences/categories");  
      
+   let  result = [];
 
     const categories = attrs.categories;
     if (categories.length === 0) {
@@ -62,6 +55,9 @@ export default createWidget('cat-categories', {
     );
 
     if (attrs.showMore) {
+      
+    if (!this.currentUser) {  
+      
       result = result.concat(
         h(
           "div.footer",
@@ -73,6 +69,23 @@ export default createWidget('cat-categories', {
           )
         )
       );
+      
+    } else { 
+      
+       result = result.concat(
+        h(
+          "div.footer",
+          h(
+            "a.d-link.more-link",
+            { attributes: { hrefmy } },
+            //I18n.t("categories.more")
+            "Редактировать разделы..."
+          )
+        )
+      );     
+      
+     } 
+      
     }
 
     return result;
