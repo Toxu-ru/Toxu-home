@@ -41,8 +41,8 @@ export default createWidget('cat-categories', {
   tagName: 'div.category-links.clearfix',
 
    html(attrs) {
-   const href = Discourse.getURL("/categories");
-   const hrefmy = Discourse.getURL("/my/preferences/categories");  
+  // const href = Discourse.getURL("/categories");
+//   const hrefmy = Discourse.getURL("/my/preferences/categories");  
      
    let  result = [];
 
@@ -57,7 +57,7 @@ export default createWidget('cat-categories', {
     if (attrs.showMore) {
       
     if (!this.currentUser) {  
-      
+      var href = Discourse.getURL("/categories");
       result = result.concat(
         h(
           "div.footer",
@@ -72,14 +72,15 @@ export default createWidget('cat-categories', {
       
     } else { 
       
+      var href = Discourse.getURL("/my/preferences/categories");
+      
        result = result.concat(
         h(
           "div.footer",
           h(
             "a.d-link.more-link",
-            { attributes: { hrefmy } },
-            //I18n.t("categories.more")
-            "Редактировать разделы..."
+            { attributes: { href } },
+             "Редактировать разделы..."
           )
         )
       );     
