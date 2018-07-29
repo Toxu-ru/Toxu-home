@@ -76,11 +76,11 @@ export default createWidget('cat-categories', {
       
        result = result.concat(
         h(
-          "div.footer",
+          "div.kollonka",
           h(
             "a.d-link.more-link",
             { attributes: { href } },
-             "Редактировать разделы..."
+             "редактировать разделы"
           )
         )
       );     
