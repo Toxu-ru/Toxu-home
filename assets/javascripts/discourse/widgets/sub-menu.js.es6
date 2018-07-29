@@ -19,8 +19,8 @@ export default createWidget('sub-menu', {
  
  var my_bio;
  
- console.log(currentUser);
- console.log(args);
+ // console.log(stat);
+// console.log(args);
 
 	    
  $.ajax({
