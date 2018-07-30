@@ -6,9 +6,6 @@ createWidget('cat-category', {
   tagName: 'div.cat-link',
   
   html(c) {
-    
-  //  var results=''; 
-    
     if (c.parent_category_id) {
       this.tagName += '.subcategory';
     }
@@ -20,32 +17,49 @@ createWidget('cat-category', {
     ]; 
     
     
- //   if (c.notification_level !== 0) { results = [ this.attach('category-link', { category: c, allowUncategorized: true }) ]; }
-    
-    const unreadTotal = parseInt(c.get('unreadTopics'), 10) + parseInt(c.get('newTopics'), 10);
+     const unreadTotal =
+      parseInt(c.get("unreadTopics"), 10) + parseInt(c.get("newTopics"), 10);
     if (unreadTotal) {
-      results.push(h('a.badge.badge-notification', {
-        attributes: { href: c.get('url') }
-      }, number(unreadTotal)));
+      results.push(
+        h(
+          "a.badge.badge-notification",
+          {
+            attributes: { href: c.get("url") }
+          },
+          number(unreadTotal)
+        )
+      );
     }
 
     if (!this.currentUser) {
-      results.push(h('b.topics-count', number(c.get('topic_count'))));
+      let count;
+
+      if (c.get("show_subcategory_list")) {
+        count = c.get("totalTopicCount");
+      } else {
+        count = c.get("topic_count");
+      }
+
+      results.push(h("b.topics-count", number(count)));
     }
 
     return results;
-  }
+}
+ 
 });
 
 export default createWidget('cat-categories', {
   tagName: 'div.category-links.clearfix',
 
-   html(attrs) {
-  // const href = Discourse.getURL("/categories");
-//   const hrefmy = Discourse.getURL("/my/preferences/categories");  
-     
-   let  result = [];
+  html(attrs) {
+    let title = I18n.t("filters.categories.title");
+    if (attrs.moreCount > 0) {
+      title += I18n.t("categories.more", { count: attrs.moreCount });
+    }
 
+    let result = [  ];
+    
+ 
     const categories = attrs.categories;
     if (categories.length === 0) {
       return;
@@ -54,27 +68,27 @@ export default createWidget('cat-categories', {
       categories.map(c => this.attach("cat-category", c))
     );
 
-    if (attrs.showMore) {
-      
-    if (!this.currentUser) {  
+
+
+  if (!this.currentUser) {  
       var href = Discourse.getURL("/categories");
-      result = result.concat(
+    
+    result = result.concat(
         h(
-          "div.footer",
+          "div.kollonka",
           h(
             "a.d-link.more-link",
             { attributes: { href } },
-            //I18n.t("categories.more")
-            "Посмотреть все..."
+             "показать все..."
           )
         )
-      );
+     ); 
       
     } else { 
       
       var href = Discourse.getURL("/my/preferences/categories");
       
-       result = result.concat(
+      result = result.concat(
         h(
           "div.kollonka",
           h(
@@ -83,11 +97,10 @@ export default createWidget('cat-categories', {
              "редактировать разделы"
           )
         )
-      );     
+      ); 
       
-     } 
-      
-    }
+    } 
+
 
     return result;
   }
