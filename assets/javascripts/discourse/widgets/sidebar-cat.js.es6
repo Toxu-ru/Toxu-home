@@ -2,14 +2,15 @@ import { createWidget, applyDecorators } from 'discourse/widgets/widget';
 import { h } from 'virtual-dom';
 import DiscourseURL from 'discourse/lib/url';
 import { ajax } from 'discourse/lib/ajax';
-
+//import { userPath } from "discourse/lib/url";
 
 const flatten = array => [].concat.apply([], array);
 
 export default createWidget('sidebar-cat', {
   tagName: 'div.cat-panel',
 
-  lookupCount(type) {
+
+   lookupCount(type) {
     const tts = this.register.lookup("topic-tracking-state:main");
     return tts ? tts.lookupCount(type) : 0;
   },
@@ -100,30 +101,31 @@ results.push(this.listCategories());
  
 
   listCategories() {
-    const maxCategoriesToDisplay = 10;
+        const maxCategoriesToDisplay = this.siteSettings
+     .hamburger_menu_categories_count;
     const categoriesList = this.site.get("categoriesByCount");
-    let categories = [];
-    let showMore = categoriesList.length > maxCategoriesToDisplay;
+    let categories = categoriesList.slice();
 
     if (this.currentUser) {
       let categoryIds = this.currentUser.get("top_category_ids") || [];
-      categoryIds = categoryIds.concat(categoriesList.map(c => c.id)).uniq();
-
-      showMore = categoryIds.length > maxCategoriesToDisplay;
-      categoryIds = categoryIds.slice(0, maxCategoriesToDisplay);
-
-      categories = categoryIds.map(id => {
-        return categoriesList.find(c => c.id === id);
+      let i = 0;
+      const mutedCategoryIds = this.currentUser.get("muted_category_ids") || [];
+      categories = categories.filter(c => !mutedCategoryIds.includes(c.id));
+      categoryIds.forEach(id => {
+        const category = categories.find(c => c.id === id);
+        if (category) {
+          categories = categories.filter(c => c.id !== id);
+          categories.splice(i, 0, category);
+          i += 1;
+        }
       });
-      categories = categories.filter(c => c);
-    } else {
-      showMore = categoriesList.length > maxCategoriesToDisplay;
-      categories = categoriesList.slice(0, maxCategoriesToDisplay);
     }
-    return this.attach('cat-categories', { categories, showMore });
 
-    },
+    const moreCount = categories.length - maxCategoriesToDisplay;
+    categories = categories.slice(0, maxCategoriesToDisplay);
 
+    return this.attach("cat-categories", { categories, moreCount });
+},
 
 
 
