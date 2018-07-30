@@ -432,7 +432,7 @@ background: #f2f7fe; border-color: #DDE7F5;color: #555;font-size: 13px;padding: 
 body.navigation-categories {
     .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa {display: none !important;}
      #create-topic {display: block !important;}
-    .container.list-container  {width: 100% !important;}	
+    .container.list-container  {width: 100% !important;margin-left: 0px !important;}	
 }
 .colon.cat-cat{  float: left;width: 66%;}
 .colon.post{width: 27%;float: right;margin-left: 30px;}
