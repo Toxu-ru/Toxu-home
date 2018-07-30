@@ -429,11 +429,11 @@ background: #f2f7fe; border-color: #DDE7F5;color: #555;font-size: 13px;padding: 
 
 /*раздел категории*/
 .navigation-topics .category-breadcrumb, .category-heading, #header-list-area, .navigation-categories .sidebar-m  {display: none; }
-.navigation-categories {
+body.navigation-categories {
     .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa {display: none !important;}
      #create-topic {display: block !important;}
+    .container.list-container  {width: 100% !important;}	
 }
-body[class*="navigation-categories"] #main-outlet .container.list-container.has-sidebar {width: 100%;float: left;}
 .colon.cat-cat{  float: left;width: 66%;}
 .colon.post{width: 27%;float: right;margin-left: 30px;}
 .cat-private {background-color: #eff5fa;color: #667d99;padding: 1px 0 1px 10px;margin-bottom: 5px;}
