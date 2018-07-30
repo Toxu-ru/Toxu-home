@@ -428,8 +428,7 @@ background: #f2f7fe; border-color: #DDE7F5;color: #555;font-size: 13px;padding: 
 .links{margin-left:16px;}
 
 /*раздел категории*/
-.navigation-topics .category-breadcrumb, .category-heading, #header-list-area  {display: none; }
-
+.navigation-topics .category-breadcrumb, .category-heading, #header-list-area, .navigation-categories .sidebar-m  {display: none; }
 
 body[class*="navigation-categories"] #main-outlet .container.list-container.has-sidebar {width: 100%;float: left;}
 .colon.cat-cat{  float: left;width: 66%;}
