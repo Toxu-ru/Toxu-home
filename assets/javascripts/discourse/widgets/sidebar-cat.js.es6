@@ -101,24 +101,38 @@ results.push(this.listCategories());
  
 
   listCategories() {
-        const maxCategoriesToDisplay = this.siteSettings
-     .hamburger_menu_categories_count;
-    const categoriesList = this.site.get("categoriesByCount");
-    let categories = categoriesList.slice();
+    const maxCategoriesToDisplay = this.siteSettings
+      .hamburger_menu_categories_count;
+    let categories = this.site.get("categoriesByCount");
 
     if (this.currentUser) {
-      let categoryIds = this.currentUser.get("top_category_ids") || [];
-      let i = 0;
-      const mutedCategoryIds = this.currentUser.get("muted_category_ids") || [];
-      categories = categories.filter(c => !mutedCategoryIds.includes(c.id));
-      categoryIds.forEach(id => {
-        const category = categories.find(c => c.id === id);
-        if (category) {
-          categories = categories.filter(c => c.id !== id);
-          categories.splice(i, 0, category);
-          i += 1;
+      const allCategories = this.site
+        .get("categories")
+        .filter(c => c.notification_level !== NotificationLevels.MUTED);
+
+      categories = allCategories
+        .filter(c => c.get("newTopics") > 0 || c.get("unreadTopics") > 0)
+        .sort((a, b) => {
+          return (
+            b.get("newTopics") +
+            b.get("unreadTopics") -
+            (a.get("newTopics") + a.get("unreadTopics"))
+          );
+        });
+
+      const topCategoryIds = this.currentUser.get("top_category_ids") || [];
+      topCategoryIds.forEach(id => {
+        const category = allCategories.find(c => c.id === id);
+        if (category && !categories.includes(category)) {
+          categories.push(category);
         }
       });
+
+      categories = categories.concat(
+        allCategories
+          .filter(c => !categories.includes(c))
+          .sort((a, b) => b.topic_count - a.topic_count)
+      );
     }
 
     const moreCount = categories.length - maxCategoriesToDisplay;
