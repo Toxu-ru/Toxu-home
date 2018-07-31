@@ -19,7 +19,7 @@ export default createWidget('sub-menu', {
  
  var my_bio;
  
- // console.log(stat);
+ console.log(Discourse.Site);
 // console.log(args);
 
 	    
