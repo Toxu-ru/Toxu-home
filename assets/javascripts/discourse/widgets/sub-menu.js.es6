@@ -19,7 +19,7 @@ export default createWidget('sub-menu', {
  
  var my_bio;
  
- console.log(Discourse.Site);
+ console.log(Discourse.Site.currentProp('top_tags'));
 // console.log(args);
 
 	    
