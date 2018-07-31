@@ -278,6 +278,23 @@ ${my_bio}
    </div>
 </div> ${t_ops} </center><br>
 
+
+
+<br><hr><br>
+tim = ${tim}<br>
+t_d =  tim/86400;<br>
+t_daym = Math.floor(t_d);<br>
+t_daym = ${t_daym}<br>
+vt_c = t_d - t_daym;
+vt_c = ${vt_c}<br>
+ugols = (vt_c/0.9999)*100; <br>
+ugols = ${ugols}<br>
+ugol = ugols.toFixed();<br>
+<br>Заполнения: ${ugol}
+<br><hr><br>
+
+
+
 Лидер: <span class="numer">4</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
