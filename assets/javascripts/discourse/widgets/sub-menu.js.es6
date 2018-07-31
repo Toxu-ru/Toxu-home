@@ -278,9 +278,7 @@ ${my_bio}
    </div>
 </div> ${t_ops} </center><br>
 
-
-
-<br><hr><br>
+<br><hr>
 tim = ${tim}<br>
 t_d =  tim/86400;<br>
 t_d = ${t_d}<br><br>
