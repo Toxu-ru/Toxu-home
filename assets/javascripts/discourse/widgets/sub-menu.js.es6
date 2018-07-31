@@ -285,11 +285,12 @@ t_d = ${t_d}<br><br>
 t_daym = Math.floor(t_d);<br>
 t_daym = ${t_daym}<br><br>
 vt_c = t_d - t_daym;<br>
-vt_c = ${vt_c}<br>
-ugols = (vt_c/0.9999)*100; <br><br>
+vt_c = ${vt_c}<br><br>
+ugols = (vt_c/0.9999)*100; <br>
 ugols = ${ugols}<br>
-ugol = ugols.toFixed();<br><br>
-<br>Заполнения: ${ugol} град. т.е. = ugol
+ugol = ugols.toFixed();<br>
+ugol = ${ugol}<br>
+<br>Т.е. заполнения: ${ugol} %
 <br><hr><br>
 
 
