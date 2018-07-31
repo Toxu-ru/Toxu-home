@@ -291,7 +291,11 @@ ugols = ${ugols}<br>
 ugol = ugols.toFixed();<br>
 ugol = ${ugol}<br>
 <br>Т.е. заполнения: ${ugol} %
-<br><hr><br>
+<br><br>
+
+t_d_centr = t_d.toFixed(); - время от t_d <br>
+t_d_centr = ${t_d_centr} - в центре<br>
+<hr><br>
 
 
 
