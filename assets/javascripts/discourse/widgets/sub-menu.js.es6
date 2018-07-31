@@ -61,7 +61,8 @@ var t_hh_gr = Math.floor(t_h_gr);
 	  
 var t_d =  tim/86400;
 var t_daym = Math.floor(t_d); //в меньшую для подсчетов
-var t_d_centr = t_d.toFixed(); 	//в центр уркга
+var t_d_centr = t_d.toFixed(); 	//в центр круга целое
+var t_d_centr_d = t_d.toFixed(1); 	//в центр круга дробное	  
 var vt_c = t_d - t_daym;
 var cas = vt_c*24; //новых часов
 
@@ -294,7 +295,10 @@ ugol = ${ugol}<br>
 <br><br>
 
 t_d_centr = t_d.toFixed(); - время от t_d <br>
-t_d_centr = ${t_d_centr} - в центре<br>
+t_d_centr = ${t_d_centr} - в центре<br><br>
+
+${t_d_centr_d}  - дроб., toFixed(1), один знак.
+<br>
 <hr><br>
 
 
