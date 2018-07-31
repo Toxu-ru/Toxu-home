@@ -6,26 +6,14 @@ img {max-width: 95%;}
 .menu i {margin-right: 5px; color: #08c;}
 .menu i:hover {color: #f56400;}
 span.menu i {color: #222;}
-.sidb {width: 240px;background: #f6f8fe;float: left;padding: 10px 0 10px 15px;margin-top: 13px;}
+.sidb {width: 240px;background: #f6f8fe;float: left;margin-top: 13px;}
 .help-telo {margin-left: 30px !important;width: 71%; float: right;}
-@media screen and (max-width: 1050px) {.help-telo {width: 99%;}.sidb {display: none;}}
+.menu {margin: 15px;}
+@media screen and (max-width: 1000px) {.help-telo, .sidb {width: 100%;}.sidb {margin-top: 1px;}}
 </style>
 
 <div class="help">
 <div class="blog-list">
-<div class="sidb">
-    
-<a class="menu" href="https://toxu.ru/help"> <i class="fa fa-home" aria-hidden="true"></i> Помощь по сайту</a>
-<a class="menu" href="https://toxu.ru/pravila"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Правила и рекомендации</a>
-<span class="menu"> <i class="fa fa-database" aria-hidden="true"></i> Возможности сайта</span>
-<a class="menu" href="https://toxu.ru/level"> <i class="fa fa-heart-o" aria-hidden="true"></i> Уровни доверия</a>
-<a class="menu" href="https://toxu.ru/toxu"> <i class="fa fa-question-circle-o" aria-hidden="true"></i> Почему сайт назван Toxu?</a>
-<a class="menu" href="dev"> <i class="fa fa-code" aria-hidden="true"></i> Для разработчиков</a>
-<a class="menu" href="https://toxu.ru/donate"> <i class="fa fa-credit-card" aria-hidden="true"></i> Хотите помочь проекту?</a>   
-
-{{mount-widget widget="page-my-menu"}}
-
-</div>
 <div class="help-telo">      
 
 <h1>Возможности сайта Toxu.ru</h1>
@@ -119,5 +107,16 @@ Wiki вопросы и ответы<br>
 <h3><i class="fa fa-envelope-o d-icon d-icon-envelope-o"></i> Контакты</h3>
 Если у вас возникли трудности при использовании сайта, или есть вопросы, пишите: <img src="https://toxu.ru/uploads/default/original/2X/1/1a13a0921ac5c3e52cc74d68529e2c92709eca12.png">
 </section>
-</div></div></div>
+</div></div>
+<div class="sidb">
+<a class="menu" href="https://toxu.ru/help"> <i class="fa fa-home" aria-hidden="true"></i> Помощь по сайту</a>
+<a class="menu" href="https://toxu.ru/pravila"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Правила и рекомендации</a>
+<span class="menu"> <i class="fa fa-database" aria-hidden="true"></i> Возможности сайта</span>
+<a class="menu" href="https://toxu.ru/level"> <i class="fa fa-heart-o" aria-hidden="true"></i> Уровни доверия</a>
+<a class="menu" href="https://toxu.ru/toxu"> <i class="fa fa-question-circle-o" aria-hidden="true"></i> Почему сайт назван Toxu?</a>
+<a class="menu" href="dev"> <i class="fa fa-code" aria-hidden="true"></i> Для разработчиков</a>
+<a class="menu" href="https://toxu.ru/donate"> <i class="fa fa-credit-card" aria-hidden="true"></i> Хотите помочь проекту?</a>   
+{{mount-widget widget="page-my-menu"}}
+</div>
+</div>
 {{footer-toxu}}
