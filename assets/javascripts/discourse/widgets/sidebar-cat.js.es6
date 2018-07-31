@@ -2,6 +2,7 @@ import { createWidget, applyDecorators } from 'discourse/widgets/widget';
 import { h } from 'virtual-dom';
 import DiscourseURL from 'discourse/lib/url';
 import { ajax } from 'discourse/lib/ajax';
+import { NotificationLevels } from "discourse/lib/notification-levels";
 //import { userPath } from "discourse/lib/url";
 
 const flatten = array => [].concat.apply([], array);
