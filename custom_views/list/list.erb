@@ -54,8 +54,9 @@
   <meta itemprop='itemListOrder' content='http://schema.org/ItemListOrderDescending'>
   <% @list.topics.each_with_index do |t,i| %>
     <div itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+      <meta itemprop='position' content='<%= i %>'>
       <meta itemprop='url' content='<%= t.url %>'>
-      <a href='<%= t.relative_url %>' itemprop='item'>
+      <a href='<%= t.url %>'>
         <span itemprop='name'><%= t.title %></span>
       </a>
       <span class="page-links"><%= page_links(t) %></span>
