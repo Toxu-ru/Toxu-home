@@ -338,8 +338,10 @@ new RawHtml({ html: `<div>
 <div class="mn"> <i aria-hidden="true" class="fa fa-trophy"></i> Про уровень доверия - <b>лидер</b>. Узнайте <a class="cvet" href="https://toxu.ru/level">больше.</a></div>
 <div class="mn"> <i class="fa fa-star-o"></i> Посмотреть <a class="cvet" href="https://toxu.ru/help">раздел помощь.</a></div>
 <div class="mn"> <i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас есть предложения по сайту? <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">Напишите</a> про них.</div>
-
-<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
+<br><center><a href="https://toxu.ru/login" id="create-topic" class="btn btn-default btn btn-icon-text ember-view">    <i class="fa fa-plus d-icon d-icon-plus"></i>
+<span class="d-button-label">Задать вопрос</span>
+</a></center>
+<br><br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
 <div class="img-my-menu"></div>
 
