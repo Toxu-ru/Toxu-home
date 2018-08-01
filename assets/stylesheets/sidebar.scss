@@ -23,7 +23,6 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 
 /*mini header*/
 #top-navbar-links {background: #f6f8fe}
-/* #top-navbar-links {background: rgba(82,186,213,0.1);} */
 #top-navbar-links a {color: #919191;display: inline-block;font-size: 12px;line-height: 12px;padding: 3px 6px 6px 6px;}
 #top-navbar-links a:hover {color: #f56400;}
 .right-h{float: right;margin-right: 5px;}
@@ -32,17 +31,18 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 .wrap {max-width: 90em;}
 
 html:not(.mobile-view) {
-	
+
 .blog-list {position: relative;}
  li.nav-item-guidelines {display: none;}
-.sidebar {width: 210px;float: left;}
+.sidebar {width: 20%;float: left;}
 .telo-qa {width: 80%;float: right;}
 .list-container.has-sidebar {float: left;margin-left: 20px;}
 .container-tip {position: relative;}
 	
 }	
 
-	
+html.anon .sidebar, sidebar-m {margin-top: 33px;}
+
 .sidebar-fon {padding: 7px 0 7px 12px;}
 .container-telo {float: left;}
 .container-bar {width: 27%;float: right;position: absolute;    right: 0;}
@@ -55,7 +55,7 @@ a:hover {color: #f56400;}
 .mn i.fa {color: #ffb74d;}
 display: block;
     float: right;
-    width: 21%;
+    width: 210px;
     background: url(https://toxu.ru/uploads/default/original/2X/5/5093fa25eaaad68132d9809cc13ac04ea7e4e3f0.png);
     box-shadow: 0 1px 0 0 #e7edf3, 0 0 0 1px #e7edf3;
     padding: 10px;
