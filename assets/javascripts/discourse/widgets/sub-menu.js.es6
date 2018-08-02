@@ -333,7 +333,7 @@ ${t_d_centr_d}  - дроб., toFixed(1), один знак.
 
 contents.push(
 new RawHtml({ html: `<div>
-<div class="title">Информаци<span id="toxu"></div>
+<div class="title">Информация<span id="toxu"></div>
 <div class="mn">После регистрации вам будут показаны ваши достижения. </div>
 
 <div class="img-my-r"></div>
