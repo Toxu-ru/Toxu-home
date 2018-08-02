@@ -120,7 +120,7 @@ ${my_bio}
    </div>
 </div>${t_ops} </center><br>
 
-Посетитель: <span class="numer">4</span> из 4<br>
+Посетитель: <span class="numer">0</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
 <br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
@@ -160,7 +160,7 @@ ${my_bio}
    </div>
 </div>${t_ops} </center><br>
 
-Пользователь: <span class="numer">4</span> из 4<br>
+Пользователь: <span class="numer">1</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
 <br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
@@ -201,7 +201,7 @@ ${my_bio}
    </div>
 </div>${t_ops} </center><br>
 
-Участник: <span class="numer">4</span> из 4<br>
+Участник: <span class="numer">2</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
 <br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
@@ -333,10 +333,12 @@ ${t_d_centr_d}  - дроб., toFixed(1), один знак.
 
 contents.push(
 new RawHtml({ html: `<div>
-<div class="title">Другое<span id="toxu"></div>
+<div class="title">Информаци<span id="toxu"></div>
+<div class="mn">Общее время чтения - важный показатель на сайте. И вам будут показаны ваши достижения. </div>
+
+<div class="img-my-r"></div>
 
 <div class="mn"> <i aria-hidden="true" class="fa fa-trophy"></i> Про уровень доверия - <b>лидер</b>. Узнайте <a class="cvet" href="https://toxu.ru/level">больше.</a></div>
-<div class="mn"> <i class="fa fa-star-o"></i> Посмотреть <a class="cvet" href="https://toxu.ru/help">раздел помощь.</a></div>
 <div class="mn"> <i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас есть предложения по сайту? <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">Напишите</a> про них.</div>
 <br><center><a href="https://toxu.ru/login" id="create-topic" class="btn btn-default btn btn-icon-text ember-view">    <i class="fa fa-plus d-icon d-icon-plus"></i>
 <span class="d-button-label">Задать вопрос</span>
