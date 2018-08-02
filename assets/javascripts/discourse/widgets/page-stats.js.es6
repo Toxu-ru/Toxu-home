@@ -265,10 +265,7 @@ ${shcala}
 <b>Смелее предлагайте</b> свои идеи, и мы сделаем ресурс лучше!<br>
 <img class="img" src="https://toxu.ru/uploads/default/original/2X/6/6d31dd3cefe0a112c68dfbf60c6a66bd827df2f2.jpg" alt="Toxu" width="455" height="324"><br>
 
-<b>Вносите предложения:</b> <a href="https://toxu.ru/t/lokalizacziya-perevody-v-etom-poste/1684" target="_blank">переводы</a>, дизайн - 
-<a href="https://toxu.ru/t/mobilnyj-dizajn-i-vse-chto-s-nim-svyazano/1635" target="_blank">мобильный</a> и 
-<a href="https://toxu.ru/t/oshibki-v-dizajne-pk-publikuem-tut/1862" target="_blank">ПК</a>, 
-<a href="https://toxu.ru/t/kategorii-udobstvo-dostup/1090" target="_blank">категории/удобство/доступ</a> или юзабилити и т.д. <br> <br> 
+<b>Вносите предложения:</b> по переводам, дизайну, юзабилити и т.д. <br> <br> 
 А еще, <a target="_blank"  href="https://toxu.ru/chess"><b>играйте в шахматы!</b></a><br> <br>
 
 
