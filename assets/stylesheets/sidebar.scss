@@ -41,7 +41,7 @@ html:not(.mobile-view) {
 	
 }	
 
-html.anon .sidebar, sidebar-m {margin-top: 33px;}
+html.anon { .sidebar, sidebar-m {margin-top: 33px;}}
 
 .sidebar-fon {padding: 7px 0 7px 12px;}
 .container-telo {float: left;}
