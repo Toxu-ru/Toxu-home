@@ -41,7 +41,10 @@ html:not(.mobile-view) {
 	
 }	
 
-html.anon { .sidebar, .sidebar-m {margin-top: 34px;}}
+html.anon { 
+ .sidebar, .sidebar-m {margin-top: 34px;}
+ .sidebar-add-qa {display: none;}
+}
 
 .sidebar-fon {padding: 7px 0 7px 12px;}
 .container-telo {float: left;}
@@ -249,10 +252,6 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 .d-icon.d-icon-d-regular, .d-icon.d-icon-d-muted, .d-icon.d-icon-d-watching-first, .d-icon.d-icon-d-watching-first-post {color: #919191 !important;}
 
 #login-buttons .btn  {text-align: left !important;}
-
-/*боковые категории*/
-.anon .sidebar-add-qa, .fon .sidebar-add-qa  {display: none;}
-
 
 .sidebar {    
 .vid {color: #919191;}
