@@ -422,7 +422,7 @@ background: #f2f7fe; border-color: #DDE7F5;color: #555;font-size: 13px;padding: 
 .links{margin-left:16px;}
 
 /*раздел категории*/
-.navigation-topics .category-breadcrumb, .category-heading, #header-list-area, .navigation-categories .sidebar-m  {display: none; }
+.navigation-topics .category-breadcrumb, .category-heading, .navigation-categories .sidebar-m  {display: none; }
 body.navigation-categories {
     .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa {display: none !important;}
      #create-topic {display: block !important;}
