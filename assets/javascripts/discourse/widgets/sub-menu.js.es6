@@ -66,7 +66,16 @@ var t_d =  tim/86400;
 var t_daym = Math.floor(t_d); //в меньшую для подсчетов + изменил для центра круга
 var t_d_centr = t_d.toFixed(); 	//в центр круга целое - убрал из центра круга
 
-  
+//НОВЫЙ ПОДСЧЕТ
+//var t_center= Math.round(t_d); //1.49 = 1 а 1.51 = 2 
+//var cislo = t_center%1; // http://rextester.com/l/js
+//if (cislo > 0.5) {  } else {  }
+	  
+//console.log(t_center);  
+//console.log(cislo); 	  
+	  
+	  
+//КОНЕЦ НОВОГО ПОДСЧЕТА	  
 	  
 var t_d_centr_d = t_d.toFixed(1); 	//в центр круга дробное	  
 var vt_c = t_d - t_daym;
