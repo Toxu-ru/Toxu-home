@@ -67,14 +67,23 @@ export default createWidget('sidebar-cat', {
       
     });
 
+if (!this.currentUser) {
      links.push({
       route: "discovery.categories",
       className: "top-cat",
       label: "filters.categories.title",
       title: "filters.categories.title",
-      icon: "object-group "
-      
+      icon: "object-group"
     });
+} else {
+  links.push({
+      href: "my/preferences/categories",
+      className: "top-cat",
+      label: "user.tracked_categories",
+      title: "user.tracked_categories",
+      icon: "object-group"
+    });
+}  
 
     const extraLinks = flatten(
       applyDecorators(this, "generalLinks", this.attrs, this.state)
@@ -102,8 +111,14 @@ results.push(this.listCategories());
  
 
   listCategories() {
-    const maxCategoriesToDisplay = this.siteSettings
-      .header_dropdown_category_count;
+
+    if (!this.currentUser) {
+       var maxCategoriesToDisplay = 24;
+    } else {
+       var maxCategoriesToDisplay = this.siteSettings
+        .header_dropdown_category_count;
+    }  
+    
     let categories = this.site.get("categoriesByCount");
 
     if (this.currentUser) {
