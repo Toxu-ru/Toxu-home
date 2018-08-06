@@ -63,8 +63,11 @@ var t_h_gr = (t_h_c/0.9999)*100;
 var t_hh_gr = Math.floor(t_h_gr);  	  
 	  
 var t_d =  tim/86400;
-var t_daym = Math.floor(t_d); //в меньшую для подсчетов
-var t_d_centr = t_d.toFixed(); 	//в центр круга целое
+var t_daym = Math.floor(t_d); //в меньшую для подсчетов + изменил для центра круга
+var t_d_centr = t_d.toFixed(); 	//в центр круга целое - убрал из центра круга
+
+  
+	  
 var t_d_centr_d = t_d.toFixed(1); 	//в центр круга дробное	  
 var vt_c = t_d - t_daym;
 var cas = vt_c*24; //новых часов
@@ -95,7 +98,7 @@ var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.'; 
 if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }	
 }
 if (t_daym > 0) { 
-var vrema = 'day'; var vrema_t = t_d_centr; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';
+var vrema = 'day'; var vrema_t = t_daym; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';
 if (ugol > 49) { var isprav = 'over50'; } else { var isprav = '111'; }
 var verh = 'шкала 1 день';
 }	  
@@ -297,8 +300,9 @@ ugol = ${ugol}<br>
 <br>Т.е. заполнения: ${ugol} %
 <br><br>
 
-t_d_centr = t_d.toFixed(); - время от t_d <br>
-t_d_centr = ${t_d_centr} - в центре<br><br>
+t_d_centr = t_d.toFixed(); - время от t_d <br><br>
+t_d_centr = ${t_d_centr} - в центре было<br>
+t_daym = ${t_daym} - в центре стало<br><br>
 
 ${t_d_centr_d}  - дроб., toFixed(1), один знак.
 <br>
