@@ -113,7 +113,7 @@ results.push(this.listCategories());
   listCategories() {
 
     if (!this.currentUser) {
-       var maxCategoriesToDisplay = 24;
+       var maxCategoriesToDisplay = 28;
     } else {
        var maxCategoriesToDisplay = this.siteSettings
         .header_dropdown_category_count;
