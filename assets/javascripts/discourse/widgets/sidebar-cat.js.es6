@@ -79,7 +79,7 @@ if (!this.currentUser) {
   links.push({
       href: "my/preferences/categories",
       className: "top-cat",
-      label: "user.tracked_categories",
+      label: "main.cat-you",
       title: "user.tracked_categories",
       icon: "object-group"
     });
