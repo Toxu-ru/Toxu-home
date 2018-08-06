@@ -70,8 +70,8 @@ export default createWidget('sidebar-cat', {
      links.push({
       route: "discovery.categories",
       className: "top-cat",
-      label: "filters.categories.title",
-      title: "filters.categories.title",
+      label: "categories.all",
+      title: "categories.all",
       icon: "object-group "
       
     });
