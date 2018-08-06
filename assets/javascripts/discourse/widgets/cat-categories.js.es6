@@ -71,7 +71,10 @@ export default createWidget('cat-categories', {
 
 
   if (!this.currentUser) {  
-      var href = Discourse.getURL("/categories");
+      
+    } else { 
+      
+    var href = Discourse.getURL("/categories");
     
     result = result.concat(
         h(
@@ -83,21 +86,6 @@ export default createWidget('cat-categories', {
           )
         )
      ); 
-      
-    } else { 
-      
-      var href = Discourse.getURL("/my/preferences/categories");
-      
-      result = result.concat(
-        h(
-          "div.kollonka",
-          h(
-            "a.d-link.more-link",
-            { attributes: { href } },
-             "редактировать разделы"
-          )
-        )
-      ); 
       
     } 
 
