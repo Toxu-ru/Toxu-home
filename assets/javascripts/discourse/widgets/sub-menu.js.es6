@@ -56,13 +56,13 @@ function truncated(num, decimalPlaces) {
 var tim = data.user.time_read;
     
 var t_m = tim/60;
-var t_minut = Math.floor(t_m);
+var t_minut = truncated(t_m,0);  //целое число до запятой
 var t_m_c = t_m - t_minut;  
 var t_m_gr = (t_m_c/0.9999)*100;    
 var t_mm_gr = Math.floor(t_m_gr);
 	  
 var t_c =  tim/3600;
-var t_hour = Math.floor(t_c);
+var t_hour = truncated(t_c,0);  //целое число до запятой
 var t_h_c = t_c - t_hour;	  
 var t_h_gr = (t_h_c/0.9999)*100; 
 var t_hh_gr = Math.floor(t_h_gr);  	  
@@ -71,7 +71,7 @@ var t_d =  tim/86400;
 var t_daym = truncated(t_d,0);  //целое число до запятой
 	  
 //var t_daym = Math.floor(t_d); //в меньшую для подсчетов + изменил для центра круга
-var t_d_centr = t_d.toFixed(); 	//в центр круга целое - убрал из центра круга
+//var t_d_centr = t_d.toFixed(); 	//в центр круга целое - убрал из центра круга
 
 //НОВЫЙ ПОДСЧЕТ
 //var t_center= Math.round(t_d); //1.49 = 1 а 1.51 = 2 
@@ -84,7 +84,7 @@ var t_d_centr = t_d.toFixed(); 	//в центр круга целое - убра
 	  
 //КОНЕЦ НОВОГО ПОДСЧЕТА	  
 	  
-var t_d_centr_d = t_d.toFixed(1); 	//в центр круга дробное	  
+//var t_d_centr_d = t_d.toFixed(1); 	//в центр круга дробное	  
 var vt_c = t_d - t_daym;
 var cas = vt_c*24; //новых часов
 
@@ -305,7 +305,7 @@ ${my_bio}
 tim = ${tim}<br>
 t_d =  tim/86400;<br>
 t_d = ${t_d}<br><br>
-t_daym = Math.floor(t_d);<br>
+t_daym = Mtruncated(t_d,0) - функция отбразывания всего после запятой<br>
 t_daym = ${t_daym}<br><br>
 vt_c = t_d - t_daym;<br>
 vt_c = ${vt_c}<br><br>
@@ -314,14 +314,8 @@ ugols = ${ugols}<br>
 ugol = ugols.toFixed();<br>
 ugol = ${ugol}<br>
 <br>Т.е. заполнения: ${ugol} %
-<br><br>
-
-t_d_centr = t_d.toFixed(); - время от t_d <br><br>
-t_d_centr = ${t_d_centr} - в центре было<br>
-t_daym = ${t_daym} - в центре стало<br><br>
-
-${t_d_centr_d}  - дроб., toFixed(1), один знак.
 <br>
+
 <hr><br>
 
 
