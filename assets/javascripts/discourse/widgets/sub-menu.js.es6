@@ -68,7 +68,7 @@ var t_h_gr = (t_h_c/0.9999)*100;
 var t_hh_gr = Math.floor(t_h_gr);  	  
 	  
 var t_d =  tim/86400;
-var t_daym = truncated(t_d,0);  //целое число до запятой
+var t_daym = truncated(t_d,1);  //целое число до запятой
 	  
 //var t_daym = Math.floor(t_d); //в меньшую для подсчетов + изменил для центра круга
 //var t_d_centr = t_d.toFixed(); 	//в центр круга целое - убрал из центра круга
