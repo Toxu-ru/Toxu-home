@@ -10,10 +10,9 @@ export default Ember.Component.extend({
   searchHelp(search) {
   var results='';
   
-  if (search === 'discourse'){ results =   '<div class="search-ins">We connect the dictionary. Dial number: <b>2221</b></div>';}
-  if (search === '2221'){ results =   '<div class="search-ins">Вот что такое обновление на странице. Меняем последнюю цифру на 2, т.е. <b>2222</b></div>';} 
-  if (search === '2222'){ results =   '<div class="search-ins">sdfsdfsdf<a href="ee">sdf</a> sdfsdf. Меняем на 2223</div>';}
-  if (search === '2223'){ results =   '<div class="search-ins">Все! Это весь словарь. УРА! :)</a>';}
+if (search === 'discourse' || search === 'Discourse'){ results = '<div class="search-ins"><b>Discourse</b> - это интернет-форум с открытым исходным кодом и программное обеспечение для управления списком рассылки, созданное в 2013 году Jeff Atwood, Robin Ward, and Sam Saffron. См. <a target="_blank" href="https://ru.wikipedia.org/wiki/Discourse">в Википедии.</a></div>';}
+if (search === 'Toxu' || search === 'toxu' || search === 'тоху'){ results =   '<div class="search-ins">Это название сайта вопросов и ответов.</div>';} 
+
   
   return Discourse.getURLWithCDN(results);
 
