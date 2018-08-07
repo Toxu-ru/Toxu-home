@@ -19,10 +19,8 @@ export default createWidget('sub-menu', {
  
  var my_bio;
  
-// console.log(Discourse.Site.currentProp('top_tags'));
 // console.log(args);
 
-	    
  $.ajax({
   url: "/u/"+ username +".json", 
   dataType: 'json',
@@ -57,13 +55,12 @@ var tim = data.user.time_read;
     
 var t_m = tim/60;
 var t_minut = truncated(t_m,0);  //целое число до запятой
-//var t_m_c = t_m%1;  //после запятой
 var t_m_gr = (t_minut*100)/60;
 var t_mm_gr = Math.floor(t_m_gr);
 	  
 var t_c =  tim/3600;
 var t_hour = truncated(t_c,0);  //целое число до запятой
-var t_h_c = t_c - t_hour;	  
+var t_h_c = t_c%1;	  
 var t_h_gr = (t_h_c/0.9999)*100; 
 var t_hh_gr = Math.floor(t_h_gr);  	  
 	  
@@ -71,31 +68,11 @@ var t_d =  tim/86400;
 var t_daym = truncated(t_d,0);  //целое число до запятой
 var t_daym_one = truncated(t_d,1);  //одно число после запятой	  
 	  
-//var t_daym = Math.floor(t_d); //в меньшую для подсчетов + изменил для центра круга
-//var t_d_centr = t_d.toFixed(); 	//в центр круга целое - убрал из центра круга
-
-//НОВЫЙ ПОДСЧЕТ
-//var t_center= Math.round(t_d); //1.49 = 1 а 1.51 = 2 
-//var cislo = t_center%1; // http://rextester.com/l/js
-//if (cislo > 0.5) {  } else {  }
-	  
-//console.log(t_center);  
-//console.log(cislo); 	  
-	  
-	  
-//КОНЕЦ НОВОГО ПОДСЧЕТА	  
-	  
-//var t_d_centr_d = t_d.toFixed(1); 	//в центр круга дробное	  
-
 //var vt_c = t_d - t_daym; убрано
 var vt_c = t_d%1; //после запятой
 	  
 var cas = vt_c*24; //новых часов
 
-//console.log(t_d); console.log('общее Дни');	  
-//console.log(t_daym); console.log('округление в меньшую');
-//console.log(vt_c); console.log('новое время отчет');
- 
 var ugols = (vt_c/0.9999)*100; 
 //console.log(ugols); console.log('угол');
 
@@ -114,7 +91,7 @@ var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'м�
 if (t_mm_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }
 }
 if (t_hour > 0) { 
-var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = 'до следующего часа'; var verh = 'шкала 1 день';
+var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = 'время до дня'; var verh = 'шкала 1 день';
 if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }	
 }
 if (t_daym > 0) { 
@@ -311,7 +288,7 @@ t_d =  tim/86400;<br>
 t_d = ${t_d}<br><br>
 t_daym = Mtruncated(t_d,0) - функция отбразывания всего после запятой<br>
 t_daym = ${t_daym}<br><br>
-vt_c = t_d - t_daym;<br>
+vt_c = t_d%1; - без вычитания. Новая.<br>
 vt_c = ${vt_c}<br><br>
 ugols = (vt_c/0.9999)*100; <br>
 ugols = ${ugols}<br>
