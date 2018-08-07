@@ -58,7 +58,7 @@ var tim = data.user.time_read;
 var t_m = tim/60;
 var t_minut = truncated(t_m,0);  //целое число до запятой
 var t_m_c = t_m%1;  //после запятой
-var t_m_gr = (t_m_c*100)/60;
+var t_m_gr = (t_minut*100)/60;
 var t_mm_gr = Math.floor(t_m_gr);
 	  
 var t_c =  tim/3600;
@@ -86,7 +86,10 @@ var t_daym_one = truncated(t_d,1);  //одно число после запят�
 //КОНЕЦ НОВОГО ПОДСЧЕТА	  
 	  
 //var t_d_centr_d = t_d.toFixed(1); 	//в центр круга дробное	  
-var vt_c = t_d - t_daym;
+
+//var vt_c = t_d - t_daym; убрано
+var vt_c = t_d%1; //после запятой
+	  
 var cas = vt_c*24; //новых часов
 
 //console.log(t_d); console.log('общее Дни');	  
