@@ -51,7 +51,7 @@ export default createWidget('sub-menu', {
 var tim = data.user.time_read;
     
 var t_m = tim/60;
-var t_minut = t_m.toFixed();
+var t_minut = Math.floor(t_m);
 var t_m_c = t_m - t_minut;  
 var t_m_gr = (t_m_c/0.9999)*100;    
 var t_mm_gr = Math.floor(t_m_gr);
@@ -107,7 +107,7 @@ var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.'; 
 if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }	
 }
 if (t_daym > 0) { 
-var vrema = 'day'; var vrema_t = t_daym; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';
+var vrema = 'day'; var vrema_t = t_d_centr_d; var grad = ugol; var t_op = 'д.';  var t_ops = 'осталось до следующего<br> дня ~ ' + oct +' ч.<br>';
 if (ugol > 49) { var isprav = 'over50'; } else { var isprav = '111'; }
 var verh = 'шкала 1 день';
 }	  
