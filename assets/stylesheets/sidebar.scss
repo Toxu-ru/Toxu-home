@@ -324,12 +324,16 @@ nav.post-controls button.reply.create span.d-button-label {display: none;}
 nav.post-controls button.reply.create:after {   content: "комм";}
 .topic-post.comment nav.post-controls button.reply.create:after {   content: "комм";}
 .topic-post nav.post-controls .create i.fa-reply {display: none;}
+
+.mail-blog  {display: none;}
 .archetype-private_message {
+.mail-blog {display: block;background: #FFF8DC;padding: 8px 11px 2px 12px;}
+	
 background: #fdfdfd url(https://toxu.ru/uploads/default/original/2X/5/57dc9ca1e3af5339abacf4a04fce90a5cb8cb7d8.png) repeat;
 .boxed.onscreen-post {background-color: #fff;padding: 5px;}
 img.avatar {border-radius: 5%;}
 .d-header-icons .icon img.avatar {border-radius: 50%;}
-.sidebar-top  {display:none;}   
+.cat-pods, .messag2, #ostan  {display:none;}   
 .topic-post {margin-bottom: 10px;} 
 .topic-body, .topic-avatar, .topic-status-info {border-top: none;}
 #suggested-topics .loading-container.ember-view  {display:block !important;}
