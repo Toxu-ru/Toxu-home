@@ -57,8 +57,8 @@ var tim = data.user.time_read;
     
 var t_m = tim/60;
 var t_minut = truncated(t_m,0);  //целое число до запятой
-var t_m_c = t_m - t_minut;  
-var t_m_gr = (t_m_c/0.9999)*100;    
+var t_m_c = t_m%1;  //после запятой
+var t_m_gr = (t_m_c*100)/60;
 var t_mm_gr = Math.floor(t_m_gr);
 	  
 var t_c =  tim/3600;
