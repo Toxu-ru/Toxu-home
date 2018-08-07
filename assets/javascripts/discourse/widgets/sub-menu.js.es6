@@ -68,7 +68,8 @@ var t_h_gr = (t_h_c/0.9999)*100;
 var t_hh_gr = Math.floor(t_h_gr);  	  
 	  
 var t_d =  tim/86400;
-var t_daym = truncated(t_d,1);  //целое число до запятой
+var t_daym = truncated(t_d,0);  //целое число до запятой
+var t_daym_one = truncated(t_d,1);  //одно число после запятой	  
 	  
 //var t_daym = Math.floor(t_d); //в меньшую для подсчетов + изменил для центра круга
 //var t_d_centr = t_d.toFixed(); 	//в центр круга целое - убрал из центра круга
@@ -114,7 +115,7 @@ var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.'; 
 if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }	
 }
 if (t_daym > 0) { 
-var vrema = 'day'; var vrema_t = t_daym; var grad = ugol; var t_op = 'д.';  var t_ops = 'до следующего дня';
+var vrema = 'day'; var vrema_t = t_daym_one; var grad = ugol; var t_op = 'д.';  var t_ops = 'до следующего дня';
 if (ugol > 49) { var isprav = 'over50'; } else { var isprav = '111'; }
 var verh = 'шкала 1 день';
 }	  
