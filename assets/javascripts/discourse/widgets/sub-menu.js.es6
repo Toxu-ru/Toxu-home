@@ -43,6 +43,11 @@ export default createWidget('sub-menu', {
 
 	  
 // var tracked_tags = data.user.tracked_tags;
+
+function truncated(num, decimalPlaces) {    
+    let numPowerConverter = Math.pow(10, decimalPlaces); 
+    return ~~(num * numPowerConverter)/numPowerConverter;
+}	  
 	  
 	  
 //10минут = 600 сек, 1 часе = 3600 сек, 1 дне = 86400 сек 	  
@@ -63,7 +68,9 @@ var t_h_gr = (t_h_c/0.9999)*100;
 var t_hh_gr = Math.floor(t_h_gr);  	  
 	  
 var t_d =  tim/86400;
-var t_daym = Math.floor(t_d); //в меньшую для подсчетов + изменил для центра круга
+var t_daym = truncated(t_d,0);  //целое число до запятой
+	  
+//var t_daym = Math.floor(t_d); //в меньшую для подсчетов + изменил для центра круга
 var t_d_centr = t_d.toFixed(); 	//в центр круга целое - убрал из центра круга
 
 //НОВЫЙ ПОДСЧЕТ
