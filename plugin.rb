@@ -40,7 +40,7 @@ User.register_custom_field_type('userbar_cat', :boolean)
 User.register_custom_field_type('userbar_profile', :boolean)  
   
   add_to_class :post, :excerpt_for_topic do
-      Post.excerpt(cooked, 250, strip_links: true)
+      Post.excerpt(cooked, 300, strip_links: true)
   end
   add_to_serializer(:listable_topic, :include_excerpt?) { true }
  
