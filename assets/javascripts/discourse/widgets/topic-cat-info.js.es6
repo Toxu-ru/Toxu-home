@@ -25,7 +25,7 @@ if (catid === 1) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> В
 if (catid === 33) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> Это блоги </div>`}));  } 
 if (catid === 28) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> Это правила Toxu</div>`}));  } 
 if (catid === 20) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> В разделе: <a href="https://toxu.ru/c/test">для тестирования...</a> </div>`}));  }   
-if (catid === 7) {  contents.push( new RawHtml({ html: `<div class="cat-blo"><font color=red>П</font>осмотрите о <a target="_blank" href="https://toxu.ru/features">возможностях Toxu.ru</a></div>`}));  }
+if (catid === 7) {  contents.push( new RawHtml({ html: `<div class="cat-blo"><font color=red>О</font> <a target="_blank" href="https://toxu.ru/features">возможностях Toxu.ru</a></div>`}));  }
 
 if (qaid === 4117 || qaid === 4569) {  contents.push( new RawHtml({ html: `<div class="cat-blo"> Это вопрос про общение. </div>`}));  } 
 
