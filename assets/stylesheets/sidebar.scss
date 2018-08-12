@@ -284,7 +284,8 @@ a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
 /*Навигация категории*/
 .badge-wrapper {font-weight: 400;}
 .badge-wrapper.bullet .badge-category-bg {border-radius: 10px;opacity: 0.8;}
-.badge-wrapper.bullet .badge-category-parent-bg {margin-right: 2px;border-radius: 10px;}
+.badge-wrapper.bullet .badge-category-parent-bg + .badge-category-bg {width: 9px;}
+.badge-wrapper.bullet .badge-category-parent-bg {display: none;}
 /*комментарии*/
 .topic-post.comment { 
 margin-left: 53px;	
