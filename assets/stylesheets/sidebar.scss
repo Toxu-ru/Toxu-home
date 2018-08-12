@@ -244,7 +244,7 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 .sidebar {    
 .vid {color: #919191;}
 .cat-link {margin-bottom: 9px;}	
-.badge-wrapper.bullet .badge-category-bg {margin-right: 8px;opacity: 0.2;}	
+.badge-wrapper.bullet .badge-category-bg {margin-right: 8px;width: 6px;height: 6px;margin-bottom: 2px;}	
 .badge-wrapper.bullet .badge-category-parent-bg {display: none;}
 a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
 .badge-wrapper.bullet .badge-category-bg:hover {opacity: 1;}
@@ -285,7 +285,6 @@ a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
 .badge-wrapper {font-weight: 400;}
 .badge-wrapper.bullet .badge-category-bg {border-radius: 10px;opacity: 0.8;}
 .badge-wrapper.bullet .badge-category-parent-bg {width: 9px;height: 9px;margin-right: 2px;border-radius: 10px;}
-.badge-wrapper.bullet .badge-category-parent-bg + .badge-category-bg {width: 9px;}
 /*комментарии*/
 .topic-post.comment { 
 margin-left: 53px;	
