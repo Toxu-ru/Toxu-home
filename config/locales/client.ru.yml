@@ -19,3 +19,13 @@ ru:
       cat-you: "Избранные разделы"
     composer:
       adm_ui_button_title: "Выделение вставки для админов"      
+    topic:
+      answer:
+        title: 'Answer'
+        help: 'begin composing an answer to the question'
+      comment:
+        title: 'Комментарии'
+        help: 'begin composing a comment on this answer'
+        show_comments:
+          all: 'скрыт {{count}} комментария'
+          more: 'скрыты {{count}} комментариев'  
