@@ -8,3 +8,6 @@ plugins:
   my_index:
     default: true
     client: true
+  qa_comments_default:
+    default: 3
+    client: true
