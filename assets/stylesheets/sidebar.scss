@@ -244,7 +244,7 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 .sidebar {    
 .vid {color: #919191;}
 .cat-link {margin-bottom: 9px;}	
-.badge-wrapper.bullet .badge-category-bg {margin-right: 8px;width: 6px;height: 6px;margin-bottom: 2px;}	
+.badge-wrapper.bullet .badge-category-bg {margin-right: 8px;width: 6px !important;height: 6px;margin-bottom: 2px;}	
 .badge-wrapper.bullet .badge-category-parent-bg {display: none;}
 a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
 .badge-wrapper.bullet .badge-category-bg:hover {opacity: 1;}
