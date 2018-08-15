@@ -282,10 +282,6 @@ ${my_bio}
    </div>
 </div> ${t_ops} </center><br>
 
-<hr><br>
-
-
-
 Лидер: <span class="numer">4</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
