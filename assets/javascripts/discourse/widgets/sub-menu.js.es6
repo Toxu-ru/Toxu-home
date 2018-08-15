@@ -282,21 +282,6 @@ ${my_bio}
    </div>
 </div> ${t_ops} </center><br>
 
-<br><hr>
-tim = ${tim}<br>
-t_d =  tim/86400;<br>
-t_d = ${t_d}<br><br>
-t_daym = Mtruncated(t_d,0) - функция отбразывания всего после запятой<br>
-t_daym = ${t_daym}<br><br>
-vt_c = t_d%1; - без вычитания. Новая.<br>
-vt_c = ${vt_c}<br><br>
-ugols = (vt_c/0.9999)*100; <br>
-ugols = ${ugols}<br>
-ugol = ugols.toFixed();<br>
-ugol = ${ugol}<br>
-<br>Т.е. заполнения: ${ugol} %
-<br>
-
 <hr><br>
 
 
