@@ -856,10 +856,6 @@ border-radius: 0px;
 
 /*add mobile*/
 html.mobile-view { html {font-weight: 400;}
-
-.topic-body .contents .cooked, .help, .d-editor-preview {font-size: 15px;font-weight: 400;line-height: 1.4;}
-.topic-post.comment .topic-body .contents .cooked {font-size: 1em;}	
-	
 .sidebar, .user-signature, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
  #scroll-bottom, #scroll-top, .sidebar-m, .category-list  .category-description,  .container-bar, .topic-excerpt, .sidebar-add-qa {display: none !important;}
 .navigation-categories {th.latest, td.latest {display: none;}.category {width: 99%;}}
