@@ -91,13 +91,13 @@ var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'м�
 if (t_mm_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }
 }
 if (t_hour > 0) { 
-var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = 'время до дня'; var verh = 'шкала 1 день';
+var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = 'время до дня'; var verh = 'шкала день';
 if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }	
 }
 if (t_daym > 0) { 
-var vrema = 'day'; var vrema_t = t_daym_one; var grad = ugol; var t_op = 'д.';  var t_ops = 'до следующего дня';
+var vrema = 'day'; var vrema_t = t_daym_one; var grad = ugol; var t_op = ' ';  var t_ops = 'до следующего дня';
 if (ugol > 49) { var isprav = 'over50'; } else { var isprav = '111'; }
-var verh = 'шкала 1 день';
+var verh = 'шкала день';
 }	  
 	
 if (trust_level === 0) { 
@@ -112,7 +112,7 @@ ${my_bio}
 
 <div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
-<center>${verh}<div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -152,7 +152,7 @@ ${my_bio}
 
 <div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
-<center>${verh}<div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -193,7 +193,7 @@ ${my_bio}
 
 <div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
-<center>${verh}<div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -234,7 +234,7 @@ ${my_bio}
 
 <div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
-<center>${verh}<div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -274,7 +274,7 @@ ${my_bio}
 
 <div class="mn">Общее время чтения - важный показатель на сайте.</div>
 
-<center>${verh}<div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
