@@ -91,13 +91,13 @@ var vrema = 'minute'; var vrema_t = t_minut; var grad = t_mm_gr; var t_op = 'м�
 if (t_mm_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }
 }
 if (t_hour > 0) { 
-var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = 'время до дня'; var verh = 'шкала дней';
+var vrema = 'hour'; var vrema_t = t_hour; var grad = t_hh_gr; var t_op = 'ч.';  var t_ops = 'время до дня'; var verh = 'всего дней';
 if (t_hh_gr > 49) { var isprav = 'over50'; } else { var isprav = ''; }	
 }
 if (t_daym > 0) { 
-var vrema = 'day'; var vrema_t = t_daym_one; var grad = ugol; var t_op = ' ';  var t_ops = 'до следующего дня';
+var vrema = 'day'; var vrema_t = t_daym_one; var grad = ugol; var t_op = ' ';  var t_ops = ' ';
 if (ugol > 49) { var isprav = 'over50'; } else { var isprav = '111'; }
-var verh = 'шкала дней';
+var verh = 'всего дней';
 }	  
 	
 if (trust_level === 0) { 
@@ -110,7 +110,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn">Общее время чтения - важный показатель на сайте.</div>
+<div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
 <center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -150,7 +150,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn">Общее время чтения - важный показатель на сайте.</div>
+<div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
 <center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -191,7 +191,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn">Общее время чтения - важный показатель на сайте.</div>
+<div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
 <center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -232,7 +232,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn">Общее время чтения - важный показатель на сайте.</div>
+<div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
 <center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
@@ -272,7 +272,7 @@ new RawHtml({ html: `<div>
 
 ${my_bio}
 
-<div class="mn">Общее время чтения - важный показатель на сайте.</div>
+<div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
 <center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
