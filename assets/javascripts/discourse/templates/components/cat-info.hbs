@@ -1,11 +1,29 @@
-{{#if src}}
+{{#if category}}
+<div class="sidebar-right-fon">
+
+<div class="catimg">{{cdn-img src=category.uploaded_logo.url class="cat-big"}}</div>
+
+<span class="dis-info-name">{{{dir-span category.name}}}</span>
+
+<span class="dis-info">{{{dir-span category.description}}}<br><br> Вопросов: <span class="num-info">{{{dir-span category.topic_count}}}</span></span>
+
+<span class="dis-info-more"><a href="https://toxu.ru{{{dir-span category.topic_url}}}"><i class="fa fa-list" aria-hidden="true"></i> подробнее...</a></span>
+
+<span class="dis-info-rss"><a href="https://toxu.ru/c/{{{dir-span category.slug}}}.rss"><i class="fa fa-rss" aria-hidden="true"></i>
+ лента раздела...</a></span>
 
 <div class="cat-info">
 {{{catTxt}}}
 </div>
+</div>
+
+<div class="sidebar-qa">
+{{dir-span category.categorqa}}
+</div>
 
 {{else}}    
 
-{{mount-widget widget="sidebar-items"}}
-
+<div class="sidebar-m">
+ {{mount-widget widget="sub-menu"  args=(hash listLoading=loading)}}
+</div>
 {{/if}}
