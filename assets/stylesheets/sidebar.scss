@@ -59,10 +59,15 @@ a:hover {color: #f56400;}
 
 
 .sidebar-right {
-    float: right;
-    a.info{font-size: 16px;margin-top: 3px; display: inline-block;}
+   float: right;
+   a.info{font-size: 16px;margin-top: 3px; display: inline-block;}
   .avahome img {width: 38px;height:38px;}
   .avahome {float: left;margin-right: 12px;margin-top: 3px;}
+
+ .topic-list-link-top {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
 	
   .sidebar-right-fon {   
     width: 210px;
@@ -75,7 +80,8 @@ a:hover {color: #f56400;}
    width: 210px;
    padding: 10px;
    border-radius: 3px;
-   margin-top: 20px;
+   margin-top: 10px;
+   font-size: 15px;
   }
 	
  .cat-pods-cat {
@@ -286,21 +292,21 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 }
 
 .sidebar {    
-.vid {color: #919191;}
 .cat-link {margin-bottom: 9px;}	
 .badge-wrapper.bullet .badge-category-bg {margin-right: 8px;width: 6px !important;height: 6px;}	
 .badge-wrapper.bullet .badge-category-parent-bg {display: none;}
-a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
+ a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
 .badge-wrapper.bullet .badge-category-bg:hover {opacity: 1;}
 .badge-notification {color: #f56400 !important;font-size: 14px;background-color: #fff;margin-top: -2px;}
 .badge-wrapper.bullet {padding: 4px 0 4px 4px;}
 .badge-wrapper.bullet:hover, .badge-wrapper.bullet span.badge-category:hover, a.cvet:hover {color: #f56400;}
 .cat-link .topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 2px;margin-right: 6px;}
 .badge-wrapper {font-size: 14px;}
-#create-topic {background: #e7672e;color: #fff;margin-bottom: 10px;width: 99%;}
+/*#create-topic {background: #e7672e;color: #fff;margin-bottom: 10px;width: 99%;}
 #create-topic:hover {background: #f56400;color:#fff;}	
 .footer{margin-bottom: 12px;margin-left: 7px;}
 .footer a.more-link{font-size: 13px;}	
+.vid {color: #919191;}	*/
 }
 
 .nav-pills > li > a {color: #667d99;}
