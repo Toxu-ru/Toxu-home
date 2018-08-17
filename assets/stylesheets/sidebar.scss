@@ -57,6 +57,17 @@ html.anon {
 h1, h2, h3, h4, h5, h6 {font-weight: 400;}
 a:hover {color: #f56400;}
 
+
+.sidebar-right {
+    float: right;
+  .sidebar-right-fon {   
+    width: 210px;
+    background: #f6f8fe;
+    padding: 10px;
+    border-radius: 3px;
+  }
+}
+
 .sidebar-m { font-size: 0.96em;
 .pgbar {width: 95%;margin-top: 2px;}
 .mn i.fa {color: #ffb74d;}
@@ -246,6 +257,17 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 
 #login-buttons .btn  {text-align: left !important;}
 
+.sidebar-right { 
+.dis-info {color: #666;font-size: 13px;clear: both;display: block;}
+.dis-info-more{font-size: 13px;margin-top: 10px;display: block;}
+.dis-info-name {color: #333;font-size: 18px;display: block;padding-top: 5px;padding-bottom: 5px;text-align: center;}	
+.dis-info-rss {display: block;margin-top: 10px;font-size: 13px;}
+.catimg {    margin: 0 auto;    width: 65px;}
+.num-info{color: #F7941D;font-weight:400;}
+.cat-ava {margin-bottom: 15px;height: 50px;}
+.cat-info {font-size: 13px;color: #666; margin-top: 15px;}
+}
+
 .sidebar {    
 .vid {color: #919191;}
 .cat-link {margin-bottom: 9px;}	
@@ -258,21 +280,13 @@ a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
 .badge-wrapper.bullet:hover, .badge-wrapper.bullet span.badge-category:hover, a.cvet:hover {color: #f56400;}
 .cat-link .topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 2px;margin-right: 6px;}
 a.info{font-size: 16px;    margin-top: 3px;    display: inline-block;}
-.catimg {    margin: 0 auto;    width: 65px;}
 .avahome img {width: 38px;height:38px;}
-.cat-ava {margin-bottom: 15px;height: 50px;}
-.cat-info {font-size: 13px;color: #666; margin-top: 15px;}
 .avahome {float: left;margin-right: 12px;margin-top: 3px;}
 .badge-wrapper {font-size: 14px;}
 #create-topic {background: #e7672e;color: #fff;margin-bottom: 10px;width: 99%;}
 #create-topic:hover {background: #f56400;color:#fff;}	
-.dis-info {color: #666;font-size: 13px;clear: both;display: block;}
-.dis-info-more{font-size: 13px;margin-top: 10px;display: block;}
-.dis-info-name {color: #333;font-size: 18px;display: block;padding-top: 5px;padding-bottom: 5px;text-align: center;}	
-.dis-info-rss {display: block;margin-top: 10px;font-size: 13px;}
 .footer{margin-bottom: 12px;margin-left: 7px;}
 .footer a.more-link{font-size: 13px;}	
-.num-info{color: #F7941D;font-weight:400;}
 }
 
 .nav-pills > li > a {color: #667d99;}
@@ -866,7 +880,7 @@ border-radius: 0px;
 
 /*add mobile*/
 html.mobile-view { html {font-weight: 400;}
-.sidebar, .user-signature, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
+.sidebar, .sidebar-right, .user-signature, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
  #scroll-bottom, #scroll-top, .sidebar-m, .category-list  .category-description,  .container-bar, .topic-excerpt, .sidebar-add-qa {display: none !important;}
 .navigation-categories {th.latest, td.latest {display: none;}.category {width: 99%;}}
 .topic-post.comment .topic-avatar {padding-top: 0;}
