@@ -13,9 +13,12 @@ export default createWidget('toxu-info', {
       
     contents.push(
       new RawHtml({ html: `<div class="toxu-info">
-      <div class="toxu-info-soc"><a class="info-soc" href="./help">Правила</a> <a class="info-soc" href="./qa">Писатели</a> </div>
+      <div class="toxu-info-soc">
+      <a class="info-soc" target="_blank" href="./about">О нас</a> 
+      <a class="info-soc" target="_blank" href="./help">Помощь</a> 
+      <a class="info-soc" target="_blank" href="./qa">Писатели</a>
+      </div>
       ©  2017–2018 «Toxu» — <a class="info-soc my" href="https://toxu.ru/u/${username}/summary">${username}</a>
-
       </div>`})); 
       
     } else { 
