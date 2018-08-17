@@ -295,7 +295,7 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 .cat-link {margin-bottom: 9px;}	
 .badge-wrapper.bullet .badge-category-bg {margin-right: 8px;width: 6px !important;height: 6px;}	
 .badge-wrapper.bullet .badge-category-parent-bg {display: none;}
- a.box.bar:hover, .discourse-tag.bullet:hover, a.info-soc:hover {color: #f56400;}
+ a.box.bar:hover, .discourse-tag.bullet:hover {color: #f56400;}
 .badge-wrapper.bullet .badge-category-bg:hover {opacity: 1;}
 .badge-notification {color: #f56400 !important;font-size: 14px;background-color: #fff;margin-top: -2px;}
 .badge-wrapper.bullet {padding: 4px 0 4px 4px;}
@@ -313,7 +313,9 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
     font-size: 13px;
     color: #919191;
 .toxu-info-soc {margin-bottom: 6px; }
-a.info-soc {color: #919191;}	
+a.info-soc {color: #919191;margin-right: 6px;}
+a.info-soc.my:first-letter {display: inline-block;color: #f56400;}
+a.info-soc:hover {color: #f56400;}
 }
 	
 }
