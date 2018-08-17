@@ -8,22 +8,8 @@
 <div class="sidebar"> 
 <div class="sidebar-fix"> 
 <div class="sidebar-fon"> 
-    {{#if category.uploaded_logo.url}}
-      <div class="catimg">{{cdn-img src=category.uploaded_logo.url class="cat-big"}}</div>
-      {{#if category.description}}
-         <span class="dis-info-name">{{{dir-span category.name}}}</span>
-         <span class="dis-info">{{{dir-span category.description}}}<br><br> Вопросов: <span class="num-info">{{{dir-span category.topic_count}}}</span></span>
-<span class="dis-info-more"><a href="https://toxu.ru{{{dir-span category.topic_url}}}"><i class="fa fa-list" aria-hidden="true"></i> подробнее...</a></span>
-<span class="dis-info-rss"><a href="https://toxu.ru/c/{{{dir-span category.slug}}}.rss"><i class="fa fa-rss" aria-hidden="true"></i>
- лента раздела...</a></span>
-      {{/if}}
-    {{/if}}
- 
-     {{cat-info src=category.categorization}}
+{{mount-widget widget="sidebar-items"}}
 </div> 
-<div class="sidebar-qa">
-{{dir-span category.categorqa}}
-</div>
 </div>
 </div>
 
@@ -69,12 +55,11 @@
 <span class="d-button-label">Задать вопрос</span>
 </button></div>
 
- <div class="sidebar-m"> 
- {{mount-widget widget="sub-menu"  args=(hash listLoading=loading)}}
- </div>
+<div class="sidebar-right"> 
+    {{cat-info category=category}}
+</div>
 
- </div>
-
+</div>
 </div>
 
 {{plugin-outlet name="discovery-below"}}
