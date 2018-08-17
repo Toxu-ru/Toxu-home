@@ -3,10 +3,10 @@ import computed from 'ember-addons/ember-computed-decorators';
 export default Ember.Component.extend({
   tagName: '',
 
- @computed('src')
-  catTxt(src) {
+ @computed('categ')
+  catTxt(categ) {
    
-    return Discourse.getURLWithCDN(src);
+    return Discourse.getURLWithCDN(categ);
 
   }
   
