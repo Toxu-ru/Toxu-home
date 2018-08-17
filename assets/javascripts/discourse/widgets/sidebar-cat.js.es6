@@ -77,7 +77,7 @@ if (!this.currentUser) {
     });
 } else {
   links.push({
-      href: "my/preferences/categories",
+      href: "/my/preferences/categories",
       className: "top-cat",
       label: "main.cat-you",
       title: "user.tracked_categories",
