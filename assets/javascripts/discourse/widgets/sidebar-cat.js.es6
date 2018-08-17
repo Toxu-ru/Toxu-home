@@ -154,7 +154,8 @@ results.push(this.listCategories());
     const moreCount = categories.length - maxCategoriesToDisplay;
     categories = categories.slice(0, maxCategoriesToDisplay);
 
-    return this.attach("cat-categories", { categories, moreCount });
+    var cslug = this.attrs.cslug;
+    return this.attach("cat-categories", { categories, moreCount, cslug });
 },
 
 
