@@ -314,7 +314,8 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
     color: #919191;
 .toxu-info-soc {margin-bottom: 6px; }
 a.info-soc {color: #919191;margin-right: 6px;}
-a.info-soc.my:first-letter {display: inline-block;color: #f56400;}
+a.info-soc.my {display: inline-block;}	
+a.info-soc.my:first-letter {color: #f56400;}
 a.info-soc:hover {color: #f56400;}
 }
 	
