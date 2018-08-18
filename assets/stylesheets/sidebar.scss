@@ -374,7 +374,7 @@ section.post-menu-area { max-width: 200px;float: right;}
 }
 
 nav.post-controls button.reply.create span.d-button-label {display: none;}
-button.reply.create {max-width: 83px !important;}
+button.reply.create {max-width: 83px !important;color: #444 !important;}
 nav.post-controls button.reply.create:after {   content: "комм";}
 .topic-post.comment nav.post-controls button.reply.create:after { margin-left: 3px;  content: "комм";}
 
