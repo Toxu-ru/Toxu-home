@@ -27,5 +27,5 @@ ru:
         title: 'Комментарии'
         help: 'begin composing a comment on this answer'
         show_comments:
-          all: 'скрыт {{count}} комментария'
-          more: 'скрыты {{count}} комментариев'  
+          all: 'скрыт {{count}} комментарий'
+          more: 'скрыто {{count}} комм.'  
