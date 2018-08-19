@@ -23,6 +23,12 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 /*колонки*/
 .wrap {max-width: 90em;}
 
+
+.pravo {
+    float: right;
+    margin-right: 4px;
+}
+
 html:not(.mobile-view) {
 
 @font-face { 
