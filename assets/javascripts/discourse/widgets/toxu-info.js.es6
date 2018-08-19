@@ -17,6 +17,18 @@ export default createWidget('toxu-info', {
       <a class="info-soc" target="_blank" href="./about">О нас</a> 
       <a class="info-soc" target="_blank" href="./help">Помощь</a> 
       <a class="info-soc" target="_blank" href="./qa">Писатели</a>
+
+<div class="dropdown">
+<a class="info-soc pravo" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;margin-right: 4px;">
+Ещё <i class="fa fa-angle-down" aria-hidden="true"></i>
+</a>
+  <div class="dropdown-menu soc" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" rel="nofollow" target="_blank" href="https://vk.com/toxu_ru">ВКонтакте</a>
+    <a class="dropdown-item" rel="nofollow" target="_blank" href="https://twitter.com/toxu_russian">Twitter</a>
+    <a class="dropdown-item" rel="nofollow" target="_blank" href="https://www.facebook.com/toxu.ru">Facebook</a>
+  </div>
+</div>
+     
       </div>
       ©  2017–2018 «Toxu» — <a class="info-soc my" href="https://toxu.ru/u/${username}/summary">${username}</a>
       </div>`})); 
