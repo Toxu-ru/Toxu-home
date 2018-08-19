@@ -31,17 +31,6 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 
 html:not(.mobile-view) {
 
-@font-face { 
-  font-family: 'Fira Sans'; 
-  src: url($Firasansregular) format('woff2'), 
-       url('$Firasansregular-2') format('woff'); 
-  font-weight: normal; 
-  font-style: normal; 
-}
-
-a.title, a.topic-link, a.fancy-title, .cat-pods a, .sidebar  a.widget-link, .sidebar  a.badge-wrapper, #banner-content-t h1 {font-family: 'Fira Sans',sans-serif;}
-
-	
 .blog-list {position: relative;}
  li.nav-item-guidelines {display: none;}
 .sidebar {width: 20%;float: left;}
