@@ -24,7 +24,8 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 .wrap {max-width: 90em;}
 
 
-.pravo {
+.dropdown.pravo {
+    display: inline-block;
     float: right;
     margin-right: 4px;
 }
