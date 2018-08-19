@@ -19,13 +19,13 @@ export default createWidget('toxu-info', {
       <a class="info-soc" target="_blank" href="./qa">Писатели</a>
 
 <div class="dropdown pravo">
-<a class="info-soc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;margin-right: 4px;">
-Ещё <i class="fa fa-angle-down" aria-hidden="true"></i>
-</a>
+<a title="Мы в социальных сетях..." class="info-soc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Ещё...</a>
   <div class="dropdown-menu soc" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" rel="nofollow" target="_blank" href="https://vk.com/toxu_ru">ВКонтакте</a>
-    <a class="dropdown-item" rel="nofollow" target="_blank" href="https://twitter.com/toxu_russian">Twitter</a>
-    <a class="dropdown-item" rel="nofollow" target="_blank" href="https://www.facebook.com/toxu.ru">Facebook</a>
+  <a class="dropdown-item" rel="nofollow" target="_blank" href="https://vk.com/toxu_ru">ВКонтакте</a>
+  <a class="dropdown-item" rel="nofollow" target="_blank" href="https://my.mail.ru/community/toxu/">Мой мир@Mail.Ru</a>
+  <a class="dropdown-item" rel="nofollow" target="_blank" href="https://twitter.com/toxu_russian">Twitter</a>
+  <a class="dropdown-item" rel="nofollow" target="_blank" href="https://www.facebook.com/toxu.ru">Facebook</a>
   </div>
 </div>
      
