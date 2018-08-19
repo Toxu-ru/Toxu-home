@@ -18,8 +18,8 @@ export default createWidget('toxu-info', {
       <a class="info-soc" target="_blank" href="./help">Помощь</a> 
       <a class="info-soc" target="_blank" href="./qa">Писатели</a>
 
-<div class="dropdown">
-<a class="info-soc pravo" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;margin-right: 4px;">
+<div class="dropdown pravo">
+<a class="info-soc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="float: right;margin-right: 4px;">
 Ещё <i class="fa fa-angle-down" aria-hidden="true"></i>
 </a>
   <div class="dropdown-menu soc" aria-labelledby="dropdownMenuButton">
