@@ -25,7 +25,7 @@ export default createWidget('toxu-info', {
   <a class="dropdown-item" rel="nofollow" target="_blank" href="https://vk.com/toxu_ru"><i class="fa fa-vk" aria-hidden="true"></i></a>
   <a class="dropdown-item" rel="nofollow" target="_blank" href="https://twitter.com/toxu_russian"><i class="fa fa-twitter" aria-hidden="true"></i></a>
   <a class="dropdown-item" rel="nofollow" target="_blank" href="https://www.facebook.com/toxu.ru"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-  <a class="dropdown-item" rel="nofollow" target="_blank" href="https://my.mail.ru/community/toxu/">@M</a>
+  <a class="dropdown-item" rel="nofollow" target="_blank" href="https://my.mail.ru/community/toxu/"><b>@</b></a>
   </center></div>
 </div>
      
