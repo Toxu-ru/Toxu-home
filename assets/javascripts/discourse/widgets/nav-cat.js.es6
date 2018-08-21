@@ -46,9 +46,10 @@ export default createWidget('nav-cat', {
     contents.push( new RawHtml({ html: `<div class="infocat">
 
    <div calss="imgcat"><img src="${url_logo}" class="cat-big"> </div>
-   
+   <div calss="desc-info">
    <div calss="descr"> ${description} </div> 
    <div calss="vopr"> Вопросов в разделе:${topic_count} </div>
+   </div>
    <div calss="c-info">
    <i aria-hidden="true" class="fa fa-list"></i> <a href="${topic_url}">о разделе...</a>  &nbsp; &nbsp; 
    <a href="https://toxu.ru/c/${slug}.rss"><i aria-hidden="true" class="fa fa-rss"></i> лента раздела...</a>
