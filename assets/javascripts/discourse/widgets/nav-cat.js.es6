@@ -25,7 +25,7 @@ export default createWidget('nav-cat', {
  var topic_count = attrs.category.topic_count;
  var topic_url = attrs.category.topic_url;
       
-   console.log(attrs);
+ console.log(attrs);
       
  if (attrs.categories) {
   
@@ -43,11 +43,16 @@ export default createWidget('nav-cat', {
   }
       
    if (slug == "test") { 
-    contents.push( new RawHtml({ html: `<div>
+    contents.push( new RawHtml({ html: `<div class="infocat">
 
-    <img src="${url_logo}" class="cat-big"> ${description}  <br> А вопросов тут всего:  ${topic_count} <br>
-  <i aria-hidden="true" class="fa fa-list"></i> А главная общая тема тут для раздела:   <a href="${topic_url}"> вот</a>
-
+   <div calss="imgcat"><img src="${url_logo}" class="cat-big"> </div>
+   
+   <div calss="descr"> ${description} </div> 
+   <div calss="vopr"> Вопросов в разделе:${topic_count} </div>
+   <div calss="c-info">
+   <i aria-hidden="true" class="fa fa-list"></i> <a href="${topic_url}">о разделе...</a>  &nbsp; &nbsp; 
+   <a href="https://toxu.ru/c/${slug}.rss"><i aria-hidden="true" class="fa fa-rss"></i> лента раздела...</a>
+   </div>
     </div>`}));  
                        
     } else{ }       
