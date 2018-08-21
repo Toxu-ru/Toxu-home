@@ -19,7 +19,7 @@ export default createWidget('nav-cat', {
   if (slug == "occultism") { nsub = 'Религия, Непознанное'; } else {  }
   if (slug == "toxu") { nsub = 'Toxu, Вопросы'; } else {   }
   
-    
+   console.log(attrs);
       
  if (attrs.categories) {
   
