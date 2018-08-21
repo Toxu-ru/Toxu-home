@@ -19,6 +19,12 @@ export default createWidget('nav-cat', {
   if (slug == "occultism") { nsub = 'Религия, Непознанное'; } else {  }
   if (slug == "toxu") { nsub = 'Toxu, Вопросы'; } else {   }
   
+      
+ var url_logo =  attrs.category.uploaded_logo.url;
+ var description =  attrs.category.description;
+ var topic_count = attrs.category.topic_count;
+ var topic_url = attrs.category.topic_url;
+      
    console.log(attrs);
       
  if (attrs.categories) {
@@ -39,7 +45,8 @@ export default createWidget('nav-cat', {
    if (slug == "test") { 
     contents.push( new RawHtml({ html: `<div>
 
-    тест тест
+    <img src="${url_logo}" class="cat-big"> ${description}  <br> А вопросов тут всего:  ${topic_count} <br>
+  <i aria-hidden="true" class="fa fa-list"></i> А главная общая тема тут для раздела:   <a href="${topic_url}"> вот</a>
 
     </div>`}));  
                        
