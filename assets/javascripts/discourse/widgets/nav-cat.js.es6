@@ -24,7 +24,8 @@ export default createWidget('nav-cat', {
  var description =  attrs.category.description;
  var topic_count = attrs.category.topic_count;
  var topic_url = attrs.category.topic_url;
-      
+ var post_count  = attrs.category.post_count;
+ 
  console.log(attrs);
       
  if (attrs.categories) {
@@ -51,7 +52,8 @@ export default createWidget('nav-cat', {
    <div calss="vopr"> Вопросов в разделе:${topic_count} </div>
    </div>
    <div calss="c-info">
-   <i aria-hidden="true" class="fa fa-list"></i> <a href="${topic_url}">о разделе...</a>  &nbsp; &nbsp; 
+   <i class="fa fa-eye" aria-hidden="true"></i>  ${post_count} &nbsp; &nbsp; 
+   <a href="${topic_url}"><i aria-hidden="true" class="fa fa-list"></i> о разделе...</a>  &nbsp; &nbsp; 
    <a href="https://toxu.ru/c/${slug}.rss"><i aria-hidden="true" class="fa fa-rss"></i> лента раздела...</a>
    </div>
     </div>`}));  
