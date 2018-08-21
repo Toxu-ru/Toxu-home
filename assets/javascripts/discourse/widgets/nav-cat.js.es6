@@ -23,12 +23,12 @@ export default createWidget('nav-cat', {
  contents.push(
  new RawHtml({ html: `<div>  
 
-  <h1 class="navig"> <a href="">Главная</a> / <a href="http://localhost:3000/c/${slug}">${nsub}</a> / ${name}</h1> 
+  <h1 class="navig"> <a href="https://toxu.ru">Главная</a> / <a href="https://toxu.ru/c/${slug}">${nsub}</a> / ${name}</h1> 
   </div>`})); 
    
   } else { 
   
-  contents.push( new RawHtml({ html: `<div><h1 class="navig"> <a href="">Главная</a> / ${name}</h1> </div>`}));
+  contents.push( new RawHtml({ html: `<div><h1 class="navig"> <a href="https://toxu.ru">Главная</a> / ${name}</h1> </div>`}));
 
   }
 
