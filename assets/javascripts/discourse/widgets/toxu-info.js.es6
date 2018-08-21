@@ -38,7 +38,7 @@ export default createWidget('toxu-info', {
      contents.push(
        new RawHtml({ html: `<div class="toxu-info">
 
-      © 2017–2018 «Toxu» — вопросы и ответы
+      © 2018 «Toxu» — вопросы и ответы
 
       </div>`}));
    
