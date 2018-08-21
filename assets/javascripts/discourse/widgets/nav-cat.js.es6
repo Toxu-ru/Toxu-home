@@ -54,7 +54,7 @@ export default createWidget('nav-cat', {
    <div class="c-info">
    <i class="fa fa-eye" aria-hidden="true"></i>  <span class="coun">${post_count}</span> &nbsp; &nbsp; 
    <a href="${topic_url}"><i aria-hidden="true" class="fa fa-list"></i> о разделе...</a>  &nbsp; &nbsp; 
-   <span class="rss-i"> <a href="https://toxu.ru/c/${slug}.rss"><i aria-hidden="true" class="fa fa-rss"></i> лента раздела...</a></span>
+   <span class="rss-i"> <a href="https://toxu.ru/c/${slug}.rss"><i aria-hidden="true" class="fa fa-rss"></i> лента...</a></span>
    </div>
     </div>`}));  
                        
