@@ -5,9 +5,7 @@ export default createWidget('nav-cat', {
   buildKey: (attrs) => 'nav-cat',
  
  html(attrs, state) {
-    const { currentUser } = this;
-    let contents = []
-    if (currentUser) {
+  let contents = []
   var name = attrs.name;
   var slug = attrs.category.slug;
   var nsub;
@@ -59,7 +57,6 @@ export default createWidget('nav-cat', {
     </div>`}));  
                        
     } else{ }       
-   
-} 
+
 return contents;
 }});
