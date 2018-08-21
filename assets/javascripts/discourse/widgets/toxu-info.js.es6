@@ -14,9 +14,9 @@ export default createWidget('toxu-info', {
     contents.push(
       new RawHtml({ html: `<div class="toxu-info">
       <div class="toxu-info-soc">
-      <a class="info-soc" target="_blank" href="./about">О нас</a> 
-      <a class="info-soc" target="_blank" href="./help">Помощь</a> 
-      <a class="info-soc" target="_blank" href="./qa">Писатели</a>
+      <a class="info-soc" target="_blank" href="https://toxu.ru/about">О нас</a> 
+      <a class="info-soc" target="_blank" href="https://toxu.ru/help">Помощь</a> 
+      <a class="info-soc" target="_blank" href="https://toxu.ru/qa">Писатели</a>
 
 <noindex><div class="dropdown pravo">
 <a title="Мы в социальных сетях..." class="info-soc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
