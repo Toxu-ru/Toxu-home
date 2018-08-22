@@ -2,7 +2,16 @@
 <div class="sidebar-right-fon">
 
 <div class="catimg">{{cdn-img src=category.uploaded_logo.url class="cat-big"}}</div>
-<div class="cat-big-img">{{cdn-img src=category.categorimg class="cat-big"}}</div>
+
+<div class="cat-big-img">
+
+{{cdn-img src=category.categorimg class="cat-big"}}
+
+<div class="cat-img-num"><i class="fa fa-eye" aria-hidden="true"></i> {{{dir-span category.post_count}}}</div>
+
+<div class="cat-img-qa"><i aria-hidden="true" class="fa fa-question"></i> {{{dir-span category.topic_count}}}</div>
+
+</div>
 
 <span class="dis-info-name">{{{dir-span category.name}}}</span>
 
