@@ -17,9 +17,6 @@ export default createWidget('nav-cat', {
   if (slug == "occultism") { nsub = 'Религия, Непознанное'; } else {  }
   if (slug == "toxu") { nsub = 'Toxu, Вопросы'; } else {   }
   
-      
-
- var description =  attrs.category.description;
 // console.log(attrs);
       
  if (attrs.categories) {
@@ -38,11 +35,8 @@ export default createWidget('nav-cat', {
   }
       
    if (slug == "test") { 
-    contents.push( new RawHtml({ html: `<div class="infocat">
-     ${description} 
-    </div>`}));  
-                       
-    } else{ }       
+    contents.push( new RawHtml({ html: `<div class="infocat">Предложения, пожелания, критика - приветствуется...</div>`}));  
+   } else{ }       
 
 return contents;
 }});
