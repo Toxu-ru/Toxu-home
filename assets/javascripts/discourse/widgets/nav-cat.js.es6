@@ -24,7 +24,7 @@ export default createWidget('nav-cat', {
  var topic_url = attrs.category.topic_url;
  var post_count  = attrs.category.post_count;
  
- //console.log(attrs);
+ console.log(attrs);
       
  if (attrs.categories) {
   
