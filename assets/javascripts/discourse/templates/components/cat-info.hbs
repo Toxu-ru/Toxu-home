@@ -3,26 +3,20 @@
 
 <div class="catimg">{{cdn-img src=category.uploaded_logo.url class="cat-big"}}</div>
 
-
-
 <div class="cat-big-img">
+    <div class="dropdown pravo">
+    <a title="{{{dir-span category.name}}}" class="info-soc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{cdn-img src=category.categorimg class="cat-big"}}</a>
 
-<div class="dropdown pravo">
-<a title="{{{dir-span category.name}}}" class="info-soc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-{{cdn-img src=category.categorimg class="cat-big"}}</a>
-  <div class="dropdown-menu cat" aria-labelledby="dropdownMenuButton">
-{{cdn-img src=category.categorimg class="cat-bigs"}}
-<br>
-{{{dir-span category.description}}}
-</div>
-</div>
-
-<div class="cat-img-num"><i class="fa fa-eye" aria-hidden="true"></i> {{{dir-span category.post_count}}}</div>
-<div class="cat-img-qa"><i aria-hidden="true" class="fa fa-question"></i> {{{dir-span category.topic_count}}}</div>
-
+    <div class="dropdown-menu cat" aria-labelledby="dropdownMenuButton">
+    {{cdn-img src=category.categorimg class="cat-bigs"}}
+        <div class="cattxt">{{{dir-span category.categortxt}}}</div>
+    </div>
 </div>
 
-
+    <div class="cat-img-num"><i class="fa fa-eye" aria-hidden="true"></i> {{{dir-span category.post_count}}}</div>
+    <div class="cat-img-qa"><i aria-hidden="true" class="fa fa-question"></i> {{{dir-span category.topic_count}}}</div>
+</div>
 
 <span class="dis-info-name">{{{dir-span category.name}}}</span>
 
