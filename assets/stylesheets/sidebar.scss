@@ -453,7 +453,7 @@ h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-w
 .links{margin-left:16px;}
 
 /*раздел категории*/
-.navigation-topics .category-breadcrumb, .category-heading, .navigation-categories .sidebar-m  {display: none; }
+.navigation-topics .category-breadcrumb, .category-heading, .navigation-categories .sidebar-m, .navigation-categories .sidebar-right {display: none; }
 body.navigation-categories {
     .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa {display: none !important;}
      #create-topic {display: block !important;}
