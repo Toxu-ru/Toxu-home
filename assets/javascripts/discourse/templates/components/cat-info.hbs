@@ -10,7 +10,12 @@
 
     <div class="dropdown-menu cat" aria-labelledby="dropdownMenuButton">
     {{cdn-img src=category.categorimg class="cat-bigs"}}
-        <div class="cattxt">{{{dir-span category.categortxt}}}</div>
+        <div class="cattxt">{{{dir-span category.categortxt}}}
+        
+<br>Количество заданных вопросов в разделе – <span class="num-info">{{{dir-span category.topic_count}}}</span>, 
+количество просмотров – <span class="num-info">{{{dir-span category.post_count}}}</span>.
+        
+        </div>
     </div>
 </div>
 
@@ -23,7 +28,8 @@
 <span class="dis-info">{{{dir-span category.description}}}<br>
 
 <span class="scryt">
-<br> <i class="fa fa-eye" aria-hidden="true"></i> {{{dir-span category.post_count}}} &nbsp; - &nbsp; вопросов: <span class="num-info">{{{dir-span category.topic_count}}}</span>
+<br> <i class="fa fa-eye" aria-hidden="true"></i> {{{dir-span category.post_count}}} &nbsp; - &nbsp; вопросов: 
+<span class="num-info">{{{dir-span category.topic_count}}}</span>
 </span>
 
 </span>
