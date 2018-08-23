@@ -12,8 +12,12 @@
     {{cdn-img src=category.categorimg class="cat-bigs"}}
         <div class="cattxt">{{{dir-span category.categortxt}}}
         
-<div class="cattxtsi">Количество заданных вопросов в разделе – <span class="num-info">{{{dir-span category.topic_count}}}</span>, 
-количество просмотров – <span class="num-info">{{{dir-span category.post_count}}}</span>.</div>
+                <div class="cattxtsi" style="border-left: 2px solid #{{{dir-span category.color}}};">
+                <div class="telocat">
+                Количество заданных вопросов в разделе – <span class="num-info">{{{dir-span category.topic_count}}}</span>, 
+                количество просмотров – <span class="num-info">{{{dir-span category.post_count}}}</span>.
+                </div>
+                </div>
         
         </div>
     </div>
