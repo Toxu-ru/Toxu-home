@@ -7,6 +7,10 @@ export default createWidget('nav-cat', {
  html(attrs, state) {
   let contents = []
   var name = attrs.name;
+  
+  if (name) {   
+  
+  
   var slug = attrs.category.slug;
   var nsub;
     
@@ -17,8 +21,6 @@ export default createWidget('nav-cat', {
   if (slug == "occultism") { nsub = 'Религия, Непознанное'; } else {  }
   if (slug == "toxu") { nsub = 'Toxu, Вопросы'; } else {   }
   
-// console.log(attrs);
-      
  if (attrs.categories) {
   
  contents.push(
@@ -34,9 +36,7 @@ export default createWidget('nav-cat', {
 
   }
       
-   if (slug == "test") { 
-    contents.push( new RawHtml({ html: `<div class="infocat">Предложения, пожелания, критика - приветствуется...</div>`}));  
-   } else{ }       
+  } else { contents.push( new RawHtml({ html: `<div> </div>`}));  }   
 
 return contents;
 }});
