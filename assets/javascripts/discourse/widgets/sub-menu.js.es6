@@ -137,7 +137,7 @@ ${my_bio}
   
 <br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
-<div class="img-my-menu"></div>
+
 </div>`}));
 
 }
@@ -174,10 +174,6 @@ ${my_bio}
 
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="red">М</font><font color="orange">о</font><font color="brown">я</font> карточка</a>. Как видят меня?</div>
  
-<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
-<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
-
-<div class="img-my-menu"></div>
 </div>`}));
 
 }
@@ -214,11 +210,6 @@ ${my_bio}
 
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="red">М</font><font color="orange">о</font><font color="brown">я</font> карточка</a>. Как видят меня?</div>
   
-<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
-<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
-
-<div class="img-my-menu"></div>
-
 </div>`}));
 
 }
@@ -255,9 +246,7 @@ ${my_bio}
  
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="red">М</font><font color="orange">о</font><font color="brown">я</font> карточка</a>. Как видят меня?</div>
   
-<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
-<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
-<div class="img-my-menu"></div>
+
 </div>`}));
 
 }
@@ -294,10 +283,6 @@ ${my_bio}
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Раздел <a href="https://toxu.ru/c/dev">dev</a> - для разработки...</div>
  
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="red">М</font><font color="orange">о</font><font color="brown">я</font> карточка</a>. Как видят меня?</div>
- 
-<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
-<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
-<div class="img-my-menu"></div>
 
 </div>`}));
 }   
@@ -321,7 +306,6 @@ new RawHtml({ html: `<div>
 </a></center>
 <br><br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
 <a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
-<div class="img-my-menu"></div>
 
 </div>`}) );
   
