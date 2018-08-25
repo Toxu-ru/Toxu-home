@@ -100,15 +100,15 @@ a:hover {color: #f56400;}
   }
 	
  .mtag {
-    font-size: 13px;
-    display: inline-block;
+    font-size: 13px !important;
+    display: table;
     background: rgba(82,186,213,0.1);
     text-decoration: none;
     white-space: nowrap;
     overflow: visible;
-    margin-right: 2px;
     padding: .2em .8em;
     line-height: 1.2;
+    margin: 8px 5px 2px 0;	 
     border-radius: 3px;
     border-image: initial;
 }	
