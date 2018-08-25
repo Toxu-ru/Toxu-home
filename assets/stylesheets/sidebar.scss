@@ -60,6 +60,7 @@ a:hover {color: #f56400;}
   .avahome {float: left;margin-right: 12px;margin-top: 3px;}
 
  .topic-list-link-top {
+    color: #667d99;
     font-size: 15px;
     margin-bottom: 4px;
   }
@@ -75,6 +76,7 @@ a:hover {color: #f56400;}
  .cat-info {width: 210px;   padding: 10px;}
  	
  .sidebar-qa {
+   color: #666;	 
    background: #f6f8fe;
    width: 210px;
    padding: 10px;
@@ -117,9 +119,8 @@ a.link:hover{color: #f56400;}
 	
 }
 
-.sidebar-qa {padding-top: 10px;font-size:13px;color: #666;
-.fa{margin-right: 4px;color: #339900;}
-}
+.sidebar-qa .fa{margin-right: 4px;color: #339900;}
+
 	
 @media screen and (max-width : 1200px) {
 #scroll-top  {display: none !important;}
@@ -282,13 +283,23 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
 #login-buttons .btn  {text-align: left !important;}
 
 .sidebar-right { 
+	
 .dis-info {color: #666;font-size: 13px;clear: both;display: block;}
 .dis-info-more{font-size: 13px;margin-top: 10px;display: block;}
 .dis-info-name {color: #333;font-size: 18px;display: block;padding-top: 5px;padding-bottom: 5px;text-align: center;}	
 .dis-info-rss {display: block;margin-top: 10px;font-size: 13px;}
 .num-info{color: #F7941D;font-weight:400;}
+	
 .cat-ava {margin-bottom: 15px;height: 50px;}
 .cat-info {font-size: 13px;color: #666;}
+
+.cat-info img {
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin-right: 5px;
+}	
+	
 }
 
 .sidebar {    
