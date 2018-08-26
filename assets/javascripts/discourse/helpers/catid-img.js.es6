@@ -12,7 +12,7 @@ export function categoryBadgeHTML(category, opts) {
          Discourse.SiteSettings.suppress_uncategorized_badge
         )
    ) return "";   
-    
+  console.log(category);
   let categoryID = escapeExpression(get(category, 'id'));
   let img = Discourse.Category.findById(categoryID).uploaded_logo.url;
   let categoryName = escapeExpression(get(category, 'name'));
