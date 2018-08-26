@@ -14,7 +14,7 @@ export function categoryBadgeHTML(category, opts) {
    ) return "";   
     
   let categoryID = escapeExpression(get(category, 'id'));
-  let img = Discourse.Category.findById(categoryID).uploaded_logo.url;
+  let img = Discourse.Category.findById(categoryID).categorimg;
   let categoryName = escapeExpression(get(category, 'name'));
   let url = opts.url ? opts.url : Discourse.getURL("/c/") + Discourse.Category.slugFor(category); 
  
