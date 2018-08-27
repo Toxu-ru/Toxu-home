@@ -7,7 +7,7 @@ function setDir(text) {
   
 if (slug == 'blog') { 
    
-  return `<span class="timg"><img alt="блоги" src="/uploads/default/original/2X/0/0e338b885252f366d871634846d7836ff8fa7ac2.jpeg"></span>`;
+  return `<span class="timg"><img alt="блоги" src="/uploads/default/original/2X/c/c73cd3461513cda6f28f8d81fc4f0bbcd50601c4.jpeg"></span>`;
   
  } else { 
    
