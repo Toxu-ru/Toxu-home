@@ -1,6 +1,10 @@
 .topic-body .contents .cooked, .help, .d-editor-preview {font-size: 16px;font-weight: 400;line-height: 1.56;}
 .topic-post.comment .topic-body .contents .cooked {font-size: 1em;}
 
+@media (max-width: 600px){
+    .banner-toxu-t {display:none !important;}
+}
+
 
 /*-comm post_1 + none signature hidden и для общения нет подробного */
 #post_1 nav.post-controls button.reply, .post-hidden .user-signature, .category-other .sidebar-fon .dis-info-more {
