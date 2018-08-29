@@ -7,7 +7,7 @@ export default createWidget('sub-menu', {
   html(args, state) {
    if (this.site.mobileView)
   	return;	  
-  
+  console.log(this.site.mobileView);
     const { currentUser } = this;
     let contents = []
     if (currentUser) {
