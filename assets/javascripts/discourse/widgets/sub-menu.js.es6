@@ -5,6 +5,9 @@ export default createWidget('sub-menu', {
   buildKey: (args) => 'user-profile',
 
   html(args, state) {
+   if (this.site.mobileView)
+  	return;	  
+  
     const { currentUser } = this;
     let contents = []
     if (currentUser) {
