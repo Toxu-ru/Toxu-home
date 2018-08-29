@@ -53,11 +53,56 @@ h1, h2, h3, h4, h5, h6 {font-weight: 400;}
 a:hover {color: #f56400;}
 
 
-.sidebar-right {
-	
-   float: right;
+.category-navigation ol.category-breadcrumb {     margin: 0;}
+.category-other .txt  {display: none !important;}
+.category-test  .infocat { border: 1px solid #ddd;font-size: 13px;color: #777; padding: 5px;margin-left: 8px;}
+.panel-body-contents .badge-notification {background-color: #f56400;}
 
-	.topic-list-link-top {
+.sidebar-right {
+.cattxtsi{margin-top: 15px;}
+.telocat {margin-left: 7px;}    
+.dropdown-menu.cat {
+.txt {font-style: italic;margin-top: 15px; }
+.cattxt a.txt {display: inline;color:#07c;padding: 0;}     
+.cattxt a.txt:hover  {color:#f56400;}
+width: 400px;
+left: -420px;
+bottom: -273px;
+height: 370px;
+border-radius: 2px;
+} 
+.cattxt{padding: 6px;}     
+.catimg, .scryt {    display: none;}
+.cat-big-img{display: inline-block !important;}
+.cat-big { width: 210px;}
+.cat-img-num {
+    margin-top: 0px;
+    margin-left: 2px;
+    position: absolute;
+    border-radius: 4px;
+    padding: 1px 7px 0px 7px;
+    font-size: 12px;
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+}
+
+.cat-img-qa{
+    margin-top: 0px;
+    margin-right: 16px;
+    background-color: rgba(0,0,0,.4);
+    color: #fff;
+    position: absolute;
+    right: 0;
+    border-radius: 4px;
+    padding: 1px 7px 0px 7px;
+}
+	
+	
+	
+	
+  float: right;
+
+ .topic-list-link-top {
     color: #667d99;
     font-size: 15px;
     margin-bottom: 4px;
