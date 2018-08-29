@@ -5,14 +5,16 @@ export default createWidget('toxu-items', {
   buildKey: (attrs) => 'home-toxu',
 
   html(attrs, state) {
+      	if (this.site.mobileView)
+  		return;
+    
     const { currentUser } = this;
     let contents = []
     if (currentUser) { 
     
     const trust_level = currentUser.get('trust_level');
     
-       
-    
+
     } else { 
  
 contents.push(
