@@ -26,11 +26,11 @@ export default createWidget('sidebar-cat', {
   generalLinks() {
     const { siteSettings } = this;
     const links = [];
-
-
+    var activ = document.location.pathname;
+  
     links.push({
       route: "discovery.latest",
-      className: "latest-topics-link",
+      className: "latest-topics-link " + ((activ == '/latest') ? "active" : "") + ((activ == '/') ? "active" : ""),
       label: "filters.latest.title",
       title: "filters.latest.help",
       icon: "newspaper-o"
@@ -39,7 +39,7 @@ export default createWidget('sidebar-cat', {
     if (this.currentUser) {
       links.push({
         route: "discovery.new",
-        className: "new-topics-link",
+        className: "new-topics-link " + ((activ == '/new') ? "active" : ""),
         labelCount: "filters.new.title_with_count",
         label: "filters.new.title",
         title: "filters.new.help",
@@ -49,7 +49,7 @@ export default createWidget('sidebar-cat', {
 
       links.push({
         route: "discovery.unread",
-        className: "unread-topics-link",
+        className: "unread-topics-link " + ((activ == '/unread') ? "active" : ""),
         labelCount: "filters.unread.title_with_count",
         label: "filters.unread.title",
         title: "filters.unread.help",
@@ -58,17 +58,10 @@ export default createWidget('sidebar-cat', {
       });
     }
 
-   links.push({
-      href: "/latest?ascending=true&order=posts",
-      className: "top-topics-link",
-      label: "main.no-otv",
-      title: "main.no-otv",
-      icon: "map-o"
-    });
-    
+
     links.push({
       route: "discovery.top",
-      className: "top-topics-link",
+      className: "top-topics-link "  + ((activ == '/top') ? "active" : ""),
       label: "filters.top.title",
       title: "filters.top.help",
       icon: "free-code-camp"
