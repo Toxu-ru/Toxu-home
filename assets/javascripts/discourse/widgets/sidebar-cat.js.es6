@@ -27,8 +27,6 @@ export default createWidget('sidebar-cat', {
     const { siteSettings } = this;
     const links = [];
 
-    //fa-map-o
-    //var dnopost = 'latest?ascending=true&order=posts';
 
     links.push({
       route: "discovery.latest",
@@ -60,15 +58,11 @@ export default createWidget('sidebar-cat', {
       });
     }
 
-   //fa-map-o
-   var dnopost = 'latest?ascending=true&order=posts';
-   var vbo =  'вопросы с минимальным количеством ответов';
-   var vbov =  'Вопросы без ответов'; 
    links.push({
-      route: "dnopost",
+      href: "/latest?ascending=true&order=posts",
       className: "top-topics-link",
-      label: "vbo",
-      title: "vbov",
+      label: "main.no-otv",
+      title: "main.no-otv",
       icon: "map-o"
     });
     
