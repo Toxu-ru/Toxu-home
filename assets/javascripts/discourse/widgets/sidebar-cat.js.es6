@@ -28,6 +28,7 @@ export default createWidget('sidebar-cat', {
     const links = [];
 
     //fa-map-o
+    //var dnopost = 'latest?ascending=true&order=posts';
 
     links.push({
       route: "discovery.latest",
@@ -59,13 +60,24 @@ export default createWidget('sidebar-cat', {
       });
     }
 
+   //fa-map-o
+   var dnopost = 'latest?ascending=true&order=posts';
+   var vbo =  'вопросы с минимальным количеством ответов';
+   var vbov =  'Вопросы без ответов'; 
+   links.push({
+      route: "dnopost",
+      className: "top-topics-link",
+      label: "vbo",
+      title: "vbov",
+      icon: "map-o"
+    });
+    
     links.push({
       route: "discovery.top",
       className: "top-topics-link",
       label: "filters.top.title",
       title: "filters.top.help",
       icon: "free-code-camp"
-      
     });
 
 if (!this.currentUser) {
