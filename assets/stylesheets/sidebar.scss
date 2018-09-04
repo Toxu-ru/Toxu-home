@@ -443,6 +443,19 @@ nav.post-controls {    margin-top: -10px;}
 .like-button, .share, .who-liked {display: none !important;} 	
 }
 
+.category-test .topic-post.comment .like-button, .topic-post.comment .who-liked {    display: inline-block !important;}
+
+.list-controls {
+li.category-drop   {display: none !important;}
+li.tag-drop i.fa.fa-caret-right {display: none !important;}
+li.tag-drop  .tag-drop-header::after {
+content: "\f0d7"; color: #F7941D;
+margin-left: 8px;
+display: inline-block;
+font-family: FontAwesome;}
+}
+
+
 /*ПМ и комм*/
 .user-messages-page .categ:after {display: inline-block;content: '\f003';font-family: FontAwesome; color:#339900;margin-left: 5px;}
 h2.selected-name{overflow: hidden !important;}
