@@ -368,7 +368,7 @@ i.fa {    margin-right: 5px;    margin-left: 4px;}
     margin-bottom: 4px;
     padding: 4px;
 }
-.kollonka{  margin-left: 15px;}	
+.kollonka{  margin-left: 16px;}	
 .cat-link {margin-bottom: 9px;font-size: 16px;}	
 .badge-wrapper.bullet .badge-category-bg {margin-right: 8px;width: 6px !important;height: 6px;margin-bottom: 2px;}	
 .badge-wrapper.bullet .badge-category-parent-bg {display: none;}
@@ -379,12 +379,14 @@ i.fa {    margin-right: 5px;    margin-left: 4px;}
 .badge-wrapper {font-size: 14px;}
 
 .toxu-info {
-    padding: 16px 0 4px 14px;
+    padding: 1px 0 4px 14px;
     font-size: 12px;
     color: #919191;
 .toxu-info-soc {margin-bottom: 6px; }
 a.info-soc {color: #919191;margin-right: 6px;}
 a.info-soc.my {display: inline-block;}	
+hr.hr{width: 70%;margin-left: 25px;}
+	
 }
 
 a.d-link, .cat-panel span {color: #222;}
