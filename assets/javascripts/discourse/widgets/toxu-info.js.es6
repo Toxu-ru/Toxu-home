@@ -7,9 +7,12 @@ export default createWidget('toxu-info', {
   html(attrs, state) {
     const { currentUser } = this;
     let contents = []
-    if (currentUser) { 
+    var username = currentUser.get('username');
+    var uinfo;
     
-   var username = currentUser.get('username');
+    if (currentUser) { 
+    uinfo = '<a class="info-soc my" href="https://toxu.ru/u/${username}/summary">${username}</a>';
+    } else { uinfo = ''; }  
       
     contents.push(
       new RawHtml({ html: `<div class="toxu-info"><hr class="hr">
@@ -30,19 +33,10 @@ export default createWidget('toxu-info', {
 </div></noindex>
      
       </div>
-      ©  2017–2018 «Toxu» — <a class="info-soc my" href="https://toxu.ru/u/${username}/summary">${username}</a>
+      ©  2017–2018 «Toxu» — ${uinfo}
       </div>`})); 
-      
-    } else { 
- 
-     contents.push(
-       new RawHtml({ html: `<div class="toxu-info">
-
-      © 2018 «Toxu» — вопросы и ответы
-
-      </div>`}));
    
-    } 
+   
 
 return contents;
 
