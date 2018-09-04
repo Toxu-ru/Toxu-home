@@ -12,7 +12,7 @@ export default createWidget('toxu-info', {
    var username = currentUser.get('username');
       
     contents.push(
-      new RawHtml({ html: `<div class="toxu-info">
+      new RawHtml({ html: `<div class="toxu-info"><hr class="hr">
       <div class="toxu-info-soc">
       <a class="info-soc" target="_blank" href="https://toxu.ru/about">О нас</a> 
       <a class="info-soc" target="_blank" href="https://toxu.ru/help">Помощь</a> 
