@@ -248,7 +248,10 @@ a.link:hover{color: #f56400;}
 }
 
  
-
+.suggested-topics-message .badge-wrapper .badge-category {
+.category-name {color: #08c;}
+.category-name:hover {color: #f56400;}
+}
 
 /*логин и регистрация фон*/
 html:not(.mobile-view) {
