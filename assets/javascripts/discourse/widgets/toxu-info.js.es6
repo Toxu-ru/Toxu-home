@@ -12,7 +12,7 @@ export default createWidget('toxu-info', {
     
     if (currentUser) { 
     uinfo = '<a class="info-soc my" href="https://toxu.ru/u/'+ username +'/summary">'+ username +'</a>';
-    } else { uinfo = ''; }  
+    } else { uinfo = '  '; }  
       
     contents.push(
       new RawHtml({ html: `<div class="toxu-info"><hr class="hr">
