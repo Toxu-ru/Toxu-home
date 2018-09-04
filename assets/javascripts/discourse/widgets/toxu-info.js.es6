@@ -11,7 +11,7 @@ export default createWidget('toxu-info', {
     var uinfo;
     
     if (currentUser) { 
-    uinfo = '<a class="info-soc my" href="https://toxu.ru/u/${username}/summary">${username}</a>';
+    uinfo = '<a class="info-soc my" href="https://toxu.ru/u/'+ username +'/summary">'+ username +'</a>';
     } else { uinfo = ''; }  
       
     contents.push(
