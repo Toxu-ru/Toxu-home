@@ -55,6 +55,7 @@ html:not(.mobile-view) {
 html.anon { 
  .sidebar, .sidebar-m, .sidebar-right, .list-controls {margin-top: 14px;}
  .sidebar-add-qa {display: none;}
+ .sidebar { position: relative !important;}	
 }
 
 .sidebar-fon {padding: 17px 0 0 2px;}
