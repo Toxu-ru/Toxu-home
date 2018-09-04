@@ -558,12 +558,13 @@ h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-w
 .links{margin-left:16px;}
 
 /*раздел категории*/
-.navigation-topics .category-breadcrumb, .category-heading, .navigation-categories .sidebar-m, .navigation-categories .sidebar-right {display: none; }
 body.navigation-categories {
-    .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa {display: none !important;}
+    .telo-qa { width: 100% !important;}	
+    .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right  {display: none !important;}
      #create-topic {display: block !important;}
     .container.list-container  {width: 100% !important;margin-left: 0px !important;}	
 }
+
 .colon.cat-cat{  float: left;width: 66%;}
 .colon.post{width: 27%;float: right;margin-left: 30px;}
 .cat-private {background-color: #eff5fa;color: #667d99;padding: 1px 0 1px 10px;margin-bottom: 5px;}
