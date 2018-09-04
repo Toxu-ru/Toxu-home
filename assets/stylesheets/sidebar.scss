@@ -216,15 +216,6 @@ a.link:hover{color: #f56400;}
 .bbcodeleft img {float: left; margin: 8px 14px 2px 0;}
 .bbcoderight img {  float: right; margin: 9px 0 2px 12px;}
 
-.kollonka{
-    font-size: 13px;
-    background-color: #fff;
-    padding: 5px;
-    margin: 5px 14px 5px 2px;
-    text-align: center;
-}
-
-
 /*награда под авой в профиле*/
 .all-bar {clear: both;}
 .cv-1 {background: #eee;}
@@ -377,7 +368,7 @@ i.fa {    margin-right: 5px;    margin-left: 4px;}
     margin-bottom: 4px;
     padding: 4px;
 }
-	
+.kollonka{ text-align: center;}	
 .cat-link {margin-bottom: 9px;font-size: 16px;}	
 .badge-wrapper.bullet .badge-category-bg {margin-right: 8px;width: 6px !important;height: 6px;margin-bottom: 2px;}	
 .badge-wrapper.bullet .badge-category-parent-bg {display: none;}
@@ -395,8 +386,12 @@ i.fa {    margin-right: 5px;    margin-left: 4px;}
 .toxu-info-soc {margin-bottom: 6px; }
 a.info-soc {color: #919191;margin-right: 6px;}
 a.info-soc.my {display: inline-block;}	
+	
 a.info-soc.my:first-letter {color: #f56400;}
-a.info-soc:hover {color: #f56400;}
+a.info-soc:hover, a.more-link:hover {color: #f56400;}
+
+a.more-link {color: #222;}
+	
 }
 	
 }
