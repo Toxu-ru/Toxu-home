@@ -397,6 +397,8 @@ hr.hr{width: 70%;margin-left: 25px;}
 a.d-link, .cat-panel span {color: #222;}
 a.info-soc.my:first-letter, a.info-soc:hover, a.more-link:hover, .cat-panel span:hover, 
 .kollonka a.d-link:hover, .badge-wrapper.bullet span.badge-category:hover {color: #f56400 !important;}
+
+.widget-link.top-cat{margin-top: 20px;}
 	
 }
 
@@ -559,7 +561,8 @@ h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-w
 
 /*раздел категории*/
 body.navigation-categories {
-    .telo-qa { width: 100% !important;}	
+    .full-width {    margin-left: 0px;}	
+    .telo-qa { width: 100% !important;border-left: none;}	
     .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right  {display: none !important;}
      #create-topic {display: block !important;}
     .container.list-container  {width: 100% !important;margin-left: 0px !important;}	
