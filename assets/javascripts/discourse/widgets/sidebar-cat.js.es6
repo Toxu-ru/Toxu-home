@@ -27,6 +27,7 @@ export default createWidget('sidebar-cat', {
     const { siteSettings } = this;
     const links = [];
 
+    //fa-map-o
 
     links.push({
       route: "discovery.latest",
