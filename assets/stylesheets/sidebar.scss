@@ -58,6 +58,7 @@ html.anon {
  .sidebar { position: relative !important;margin-top: 25px;}	
 }
 
+.list-controls, ol.category-breadcrumb {   margin-bottom: 0px; }
 .sidebar-fon {padding: 15px 0 0 2px;}
 .container-telo {float: left;}
 .container-bar {width: 27%;float: right;position: absolute;    right: 0;}
@@ -66,7 +67,6 @@ h1, h2, h3, h4, h5, h6 {font-weight: 400;}
 a:hover {color: #f56400;}
 
 
-.category-navigation ol.category-breadcrumb {     margin: 0;}
 .category-other .txt  {display: none !important;}
 .category-test  .infocat { border: 1px solid #ddd;font-size: 13px;color: #777; padding: 5px;margin-left: 8px;}
 .panel-body-contents .badge-notification {background-color: #f56400;}
