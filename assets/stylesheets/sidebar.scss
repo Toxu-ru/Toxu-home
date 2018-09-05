@@ -394,9 +394,9 @@ a.info-soc.my {display: inline-block;}
 hr.hr{width: 70%;margin-left: 25px;}
 	
 }
-
+.badge-wrapper .badge-category .d-icon {color: #339900;}
 a.d-link, .cat-panel span {color: #222;}
-a.info-soc.my:first-letter, a.info-soc:hover, a.more-link:hover, .cat-panel span:hover, 
+a.info-soc.my:first-letter, a.info-soc:hover, a.more-link:hover, .cat-panel span:hover, .badge-wrapper .badge-category .d-icon:hover, 
 .kollonka a.d-link:hover, .badge-wrapper.bullet span.badge-category:hover {color: #f56400 !important;}
 
 .widget-link.top-cat{margin-top: 20px;}
