@@ -46,6 +46,7 @@ html:not(.mobile-view) {
     width: calc(100% - 231px) !important;	
     float: right;
     margin-top: -20px;	
+    min-height: 650px;	
 }
 
 .list-container.has-sidebar {float: left;margin-left: 20px;}
