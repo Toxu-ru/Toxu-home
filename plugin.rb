@@ -38,6 +38,8 @@ ActionController::Base.prepend_view_path File.expand_path("../custom_views", __F
 User.register_custom_field_type('see_userbar', :boolean)
 User.register_custom_field_type('userbar_cat', :boolean)
 User.register_custom_field_type('userbar_profile', :boolean)  
+ 
+register_editable_user_custom_field :userbar_cat if defined? register_editable_user_custom_field
   
   add_to_class :post, :excerpt_for_topic do
       Post.excerpt(cooked, 300, strip_links: true)
