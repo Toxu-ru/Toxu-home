@@ -4,7 +4,7 @@ import { isRTL } from "discourse/lib/text-direction";
 function setDir(text) {
   let content;
  
-  
+  console.log(text);
  if (text) {  
  
  var slug = text.category.slug;
