@@ -12,9 +12,9 @@ function setDir(text) {
    
   return `<span class="timg"><img alt="блоги" src="/uploads/default/original/2X/c/c73cd3461513cda6f28f8d81fc4f0bbcd50601c4.jpeg"></span>`;
   
- } else {   return `<span>1</span>`; }
+ } else { return `<span></span>`; }
   
- } else {  }
+ } else { return `<span></span>`; }
   
   
   
