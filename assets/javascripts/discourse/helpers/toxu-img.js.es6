@@ -4,6 +4,10 @@ import { isRTL } from "discourse/lib/text-direction";
 function setDir(text) {
   let content;
   var slug = text.category.slug;
+  console.log(text);
+  
+  if (text) { console.log('11111111'); } else { console.log('222222');   }
+  
   
 if (slug == 'blog') { 
    
