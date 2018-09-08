@@ -11,7 +11,7 @@ export default createWidget('link-top', {
   var slug;
  // var catid;
  // var name;
- // var reply_count;
+  var reply_count;
     
   $.ajax({
   url: "/top/daily.json",
