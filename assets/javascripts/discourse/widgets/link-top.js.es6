@@ -29,7 +29,7 @@ export default createWidget('link-top', {
  reply_count = topics[t].reply_count; 
 // img = Discourse.Category.findById(catid).uploaded_logo.url;
 // name =  Discourse.Category.findById(catid).name;   <img src="${img}" alt="${name}" title="${name}" class="cat-small">
- contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><div class="reply_count-sug">${reply_count}</div>
+ contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><div class="reply-count-sug">${reply_count}</div>
  <div class="otst-top"><a href="/t/${slug}">${title}</a></div></div>`})); 
    
  }
