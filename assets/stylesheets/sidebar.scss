@@ -57,7 +57,9 @@ html:not(.mobile-view) {
 html.anon { 
 .sidebar-m, .sidebar-right, .list-controls {margin-top: 14px;}
  .sidebar-add-qa {display: none;}
- .sidebar { position: relative !important;margin-top: 25px;}	
+ .sidebar { position: relative !important;margin-top: 10px;}	
+.telo-qa {margin-top: 1px;}	
+.list-container.has-sidebar {    margin-top: 3px;}	
 }
 
 .list-controls, ol.category-breadcrumb {   margin-bottom: 0px; }
