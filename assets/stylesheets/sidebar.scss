@@ -545,9 +545,9 @@ a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-we
 .cat-pods { 
     padding: 3px 3px 10px 0px;
     margin-bottom: 20px;
-    .reply-count-sug {float: left;width: 25px;display: inline-block;height: 25px;color: #919191;}	
-    .topic-list-item-sug {margin-bottom: 10px;overflow: hidden;}	
-    .otst-top  {float: left;}
+    .topic-list-item-sug {
+	    sup {color:#919191;}
+	    margin-bottom: 10px;overflow: hidden;}	
     .rss-link-top{display: inline-block;float:right;}
     .rss-link-top a  {color: #667d99;font-size:14px;}
    .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {display: none !important;}
