@@ -11,6 +11,7 @@ export default createWidget('link-top', {
   var slug;
   var catid;
   var name;
+  var reply_count;
     
   $.ajax({
   url: "/top/daily.json",
@@ -25,9 +26,10 @@ export default createWidget('link-top', {
  title = topics[t].title;
  slug = topics[t].slug; 
  catid = topics[t].category_id;
- img = Discourse.Category.findById(catid).uploaded_logo.url;
- name =  Discourse.Category.findById(catid).name;   
- contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><img src="${img}" alt="${name}" title="${name}" class="cat-small"> 
+ reply_count = topics[t].reply_count; 
+// img = Discourse.Category.findById(catid).uploaded_logo.url;
+// name =  Discourse.Category.findById(catid).name;   <img src="${img}" alt="${name}" title="${name}" class="cat-small">
+ contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><div class="reply_count-sug">${reply_count}</div>
  <div class="otst-top"><a href="/t/${slug}">${title}</a></div></div>`})); 
    
  }
