@@ -413,7 +413,6 @@ a.info-soc.my:first-letter, a.info-soc:hover, a.more-link:hover, .cat-panel span
 .nav-pills > li > a {color: #667d99;}
 
 /*детали в колонках*/
-.topic-list-item-sug {margin-bottom: 10px;clear: both;min-height: 31px;}
 .cat-pods, .topic-meta-data .post-infos {font-size: 14px;font-weight: 300;}
 .topic-list-sug {margin-bottom: 10px;}
 .user-profile.widget-container {color: #919191;}
@@ -539,13 +538,17 @@ a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-we
 }
 .qa-add{margin-top: 8px;}
 .sidebar-top .ser.cvet{text-decoration: underline;}
+
+
+
+
 .cat-pods { 
     padding: 3px 3px 10px 0px;
     margin-bottom: 20px;
-    img.cat-small {margin-right: 10px;margin-top: 5px;float: left;width: 24px;height: 24px;}	
+    .reply-count-sug {float: left;}	
+    .otst-top  {float: left;}
     .rss-link-top{display: inline-block;float:right;}
     .rss-link-top a  {color: #667d99;font-size:14px;}
-   .otst-top  {margin-left: 33px;}
    .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {display: none !important;}
    .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {display: block;margin-top: 15px;}
    .badge-wrapper.bullet span.badge-category {color:#07c;font-size:13px;}
