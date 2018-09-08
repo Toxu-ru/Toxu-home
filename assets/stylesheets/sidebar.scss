@@ -545,7 +545,11 @@ a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-we
 .cat-pods { 
     padding: 3px 3px 10px 0px;
     margin-bottom: 20px;
-    .reply-count-sug {float: left;}	
+    .reply-count-sug {float: left;
+                      width: 25px;
+                      display: inline-block;
+	             }	
+    .topic-list-item-sug {margin-bottom: 10px;clear: both;min-height: 31px;}	
     .otst-top  {float: left;}
     .rss-link-top{display: inline-block;float:right;}
     .rss-link-top a  {color: #667d99;font-size:14px;}
