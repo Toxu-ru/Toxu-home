@@ -26,7 +26,7 @@ export default createWidget('link-top', {
  title = topics[t].title;
  slug = topics[t].slug; 
  //catid = topics[t].category_id;
-// reply_count = topics[t].reply_count; 
+ reply_count = topics[t].reply_count; 
 // img = Discourse.Category.findById(catid).uploaded_logo.url;
 // name =  Discourse.Category.findById(catid).name;   <img src="${img}" alt="${name}" title="${name}" class="cat-small">
  contents.push( new RawHtml({ html: ` <div class="topic-list-item-sug"><a href="/t/${slug}">${title}</a> <sup>${reply_count}</sup></div>`})); 
