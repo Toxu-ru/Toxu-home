@@ -49,7 +49,7 @@ html:not(.mobile-view) {
     min-height: 650px;	
 }
 
-.list-container.has-sidebar {float: left;margin-left: 20px;}
+.list-container.has-sidebar {float: left;margin-left: 20px;margin-top: 11px;}
 .container-tip {position: relative;}
 	
 }	
@@ -205,6 +205,14 @@ a.link:hover{color: #f56400;}
 
 .sidebar-qa .fa{margin-right: 4px;color: #339900;}
 
+.sidebar-add-qa {
+    text-align: center;
+    float: right;
+    padding: 1px 10px 10px 10px;
+    width: 21%;
+    color: #666;
+    margin-top: 11px;
+}
 	
 @media screen and (max-width : 1200px) {
 #scroll-top  {display: none !important;}
