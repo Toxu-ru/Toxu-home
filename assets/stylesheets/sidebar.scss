@@ -595,7 +595,7 @@ float: left; position: relative;
 }	
 	
 .groups-d.ogr {width: 62%;margin-left: 40px;}
-.sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right  {display: none !important;}	
+.sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right, #scroll-top  {display: none !important;}	
 .cat-home {
 width: 44%; height: 240px;padding: 20px;float: left;position: relative;display: inline-block;
 img {width:99%;}
@@ -616,9 +616,13 @@ img {width:99%;}
 background-color: rgba(0,0,0,0.4);
 font-size: 16px;color: #fff;position: absolute;right: 0;top: 60px;margin-right: 50px;border-radius: 4px;padding: 1px 7px 0px 7px;
 }	
-	
-}
 
+@media (max-width: 1030px){ 
+	.colon.cat-cat {width: 100% !important;}	
+	.colon.post {display: none !important;}
+}
+}
+/*end категории*/
 
 section.category-heading  {    display: none;}
 
