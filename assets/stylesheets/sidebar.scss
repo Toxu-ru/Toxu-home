@@ -596,7 +596,7 @@ float: left; position: relative;
 
 .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right, #scroll-top  {display: none !important;}	
 .cat-home {
-width: 44%; height: 240px;padding: 20px;float: left;position: relative;display: inline-block;
+width: 45%; height: 100%;padding: 15px;float: left;position: relative;display: inline-block;
 img {width:99%;}
 .category-description, .subcategories {margin-top:10px;}
 }
@@ -617,7 +617,7 @@ font-size: 16px;color: #fff;position: absolute;right: 0;top: 60px;margin-right: 
 }	
 
 @media (max-width: 1030px){ .colon.cat-cat {width: 100% !important;} .colon.post {display: none !important;}}
-@media (max-width: 700px){.cat-home {width: 100% !important;height: 330px;padding: 0px;.groups-d.ogr {width:97%  !important;}} 
+@media (max-width: 700px){.cat-home {margin-bottom: 20px;width: 100% !important;padding: 0px;}.groups-d.ogr {width:97%  !important;}} 
 
 }	
 }
