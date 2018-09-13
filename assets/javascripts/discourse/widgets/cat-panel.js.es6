@@ -22,8 +22,8 @@ createWidget('cat-panel', {
       h("div.menu-link", links.map(l => h("div", liOpts, l)))
     );
   
-  
-    return h('div.menu-body', h('div.my-menu', attrs.contents()));
+  return h('div.my-menu', attrs.contents());
+//    return h('div.menu-body', h('div.my-menu', attrs.contents()));
 
   }
 });
