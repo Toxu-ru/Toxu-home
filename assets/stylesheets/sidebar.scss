@@ -579,35 +579,28 @@ h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-w
 
 /*раздел категории*/
 body.navigation-categories {
-    .full-width {    margin-left: 0px;}	
-    .groups-d.ogr {    width: 60%;}	
-    .telo-qa { width: 100% !important;border-left: none;max-width: 1245px;}	
-    .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right  {display: none !important;}
-     #create-topic {display: block !important;}
-    .container.list-container  {width: 100% !important;margin-left: 0px !important;}	
+.groups-d.ogr {width: 60%;}
+	
+.cat-home {
+width: 44%; height: 240px;padding: 20px;float: left;position: relative;display: inline-block;
+img {width:99%;}
+.category-description, .subcategories {margin-top:10px;}
 }
 
-.colon.cat-cat{  float: left;width: 66%;}
-.colon.post{width: 27%;float: right;margin-left: 30px;}
-.cat-private {background-color: #eff5fa;color: #667d99;padding: 1px 0 1px 10px;margin-bottom: 5px;}
+.colon.cat-cat {float: left;width:69%;}
+.colon.post { width: 27%;float: right;margin-left: 30px;}
 
-.cat-cat { width: 100%;
-.category-logo {margin-top: 3px;margin-bottom: 0;width: 46px;height:46px;}
-.avacat a {font-size: 13px;color: #777;text-decoration: underline;}
+.cat-cat { 
+.avacat img {width: 24px;height: 24px;}	
+.avacat a {font-size: 13px;color: #777;text-decoration: underline;}	
 .telohome {float: left;width: 90%;margin-left: 15px;}
-.topic-cat {display: inline-block;margin-bottom: 20px}
-.stats {font-size: 20px;text-align: center;line-height: 22px;margin-bottom: 20px;}
-.stats small {text-transform: uppercase;color: #777;font-weight: 300;font-size: 12px;}
-.has-description {float: left;width: 70%;}
-.cat-glav {height: 80px;}
-.badge-category-bg {display: none !important;}
-.badge-wrapper.bullet span.badge-category{color:#08c;}
-.badge-wrapper.bullet span.badge-category:hover {color: #f56400;}
-.category-logo-small {width: 14px;height: 14px;}
-.category-description {max-width: 450px;font-size: 0.97rem;font-weight: 400;line-height: 1.2;color: #777;}
-.topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 2px;}
-.avacat img {width: 24px;    height: 24px;}
-.category-title-link .category-name {font-size: 20px;}
+.topic-cat {display: inline-block;margin-bottom: 20px;}
+}	
+	
+.cat-vopros{
+background-color: rgba(0,0,0,0.4);
+font-size: 16px;color: #fff;position: absolute;right: 0;top: 60px;margin-right: 50px;border-radius: 4px;padding: 1px 7px 0px 7px;
+}	
 	
 }
 
