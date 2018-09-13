@@ -618,7 +618,7 @@ font-size: 16px;color: #fff;position: absolute;right: 0;top: 60px;margin-right: 
 }	
 
 @media (max-width: 1030px){ .colon.cat-cat {width: 100% !important;} .colon.post {display: none !important;}}
-@media (max-width: 600px){cat-home {width: 100%;} 
+@media (max-width: 600px){cat-home {width: 100% !important;} 
 
 }	
 }
