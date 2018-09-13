@@ -589,14 +589,13 @@ img.category-logo-small {width:20px;width: 20px !important;border-radius: 50%;he
 }	
 	
 .telo-qa, .list-container.has-sidebar{
-margin-top: 30px !important;
     border-left: none !important;
     max-width: 100% !important;
     width: 100% !important;
     margin-left: 0px !important;
 float: left; position: relative;
 }	
-
+.fon .list-controls { display: block !important;}
 .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right, #scroll-top, #banner  {display: none !important;}	
 .cat-home {
 width: 45%; height: 100%;padding: 15px;float: left;position: relative;display: inline-block;
