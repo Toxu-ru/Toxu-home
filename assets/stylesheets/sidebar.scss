@@ -579,6 +579,11 @@ h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-w
 
 /*раздел категории*/
 body.navigation-categories {
+
+.subcategory{
+img.category-logo-small {width:20px;width: 20px !important;border-radius: 50%;height: 20px;}
+.badge-category-bg {display: none !important;}
+}	
 	
 .telo-qa, .list-container.has-sidebar{
 margin-top: 30px !important;
@@ -599,7 +604,7 @@ img {width:99%;}
 
 .colon.cat-cat {float: left;width:69%;}
 .colon.post { width: 27%;float: right;margin-left: 30px;}
-.cat-title {font-size:17px;}
+.cat-title {font-size:21px;}
 .cat-cat { 
 .avacat img {width: 24px;height: 24px;}	
 .avacat a {font-size: 13px;color: #777;text-decoration: underline;}	
