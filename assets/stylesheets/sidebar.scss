@@ -580,7 +580,7 @@ h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-w
 /*раздел категории*/
 body.navigation-categories {
 .groups-d.ogr {width: 60%;}
-	
+.sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right  {display: none !important;}	
 .cat-home {
 width: 44%; height: 240px;padding: 20px;float: left;position: relative;display: inline-block;
 img {width:99%;}
