@@ -602,8 +602,8 @@ img {width:99%;}
 .category-description, .subcategories {margin-top:10px;}
 }
 
-.colon.cat-cat {float: left;width:69%;}
-.colon.post { width: 27%;float: right;margin-left: 30px;}
+.colon.cat-cat {float: left;width:68%;}
+.colon.post { width: 27%;float: right;margin-left: 20px;}
 .cat-title {font-size:21px;}
 .cat-cat { 
 .avacat img {width: 24px;height: 24px;}	
@@ -617,10 +617,10 @@ background-color: rgba(0,0,0,0.4);
 font-size: 16px;color: #fff;position: absolute;right: 0;top: 60px;margin-right: 50px;border-radius: 4px;padding: 1px 7px 0px 7px;
 }	
 
-@media (max-width: 1030px){ 
-	.colon.cat-cat {width: 100% !important;}	
-	.colon.post {display: none !important;}
-}
+@media (max-width: 1030px){ .colon.cat-cat {width: 100% !important;} .colon.post {display: none !important;}}
+@media (max-width: 600px){cat-home {width: 100%;} 
+
+}	
 }
 /*end категории*/
 
