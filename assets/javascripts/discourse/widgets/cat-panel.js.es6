@@ -3,7 +3,7 @@ import { h } from 'virtual-dom';
 
 
 createWidget('cat-panel', {
-  tagName: 'div.cat-panel',
+ // tagName: 'div.cat-panel',
 
 
   html(attrs) {
