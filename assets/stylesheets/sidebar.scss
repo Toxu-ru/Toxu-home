@@ -580,8 +580,7 @@ h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-w
 /*раздел категории*/
 body.navigation-categories {
 .groups-d.ogr {margin-left: 33px;width:68%;}
-.title-t a {margin-bottom: 7px;color: #777;}	
-.title-t a:hover, .avacat a:hover{color: #F48024;}
+
 	
 .subcategory{
 img.category-logo-small {width:20px;width: 20px !important;border-radius: 50%;height: 20px;}
@@ -609,7 +608,9 @@ img {width:99%;}
 .cat-title {font-size:21px;}
 .cat-cat { 
 .avacat img {width: 24px;height: 24px;}	
-.avacat a {font-size: 13px;color: #777;text-decoration: underline;}	
+.avacat a {font-size: 13px;color: #777;text-decoration: underline;}
+.title-t .avacat a {margin-bottom: 7px;color: #777;}	
+.title-t .avacat a:hover {color: #F48024;}	
 .telohome {float: left;width: 90%;margin-left: 15px;}
 .topic-cat {display: inline-block;margin-bottom: 20px;}
 }	
