@@ -397,7 +397,6 @@ a.widget-link {
 
 .badge-wrapper.bullet {
 	.badge-category-parent-bg {display: none;}
-	.badge-category-bg:hover {opacity: 1;}
 	.badge-category-bg {width: 6px !important;height: 6px;margin-bottom: 2px;margin-top: 7px;position: absolute;}
 	span.badge-category:hover {color: #f56400 !important;}
 	display: inline;
@@ -414,8 +413,6 @@ a.widget-link {
 	}
 	
 a.badge-wrapper.bullet, .cat-panel span {color: #222;}
-a.info-soc.my:first-letter, a.info-soc:hover, a.more-link:hover, .cat-panel span:hover, .badge-wrapper .badge-category .d-icon:hover, 
-.widget-link.top-cat{margin-top: 20px;}
 }
 /*end sidebar*/
 
