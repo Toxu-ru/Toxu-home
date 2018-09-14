@@ -60,7 +60,8 @@ html.anon {
  .sidebar-add-qa {display: none;}
  .sidebar { position: relative !important;margin-top: 10px;}	
 .telo-qa {margin-top: 1px;}	
-.list-container.has-sidebar {    margin-top: 3px;}	
+.list-container.has-sidebar {    margin-top: 3px;}
+.sidebar-right { .cat-img-num, .cat-img-qa { top: 28px;}}	
 }
 
 .list-controls, ol.category-breadcrumb {   margin-bottom: 0px;margin-top: 8px; }
