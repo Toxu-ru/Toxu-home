@@ -34,7 +34,9 @@ html:not(.mobile-view) {
 #ostan {max-width: 320px;}
 #topic-progress-wrapper {right: 1em !important;bottom: 0px !important;position: fixed !important;}	
 .container-telo, .container-tip {min-height: 600px;}
-	
+.archetype-regular #suggested-topics .loading-container, .archetype-regular h3.suggested-topics-title, .archetype-banner #suggested-topics .loading-container, .archetype-banner h3.suggested-topics-title {
+    display: none !important;
+}	
 	
 .blog-list {position: relative;}
  li.nav-item-guidelines {display: none;}
