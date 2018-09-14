@@ -407,13 +407,13 @@ a.widget-link {
 	
 /*выпад мен. soc*/
 .dropdown.pravo {    display: inline-block;float: right;margin-right: 4px;}
-.dropdown-menu.soc {width: 149px;left: -110px;bottom: 21px;}
+.dropdown-menu.soc {width: 149px;left: -112px;bottom: 21px;}
 .dropdown-menu.soc a {color: #555;display: inline-block;padding: 6px 9px 4px 9px;}
 .dropdown-menu.soc a:hover {color: #f56400;}
-	
 	}
 	
 a.badge-wrapper.bullet, .cat-panel span {color: #222;}
+a.badge-wrapper.bullet:hover, .cat-panel span:hover {color: #f56400 !important;}
 }
 /*end sidebar*/
 
