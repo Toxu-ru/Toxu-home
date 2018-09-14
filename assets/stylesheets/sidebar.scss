@@ -32,6 +32,7 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 html:not(.mobile-view) {
 /*для вопроса*/	
 #ostan {max-width: 320px;}
+#topic-title .title-wrapper {max-width: 880px;}
 #topic-progress-wrapper {right: 1em !important;bottom: 0px !important;position: fixed !important;}	
 .container-telo, .container-tip {min-height: 600px;}
 .archetype-regular #suggested-topics .loading-container, .archetype-regular h3.suggested-topics-title, .archetype-banner #suggested-topics .loading-container, .archetype-banner h3.suggested-topics-title {
