@@ -1,11 +1,6 @@
 .topic-body .contents .cooked, .help, .d-editor-preview {font-size: 16px;font-weight: 400;line-height: 1.56;}
 .topic-post.comment .topic-body .contents .cooked {font-size: 1em;}
 
-@media (max-width: 600px){
-    .banner-toxu-t, .sidebar, .sidebar-right {display:none !important;}
-}
-
-
 .otv {
     background: url(/uploads/default/original/2X/3/36ed891f09bdd9bf9683afd81c076a6bd451fc1f.jpg);
     width: 10px;
@@ -252,17 +247,6 @@ a.badge-wrapper.bullet:hover, .cat-panel span:hover, .toxu-info a:hover {color: 
 /*end sidebar*/
 
 
-
-@media screen and (max-width : 1200px) {
-#scroll-top  {display: none !important;}
-}
-
-@media screen and (max-width : 1055px) {
-.container-telo {width: 100%;}
-.container-bar {display: none;}
-}
-
-	
 .bbcodeleft img {float: left; margin: 8px 14px 2px 0;}
 .bbcoderight img {  float: right; margin: 9px 0 2px 12px;}
 
@@ -1037,6 +1021,24 @@ border-radius: 0px;
 .progress-circle.p98 .value-bar { transform: rotate(353deg); }
 .progress-circle.p99 .value-bar { transform: rotate(356deg); }
 .progress-circle.p100 .value-bar { transform: rotate(360deg); }
+
+@media (max-width: 1220px){
+   .list-container.has-sidebar {width: 70% !important;}
+   #scroll-top  {display: none !important;}	
+}
+@media (max-width: 1120px){ 
+    .sidebar-m, .sidebar-right {display:none;}
+    .list-container.has-sidebar {width: 98% !important;}
+}
+@media (max-width: 1030px){
+    .sidebar, .colon.post {display:none;} .full-width {    margin-left: 0px;}
+    #banner  {width: 98% !important;}
+    .cat-cat .has-description {width: 80%;}
+    #list-area .topic-list {    margin-left: 0px;}
+    #topic-title .title-wrapper  {width: 100% !important;} 
+    .list-container.has-sidebar, .colon.cat-cat {width: 100%;margin-left: 0px !important;}
+    html:not(.mobile-view) .telo-qa {      border-left: none;  width: 100% !important;}
+}
 
 /*add mobile*/
 html.mobile-view { html {font-weight: 400;}
