@@ -177,7 +177,9 @@ border-radius: 2px;
 	 
 }
 
-.sidebar-m { font-size: 0.96em;
+/*правая*/
+.sidebar-m { 
+font-size: 0.96em;
 .pgbar {width: 95%;margin-top: 2px;}
 .mn i.fa {color: #ffb74d;}
 display: block;
@@ -201,24 +203,58 @@ a.link:hover{color: #f56400;}
     opacity: 0.6;
     margin-bottom: 20px;	
 }
-	
 }
 
 .sidebar-qa .fa{margin-right: 4px;color: #339900;}
+.sidebar-add-qa {text-align: center;float: right;padding: 8px 10px 10px 10px;width: 21%;color: #666;margin-top: 11px;}
 
-.sidebar-add-qa {
-    text-align: center;
-    float: right;
-    padding: 8px 10px 10px 10px;
-    width: 21%;
-    color: #666;
-    margin-top: 11px;
-}
+/*sidebar*/
+.sidebar { 
+.cat-panel span {font-size: 14px;}
+.badge-notification {color: #f56400 !important;font-size: 14px;background-color: #fff;float:right;margin-right:5px;}	
+
+a.widget-link {
+	display: block;margin-bottom: 4px;padding: 4px;
+        i.fa {margin-right: 5px;margin-left:4px;}
+	}
+
+.cat-link {
+	margin-bottom: 9px;font-size: 16px;position: relative;display: block; margin-left: 13px;
+	.topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 2px;margin-right: 6px;}
+	}	
+
+.badge-wrapper.bullet {
+	.badge-category-bg {width: 6px !important;height: 6px;margin-bottom: 2px;margin-top: 7px;position: absolute;}
+	span.badge-category:hover {color: #f56400 !important;}
+	display: inline;
+	}
+.badge-wrapper .badge-category { 
+	position: absolute;margin-left: 12px;
+	.d-icon {color: #339900;margin-right: 5px;}
+	}	
+
+.toxu-info {
+      padding: 1px 0 4px 14px;font-size: 12px;color: #919191;
+      .toxu-info-soc {margin-bottom: 6px; }
+      hr.hr {width: 70%;margin-left: 25px;}
 	
+/*выпад мен. soc*/
+.dropdown.pravo {    display: inline-block;float: right;margin-right: 4px;}
+.dropdown-menu.soc {width: 149px;left: -112px;bottom: 21px;}
+.dropdown-menu.soc a {color: #555;display: inline-block;padding: 6px 9px 4px 9px;}
+.dropdown-menu.soc a:hover {color: #f56400;}
+	}
+	
+a.badge-wrapper.bullet, .cat-panel span {color: #222;}
+a.badge-wrapper.bullet:hover, .cat-panel span:hover {color: #f56400 !important;}
+}
+/*end sidebar*/
+
+
+
 @media screen and (max-width : 1200px) {
 #scroll-top  {display: none !important;}
 }
-
 
 @media screen and (max-width : 1055px) {
 .container-telo {width: 100%;}
@@ -372,52 +408,6 @@ button.btn-danger:hover, button.btn-danger i.fa:hover {background: #931d05 !impo
     background: #f6f8fe;border-right: 3px solid #F48024;
     i.fa {color: #F48024;}	
 }
-
-
-/*sidebar*/
-.sidebar { 
-.cat-panel span {font-size: 14px;}
-.badge-notification {color: #f56400 !important;font-size: 14px;background-color: #fff;float:right;margin-top:11px;margin-right:5px;}	
-
-a.widget-link {
-	display: block;margin-bottom: 4px;padding: 4px;
-        i.fa {margin-right: 5px;margin-left:4px;}
-	}
-
-.cat-link {
-	margin-bottom: 9px;font-size: 16px;position: relative;display: block; margin-left: 13px;
-	.topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 2px;margin-right: 6px;}
-	}	
-
-.badge-wrapper.bullet {
-	.badge-category-parent-bg {display: none;}
-	.badge-category-bg {width: 6px !important;height: 6px;margin-bottom: 2px;margin-top: 7px;position: absolute;}
-	span.badge-category:hover {color: #f56400 !important;}
-	display: inline;
-	}
-.badge-wrapper .badge-category { 
-	position: absolute;margin-left: 12px;
-	.d-icon {color: #339900;margin-right: 5px;}
-	}	
-
-.toxu-info {
-      padding: 1px 0 4px 14px;font-size: 12px;color: #919191;
-      .toxu-info-soc {margin-bottom: 6px; }
-      hr.hr {width: 70%;margin-left: 25px;}
-	
-/*выпад мен. soc*/
-.dropdown.pravo {    display: inline-block;float: right;margin-right: 4px;}
-.dropdown-menu.soc {width: 149px;left: -112px;bottom: 21px;}
-.dropdown-menu.soc a {color: #555;display: inline-block;padding: 6px 9px 4px 9px;}
-.dropdown-menu.soc a:hover {color: #f56400;}
-	}
-	
-a.badge-wrapper.bullet, .cat-panel span {color: #222;}
-a.badge-wrapper.bullet:hover, .cat-panel span:hover {color: #f56400 !important;}
-}
-/*end sidebar*/
-
-
 
 
 .nav-pills > li > a {color: #667d99;}
