@@ -672,6 +672,12 @@ blockquote, aside.quote .title {border-left: 2px solid #ffeb8e;}
 /*Катерория Toxu-правила*/
 .custom-cat-header-toxu-regulations {display: none;}
 
+/*Фото с блогов*/
+.timg {float: right; }
+.category-blog .post .topic-excerpt {  padding-right: 5px; width: 75%;  display: inline-block !important;}
+.category-blog .timg {display:none;}
+.navigation-topics .timg {display: inline-block !important;margin-top: 6px;}
+.timg img{width: 120px;}
 
 /*поиск*/
 .d-header .title {
