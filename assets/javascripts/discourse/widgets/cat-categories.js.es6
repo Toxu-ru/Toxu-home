@@ -78,9 +78,9 @@ export default createWidget('cat-categories', {
     
     result = result.concat(
         h(
-          "div.kollonka",
+          "div.cat-link.all",
           h(
-            "a.d-link.more-link",
+            "a.badge-wrapper.bullet",
             { attributes: { href } },
              "Показать все..."
           )
