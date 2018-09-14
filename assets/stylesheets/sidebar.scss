@@ -30,7 +30,12 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 .wrap {max-width: 90em;}
 
 html:not(.mobile-view) {
-
+/*для вопроса*/	
+#ostan {max-width: 320px;}
+#topic-progress-wrapper {right: 1em !important;bottom: 0px !important;position: fixed !important;}	
+.container-telo, .container-tip {min-height: 600px;}
+	
+	
 .blog-list {position: relative;}
  li.nav-item-guidelines {display: none;}
 	
