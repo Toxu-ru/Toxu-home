@@ -1030,6 +1030,12 @@ border-radius: 0px;
     .sidebar-m, .sidebar-right {display:none;}
     .list-container.has-sidebar {width: 98% !important;}
 }
+
+@media screen and (max-width : 1055px) {
+.container-telo {width: 100%;}
+.container-bar {display: none;}
+}
+
 @media (max-width: 1030px){
     .sidebar, .colon.post {display:none;} .full-width {    margin-left: 0px;}
     #banner  {width: 98% !important;}
