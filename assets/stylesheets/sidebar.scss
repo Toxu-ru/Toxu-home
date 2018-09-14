@@ -50,9 +50,9 @@ html:not(.mobile-view) {
     min-height: 650px;	
 }
 
-.list-container.has-sidebar {float: left;margin-left: 20px;margin-top: 11px;}
+.list-container.has-sidebar {float: left;margin-left: 20px;margin-top: 11px;width: 73%;}
 .container-tip {position: relative;}
-	
+
 }	
 
 html.anon { 
@@ -93,7 +93,7 @@ border-radius: 2px;
 .cat-big-img{display: inline-block !important;}
 .cat-big { width: 210px;}
 .cat-img-num {
-    margin-top: 0px;
+    top: 50px;
     margin-left: 2px;
     position: absolute;
     border-radius: 4px;
@@ -104,7 +104,7 @@ border-radius: 2px;
 }
 
 .cat-img-qa{
-    margin-top: 0px;
+    top: 50px;
     margin-right: 16px;
     background-color: rgba(0,0,0,.4);
     color: #fff;
@@ -113,9 +113,6 @@ border-radius: 2px;
     border-radius: 4px;
     padding: 1px 7px 0px 7px;
 }
-	
-	
-	
 	
   float: right;
 
