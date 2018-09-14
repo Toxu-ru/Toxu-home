@@ -34,12 +34,6 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 /*колонки*/
 .wrap {max-width: 90em;}
 
-/*выпад мен. soc*/
-.dropdown.pravo {    display: inline-block;float: right;margin-right: 4px;}
-.dropdown-menu.soc {width: 149px;left: -110px;bottom: 21px;}
-.dropdown-menu.soc a {color: #555;display: inline-block;padding: 6px 9px 4px 9px;}
-.dropdown-menu.soc a:hover {color: #f56400;}
-
 html:not(.mobile-view) {
 
 .blog-list {position: relative;}
@@ -410,6 +404,13 @@ a.widget-link {
       padding: 1px 0 4px 14px;font-size: 12px;color: #919191;
       .toxu-info-soc {margin-bottom: 6px; }
       hr.hr {width: 70%;margin-left: 25px;}
+	
+/*выпад мен. soc*/
+.dropdown.pravo {    display: inline-block;float: right;margin-right: 4px;}
+.dropdown-menu.soc {width: 149px;left: -110px;bottom: 21px;}
+.dropdown-menu.soc a {color: #555;display: inline-block;padding: 6px 9px 4px 9px;}
+.dropdown-menu.soc a:hover {color: #f56400;}
+	
 	}
 	
 a.badge-wrapper.bullet, .cat-panel span {color: #222;}
