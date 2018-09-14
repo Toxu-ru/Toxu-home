@@ -392,12 +392,12 @@ i.fa {    margin-right: 5px;    margin-left: 4px;}
 }
 .kollonka{  margin-left: 16px;}	
 .cat-link {margin-bottom: 9px;font-size: 16px;}	
-.badge-wrapper.bullet .badge-category-bg {margin-right: 8px;width: 6px !important;height: 6px;margin-bottom: 2px;}	
+.badge-wrapper.bullet .badge-category-bg {width: 6px !important;height: 6px;margin-bottom: 2px;margin-top: 7px;position: absolute;}	
 .badge-wrapper.bullet .badge-category-parent-bg {display: none;}
 .badge-wrapper.bullet .badge-category-bg:hover {opacity: 1;}
 .badge-notification {color: #f56400 !important;font-size: 14px;background-color: #fff;}
 .badge-wrapper.bullet {padding: 4px 0 4px 14px;margin-right: 2px;}
-.badge-wrapper .badge-category {    display: inline;}	
+.badge-wrapper .badge-category { position: absolute;margin-left: 12px;}	
 	
 .cat-link .topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 2px;margin-right: 6px;}
 .badge-wrapper {font-size: 14px;}
