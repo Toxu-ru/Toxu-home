@@ -26,15 +26,20 @@ button.adm_ui_button {display: none !important;}
 body.staff button.adm_ui_button {display: inline-block !important;}
 .adm {font-size: 14px;border-left: 3px dotted #f56400;padding-left: 12px;color: #666;}
 
-/*колонки*/
+/*колонки + add*/
 .wrap {max-width: 90em;}
+#create-topic {color: #fff !important;    font-size: 1em;background-color: #0af !important;}
+#create-topic:hover, #create-topic:active {color: #fff !important;background-color: #0095ff !important;}
+#create-topic .btn .d-icon { opacity: 1;}
+
 
 html:not(.mobile-view) {
 /*для вопроса*/	
 #ostan {max-width: 320px;}
-#topic-title .title-wrapper {max-width: 880px;}
+.archetype-regular #banner, #topic-title .title-wrapper {max-width: 880px;}
 #topic-progress-wrapper {right: 1em !important;bottom: 0px !important;position: fixed !important;}	
 .container-telo, .container-tip {min-height: 600px;}
+	
 .archetype-regular #suggested-topics .loading-container, .archetype-regular h3.suggested-topics-title, .archetype-banner #suggested-topics .loading-container, .archetype-banner h3.suggested-topics-title {
     display: none !important;
 }	
