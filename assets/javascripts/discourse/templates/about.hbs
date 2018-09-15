@@ -1,3 +1,93 @@
+<style>
+.time-cont {
+    width: 100%;
+    max-width: 728px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.time .-period:last-child .-vr:last-child::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    background: #fff;
+    position: absolute;
+    left: -33px;
+    top: 18px;
+    bottom: 0;
+    z-index: 2;
+    height: 30px;
+}
+.time .-time {
+    text-align: right;
+    font-size: 27px;
+    line-height: 1;
+    color: #005999;
+    display: inline-block;
+    width: 48px;
+}
+.static-content li, .static-content ._icon {
+    font-size: 15px;
+    line-height: 1.53333333;
+    margin-bottom: 24px;
+}
+.time .-period {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.static-content ol, .static-content li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.time {
+    position: relative;
+}
+.time .-vrs {
+    width: calc(100% - 64px - 48px);
+}
+.time-cont ul, .time-cont ol, .time-cont li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.time .-vr {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.time .-vr::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #F48024;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    z-index: 3;
+    left: -41px;
+
+}
+.time .-vrs {
+    width: calc(100% - 64px - 48px);
+}
+.time::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    background: #e4e6e8;
+    position: absolute;
+    left: 79px;
+    top: 4px;
+    bottom: 0;
+    z-index: 1;
+}
+</style>
+
 {{#d-section pageClass="about"}}
   <div class='container'>
     <div class='contents clearfix'>
@@ -44,7 +134,28 @@
 </center>
 <div class="new-str"><br><br>
 
-      {{#if model.moderators}}
+    
+<section class="time-cont"><ol class="time">
+        <li class="-period">
+            <span class="-time">'17</span>
+            <ol class="-vrs">
+         <li class="-vr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Разочарованные существующими Q&A системами, группа программистов из Нижнего Новгорода, использую свободное программное обеспечение Discourse решило создать новый сайт вопросов и ответов.</font></font></li>
+         <li class="-vr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Запуск Toxu.ru в режиме alfa- тестирования.</font></font></li>
+            </ol>
+        </li>
+
+        <li class="-period">
+            <span class="-time">'18</span>
+            <ol class="-vrs">
+                <li class="-vr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Сайт переходит в активное beta- тестирование.</font></font></li>
+			 
+             </ol>
+        </li>
+</ol></section>  
+    
+    
+    
+    {{#if model.moderators}}
         <section class='about moderators'>
           <h3>{{d-icon "users"}} {{i18n 'about.our_moderators'}}</h3>
 
@@ -66,6 +177,9 @@
             <p>{{{contactInfo}}}</p>
         </section>
       {{/if}}
+      
+      
+      
 </div>
     </div>
   </div>
