@@ -248,15 +248,16 @@ a.widget-link {
       hr.hr {width: 70%;margin-left: 25px;}
       a {color: #919191;}
       .info-soc {margin-right: 5px;}	
+ 	
 /*выпад мен. soc*/
 .dropdown.pravo {    display: inline-block;float: right;margin-right: 4px;}
 .dropdown-menu.soc {width: 149px;left: -112px;bottom: 21px;}
 .dropdown-menu.soc a {color: #555;display: inline-block;padding: 6px 9px 4px 9px;}
 .dropdown-menu.soc a:hover {color: #f56400;}
 	}
-	
+a.info-soc.my {display: inline-block;} 
 a.badge-wrapper.bullet, .cat-panel span {color: #222;}
-a.badge-wrapper.bullet:hover, .cat-panel span:hover, .toxu-info a:hover {color: #f56400 !important;}
+a.badge-wrapper.bullet:hover, a.info-soc.my:first-letter, .cat-panel span:hover, .toxu-info a:hover {color: #f56400 !important;}
 }
 /*end sidebar*/
 
