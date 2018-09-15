@@ -152,8 +152,13 @@
              </ol>
         </li>
 </ol></section>  
-    
-    
+    <br><br>
+      {{#if contactInfo}}
+        <section class='about contact'>
+            <h3>{{d-icon "envelope-o"}} {{i18n 'about.contact'}}</h3>
+            <p>{{{contactInfo}}}</p>
+        </section>
+      {{/if}}   
     
     {{#if model.moderators}}
         <section class='about moderators'>
@@ -168,18 +173,6 @@
         </section>
       {{/if}}
 
-
-
-
-      {{#if contactInfo}}
-        <section class='about contact'>
-            <h3>{{d-icon "envelope-o"}} {{i18n 'about.contact'}}</h3>
-            <p>{{{contactInfo}}}</p>
-        </section>
-      {{/if}}
-      
-      
-      
 </div>
     </div>
   </div>
