@@ -126,7 +126,8 @@ ${my_bio}
 Посетитель: <span class="numer">0</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
-<br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
+<br>Количество наград: <span class="numer">${badge_count}</span> <a title="Все награды" href="https://toxu.ru/badges">из 50</a><br>
+
 <div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
 
@@ -166,7 +167,7 @@ ${my_bio}
 Пользователь: <span class="numer">1</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
-<br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
+<br>Количество наград: <span class="numer">${badge_count}</span> <a title="Все награды" href="https://toxu.ru/badges">из 50</a><br>
 <div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
 
@@ -203,7 +204,7 @@ ${my_bio}
 Участник: <span class="numer">2</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
-<br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
+<br>Количество наград: <span class="numer">${badge_count}</span> <a title="Все награды" href="https://toxu.ru/badges">из 50</a><br>
 <div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
 
@@ -239,7 +240,7 @@ ${my_bio}
 Постоялец: <span class="numer">3</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
-<br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
+<br>Количество наград: <span class="numer">${badge_count}</span> <a title="Все награды" href="https://toxu.ru/badges">из 50</a><br>
 <div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
 
@@ -277,7 +278,7 @@ ${my_bio}
 Лидер: <span class="numer">4</span> из 4<br>
 <div class="all-bar"><a title="Уровень доверия" href="https://toxu.ru/level"><div class="pgbar cv-1"><div class="bar-b pol-1" style="height:12px;width:${bw}%"></div></div></a></div>
 
-<br>Количество наград: <span class="numer">${badge_count}</span> из 50<br>
+<br>Количество наград: <span class="numer">${badge_count}</span> <a title="Все награды" href="https://toxu.ru/badges">из 50</a><br>
 <div class="all-bar"><a title="Награды" href="/u/${username}/badges"><div class="pgbar cv-1"><div class="bar-b pol-2" style="height:12px;width:${badge_num}%"></div></div></a></div>
 <br>
  
