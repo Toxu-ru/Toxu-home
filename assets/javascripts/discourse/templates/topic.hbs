@@ -75,9 +75,6 @@
       {{/topic-title}}
     {{/if}}
     
- {{d-button icon="reply" class="btn-primary pull-right" action="showLogin" label="topic.reply.title"}}
-
-
 
 
     <div class="container posts">
@@ -87,6 +84,8 @@
 
       {{#topic-navigation topic=model jumpToDate=(action "jumpToDate") jumpToIndex=(action "jumpToIndex") as |info|}}
         {{#if info.renderTimeline}}
+
+ {{d-button icon="reply" class="btn-primary pull-right" action="showLogin" label="topic.reply.title"}}
 
           {{topic-timeline
             topic=model
