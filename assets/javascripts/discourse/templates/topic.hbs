@@ -85,8 +85,6 @@
       {{#topic-navigation topic=model jumpToDate=(action "jumpToDate") jumpToIndex=(action "jumpToIndex") as |info|}}
         {{#if info.renderTimeline}}
 
- {{d-button icon="reply" class="btn-primary pull-right" action="showLogin" label="topic.reply.title"}}
-
           {{topic-timeline
             topic=model
             notificationLevel=model.details.notification_level
