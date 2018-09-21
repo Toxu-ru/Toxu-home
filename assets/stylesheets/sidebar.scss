@@ -38,6 +38,7 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 html:not(.mobile-view) {
 /*для вопроса*/	
 #post_1 {
+  .user-signature {margin-left: 59px;}	
   .topic-avatar {position: absolute;margin-left: 12px;}  
   .topic-meta-data{margin-left: 60px;}
   .topic-body{;width: 730px;}
@@ -632,7 +633,7 @@ img.avatar:hover, .d-header #site-logo:hover {opacity: 0.8;}
 .topic-list > tbody {border-top: 1px solid #e9e9e9;}
 .user-signature, .names .user-title a, .names .user-title {position: relative;color: #919191;font-size: 13px;}
 
-.user-signature {position: absolute;margin-top: 35px;margin-left: 56px;} 
+.user-signature {position: absolute;margin-top: -30px;} 
 .topic-body .regular {    margin-top: 35px;}
 
 .post-menu-area {margin-bottom: 1px;margin-top:2px;}
