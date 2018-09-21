@@ -10,10 +10,17 @@ a.title, a.topic-link, a.fancy-title, .cat-pods a, .sidebar  a.widget-link, .sid
     position: absolute;
 }
 .navigation-container button.select-kit-header.dropdown-select-box-header:after {content: "Подписка";}
+
 /*-comm post_1 + none signature hidden и для общения нет подробного */
 #post_1 nav.post-controls button.reply, .post-hidden .user-signature, .category-other .sidebar-fon .dis-info-more, .topic-excerpt a {
     display: none;
 }
+#post_1 {
+  .topic-avatar {position: absolute;}  
+  .topic-meta-data{margin-left: 50px;}
+  .topic-body{padding: 12px 11px 0 2px;width: 730px;}
+}
+
 
 .d-header #site-logo {    max-width: 8.2857em;}
 .search-ins{
