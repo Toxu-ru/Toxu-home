@@ -1,14 +1,9 @@
 module DiscourseAsk
 	
-	class AskController < ApplicationController
-
-#  requires_login only: [:live_post_counts]
-
+  class AskController < ApplicationController
   skip_before_action :check_xhr, only: [:index]
 
   def index
- #  return redirect_to path('/login') if SiteSetting.login_required? && current_user.nil?
-
     @dev = About.new
     respond_to do |format|
       format.html do
