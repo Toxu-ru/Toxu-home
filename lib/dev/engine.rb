@@ -119,3 +119,15 @@ module DiscoursePravila
     end
   end
 end
+
+module DiscourseAsk
+  class Engine < ::Rails::Engine
+    isolate_namespace DiscourseAsk
+
+    config.after_initialize do
+		Discourse::Application.routes.append do
+			mount ::DiscourseAsk::Engine, at: "/"
+		end
+    end
+  end
+end
