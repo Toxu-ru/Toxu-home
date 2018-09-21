@@ -38,9 +38,10 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 html:not(.mobile-view) {
 /*для вопроса*/	
 #post_1 {
-  .topic-avatar {position: absolute;}  
-  .topic-meta-data{margin-left: 50px;}
-  .topic-body{padding: 12px 11px 0 2px;width: 730px;}
+  .topic-avatar {position: absolute;margin-left: 12px;}  
+  .topic-meta-data{margin-left: 60px;}
+  .topic-body{;width: 730px;}
+   .embedded-posts .topic-avatar img {width: 22px;height: 22px;}
 }	
 	
 #ostan {max-width: 320px;}
