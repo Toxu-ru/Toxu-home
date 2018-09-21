@@ -18,7 +18,8 @@ Discourse::Application.routes.append do
   get '/donate' => 'discourse_donate/donate#index'
   get '/stats' => 'discourse_stats/stats#my_page'
   get '/chess' => 'discourse_chess/chess#my_page'
-  
+  get '/ask' => 'discourse_ask/ask#index'
+    
   get '/qa' => 'discourse_qa/qa#pages' 
   get '/qa/:username' => 'discourse_qa/qa#index', constraints: { username: RouteFormat.username }
   
