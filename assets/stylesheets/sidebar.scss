@@ -15,12 +15,6 @@ a.title, a.topic-link, a.fancy-title, .cat-pods a, .sidebar  a.widget-link, .sid
 #post_1 nav.post-controls button.reply, .post-hidden .user-signature, .category-other .sidebar-fon .dis-info-more, .topic-excerpt a {
     display: none;
 }
-#post_1 {
-  .topic-avatar {position: absolute;}  
-  .topic-meta-data{margin-left: 50px;}
-  .topic-body{padding: 12px 11px 0 2px;width: 730px;}
-}
-
 
 .d-header #site-logo {    max-width: 8.2857em;}
 .search-ins{
@@ -43,6 +37,12 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 
 html:not(.mobile-view) {
 /*для вопроса*/	
+#post_1 {
+  .topic-avatar {position: absolute;}  
+  .topic-meta-data{margin-left: 50px;}
+  .topic-body{padding: 12px 11px 0 2px;width: 730px;}
+}	
+	
 #ostan {max-width: 320px;}
 .archetype-regular #banner, #topic-title .title-wrapper {max-width: 880px;}
 #topic-progress-wrapper {right: 1em !important;bottom: 0px !important;position: fixed !important;}	
