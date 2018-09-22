@@ -231,18 +231,19 @@ a.link:hover{color: #f56400;}
 
 a.widget-link {
 	display: block;margin-bottom: 4px;padding: 4px;
-        i.fa {margin-right: 5px;margin-left:4px;}
+        i.fa {margin-right: 5px;margin-left:4px; position: absolute;font-size: 17px;margin-top: 2px;}
 	}
 	
-.top-cat {margin-top: 15px;}
-	
+.top-cat {margin-top: 10px;margin-bottom: 10px;}
+.cat-link.all{margin-left: 13px;}	
 .cat-link {
+	.my-menu .my-menu span {font-size: 14px;vertical-align: middle;margin-left: 40px;}
 	margin-bottom: 9px;font-size: 16px;position: relative;display: block; margin-left: 13px;
 	.topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 2px;margin-right: 6px;}
 	}	
 
 .badge-wrapper.bullet {
-	.badge-category-bg {width: 6px !important;height: 6px;margin-bottom: 2px;margin-top: 7px;position: absolute;}
+	.badge-category-bg {display: none;}
 	span.badge-category:hover {color: #f56400 !important;}
 	display: inline;
 	}
