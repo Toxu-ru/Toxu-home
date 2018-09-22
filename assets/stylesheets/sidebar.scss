@@ -231,11 +231,11 @@ a.link:hover{color: #f56400;}
 
 a.widget-link {
 	display: block;margin-bottom: 4px;padding: 4px;
-        i.fa {margin-right: 5px;margin-left:4px; position: absolute;font-size: 17px;margin-top: 2px;}
+        i.fa {margin: 2px 5px 0 4px; position: absolute;font-size: 17px;}
 	}
 	
-.top-cat {margin-top: 10px;margin-bottom: 10px;}
-.cat-link.all{margin-left: 13px;}	
+.top-cat {margin: 10px 0 10px 0;}
+.cat-link.all{margin-left: 12px;}	
 .cat-panel .my-menu .my-menu span {font-size: 14px; vertical-align: middle;margin-left: 40px;}  	
 	
 .cat-link {
