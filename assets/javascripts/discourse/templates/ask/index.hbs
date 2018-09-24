@@ -13,8 +13,16 @@ i.small {font-size: 15px;}
 span.menu i.fa {color: #F48024;}
 .sidb {width: 265px;background: #f6f8fe;float: left;margin-top: 13px;font-size: 15px;}
 .help-telo {margin-left: 20px !important;width: 75%; float: right;}
+
+
+.ask {display: flex;}
+.ask-block{flex-basis: calc(50% - 2em);}
+
 @media screen and (max-width: 1200px) {.help-telo {width: 70%;}}
-@media screen and (max-width: 1000px) {.help-telo, .sidb {width: 100%;}.sidb {margin-top: 1px;}}
+@media screen and (max-width: 1000px) {.help-telo, .sidb {width: 100%;}.sidb {margin-top: 1px;}
+ask {display: inherit;}
+.ask-block{flex-basis: calc(100%);}
+}
 </style>
 
 <div class="help">
@@ -25,24 +33,32 @@ span.menu i.fa {color: #F48024;}
 
 В стадии разработки...<br><br>
 
-<a title="Что значит слово Toxu?" href="https://toxu.ru/toxu">Что означает название сайта «Toxu»?</a><br>
-<i class="small">Почему сайт назван Toxu, что означает слово Toxu...</i><br><br>
+<div class="ask" style="display: flex;"><div class="ask-block">
+<h2>Вопросы</h2>
 
-
-<i>Как</i>
-<ul>
 <li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/kak-zadat-vopros-na-sajte-toxu/1439">Как задать вопрос?</a></li>
 <li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/kak-otvetit-na-vopros-na-sajte-toxu-ru/1727">Как ответить на вопрос?</a></li>
-<li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/kak-sozdat-opros-na-toxu/1452">Как создать опрос?</a></li>
-<li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/wiki-voprosy-i-otvety-na-toxu-ru/2513">Как создать Wiki вопрос/ответ?</a></li>
-<li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/luchshij-otvet-na-sajte-toxu/2479">Как выбрать лучший ответ?</a></li>
-</ul>
-
-
-<i>Популярные вопросы</i>
-<ul>
-
 <li><a class="serv__link" target="_blank" href="https://toxu.ru/t/kak-pozhalovatsya-na-vopros-ili-otvet/1462">Как пожаловаться на вопрос/ответ?</a></li>
+<li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/wiki-voprosy-i-otvety-na-toxu-ru/2513">Как создать Wiki вопрос/ответ?</a></li>
+
+
+</div><div class="ask-block">
+<h2>Ответы</h2>
+<li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/kak-otvetit-na-vopros-na-sajte-toxu-ru/1727">Как ответить на вопрос на сайте Toxu.ru?</a></li>
+<li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/luchshij-otvet-na-sajte-toxu/2479">Как выбрать лучший ответ?</a></li>
+<li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/pochemu-moj-otvet-udalen-skryt/159">Почему мой ответ удален/скрыт?</a></li>
+  
+</div></div>
+  
+<br><br>
+
+<a title="Что значит слово Toxu?" href="https://toxu.ru/toxu">Что означает название сайта «Toxu»?</a><br>
+<i class="small">Почему сайт назван Toxu, что означает слово Toxu...</i><br><br>
+<br><br>
+
+<i>Популярные</i>
+<ul>
+<li><a class="helps__item-link" target="_blank" href="https://toxu.ru/t/kak-sozdat-opros-na-toxu/1452">Как создать опрос?</a></li>
 <li><a class="serv__link" target="_blank" href="https://toxu.ru/t/vojna-pravok-na-toxu/1281">Что такое Война правок?</a></li>
 <li><a class="serv__link" target="_blank" href="https://toxu.ru/t/kak-priglasit-druzej-na-resurs-toxu/371">Как пригласить друзей?</a></li>
 <li><a class="serv__link" target="_blank" href="https://toxu.ru/t/wiki-voprosy-i-otvety-na-toxu-ru/2513"> Wiki вопросы и ответы на Toxu.ru</a></li>
