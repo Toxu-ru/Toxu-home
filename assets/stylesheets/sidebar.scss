@@ -11,6 +11,14 @@ a.title, a.topic-link, a.fancy-title, .cat-pods a, .sidebar  a.widget-link, .sid
 }
 .navigation-container button.select-kit-header.dropdown-select-box-header:after {content: "Подписка";}
 
+/*all cat к вопросу*/
+.catnav { height: 22px;
+ a {color: #222;font-size: .8706em;}
+ a:hover {color: #f56400;}
+ .str {margin: 0 10px 0 5px;}
+}
+.private_message .catnav {display:none;}
+
 /*-comm post_1 + none signature hidden и для общения нет подробного */
 #post_1 nav.post-controls button.reply, .post-hidden .user-signature, .category-other .sidebar-fon .dis-info-more, .topic-excerpt a {
     display: none;
