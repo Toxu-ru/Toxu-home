@@ -25,7 +25,7 @@
           {{/if}}
             {{text-field id="edit-title" value=buffered.title maxlength=siteSettings.max_topic_title_length autofocus="true"}}
             {{#if showCategoryChooser}}
-            <a href="https://toxu.ru">Главная</a> /  {{category-chooser class="small" value=buffered.category_id}}
+                {{category-chooser class="small" value=buffered.category_id}}
             {{/if}}
 
             {{#if canEditTags}}
@@ -70,7 +70,7 @@
             {{/if}}
           </h1>
 
-          {{topic-category topic=model class="topic-category"}}
+        .  {{topic-category topic=model class="topic-category"}}
         {{/if}}
       {{/topic-title}}
     {{/if}}
