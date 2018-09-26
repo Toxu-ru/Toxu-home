@@ -132,13 +132,13 @@ module DiscourseAsk
   end
 end
 
-module DiscourseСontacts
+module DiscourseContacts
   class Engine < ::Rails::Engine
-    isolate_namespace DiscourseСontacts
+    isolate_namespace DiscourseContacts
 
     config.after_initialize do
 		Discourse::Application.routes.append do
-			mount ::DiscourseСontacts::Engine, at: "/"
+			mount ::DiscourseContacts::Engine, at: "/"
 		end
     end
   end
