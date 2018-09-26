@@ -563,11 +563,11 @@ h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-w
 /*раздел категории*/
 body.navigation-categories {
 .title-t a {margin-bottom: 7px;color: #777;}	
-.title-t a:hover, a.badge-wrapper.bullet:hover {color: #F48024;}
+.title-t a:hover, a.badge-wrapper.bullet span.badge-category:hover {color: #F48024;}
 .title-t {margin-bottom: 7px;}	
 	
 .banner-toxu-t {display: none;}
-h1.cat{margin: -30px 0 0 14px;color: #666;font-weight: 100;}
+h1.cat{margin: -30px 0 0 5px;color: #666;font-weight: 100;}
 a img:hover {opacity: 0.7;}	
 	
 .subcategory{
@@ -585,7 +585,7 @@ float: left; position: relative;
 .fon .list-controls { display: block !important;}
 .sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right, #scroll-top, #banner  {display: none !important;}	
 .cat-home {
-width: 45%; height: 100%;padding: 15px;float: left;position: relative;display: inline-block;
+width: 47%; height: 100%;padding: 15px 15px 15px 5px;float: left;position: relative;display: inline-block;
 img {width:99%;}
 .category-description, .subcategories {margin-top:10px;}
 }
