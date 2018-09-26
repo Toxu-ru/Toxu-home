@@ -563,11 +563,11 @@ h3.topic-list-link  {display: inline-block;color: #667d99;font-size: 15px;font-w
 /*раздел категории*/
 body.navigation-categories {
 .title-t a {margin-bottom: 7px;color: #777;}	
-.title-t a:hover {color: #F48024;}
+.title-t a:hover, a.badge-wrapper.bullet:hover {color: #F48024;}
 .title-t {margin-bottom: 7px;}	
 	
 .subcategory{
-img.category-logo-small {width:20px;width: 20px !important;border-radius: 50%;height: 20px;}
+img.category-logo-small {width:20px;width: 20px !important;height: 20px;}
 .badge-category-bg {display: none !important;}
 }	
 	
