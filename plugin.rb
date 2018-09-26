@@ -26,6 +26,7 @@ Discourse::Application.routes.append do
   
 end
 
+
 load File.expand_path('../lib/dev/engine.rb', __FILE__)
 
 DiscoursePluginRegistry.serialized_current_user_fields << "see_userbar"
