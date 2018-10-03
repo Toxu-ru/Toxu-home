@@ -52,9 +52,9 @@ export default createWidget('cat-categories', {
   tagName: 'div.category-links.clearfix',
 
   html(attrs) {
-    let title = I18n.t("filters.categories.title");
+    let title = '';
     if (attrs.moreCount > 0) {
-      title += I18n.t("categories.more", { count: attrs.moreCount });
+      title = I18n.t("categories.n_more", { count: attrs.moreCount });
     }
 
     let result = [  ];
@@ -81,9 +81,7 @@ export default createWidget('cat-categories', {
           "div.cat-link.all",
           h(
             "a.badge-wrapper.bullet",
-            { attributes: { href } },
-             "Показать все..."
-          )
+            { attributes: { href } }, title)
         )
      ); 
       
