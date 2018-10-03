@@ -115,8 +115,7 @@ results.push(this.listCategories());
     if (!this.currentUser) {
        var maxCategoriesToDisplay = 28;
     } else {
-       var maxCategoriesToDisplay = this.siteSettings
-        .header_dropdown_category_count;
+       var maxCategoriesToDisplay = 14;
     }  
     
     let categories = this.site.get("categoriesByCount");
