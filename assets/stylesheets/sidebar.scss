@@ -285,9 +285,9 @@ a.widget-link.top-cat {margin: 10px 0 12px 0;}
 .dropdown-menu.soc a {color: #555;display: inline-block;padding: 6px 9px 4px 9px;}
 .dropdown-menu.soc a:hover {color: #f56400;}
 	}
-a.info-soc.my {display: inline-block;} 
+a.info-soc.my, .cat-link.all a.bullet {display: inline-block;} 
 a.badge-wrapper.bullet, .cat-panel span {color: #222;}
-a.badge-wrapper.bullet:hover, a.info-soc.my:first-letter, .cat-panel span:hover, .toxu-info a:hover {color: #f56400 !important;}
+a.badge-wrapper.bullet:hover, a.info-soc.my:first-letter, .cat-panel span:hover, .toxu-info a:hover, .cat-link.all a.bullet:first-letter {color: #f56400 !important;}
 }
 /*end sidebar*/
 
