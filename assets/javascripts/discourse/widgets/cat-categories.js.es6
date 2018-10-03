@@ -54,7 +54,7 @@ export default createWidget('cat-categories', {
   html(attrs) {
     let title = '';
     if (attrs.moreCount > 0) {
-      title = I18n.t("categories.n_more", { count: attrs.moreCount });
+      title += I18n.t("categories.n_more", { count: attrs.moreCount });
     }
 
     let result = [  ];
