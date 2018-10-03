@@ -83,7 +83,7 @@ html:not(.mobile-view) {
     min-height: 650px;	
 }
 
-.list-container.has-sidebar {float: left;margin-left: 20px;margin-top: 11px;width: 73%;}
+.list-container.has-sidebar {float: left;margin-top: 11px;width: 73%;}
 .container-tip {position: relative;}
 
 }	
@@ -92,8 +92,7 @@ html.anon {
 .sidebar-m, .sidebar-right, .list-controls {margin-top: 14px;}
  .sidebar-add-qa {display: none;}
  .sidebar { position: relative !important;margin-top: 10px;}	
-.telo-qa {margin-top: 1px;}	
-.list-container.has-sidebar {    margin-top: 3px;}
+.list-container.has-sidebar, .telo-qa {    margin-top: 1px;}
 .sidebar-right { .cat-img-num, .cat-img-qa { top: 28px;}}	
 .sidebar a.widget-link.top-cat	{  margin-bottom: 15px;}
 
