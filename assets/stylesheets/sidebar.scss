@@ -54,7 +54,7 @@ html:not(.mobile-view) {
   .user-signature {margin-left: 59px;}	
   .topic-avatar {position: absolute;margin-left: 12px;}  
   .topic-meta-data{margin-left: 60px;}
-  .topic-body{;width: 730px;}
+  .topic-body{max-width: 730px;}
    .embedded-posts .topic-avatar img {width: 22px;height: 22px;}
 }	
 
@@ -1059,12 +1059,12 @@ border-radius: 0px;
     .list-container.has-sidebar {width: 98% !important;}
 }
 
-@media screen and (max-width : 1055px) {
-.container-telo {width: 100%;}
-.container-bar {display: none;}
-}
 
 @media (max-width: 1030px){
+.container-telo {width: 100%;}
+.container-bar {display: none;}	
+	
+	
     .sidebar, .colon.post {display:none;} 
     .full-width {margin-left: 0px !important;}
     #banner  {width: 98% !important;}
