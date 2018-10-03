@@ -22,8 +22,7 @@ export default createWidget('toxu-info', {
       <a class="info-soc" target="_blank" href="https://toxu.ru/qa">Писатели</a>
 
 <noindex><div class="dropdown pravo">
-<a title="Мы в социальных сетях..." class="info-soc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Ещё...</a>
+<a title="Мы в социальных сетях..." class="info-soc" data-toggle="dropdown">Ещё...</a>
   <div class="dropdown-menu soc" aria-labelledby="dropdownMenuButton"><center>
   <a title="Мы в Моём Мире" class="dropdown-item" rel="nofollow" target="_blank" href="https://my.mail.ru/community/toxu/"><i class="fa fa-at" aria-hidden="true"></i></a>
   <a title="Мы в Twitter" class="dropdown-item" rel="nofollow" target="_blank" href="https://twitter.com/toxu_russian"><i class="fa fa-twitter" aria-hidden="true"></i></a>
