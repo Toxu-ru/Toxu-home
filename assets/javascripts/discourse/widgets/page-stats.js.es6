@@ -71,6 +71,30 @@ export default createWidget('page-stats', {
  }
  });
 
+var gramota;	    
+	    
+$.ajax({
+  url: "/user-badges/"+ username +".json", 
+  dataType: 'json',
+  async: false,
+  success: function(data) {
+	
+  var badges = data.user_badges;
+   
+  for (var t = 0; t < badges.length; t++) {
+  id = badges[t].badge_id;
+  granted_at = badges[t].granted_at;
+  if ( id == 104) { 
+ gramota = '<br>Воспользуйтесь личными сообщениями и <b>получите грамоту</b>, отправив <i>Боту</i> письмо.<br><br><center><img src="https://toxu.ru/uploads/default/original/2X/5/51cdae2910fe5d42d632123ab373a5c20e876eee.jpg" alt="Грамота">';
+ gramota += '<br><i>Пример: грамоты выданной аккаунту Toxu</i><br><br><a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" class="gramota">+ Получить грамоту</a></center><br><br>';	  
+  } else { gramota = '';  }
+  }
+
+  }
+  });	    
+	    
+	    
+	    
 if (trust_level === 0) { 
 contents.push(
 new RawHtml({ html: `<div class="id">
@@ -135,16 +159,8 @@ ${shcala}
 <br><br>
 Вам доступны <a target="_blank" href="https://toxu.ru/u/${username}/messages">личные сообщения</a>. 
 
-<br>Воспользуйтесь личными сообщениями и <b>получите грамоту</b>, отправив <i>Боту</i> письмо. 
-    <br><br><center>
-    <img src="https://toxu.ru/uploads/default/original/2X/5/51cdae2910fe5d42d632123ab373a5c20e876eee.jpg" alt="Грамота"><br>
-    <i>Пример: грамоты выданной аккаунту Toxu</i><br><br>
 
-
-
-<a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" 
-class="gramota">+ Получить грамоту</a></center><br> <br>
-
+${gramota}
 
 
 <i>Еще Вы можете:</i> <a target="_blank" href="https://toxu.ru/u/${username}/preferences/interface">настроить дизайн</a> 
@@ -195,6 +211,9 @@ ${shcala}
 <br>До уровня: <b>Постоялец (3)</b> 
 <div><div class="progress-bar"><span class="progress-bar-fill" style="width: ${days_visited}%"></span></div>
 <br> <br> 
+
+${gramota}
+
 
 <h3 class="t3">Ссылка на мой профиль</h3>
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
