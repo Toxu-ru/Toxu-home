@@ -87,8 +87,8 @@ $.ajax({
   ids = badges[t].badge_id;
   if ( ids == 104) { gramota = '';  } else { 
 
- gramota = '<br>Воспользуйтесь личными сообщениями и <b>получите грамоту</b>, отправив <i>Боту</i> письмо.<br><br><center><img src="https://toxu.ru/uploads/default/original/2X/5/51cdae2910fe5d42d632123ab373a5c20e876eee.jpg" alt="Грамота">' + 
-'<br><i>Пример: грамоты выданной аккаунту Toxu</i><br><br><a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" class="gramota">+ Получить грамоту</a></center><br><br>';	  
+ gramota = 'Воспользуйтесь личными сообщениями и <b>получите грамоту</b>, отправив <i>Боту</i> письмо.<br><br><img src="https://toxu.ru/uploads/default/original/2X/5/51cdae2910fe5d42d632123ab373a5c20e876eee.jpg" alt="Грамота">' + 
+'<br><i>Пример: грамоты выданной аккаунту Toxu</i><br><br><a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" class="gramota">+ Получить грамоту</a><br><br>';	  
    
   }
   }
@@ -161,7 +161,7 @@ ${shcala}
 Это поможет вам приблизится к следующему уровню доверия и откроет новые возможности на сайте.
 <br><br>
 Вам доступны <a target="_blank" href="https://toxu.ru/u/${username}/messages">личные сообщения</a>. 
-
+<br><br>
 
 ${gramota}
 
@@ -213,7 +213,7 @@ ${shcala}
 <img class="img" src="https://toxu.ru/uploads/default/original/2X/e/ebaabc2e2a3092fd609c886b3b9beb221da11cb5.gif" alt="Пригласить" width="590" height="100">
 <br>До уровня: <b>Постоялец (3)</b> 
 <div><div class="progress-bar"><span class="progress-bar-fill" style="width: ${days_visited}%"></span></div>
-<br> <br> 
+<br>
 
 ${gramota}
 
