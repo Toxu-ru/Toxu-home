@@ -87,8 +87,8 @@ $.ajax({
  ids = badges[t].badge_id;
  granted_at = badges[t].granted_at;
   if ( ids == 104) { 
- gramota = '<br>Воспользуйтесь личными сообщениями и <b>получите грамоту</b>, отправив <i>Боту</i> письмо.<br><br><center><img src="https://toxu.ru/uploads/default/original/2X/5/51cdae2910fe5d42d632123ab373a5c20e876eee.jpg" alt="Грамота">';
- gramota += '<br><i>Пример: грамоты выданной аккаунту Toxu</i><br><br><a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" class="gramota">+ Получить грамоту</a></center><br><br>';	  
+ gramota = '<br>Воспользуйтесь личными сообщениями и <b>получите грамоту</b>, отправив <i>Боту</i> письмо.<br><br><center><img src="https://toxu.ru/uploads/default/original/2X/5/51cdae2910fe5d42d632123ab373a5c20e876eee.jpg" alt="Грамота">' + 
+ gramota = '<br><i>Пример: грамоты выданной аккаунту Toxu</i><br><br><a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" class="gramota">+ Получить грамоту</a></center><br><br>';	  
   } else { gramota = '';  }
   }
 
