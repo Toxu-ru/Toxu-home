@@ -108,8 +108,7 @@ if (trust_level === 0) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-<div class="title">Мои данные<span id="toxu">
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
+<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
 
 ${my_bio}
 
@@ -146,8 +145,7 @@ if (trust_level === 1) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-<div class="title">Мои данные<span id="toxu">
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
+<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
 
 ${my_bio}
 
@@ -183,8 +181,7 @@ if (trust_level === 2) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-<div class="title">Мои данные<span id="toxu">
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
+<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
 
 ${my_bio}
 
@@ -219,8 +216,7 @@ if (trust_level === 3) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-<div class="title">Мои данные<span id="toxu">
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
+<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
 
 ${my_bio}
 
@@ -256,9 +252,7 @@ if (trust_level === 4) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-
-<div class="title">Мои данные<span id="toxu">
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile"><i class="fa fa-cog" aria-hidden="true"></i></a></span></div>
+<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
 
 ${my_bio}
 
