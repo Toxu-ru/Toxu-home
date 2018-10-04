@@ -125,7 +125,7 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
 }
 });
 
-if (yes) { } else {  contents.push( new RawHtml({ html: `<div class="bd"><br><br><center> <span class="no"> Сертификата нет</span> <br> <a href="https://toxu.ru/stats">Получить сертификат!</a></center></div>`}));  }
+if (yes) { } else {  contents.push( new RawHtml({ html: `<div class="bd"><br><br><center> <span class="no"> Сертификата нет</span> <br> <a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" class="gramota">Получить сертификат</a></center></div>`}));  }
 
 contents.push( new RawHtml({ html: `<div class="bd"> <center>
 <br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a> 
