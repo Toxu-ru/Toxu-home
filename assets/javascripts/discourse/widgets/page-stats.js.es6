@@ -85,10 +85,12 @@ $.ajax({
    
   for (var t = 0; t < badges.length; t++) {
   ids = badges[t].badge_id;
-  if ( ids == 104) { 
+  if ( ids == 104) { gramota = '';  } else { 
+
  gramota = '<br>Воспользуйтесь личными сообщениями и <b>получите грамоту</b>, отправив <i>Боту</i> письмо.<br><br><center><img src="https://toxu.ru/uploads/default/original/2X/5/51cdae2910fe5d42d632123ab373a5c20e876eee.jpg" alt="Грамота">' + 
 '<br><i>Пример: грамоты выданной аккаунту Toxu</i><br><br><a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" class="gramota">+ Получить грамоту</a></center><br><br>';	  
-  } else { gramota = '1';  }
+   
+  }
   }
 
   }
@@ -252,6 +254,9 @@ ${shcala}
 <br> - <a target="_blank" href="https://toxu.ru/t/vojna-pravok-na-toxu/1281">война правок</a> на сайте; 
 <br> - <a target="_blank" href="https://toxu.ru/t/kakovy-rekomendaczii-i-politika-dlya-redaktirovaniya-voprosa-na-toxu-ru/934">каковы рекомендации и политика для 
  редактирования вопроса</a>.<br> <br> 
+
+
+${gramota}
 
 <h3 class="t3">Ссылка на мой профиль</h3>
 <span class="excerpt"><small>https://toxu.ru/u/${username}/summary</small></span>
