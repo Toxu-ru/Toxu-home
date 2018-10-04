@@ -73,7 +73,7 @@ export default createWidget('page-stats', {
 
 var gramota;	    
 var ids;
-var granted_at;	
+var badges;
 	    
 $.ajax({
   url: "/user-badges/"+ username +".json", 
@@ -81,11 +81,10 @@ $.ajax({
   async: false,
   success: function(data) {
 	
-  var badges = data.user_badges;
+  badges = data.user_badges;
    
   for (var t = 0; t < badges.length; t++) {
- ids = badges[t].badge_id;
- granted_at = badges[t].granted_at;
+  ids = badges[t].badge_id;
   if ( ids == 104) { 
  gramota = '<br>Воспользуйтесь личными сообщениями и <b>получите грамоту</b>, отправив <i>Боту</i> письмо.<br><br><center><img src="https://toxu.ru/uploads/default/original/2X/5/51cdae2910fe5d42d632123ab373a5c20e876eee.jpg" alt="Грамота">' + 
 '<br><i>Пример: грамоты выданной аккаунту Toxu</i><br><br><a target="_blank" href="http://toxu.ru/new-message?username=ToxBot&amp;title=Привет%20Бот!&amp;body=@ToxBot%20старт%20новый%20пользователь%20" class="gramota">+ Получить грамоту</a></center><br><br>';	  
