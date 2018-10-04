@@ -125,7 +125,7 @@ contents.push( new RawHtml({ html: `<div><center><div class="prof-glog-blog">
 }
 });
 
-if (yes) { } else {  contents.push( new RawHtml({ html: `<div class="bd"><br><br><center> <span class="no"> Сертификата нет</span> <br> <a href="https://toxu.ru/t/pochemu-mne-pishet-kakoj-to-bot/2294">Посмотреть</a>, как получить сертификат. </center></div>`}));  }
+if (yes) { } else {  contents.push( new RawHtml({ html: `<div class="bd"><br><br><center> <span class="no"> Сертификата нет</span> <br> <a href="https://toxu.ru/stats">Получить сертификат!</a></center></div>`}));  }
 
 contents.push( new RawHtml({ html: `<div class="bd"> <center>
 <br><br><a rel="nofollow" class="btn-primary create btn btn-icon-text ember-view" href="https://toxu.ru/u/${username}/summary">Посмотреть полный профиль</a> 
