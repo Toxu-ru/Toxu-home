@@ -219,14 +219,13 @@ display: block;
     background: url(https://toxu.ru/uploads/default/original/2X/5/5093fa25eaaad68132d9809cc13ac04ea7e4e3f0.png);
     box-shadow: 0 1px 0 0 #e7edf3, 0 0 0 1px #e7edf3;
     padding: 10px;
-    color: #666;
+    color: #919191;
     height: 100%;
 a.link{color: #667d99;float: right;}
 a.link:hover{color: #f56400;}
-.title {color: #667d99;margin-bottom: 12px;font-size: 1.12em;} 
+.title {color: #222;margin-bottom: 12px;font-size: 1.12em;} 
 .mn {margin-bottom: 14px; }
-.mn i.fa {color: #F7941D;}
-.numer{ color: #F7941D;font-weight: 400;}
+.mn i.fa, .numer{ color: #f56400;font-weight: 400;}
 .img-my-r {
     width: 207px;
     height: 286px;
@@ -892,7 +891,7 @@ border-radius: 0px;
     width: 8em;
     text-align: center;
     display: block;
-    color: #53777A;
+    color: #666;
     z-index: 2;
     font-size: 0.6em;
 }
