@@ -115,7 +115,7 @@ ${my_bio}
 
 <div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
-<center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px;color: #666;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -153,7 +153,7 @@ ${my_bio}
 
 <div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
-<center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px;color: #666;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -190,7 +190,7 @@ ${my_bio}
 
 <div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
-<center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px;color: #666;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -226,7 +226,7 @@ ${my_bio}
 
 <div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
-<center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px;color: #666;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
@@ -264,7 +264,7 @@ ${my_bio}
 
 <div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
-<center><span style="font-size:14px;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
+<center><span style="font-size:14px;color: #666;text-transform: uppercase;">${verh}</span><div class="progress-circle ${isprav} p${grad}">
    <span>${vrema_t} ${t_op}</span>
    <div class="left-half-clipper">
       <div class="first50-bar"></div>
