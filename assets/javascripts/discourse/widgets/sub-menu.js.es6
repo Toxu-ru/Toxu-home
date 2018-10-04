@@ -137,11 +137,8 @@ ${my_bio}
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
  
-<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="red">М</font><font color="orange">о</font><font color="brown">я</font> карточка</a>. Как видят меня?</div>
-  
-<br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
-<a href="/tags" class="tag-теги discourse-tag bullet">все теги</a> 
-
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="#F7941D">М</font>оя карточка</a>. Как видят меня?</div>
+ 
 </div>`}));
 
 }
@@ -176,7 +173,7 @@ ${my_bio}
 
 <div class="mn"><a title="Получить грамоту" target="_blank" href="https://toxu.ru/stats"><font color="red">П</font>очитать</a> о новых возможностях, и получить грамоту.</div>
 
-<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="red">М</font><font color="orange">о</font><font color="brown">я</font> карточка</a>. Как видят меня?</div>
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="#F7941D">М</font>оя карточка</a>. Как видят меня?</div>
  
 </div>`}));
 
@@ -212,7 +209,7 @@ ${my_bio}
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
 
-<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="red">М</font><font color="orange">о</font><font color="brown">я</font> карточка</a>. Как видят меня?</div>
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="#F7941D">М</font>оя карточка</a>. Как видят меня?</div>
   
 </div>`}));
 
@@ -248,7 +245,7 @@ ${my_bio}
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
  
-<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="red">М</font><font color="orange">о</font><font color="brown">я</font> карточка</a>. Как видят меня?</div>
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="#F7941D">М</font>оя карточка</a>. Как видят меня?</div>
   
 
 </div>`}));
@@ -286,7 +283,7 @@ ${my_bio}
  
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Раздел <a href="https://toxu.ru/c/dev">dev</a> - для разработки...</div>
  
-<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="red">М</font><font color="orange">о</font><font color="brown">я</font> карточка</a>. Как видят меня?</div>
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="#F7941D">М</font>оя карточка</a>. Как видят меня?</div>
 
 </div>`}));
 }   
