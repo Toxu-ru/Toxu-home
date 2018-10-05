@@ -293,7 +293,8 @@ ${my_bio}
 
 contents.push(
 new RawHtml({ html: `<div>
-<div class="title">Информация<span id="toxu"></div>
+<h3 class="oglavl">Информация</h3>
+
 <div class="mn">После регистрации вам будут показаны ваши достижения. </div>
 
 <div class="img-my-r"></div>
