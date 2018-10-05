@@ -81,12 +81,12 @@ export default createWidget('cat-categories', {
         )
      ); 
       
-	  var href = Discourse.getURL("/categories");
+	var href = Discourse.getURL("/categories");
 	  
   	result = result.concat(
 	   
         h(
-          "div.zag",
+          "div.zagall",
           h(
             "a.all",
             { attributes: { href } }, "Все")
