@@ -52,9 +52,9 @@ html:not(.mobile-view) {
 /*для вопроса*/	
 #post_1 {
   .user-signature {margin-left: 59px;}	
-  .topic-avatar {position: absolute;margin-left: 12px;}  
+  .topic-avatar {position: absolute;}  
   .topic-meta-data{margin-left: 60px;}
-  .topic-body{max-width: 730px;}
+  .topic-body{max-width: 730px; padding: 12px 11px 0 2px;}
    .embedded-posts .topic-avatar img {width: 22px;height: 22px;}
 }	
 
