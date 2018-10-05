@@ -52,12 +52,48 @@ export default createWidget('cat-categories', {
   tagName: 'div.category-links.clearfix',
 
   html(attrs) {
-    let title = '';
-    if (attrs.moreCount > 0) {
-      title += I18n.t("categories.n_more", { count: attrs.moreCount });
-    }
+ //   let title = '';
+ //  if (attrs.moreCount > 0) {
+ //    title += I18n.t("categories.n_more", { count: attrs.moreCount });
+ //   }
 
     let result = [  ];
+    
+    
+    if (!this.currentUser) {  
+      
+  	result = result.concat(
+        h(
+          "div.zag",
+          h(
+            "div.oglavl", "Разделы" )
+        )
+     );  
+	  
+	  
+    } else { 
+  
+    result = result.concat(
+        h(
+          "div.zag",
+          h(
+            "div.oglavl", "Мои разделы")
+        )
+     ); 
+      
+	  var href = Discourse.getURL("/categories");
+	  
+  	result = result.concat(
+	   
+        h(
+          "div.zag",
+          h(
+            "a.all",
+            { attributes: { href } }, "Все")
+        )
+     );  
+	  
+    } 
     
  
     const categories = attrs.categories;
@@ -67,26 +103,6 @@ export default createWidget('cat-categories', {
     result = result.concat(
       categories.map(c => this.attach("cat-category", c))
     );
-
-
-
-  if (!this.currentUser) {  
-      
-    } else { 
-      
-    var href = Discourse.getURL("/categories");
-    
-    result = result.concat(
-        h(
-          "div.cat-link.all",
-          h(
-            "a.badge-wrapper.bullet",
-            { attributes: { href } }, title)
-        )
-     ); 
-      
-    } 
-
 
     return result;
   }
