@@ -67,24 +67,6 @@ export default createWidget('sidebar-cat', {
       icon: "free-code-camp"
     });
 
-if (!this.currentUser) {
-     links.push({
-      route: "discovery.categories",
-      className: "top-cat",
-      label: "filters.categories.title",
-      title: "filters.categories.title"
-    //  icon: "object-group"
-    });
-} else {
-  links.push({
-      href: "/my/preferences/categories",
-      className: "top-cat",
-      label: "main.cat-you",
-      title: "user.tracked_categories"
-     // icon: "object-group"
-    });
-}  
-
     const extraLinks = flatten(
       applyDecorators(this, "generalLinks", this.attrs, this.state)
     );
