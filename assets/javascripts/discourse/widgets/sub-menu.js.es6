@@ -108,7 +108,7 @@ if (trust_level === 0) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
+<h3 class="oglavl">Мои данные</h3>
 
 ${my_bio}
 
@@ -145,7 +145,7 @@ if (trust_level === 1) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
+<h3 class="oglavl">Мои данные</h3>
 
 ${my_bio}
 
@@ -181,7 +181,7 @@ if (trust_level === 2) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
+<h3 class="oglavl">Мои данные</h3>
 
 ${my_bio}
 
@@ -216,7 +216,7 @@ if (trust_level === 3) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
+<h3 class="oglavl">Мои данные</h3>
 
 ${my_bio}
 
@@ -252,7 +252,8 @@ if (trust_level === 4) {
 contents.push(
 new RawHtml({ html: `<div>  
 
-<a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Мои данные</a>
+<h3 class="oglavl">Мои данные</h3>
+
 
 ${my_bio}
 
@@ -278,6 +279,9 @@ ${my_bio}
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Раздел <a href="https://toxu.ru/c/dev">dev</a> - для разработки...</div>
  
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="#F7941D">М</font>оя карточка</a>. Как видят меня?</div>
+
+
+<div class="mn"><a class="link" title="Настройка аккаунта" target="_blank" href="https://toxu.ru/u/${username}/preferences/profile">Настройка...</a></div>
 
 </div>`}));
 }   
