@@ -72,16 +72,16 @@ if (!this.currentUser) {
       route: "discovery.categories",
       className: "top-cat",
       label: "filters.categories.title",
-      title: "filters.categories.title",
-      icon: "object-group"
+      title: "filters.categories.title"
+    //  icon: "object-group"
     });
 } else {
   links.push({
       href: "/my/preferences/categories",
       className: "top-cat",
       label: "main.cat-you",
-      title: "user.tracked_categories",
-      icon: "object-group"
+      title: "user.tracked_categories"
+     // icon: "object-group"
     });
 }  
 
