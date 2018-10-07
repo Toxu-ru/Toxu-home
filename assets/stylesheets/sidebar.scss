@@ -406,6 +406,11 @@ html:not(.mobile-view) {
 .badge-wrapper.bullet .badge-category-parent-bg + .badge-category-bg {width: 9px;}
 .badge-wrapper.bullet .badge-category-parent-bg {display: none;}
 
+.navigation-topics .sidebar .widget-link.active {
+    background: #f6f8fe;border-right: 3px solid #F48024;
+    i.fa {color: #F48024;}	
+}
+
 /*комментарии*/
 .topic-post.comment { 
 margin-left: 53px;	
