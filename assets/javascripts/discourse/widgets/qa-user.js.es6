@@ -46,7 +46,7 @@ export default createWidget('qa-user', {
  trust_level = trust_level;
  badge_count =  badge_count;
  profile_view_count = profile_view_count;	 
- }{
+ } else {
  trust_level = 'скрыто';
  badge_count = 'скрыто';	 
  profile_view_count = 'скрыто';
@@ -66,7 +66,7 @@ export default createWidget('qa-user', {
 	  
 if (recent_time_read) {
  recent_time_read = recent_time_read;
-}{
+} else {
  recent_time_read = 'скрыто';
 }	  
 	  
