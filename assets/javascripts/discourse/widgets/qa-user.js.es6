@@ -63,6 +63,13 @@ export default createWidget('qa-user', {
   var tim = data.user.time_read;
   var time = tim/86400;
   recent_time_read = time.toFixed();
+	  
+if (recent_time_read) {
+ recent_time_read = recent_time_read;
+}{
+ recent_time_read = 'скрыто';
+}	  
+	  
   }
   });
  
