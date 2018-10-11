@@ -17,6 +17,16 @@ tagName: 'div.qramota',
     var trust_level = args.model.trust_level;
     var badge_count  = args.model.badge_count;
     
+ if (trust_level) { 
+ trust_level = trust_level;
+ badge_count =  badge_count; 
+ } else {
+ 
+ trust_level = 1;
+ badge_count = 1; 	 
+	 
+ }	  
+	  
     var badge_num = badge_count*2;
     
     var id;
