@@ -47,9 +47,9 @@ export default createWidget('qa-user', {
  badge_count =  badge_count;
  profile_view_count = profile_view_count;	 
  } else {
- trust_level = 'скрыто';
+ trust_level = '-';
  badge_count = 'скрыто';	 
- profile_view_count = 'скрыто';
+ profile_view_count = '-';
  }
 	  
 
