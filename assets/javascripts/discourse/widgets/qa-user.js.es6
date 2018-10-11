@@ -41,6 +41,14 @@ export default createWidget('qa-user', {
   trust_level = data.user.trust_level;
   badge_count = data.user.badge_count;
   profile_view_count = data.user.profile_view_count;
+	  
+ if (trust_level) {
+ trust_level = '-';
+ }{
+ trust_level = trust_level;
+ }
+	  
+
   bio_excerpt = data.user.bio_excerpt;
   prbg =  data.user.profile_background;
   str =  data.user.avatar_template;
