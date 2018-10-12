@@ -524,8 +524,14 @@ a.mention, a.mention-group {color: #07c;background: rgba(82,186,213,0.1);font-we
 .topic-body .contents .cooked {font-size: 1.23em;}
 .topic-list .topic-excerpt { font-size: 1em;}
 }
-.qa-add{margin-top: 8px;}
-.sidebar-top .ser.cvet{text-decoration: underline;}
+
+.qa-add{
+margin: 8px 0 5px 13px;
+.ser.cvet{margin-top: 10px;display: block;text-decoration: underline;}
+.add {font-weight: 600;}	
+}
+
+
 
 
 
