@@ -4,9 +4,9 @@
 {{#discourse-topic multiSelect=multiSelect enteredAt=enteredAt topic=model hasScrolled=hasScrolled}}
   {{#if model}}
     {{add-category-class category=model.category}}
-    <div class="container">
+
       {{discourse-banner user=currentUser banner=site.banner overlay=hasScrolled hide=model.errorLoading}}
-    </div>
+
   {{/if}}
 
   {{#if showSharedDraftControls}}
