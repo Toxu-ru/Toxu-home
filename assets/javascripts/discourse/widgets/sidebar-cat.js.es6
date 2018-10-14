@@ -105,7 +105,7 @@ results.push(this.listCategories());
     if (this.currentUser) {
       const allCategories = this.site
         .get("categories")
-        .filter(c => c.notification_level !== NotificationLevels.MUTED);
+        .filter(c => c.notification_level !== NotificationLevels.MUTED !== c => c.parent_category_id);
 
       categories = allCategories
         .filter(c => c.get("newTopics") > 0 || c.get("unreadTopics") > 0)
@@ -128,7 +128,7 @@ results.push(this.listCategories());
       categories = categories.concat(
         allCategories
           .filter(c => !categories.includes(c))
-          .filter(c => !c.parent_category_id) // - subcategory
+         // .filter(c => !c.parent_category_id) // - subcategory
           .sort((a, b) => b.topic_count - a.topic_count)
       );
     }
