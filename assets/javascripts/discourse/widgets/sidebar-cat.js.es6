@@ -105,7 +105,8 @@ results.push(this.listCategories());
     if (this.currentUser) {
       const allCategories = this.site
         .get("categories")
-        .filter(c => c.notification_level !== NotificationLevels.MUTED !== c => c.parent_category_id);
+        .filter(c => !c.parent_category_id) // - subcategory
+        .filter(c => c.notification_level !== NotificationLevels.MUTED);
 
       categories = allCategories
         .filter(c => c.get("newTopics") > 0 || c.get("unreadTopics") > 0)
