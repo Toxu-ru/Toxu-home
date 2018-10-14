@@ -128,6 +128,7 @@ results.push(this.listCategories());
       categories = categories.concat(
         allCategories
           .filter(c => !categories.includes(c))
+          .filter(c => !c.parent_category_id) // - subcategory
           .sort((a, b) => b.topic_count - a.topic_count)
       );
     }
