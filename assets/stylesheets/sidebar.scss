@@ -98,6 +98,8 @@ html:not(.mobile-view) {
 html.anon { 
 .sidebar-m, .sidebar-right  {margin-top: 9px;}
 .sidebar-add-qa {display: none;}
+	
+.list-controls {margin-top: 1px !important;}	
 .sidebar { position: relative !important;margin-top: 10px;}	
 .list-container.has-sidebar, .telo-qa {    margin-top: 1px;}
 .sidebar-right { .cat-img-num, .cat-img-qa { top: 28px;}}	
@@ -599,7 +601,7 @@ img.category-logo-small {width:20px;width: 20px !important;height: 20px;}
     margin-left: 0px !important;
 float: left; position: relative;
 }	
-.fon .list-controls { display: block !important;}
+.fon .list-controls { display: block !important;margin-top: 25px;}
 .sidebar, .add-qa, .sidebar-right, #scroll-top, #banner  {display: none !important;}	
 .cat-home {
 width: 47%; height: 100%;padding: 15px 15px 15px 5px;float: left;position: relative;display: inline-block;
