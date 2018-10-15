@@ -62,7 +62,19 @@ export default createWidget('cat-categories', {
     
     if (!this.currentUser) {  
       
-  	result = result.concat(
+  var href = Discourse.getURL("/categories");
+ 
+  result = result.concat(
+        h(
+          "div.zagall",
+          h(
+            "a.all",
+            { attributes: { href } }, "Все")
+        )
+   ); 	    
+	    
+	    
+   result = result.concat(
         h(
           "div.zag",
           h(
