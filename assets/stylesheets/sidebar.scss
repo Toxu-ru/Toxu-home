@@ -96,7 +96,10 @@ html.anon {
 .sidebar-right { .cat-img-num, .cat-img-qa { top: 28px;}}	
 }
 .navigation-topics .list-controls {margin-bottom: 0px;}
-body:not(.navigation-topics) {.list-controls, ol.category-breadcrumb {   margin-bottom: 0px;margin-top: 8px; }}
+body:not(.navigation-topics) {
+	.list-controls, ol.category-breadcrumb {margin-bottom: 0px;margin-top: 8px;}
+        #banner{margin-top: 32px;}
+}
 
 .container-telo {float: left;}
 .container-bar {width: 28%;float: right;position: absolute;    right: 0;}
