@@ -63,7 +63,6 @@ html:not(.mobile-view) {
    .embedded-posts .topic-avatar img {width: 22px;height: 22px;}
 }	
 
-.container-telo{max-width: 70%;}	
 #topic-progress-wrapper {right: 1em !important;bottom: 0px !important;position: fixed !important;}	
 .container-telo, .container-tip {min-height: 600px;}
 	
@@ -1064,6 +1063,7 @@ border-radius: 0px;
 @media (max-width: 1120px){ 
     .sidebar-right {display:none;}
     .fon .list-controls #create-topic {display: inline-block;}
+    .list-controls {margin-top: 21px;}
 }
 
 
