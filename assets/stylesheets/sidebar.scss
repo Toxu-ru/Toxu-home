@@ -100,9 +100,10 @@ html.anon {
 .sidebar-add-qa {display: none;}
 .list-controls {margin-top: 10px !important;}	
 .sidebar { position: relative !important;margin-top: 10px;}	
-.list-container.has-sidebar, .telo-qa {    margin-top: 1px;}
+.list-container.has-sidebar{ min-width: 79%;width: auto;display: table-cell;}
 .sidebar-right { .cat-img-num, .cat-img-qa { top: 28px;}}	
 }
+
 .navigation-topics .list-controls {margin-bottom: 0px;}
 
 body:not(.navigation-topics) {
