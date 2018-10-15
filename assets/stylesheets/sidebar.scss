@@ -1045,12 +1045,10 @@ border-radius: 0px;
 .progress-circle.p100 .value-bar { transform: rotate(360deg); }
 
 @media (max-width: 1220px){
-   .list-container.has-sidebar {width: 70% !important;}
    #scroll-top  {display: none !important;}	
 }
 @media (max-width: 1120px){ 
     .sidebar-right {display:none;}
-    .list-container.has-sidebar {width: 98% !important;}
     .fon .list-controls #create-topic {display: inline-block;}
 }
 
@@ -1066,7 +1064,7 @@ border-radius: 0px;
     .cat-cat .has-description {width: 80%;}
     #list-area .topic-list {margin-left: 0px  !important;}
     #topic-title .title-wrapper  {width: 100% !important;} 
-    .list-container.has-sidebar, .colon.cat-cat {width: 100%;margin-left: 0px !important;}
+    .colon.cat-cat {width: 100%;margin-left: 0px !important;}
     html:not(.mobile-view) .telo-qa {border-left: none;width: 100% !important;}
 }
 
