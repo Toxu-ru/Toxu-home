@@ -89,8 +89,8 @@ html:not(.mobile-view) {
 
 html.anon { 
 .sidebar-m, .sidebar-right, .list-controls {margin-top: 9px;}
- .sidebar-add-qa {display: none;}
- .sidebar { position: relative !important;margin-top: 10px;}	
+.sidebar-add-qa {display: none;}
+.sidebar { position: relative !important;margin-top: 10px;}	
 .list-container.has-sidebar, .telo-qa {    margin-top: 1px;}
 .sidebar-right { .cat-img-num, .cat-img-qa { top: 28px;}}	
 }
@@ -107,6 +107,7 @@ a:hover {color: #f56400;}
 .panel-body-contents .badge-notification {background-color: #f56400;}
 
 .sidebar-right {
+.sidebar-add-qa {text-align: center;padding: 5px 10px 10px 10px;margin-top: 11px;}	
 .cattxtsi{margin-top: 15px;}
 .telocat {margin-left: 7px;}    
 .dropdown-menu.cat {
@@ -230,7 +231,6 @@ display: block;
 }
 
 .sidebar-qa .fa{margin-right: 4px;color: #339900;}
-.sidebar-add-qa {text-align: center;float: right;padding: 5px 10px 10px 10px;width: 21%;color: #666;margin-top: 11px;}
 
 /*sidebar*/
 .sidebar { 
@@ -578,7 +578,7 @@ img.category-logo-small {width:20px;width: 20px !important;height: 20px;}
 float: left; position: relative;
 }	
 .fon .list-controls { display: block !important;}
-.sidebar-m, .sidebar-add-qa, .sidebar, .add-qa, .sidebar-right, #scroll-top, #banner  {display: none !important;}	
+.sidebar, .add-qa, .sidebar-right, #scroll-top, #banner  {display: none !important;}	
 .cat-home {
 width: 47%; height: 100%;padding: 15px 15px 15px 5px;float: left;position: relative;display: inline-block;
 img {width:99%;}
@@ -1040,7 +1040,7 @@ border-radius: 0px;
    #scroll-top  {display: none !important;}	
 }
 @media (max-width: 1120px){ 
-    .sidebar-m, .sidebar-right, .sidebar-add-qa {display:none;}
+    .sidebar-right {display:none;}
     .list-container.has-sidebar {width: 98% !important;}
     .fon .list-controls #create-topic {display: inline-block;}
 }
@@ -1064,7 +1064,7 @@ border-radius: 0px;
 /*add mobile*/
 html.mobile-view { html {font-weight: 400;}
 .sidebar, .sidebar-right, .toxu-info, .user-signature, .cat-info, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
- #scroll-bottom, #scroll-top, .sidebar-m, .category-list  .category-description,  .container-bar, .topic-excerpt, .sidebar-add-qa {display: none !important;}
+ #scroll-bottom, #scroll-top, .category-list  .category-description,  .container-bar, .topic-excerpt {display: none !important;}
 .navigation-categories {th.latest, td.latest {display: none;}.category {width: 99%;}}
 .topic-post.comment .topic-avatar {padding-top: 0;}
 .list-container.has-sidebar, .container-telo {width: 100%;}
