@@ -150,6 +150,9 @@ results.push(this.listCategories());
 
 
   html() {
+    if (this.site.mobileView)
+    return; 
+	  
     return this.attach('cat-panel', { contents: () => this.panelContents() });
   },
 
