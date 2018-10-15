@@ -142,7 +142,7 @@ border-radius: 2px;
 .cat-big-img{display: inline-block !important;}
 .cat-big { width: 210px;}
 .cat-img-num {
-    top: 50px;
+    top: 72px;
     margin-left: 2px;
     position: absolute;
     border-radius: 4px;
@@ -153,7 +153,7 @@ border-radius: 2px;
 }
 
 .cat-img-qa{
-    top: 50px;
+    top: 72px;
     margin-right: 16px;
     background-color: rgba(0,0,0,.4);
     color: #fff;
@@ -387,7 +387,7 @@ text-align: center;
 @media screen and (max-width : 1100px) {#banner-content-t h1{font-size: 30px;}#banner-content-t p {font-size:14px;}} 
 .anon #banner {display: none;}
 #banner .close .fa-times:hover  {color: #f56400 !important;}
-#banner {background: #FFF8DC;font-size: 15px;margin-top: -16px;margin-bottom: 20px;}
+#banner {background: #FFF8DC;font-size: 15px;margin-bottom: 20px;}
 
 /*верхнее меню*/
 h1.navig {display: inline-block;font-size: 18px;margin-top: -12px;margin-left: 10px;font-family: 'Fira Sans',sans-serif;}
@@ -1051,9 +1051,14 @@ border-radius: 0px;
 @media (max-width: 1220px){
    #scroll-top  {display: none !important;}	
 }
+
+.list-controls {margin-top: -18px;}
+@media (min-width: 1120px){.navigation-topics .list-controls {margin-top: -30px;}} 
 @media (max-width: 1120px){ 
     .sidebar-right {display:none;}
     .fon .list-controls #create-topic {display: inline-block;}
+    .list-controls {margin-top: 18px;}
+	 
  }
 
 
