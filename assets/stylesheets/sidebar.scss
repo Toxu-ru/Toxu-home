@@ -1078,7 +1078,8 @@ border-radius: 0px;
 }
 
 /*add mobile*/
-html.mobile-view { html {font-weight: 400;}
+html.mobile-view { 
+html {font-weight: 400;}
 body:not(.navigation-topics) .list-controls {margin-top: 2px;}	
 .sidebar, .sidebar-right, .toxu-info, .user-signature, .cat-info, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
  #scroll-bottom, #scroll-top, .category-list  .category-description,  .container-bar, .topic-excerpt {display: none !important;}
@@ -1087,6 +1088,9 @@ body:not(.navigation-topics) .list-controls {margin-top: 2px;}
 .list-container.has-sidebar, .container-telo {width: 100%;}
 #list-area {
     margin-top: 2px !important;
+}	
+.list-controls {
+    margin-top: 10px !important;
 }	
 .prof-num {font-size: 2em;}
 .prof-txt {font-size: 1em;}
