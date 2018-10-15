@@ -83,6 +83,7 @@ html:not(.mobile-view) {
 }
 
 .list-container.has-sidebar {float: left;margin-top: 11px;width: 73%;}
+	
 .container-tip {position: relative;}
 
 }	
@@ -94,8 +95,9 @@ html.anon {
 .list-container.has-sidebar, .telo-qa {    margin-top: 1px;}
 .sidebar-right { .cat-img-num, .cat-img-qa { top: 28px;}}	
 }
-
+body:not(.navigation-topics) {
 .list-controls, ol.category-breadcrumb {   margin-bottom: 0px;margin-top: 8px; }
+}
 .container-telo {float: left;}
 .container-bar {width: 28%;float: right;position: absolute;    right: 0;}
 h1, h2, h3, h4, h5, h6 {font-weight: 400;}
