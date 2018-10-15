@@ -68,30 +68,27 @@ export default createWidget('cat-categories', {
             { attributes: { href } }, "Все")
         )
    ); 		  
+
 	  
 if (!this.currentUser) {  
-      
-   var href = Discourse.getURL("/categories");
-   result = result.concat(
+    result = result.concat(
         h(
           "div.zag",
           h(
             "div.oglavl", "Разделы" )
         )
      );  
-  
  } else { 
-  
-  result = result.concat(
+    result = result.concat(
         h(
           "div.zag",
           h(
             "div.oglavl", "Мои разделы")
         )
      ); 
-      
- } 
+} 
  
+	  
     const categories = attrs.categories;
     if (categories.length === 0) {
       return;
