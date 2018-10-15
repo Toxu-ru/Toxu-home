@@ -98,8 +98,7 @@ html:not(.mobile-view) {
 html.anon { 
 .sidebar-m, .sidebar-right  {margin-top: 9px;}
 .sidebar-add-qa {display: none;}
-	
-.list-controls {margin-top: 1px !important;}	
+.list-controls {margin-top: 10px !important;}	
 .sidebar { position: relative !important;margin-top: 10px;}	
 .list-container.has-sidebar, .telo-qa {    margin-top: 1px;}
 .sidebar-right { .cat-img-num, .cat-img-qa { top: 28px;}}	
@@ -113,9 +112,7 @@ body:not(.navigation-topics) {
 }
 
 html:not(.anon) {
-
 #list-area { margin-top: -27px;}
-
 }
 
 
@@ -582,7 +579,8 @@ body.navigation-categories {
 .title-t a {margin-bottom: 7px;color: #777;}	
 .title-t a:hover, a.badge-wrapper.bullet span.badge-category:hover {color: #F48024;}
 .title-t {margin-bottom: 7px;}	
-	
+
+.cat-cat{position: absolute;}	
 .banner-toxu-t {display: none;}
 h1.cat{margin: -30px 0 0 5px;color: #666;font-weight: 100;}
 a img:hover {opacity: 0.7;}	
