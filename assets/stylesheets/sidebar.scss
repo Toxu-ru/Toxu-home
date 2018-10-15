@@ -48,6 +48,9 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 #post_1 nav.post-controls button.delete{display: none;}
 .staff #post_1 nav.post-controls button.delete{display: inline-block;}	
 
+
+.list-container.has-sidebar {min-width: 79%;}
+
 html:not(.mobile-view) {
 	
 .user-signature {position: absolute;margin-top: -30px;margin-left: 11px;} 	
@@ -109,7 +112,7 @@ body:not(.navigation-topics) {
 
 html:not(.anon) {
 
-#list-area {    margin-top: -27px;}
+#list-area { margin-top: -27px;}
 
 }
 
