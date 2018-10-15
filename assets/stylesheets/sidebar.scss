@@ -1089,6 +1089,9 @@ html.mobile-view { html {font-weight: 400;}
 .navigation-categories {th.latest, td.latest {display: none;}.category {width: 99%;}}
 .topic-post.comment .topic-avatar {padding-top: 0;}
 .list-container.has-sidebar, .container-telo {width: 100%;}
+#list-area {
+    margin-top: 2px !important;
+}	
 .prof-num {font-size: 2em;}
 .prof-txt {font-size: 1em;}
 .topic-post.comment {    margin-left: 23px;}
