@@ -59,11 +59,7 @@ export default createWidget('cat-categories', {
 
     let result = [  ];
     
-    
-    if (!this.currentUser) {  
-      
   var href = Discourse.getURL("/categories");
- 
   result = result.concat(
         h(
           "div.zagall",
@@ -71,9 +67,11 @@ export default createWidget('cat-categories', {
             "a.all",
             { attributes: { href } }, "Все")
         )
-   ); 	    
-	    
-	    
+   ); 		  
+	  
+if (!this.currentUser) {  
+      
+   var href = Discourse.getURL("/categories");
    result = result.concat(
         h(
           "div.zag",
@@ -81,22 +79,9 @@ export default createWidget('cat-categories', {
             "div.oglavl", "Разделы" )
         )
      );  
-	  
-	  
-    } else { 
   
-
-  var href = Discourse.getURL("/categories");
-	  
-  result = result.concat(
-        h(
-          "div.zagall",
-          h(
-            "a.all",
-            { attributes: { href } }, "Все")
-        )
-     );  
-	    
+ } else { 
+  
   result = result.concat(
         h(
           "div.zag",
@@ -105,10 +90,7 @@ export default createWidget('cat-categories', {
         )
      ); 
       
-
-	  
-    } 
-    
+ } 
  
     const categories = attrs.categories;
     if (categories.length === 0) {
