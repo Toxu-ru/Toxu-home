@@ -132,7 +132,12 @@ results.push(this.listCategories());
          // .filter(c => !c.parent_category_id) // - subcategory
           .sort((a, b) => b.topic_count - a.topic_count)
       );
-    }
+    } else {
+	
+	   categories = categories
+	   .filter(c => !c.parent_category_id);
+	
+  	}
 
     const moreCount = categories.length - maxCategoriesToDisplay;
     categories = categories.slice(0, maxCategoriesToDisplay);
