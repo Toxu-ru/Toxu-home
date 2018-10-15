@@ -83,7 +83,7 @@ html:not(.mobile-view) {
 }
 
 .list-container.has-sidebar {
-    min-width: 80%;
+    min-width: 79%;
     width: auto;
     display: table-cell;
 	}
@@ -103,7 +103,7 @@ html.anon {
 
 body:not(.navigation-topics) {
 	.list-controls {margin-bottom: 0px;margin-top: -10px;}
-	ol.category-breadcrumb {margin-top: -1px;}
+	ol.category-breadcrumb {margin-top: 5px;}
         #banner{margin-top: 32px;}
 }
 
