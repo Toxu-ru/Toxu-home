@@ -48,9 +48,6 @@ body.staff button.adm_ui_button {display: inline-block !important;}
 #post_1 nav.post-controls button.delete{display: none;}
 .staff #post_1 nav.post-controls button.delete{display: inline-block;}	
 
-
-.list-container.has-sidebar {min-width: 77%;}
-
 html:not(.mobile-view) {
 	
 .user-signature {position: absolute;margin-top: -30px;margin-left: 11px;} 	
@@ -63,6 +60,7 @@ html:not(.mobile-view) {
    .embedded-posts .topic-avatar img {width: 22px;height: 22px;}
 }	
 
+.container-telo{max-width: 70%;}	
 #topic-progress-wrapper {right: 1em !important;bottom: 0px !important;position: fixed !important;}	
 .container-telo, .container-tip {min-height: 600px;}
 	
@@ -70,40 +68,36 @@ html:not(.mobile-view) {
     display: none !important;
 }	
 	
-.blog-list {position: relative;margin-top: -18px;}
+.blog-list {position: relative;}
  li.nav-item-guidelines {display: none;}
 	
-.sidebar {position: fixed;width: 230px;float: left;margin-top: 15px;}
+.sidebar {position: fixed;width: 230px;float: left;}
 	
 .telo-qa {
     border-left: 1px solid #d6d9dc;
     max-width: 1100px;
     width: calc(100% - 231px);	
     float: right;
+    margin-top: -20px;	
     min-height: 650px;	
 }
 
-.list-container.has-sidebar {
-    width: auto;
-    display: table-cell;
-	}
+.list-container.has-sidebar {float: left;margin-top: 11px;width: 73%;}
 	
 .container-tip {position: relative;}
 
 }	
 
 html.anon { 
-.sidebar-right  {padding-top: 15px;}
+.sidebar-m, .sidebar-right  {margin-top: 9px;}
 .sidebar-add-qa {display: none;}
-.list-controls {margin-top: 10px !important;}	
-.blog-list {margin-top: 0px;}
-.list-container.has-sidebar{ min-width: 79%;width: auto;display: table-cell;}
+.sidebar { position: relative !important;margin-top: 10px;}	
+.list-container.has-sidebar, .telo-qa {    margin-top: 1px;}
 .sidebar-right { .cat-img-num, .cat-img-qa { top: 28px;}}	
 }
-
-
+.navigation-topics .list-controls {margin-bottom: 0px;}
 body:not(.navigation-topics) {
-	ol.category-breadcrumb {margin-top: 5px;}
+	.list-controls, ol.category-breadcrumb {margin-bottom: 0px;margin-top: 8px;}
         #banner{margin-top: 32px;}
 }
 
@@ -118,13 +112,7 @@ a:hover {color: #f56400;}
 .panel-body-contents .badge-notification {background-color: #f56400;}
 
 .sidebar-right {
-	
-    width: 220px;
-    display: table-cell;
-    padding-left: 20px;
-	
-.sidebar-add-qa {text-align: center;margin-bottom: 15px;margin-top: 15px;}
-	
+.sidebar-add-qa {text-align: center;padding: 1px 10px 10px 10px;margin-top: 15px;}	
 .cattxtsi{margin-top: 15px;}
 .telocat {margin-left: 7px;}    
 .dropdown-menu.cat {
@@ -142,7 +130,7 @@ border-radius: 2px;
 .cat-big-img{display: inline-block !important;}
 .cat-big { width: 210px;}
 .cat-img-num {
-    top: 72px;
+    top: 50px;
     margin-left: 2px;
     position: absolute;
     border-radius: 4px;
@@ -153,7 +141,7 @@ border-radius: 2px;
 }
 
 .cat-img-qa{
-    top: 72px;
+    top: 50px;
     margin-right: 16px;
     background-color: rgba(0,0,0,.4);
     color: #fff;
@@ -163,6 +151,8 @@ border-radius: 2px;
     padding: 1px 7px 0px 7px;
 }
 	
+  float: right;
+
  .topic-list-link-top {
     color: #667d99;
     font-size: 15px;
@@ -226,9 +216,11 @@ border-radius: 2px;
 font-size: 0.96em;
 .pgbar {width: 95%;margin-top: 2px;}
 .mn i.fa {color: #ffb74d;}
- display: block;
+display: block;
+    float: right;
+    width: 210px;
     background: url(https://toxu.ru/uploads/default/original/2X/5/5093fa25eaaad68132d9809cc13ac04ea7e4e3f0.png);
-    box-shadow: 0 1px 0 0 #e7edf3, 0 0 1px 1px #e7edf3;
+    box-shadow: 0 1px 0 0 #e7edf3, 0 0 0 1px #e7edf3;
     padding: 10px;
     color: #919191;
     height: 100%;
@@ -387,7 +379,7 @@ text-align: center;
 @media screen and (max-width : 1100px) {#banner-content-t h1{font-size: 30px;}#banner-content-t p {font-size:14px;}} 
 .anon #banner {display: none;}
 #banner .close .fa-times:hover  {color: #f56400 !important;}
-#banner {background: #FFF8DC;font-size: 15px;margin-bottom: 20px;}
+#banner {background: #FFF8DC;font-size: 15px;}
 
 /*верхнее меню*/
 h1.navig {display: inline-block;font-size: 18px;margin-top: -12px;margin-left: 10px;font-family: 'Fira Sans',sans-serif;}
@@ -571,12 +563,11 @@ body.navigation-categories {
 .title-t a {margin-bottom: 7px;color: #777;}	
 .title-t a:hover, a.badge-wrapper.bullet span.badge-category:hover {color: #F48024;}
 .title-t {margin-bottom: 7px;}	
-
-.cat-cat{position: absolute;width: 100%;}	
+	
 .banner-toxu-t {display: none;}
-h1.cat{margin: -50px 0 0 5px;color: #666;font-weight: 100;}
+h1.cat{margin: -30px 0 0 5px;color: #666;font-weight: 100;}
 a img:hover {opacity: 0.7;}	
-.list-controls {margin-top: 15px;}
+
 .navigation-container ol, #navigation-bar {display: none;}	
 	
 .subcategory{
@@ -591,6 +582,7 @@ img.category-logo-small {width:20px;width: 20px !important;height: 20px;}
     margin-left: 0px !important;
 float: left; position: relative;
 }	
+.fon .list-controls { display: block !important;}
 .sidebar, .add-qa, .sidebar-right, #scroll-top, #banner  {display: none !important;}	
 .cat-home {
 width: 47%; height: 100%;padding: 15px 15px 15px 5px;float: left;position: relative;display: inline-block;
@@ -1049,15 +1041,14 @@ border-radius: 0px;
 .progress-circle.p100 .value-bar { transform: rotate(360deg); }
 
 @media (max-width: 1220px){
+   .list-container.has-sidebar {width: 70% !important;}
    #scroll-top  {display: none !important;}	
 }
-
 @media (max-width: 1120px){ 
     .sidebar-right {display:none;}
+    .list-container.has-sidebar {width: 98% !important;}
     .fon .list-controls #create-topic {display: inline-block;}
-    .list-controls {margin-top: 18px;}
-	 
- }
+}
 
 
 @media (max-width: 1040px){
@@ -1071,25 +1062,17 @@ border-radius: 0px;
     .cat-cat .has-description {width: 80%;}
     #list-area .topic-list {margin-left: 0px  !important;}
     #topic-title .title-wrapper  {width: 100% !important;} 
-    .colon.cat-cat {width: 100%;margin-left: 0px !important;}
+    .list-container.has-sidebar, .colon.cat-cat {width: 100%;margin-left: 0px !important;}
     html:not(.mobile-view) .telo-qa {border-left: none;width: 100% !important;}
 }
 
 /*add mobile*/
-html.mobile-view { 
-html {font-weight: 400;}
-body:not(.navigation-topics) .list-controls {margin-top: 2px;}	
+html.mobile-view { html {font-weight: 400;}
 .sidebar, .sidebar-right, .toxu-info, .user-signature, .cat-info, .category-heading, #banner-content-t, .category-logo, .sidebar-top, #reply-control .d-editor-button-bar .quote.btn, 
  #scroll-bottom, #scroll-top, .category-list  .category-description,  .container-bar, .topic-excerpt {display: none !important;}
 .navigation-categories {th.latest, td.latest {display: none;}.category {width: 99%;}}
 .topic-post.comment .topic-avatar {padding-top: 0;}
 .list-container.has-sidebar, .container-telo {width: 100%;}
-#list-area {
-    margin-top: 2px !important;
-}	
-.list-controls {
-    margin-top: 10px !important;
-}	
 .prof-num {font-size: 2em;}
 .prof-txt {font-size: 1em;}
 .topic-post.comment {    margin-left: 23px;}
