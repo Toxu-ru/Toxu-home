@@ -5,6 +5,9 @@ export default createWidget('toxu-info', {
   buildKey: (attrs) => 'toxu-info',
 
   html(attrs, state) {
+     if (this.site.mobileView)
+     return; 
+    
     const { currentUser } = this;
     let contents = []
      var uinfo;
