@@ -1,7 +1,7 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
 
-export default createWidget('sub-menu', {
+export default createWidget('right-bar-user-info', {
   buildKey: (args) => 'user-profile',
 
   html(args, state) {
