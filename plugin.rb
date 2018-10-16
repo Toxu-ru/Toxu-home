@@ -49,6 +49,48 @@ register_editable_user_custom_field :userbar_cat if defined? register_editable_u
   end
   add_to_serializer(:listable_topic, :include_excerpt?) { true }
  
+  
+#данные для бара  
+  
+   PLUGIN_NAME = "discourse-profile-widget".freeze
+  
+  
+ module ::DiscourseProfileWidget
+		class Engine < ::Rails::Engine
+			engine_name PLUGIN_NAME
+			isolate_namespace DiscourseProfileWidget
+		end
+end
+
+	class DiscourseProfileWidget::ProfilewidgetController < ::ApplicationController
+		skip_before_action :preload_json, :check_xhr
+
+		def index
+			user_id = params[:user_id].to_i
+
+			sql = sql = "SELECT * FROM user_stats WHERE user_id = #{user_id}"
+			user_stats = ActiveRecord::Base.connection.execute(sql)
+			read_time = user_stats[0]["time_read"]
+			result = {
+				'credit' => read_time
+			}
+			render json: result
+			
+		end
+	end
+
+	Discourse::Application.routes.prepend do
+		mount ::DiscourseProfileWidget::Engine, at: "/toxudata"
+	end
+
+	DiscourseProfileWidget::Engine.routes.draw do
+		get "data.json" => "profilewidget#index"
+end 
+  
+  
+  
+  
+  
 end
 
 register_asset "javascripts/discourse/templates/connectors/user-custom-preferences/userbar-preferences.hbs"
