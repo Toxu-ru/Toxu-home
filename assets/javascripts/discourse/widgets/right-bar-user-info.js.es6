@@ -26,7 +26,7 @@ export default createWidget('right-bar-user-info', {
 // console.log(args);
 
  $.ajax({
-  url: "/discourseprofilewidget/data.json?user_id="+ id, 
+  url: "/toxudata/data.json?user_id="+ id, 
   dataType: 'json',
   async: false,
   success: function(data) {
