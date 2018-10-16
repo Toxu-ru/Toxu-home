@@ -21,9 +21,9 @@ export default createWidget('right-bar-user-info', {
  if (trust_level == 3) { var bw = 75; }
  if (trust_level == 4) { var bw = 100; } 
  
- var my_bio;
+// var my_bio;
  
-// console.log(args);
+ console.log(currentUser);
 
  $.ajax({
   url: "/toxudata/data.json?user_id="+ id, 
@@ -45,7 +45,7 @@ function truncated(num, decimalPlaces) {
 
 var tim = data.credit;
     
-console.log(tim);
+//console.log(tim);
     
 var t_m = tim/60;
 var t_minut = truncated(t_m,0);  //целое число до запятой
