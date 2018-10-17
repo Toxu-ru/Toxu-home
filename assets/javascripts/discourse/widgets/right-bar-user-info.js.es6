@@ -44,9 +44,7 @@ function truncated(num, decimalPlaces) {
 //"time_read":85202,"recent_time_read":36457
 
 var tim = data.credit;
-    
-//console.log(tim);
-    
+ 
 var t_m = tim/60;
 var t_minut = truncated(t_m,0);  //целое число до запятой
 var t_m_gr = (t_minut*100)/60;
@@ -124,7 +122,7 @@ new RawHtml({ html: `<div>
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="#F7941D">М</font>оя карточка</a>. Как видят меня?</div>
 
 
-<div class="mn">модификация блога...</div>
+<div class="mn">Хотите убрать эту колонку? <a href="https://toxu.ru/my/preferences/profile">Перейдите в профиль</a> и уберите ее.</div>
 
 </div>`}));
   
