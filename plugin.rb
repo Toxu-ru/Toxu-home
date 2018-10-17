@@ -72,7 +72,7 @@ end
 			user_stats = ActiveRecord::Base.connection.execute(sql)
 			read_time = user_stats[0]["time_read"]
 			result = {
-				'credit' => read_time;
+				'credit' => read_time
 			}
 			render json: result
 			
