@@ -23,7 +23,7 @@ export default createWidget('right-bar-user-info', {
  
 // var my_bio;
  
- console.log(currentUser);
+// console.log(currentUser);
 
  $.ajax({
   url: "/toxudata/data.json?user_id="+ id, 
