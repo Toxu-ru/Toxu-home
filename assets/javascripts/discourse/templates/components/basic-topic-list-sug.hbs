@@ -1,11 +1,9 @@
 <div id='ostan'>
 <div class='messag'>
 <h3 class="oglavl recom">Рекомендованные</h3>
-{{#if topics}} {{else}} 
-{{#unless loadingMore}}
-<center><small style="color:#888">формируется список...<br><br></small></center>
-{{/unless}}
-{{/if}}
+
+
+{{#if topics}} 
 
 <div class="blogcvet">
 {{topic-list-sug showParticipants=showParticipants
@@ -18,6 +16,14 @@
                  selected=selected
                  skipHeader=skipHeader}}
 </div>
+
+{{else}} 
+{{#unless loadingMore}}
+<center><small style="color:#888">формируется список...<br><br></small></center>
+{{/unless}}
+{{/if}}
+
+
 </div>
 
 <div class='qa-add'>
