@@ -1,7 +1,7 @@
 .topic-body .contents .cooked, .help, .d-editor-preview {font-size: 16px;font-weight: 400;line-height: 1.56;}
 .topic-post.comment .topic-body .contents .cooked {font-size: 1em;}
 
-a.title, a.topic-link, a.fancy-title, .cat-pods a, #banner-content-t h1 {font-family: 'Fira Sans',sans-serif;}
+a.title, a.topic-link, a.fancy-title, .#banner-content-t h1 {font-family: 'Fira Sans',sans-serif;}
 .otv {
     background: url(/uploads/default/original/2X/3/36ed891f09bdd9bf9683afd81c076a6bd451fc1f.jpg);
     width: 10px;
@@ -397,7 +397,7 @@ html:not(.mobile-view) {
 
 
 /*детали в колонках*/
-.cat-pods, .topic-meta-data .post-infos {font-size: 14px;font-weight: 300;}
+.topic-meta-data .post-infos {font-size: 14px;font-weight: 300;}
 .topic-list-sug {margin-bottom: 16px;}
 .user-profile.widget-container {color: #919191;}
 .werng, #banner-nul {padding: 10px 10px 10px 10px;border: solid 1px #ddd;border-radius: 3px;margin-bottom: 15px;margin-top: 7px;
@@ -478,7 +478,7 @@ background: #fdfdfd url(https://toxu.ru/uploads/default/original/2X/5/57dc9ca1e3
 .boxed.onscreen-post {background-color: #fff;padding: 5px;}
 img.avatar {border-radius: 5%;}
 .d-header-icons .icon img.avatar {border-radius: 50%;}
-.cat-pods, .messag2, #ostan  {display:none;}   
+.messag2, #ostan  {display:none;}   
 .topic-post {margin-bottom: 10px;} 
 .topic-body, .topic-avatar, .topic-status-info {border-top: none;}
 #suggested-topics .loading-container.ember-view  {display:block !important;}
@@ -601,7 +601,7 @@ section.category-heading  {    display: none;}
 
 /*мелкие детали*/
 img.emoji.emoji-custom {width: auto;height: 100%;vertical-align: middle;}
-.sidebar-fon, .cat-pods, .sidebar-m, .sidebar #create-topic, .blogcvet {border-radius: 3px;}
+.sidebar-fon, .sidebar-m, .sidebar #create-topic, .blogcvet {border-radius: 3px;}
 .topic-list {
 th.activity:before {display: inline-block;content: '\f017';font-family: FontAwesome;}
 th.posts:before {display: inline-block;content: '\f27b';font-family: FontAwesome;}
