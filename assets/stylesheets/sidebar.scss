@@ -492,12 +492,6 @@ button.btn-primary.create:after { content: " Ответить приватно";
 
 
 /*теги*/
-.cat-blo {
-    padding: 13px 10px 10px 10px;
-    background: #FFF8DC;
-    margin-bottom: 24px;
-    margin-top: 20px;
-}
 .cat-tag{margin-bottom: 10px;}
 .tag{
 font-size: 13px;
@@ -534,21 +528,9 @@ margin: 0 0 5px 13px;
 .add {font-weight: 600;}	
 }
 
-.cat-pods { 
-    padding: 3px 3px 10px 0px;
-    margin-bottom: 20px;
-    .rss-link-top{display: inline-block;float:right;}
-    .rss-link-top a  {color: #667d99;font-size:14px;}
-   .blogcvet {background: #FFF8DC;}	
-   .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {display: none !important;}
-   .badge-wrapper.bullet .badge-category-parent-bg, .badge-wrapper.bullet .badge-category-bg {display: block;margin-top: 15px;}
-   .badge-wrapper.bullet span.badge-category {color:#07c;font-size:13px;}
-   .badge-wrapper.bullet span.badge-category:hover, .rss-link-top a:hover {color:#f56400;}
-}
-
 .oglavl  {display: inline-block;color: #919191;font-size: 15px;font-weight: 400;margin-bottom: 6px;}
 .oglavl.top, .oglavl.recom {font-size: 16px;}
-.blogcvet{padding: 8px 11px 2px 12px;background: rgba(82, 186, 213, 0.1);margin-bottom: 15px;max-width: 330px;}
+.blogcvet{padding: 8px 11px 2px 12px;background: #FFF8DC;);margin-bottom: 15px;max-width: 330px;}
 
 /*footer*/
 .footer-toxu {clear: both;background-color:#fff;color:#666;width:100%;display: block;z-index: 40;position: relative;}
