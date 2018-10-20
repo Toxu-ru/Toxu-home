@@ -62,7 +62,12 @@ html:not(.mobile-view) {
  .embedded-posts .topic-avatar img {width: 22px;height: 22px;}
 }	
 
+/*уменьшение колонки*/
 .topic-body {width: calc(660px + (11px * 2));}
+#reply-control .d-editor-preview img:not(.thumbnail), .cooked img:not(.thumbnail) {
+    max-width: 660px;
+    max-height: 480px;
+}	
 @media all and (max-width: 775px) {
   .topic-body {width: calc(100% - 47px);}
 }	
