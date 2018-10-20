@@ -63,7 +63,7 @@ html:not(.mobile-view) {
 }	
 
 /*уменьшение колонки*/
-.topic-body {width: calc(660px + (11px * 2));}
+.topic-body {width: calc(660px + (11px * 2));padding: 15px 0 0 0;}
 #reply-control .d-editor-preview img:not(.thumbnail), .cooked img:not(.thumbnail) {
     max-width: 660px;
     max-height: 480px;
