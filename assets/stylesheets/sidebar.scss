@@ -260,7 +260,6 @@ a.all {color: #919191;}
 .my-menu .my-menu a  {color: #1DA1F2;}
 .my-menu .my-menu a:hover, a.all:hover {color: #f56400;}	
 	
-.cat-panel span {font-size: 14px;}
 .badge-notification {color: #f56400 !important;font-size: 14px;background-color: #fff;float:right;margin-right:5px;}	
 
 a.widget-link {
@@ -268,8 +267,6 @@ a.widget-link {
         i.fa {margin: 2px 5px 0 4px; position: absolute;font-size: 17px;}
 	}
 	
-	
-
 .cat-link.all{margin-left: 10px;}	
 .cat-panel .my-menu .my-menu span {margin-left: 40px;}  	
 	
@@ -281,10 +278,9 @@ a.widget-link {
 .badge-wrapper.bullet {
 	.badge-category-bg {display: none;}
 	span.badge-category:hover {color: #f56400 !important;}
-	display: inline;
 	}
 .badge-wrapper .badge-category { 
-	position: absolute;margin-left: 10px;
+	margin-left: 10px;
 	.d-icon {color: #339900;margin-right: 5px;}
 	}	
 
