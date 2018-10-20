@@ -24,5 +24,7 @@
 {{create-topic currentUser=currentUser createTopic=createTopic}}
 <a href="https://toxu.ru/t/{{unbound topic.slug}}/{{unbound topic.id}}.rss" title="лента для данного вопроса и его ответов" class="ser cvet">RSS лента вопроса...</a>
 
+{{mount-widget widget="topic-scroll" args=(hash model=topic)}}
+
 </div></div>
 <div class='mail-blog'><i class="fa fa-envelope d-icon d-icon-envelope"></i> Почта. <a href="https://toxu.ru/my/messages">Мои сообщения...</a></div>
