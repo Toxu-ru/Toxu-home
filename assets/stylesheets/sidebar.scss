@@ -62,6 +62,11 @@ html:not(.mobile-view) {
  .embedded-posts .topic-avatar img {width: 22px;height: 22px;}
 }	
 
+.topic-body {width: calc(660px + (11px * 2));}
+@media all and (max-width: 775px) {
+  .topic-body {width: calc(100% - 47px);}
+}	
+	
 .container-telo{max-width: 880px;}	
 #topic-progress-wrapper {right: 1em !important;bottom: 0px !important;position: fixed !important;}	
 .container-telo, .container-tip {min-height: 600px;}
