@@ -1,7 +1,6 @@
 .topic-body .contents .cooked, .help, .d-editor-preview {font-size: 16px;font-weight: 400;line-height: 1.56;}
 .topic-post.comment .topic-body .contents .cooked {font-size: 1em;}
 
-#ostan{ position: fixed;max-width: 340px;}
 #topic-title h1 a, .extra-info-wrapper .topic-link, .title-t a.title {font-family: 'Fira Sans',sans-serif;}
 
 .otv {
@@ -536,9 +535,27 @@ margin: 0 0 5px 5px;
 .add {font-weight: 600;}	
 }
 
+#ostan{ position: fixed;max-width: 340px;}
 .oglavl  {display: inline-block;color: #919191;font-size: 15px;font-weight: 400;margin-bottom: 6px;}
 .oglavl.top, .oglavl.recom {font-size: 16px;}
-.blogcvet{padding: 8px 11px 2px 12px;background: #fcf8e8;margin-bottom: 15px;}
+.blogcvet{padding: 8px 11px 2px 0;background: #fcf8e8;margin-bottom: 15px;}
+.answer-count {
+    padding: 3px 0;
+    white-space: nowrap;
+    width: 38px;
+    text-align: center;
+    box-sizing: border-box;
+    height: auto;
+    float: none;
+    border-radius: 2px;
+    font-size: 90%;
+    background-color: #eff0f1;
+    color: #3b4045;
+    transform: translateY(-1px);
+    margin-right: 10px;
+}
+
+
 
 /*footer*/
 .footer-toxu {clear: both;background-color:#fff;color:#666;width:100%;display: block;z-index: 40;position: relative;}
