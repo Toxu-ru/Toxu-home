@@ -538,22 +538,24 @@ margin: 0 0 5px 5px;
 #ostan{ position: fixed;max-width: 340px;}
 .oglavl  {display: inline-block;color: #919191;font-size: 15px;font-weight: 400;margin-bottom: 6px;}
 .oglavl.top, .oglavl.recom {font-size: 16px;}
-.blogcvet{padding: 8px 11px 2px 0;margin-bottom: 15px;}
-.answer-count {
-    padding: 3px 0;
-    white-space: nowrap;
-    width: 38px;
-    text-align: center;
-    box-sizing: border-box;
-    height: auto;
-    float: none;
-    border-radius: 2px;
-    font-size: 90%;
-    background-color: #eff0f1;
-    color: #3b4045;
-    transform: translateY(-1px);
-    margin-right: 10px;
-    display: inline-block;	
+.blogcvet{
+ padding: 8px 11px 2px 0;margin-bottom: 15px;
+	.number {
+	    padding: 3px 0;
+	    white-space: nowrap;
+	    width: 38px;
+	    text-align: center;
+	    box-sizing: border-box;
+	    height: auto;
+	    float: none;
+	    border-radius: 2px;
+	    font-size: 90%;
+	    background-color: #eff0f1;
+	    color: #3b4045;
+	    transform: translateY(-1px);
+	    margin-right: 10px;
+	    display: inline-block;	
+	}
 }
 
 
