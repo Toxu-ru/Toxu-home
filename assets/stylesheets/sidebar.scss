@@ -635,7 +635,7 @@ font-size: 16px;color: #fff;position: absolute;right: 0;top: 23px;margin-right: 
 	.cat-title {top: 5px;margin-left: 5px;}
 	.groups-d.ogr {width:97%  !important;}} 
 }	
-@media (max-width: 500px){.cat-title {font-size: 16px;}}
+@media (max-width: 500px){.cat-title {font-size: 16px !important;}}
 /*end категории*/
 
 section.category-heading  {    display: none;}
