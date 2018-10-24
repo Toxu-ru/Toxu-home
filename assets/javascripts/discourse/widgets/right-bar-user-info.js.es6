@@ -116,10 +116,10 @@ new RawHtml({ html: `<div>
 <div class="mn"> Посмотреть <a class="cvet" href="/u/${username}/badges">мои награды.</a></div>
  
  
-<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас возник вопрос о самом сайте? <a href="https://toxu.ru/c/toxu">Вопросы по сайту</a> - это место, где можно говорить о таких вещах.</div>
+<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас появились вопросы, пожелания по сайту? <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">Ознакомьтесь</a> с этой темой.</div>
   
  
-<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}"><font color="#F7941D">М</font>оя карточка</a>. Как видят меня?</div>
+<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
 
 
 <div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Хотите убрать эту колонку? <a href="https://toxu.ru/my/preferences/profile">Перейдите в профиль</a> и уберите ее.</div>
