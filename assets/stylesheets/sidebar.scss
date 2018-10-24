@@ -561,11 +561,13 @@ margin: 0 0 5px 5px;
 
 
 /*footer*/
-.footer-toxu {clear: both;color:#738a94;width:100%;display: block;z-index: 40;position: relative;background: linear-gradient(#f8fafc, #f4f8fb);}
-.footer_column{font-size:14px;max-width: 90em;line-height: 18px;margin-right: auto;margin-left: auto;text-align:center;padding:20px;margin-top:50px;border-top: 1px solid #e5eff5;}
+.footer-toxu {clear: both;margin-top:20px;border-top: 1px solid #e5eff5;width:100%;z-index:40;background: linear-gradient(#f8fafc, #f4f8fb);}
+.footer_column{color: #738a94;font-size:14px;max-width: 90em;line-height: 18px;margin-right: auto;margin-left: auto;padding:20px;}
 .footer_column a {color: #738a94 !important;}
 .footer_column a:hover {color:#f56400 !important;}
-.one{margin-bottom:10px;}
+.one{margin-bottom:10px;display: inline-block;}
+.too{display: inline-block;float: right;}
+
 .links{margin-left:16px;}
 .navigation-topics .footer-toxu {display: none;}
 
