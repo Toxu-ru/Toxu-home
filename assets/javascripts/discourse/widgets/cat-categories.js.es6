@@ -54,18 +54,12 @@ export default createWidget('cat-categories', {
   tagName: 'div.category-links.clearfix',
 
   html(attrs) {
- let result = [  ];
+  let result = [  ];
   
     result = result.concat(
-        h(
-          "div.zag",
-          h(
-            "div.oglavl", "Разделы" )
-        )
-     );  
+	new RawHtml({ html: `<div class="title-dir"> <i class="fa fa-sitemap" aria-hidden="true"></i> &nbsp; разделы</div>`})
+    );
 
- 
-	  
     const categories = attrs.categories;
     if (categories.length === 0) {
       return;
