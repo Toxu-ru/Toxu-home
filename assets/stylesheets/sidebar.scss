@@ -83,7 +83,7 @@ html:not(.mobile-view) {
 .blog-list {position: relative;}
  li.nav-item-guidelines {display: none;}
 	
-.sidebar {margin-top: 4px;width: 230px;float: left;}
+.sidebar {margin-top: 4px;width: 230px;float: left;position: fixed;}
 	
 .telo-qa {
     border-left: 1px solid #d6d9dc;
@@ -94,10 +94,15 @@ html:not(.mobile-view) {
 }
 
 .list-container.has-sidebar {float: left;width: 73%;}
-	
 .container-tip {position: relative;}
 
 }	
+
+html.not-mobile-device.anon { 
+.sidebar { position: relative !important;margin-top: 10px;}	
+
+}
+
 
 .container-telo {float: left;}
 .container-bar {width: 28%;float: right;position: relative;right: 0;}
