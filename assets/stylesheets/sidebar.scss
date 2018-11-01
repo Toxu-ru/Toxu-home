@@ -245,9 +245,10 @@ a.widget-link {
         i.fa {margin: 2px 5px 0 4px; position: absolute;font-size: 17px;}
 	}
 	
-
+.badge-wrapper.bullet span.badge-category {font-size: 13px;}
+	
 .cat-link {
-	margin-bottom: 9px;font-size: 16px;position: relative;display: block; 
+	margin-bottom: 7px;display: block; 
 	.topics-count {float: right;font-weight: normal;font-size: 12px;color: #888;margin-top: 2px;margin-right: 6px;}
 	}	
 
@@ -274,7 +275,6 @@ a.widget-link {
 .dropdown-menu.soc a:hover {color: #f56400;}
 	}
 a.info-soc.my, .cat-link.all a.bullet {display: inline-block;} 
-a.badge-wrapper.bullet, .cat-panel span {color: #222;}
 a.badge-wrapper.bullet:hover, a.info-soc.my:first-letter, .cat-panel span:hover, .toxu-info a:hover, .cat-link.all a.bullet:first-letter {color: #f56400 !important;}
 }
 /*end sidebar*/
