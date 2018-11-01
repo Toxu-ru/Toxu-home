@@ -378,7 +378,7 @@ h1.navig {display: inline-block;font-size: 1.1487em;margin: 5px 0 0 14px;font-fa
 html:not(.mobile-view) {
 .nav-pills>li.active>a, .nav-pills>li>a.active {color: #999;font-weight: 500;background-color: #fff;border-bottom: 2px solid #f56400;}
 .nav-pills > li > a:hover{color: #999;  background-color: #fff;  border-bottom: 2px solid #f56400;} 
-.nav-pills > li > a {color: #667d99;}
+.nav-pills > li > a {color: #667d99;border-bottom: 2px solid transparent;}
 }	
 	
 #login-buttons .btn  {text-align: left !important;}
