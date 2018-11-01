@@ -122,7 +122,7 @@ new RawHtml({ html: `<div>
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
 
 
-<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> <a href="https://toxu.ru/my/preferences/profile">Убрать эту колонку<br>?</div>
+<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Вы можете <a href="https://toxu.ru/my/preferences/profile">убрать</a> эту <br> колонку в профиле.</div>
 
 </div>`}));
   
