@@ -3,9 +3,6 @@
  
 {{mount-widget widget="toxu-items"}}
 
-<div class="blog-list tl-{{{currentUser.trust_level}}}">
-
-
 {{discourse-banner user=currentUser banner=site.banner}} 
  
  <div class="list-controls">
@@ -14,6 +11,7 @@
   </div>
 </div> 
 
+<div class="blog-list tl-{{{currentUser.trust_level}}}">
 
 <div class="sidebar"> 
 {{mount-widget widget="sidebar-cat" args=(hash cslug=category.slug)}}
