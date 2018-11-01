@@ -3,14 +3,6 @@
  
 {{mount-widget widget="toxu-items"}}
 
-{{discourse-banner user=currentUser banner=site.banner}} 
- 
- <div class="list-controls">
-  <div class="container">
-    {{outlet "navigation-bar"}}
-  </div>
-</div> 
-
 <div class="blog-list tl-{{{currentUser.trust_level}}}">
 
 <div class="sidebar"> 
@@ -18,6 +10,14 @@
 </div>
 
 <div class="telo-qa {{if currentUser.custom_fields.userbar_profile "other-no"}}">
+
+{{discourse-banner user=currentUser banner=site.banner}} 
+ 
+ <div class="list-controls">
+  <div class="container">
+    {{outlet "navigation-bar"}}
+  </div>
+</div> 
 
 <div class="container list-container has-sidebar">
  
