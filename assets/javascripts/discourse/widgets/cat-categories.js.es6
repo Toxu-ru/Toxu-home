@@ -54,25 +54,8 @@ export default createWidget('cat-categories', {
   tagName: 'div.category-links.clearfix',
 
   html(attrs) {
- //   let title = '';
- //  if (attrs.moreCount > 0) {
- //    title += I18n.t("categories.n_more", { count: attrs.moreCount });
- //   }
-
-    let result = [  ];
-    
-  var href = Discourse.getURL("/categories");
-  result = result.concat(
-        h(
-          "div.zagall",
-          h(
-            "a.all",
-            { attributes: { href } }, "Все")
-        )
-   ); 		  
-
-	  
-if (!this.currentUser) {  
+ let result = [  ];
+  
     result = result.concat(
         h(
           "div.zag",
@@ -80,15 +63,7 @@ if (!this.currentUser) {
             "div.oglavl", "Разделы" )
         )
      );  
- } else { 
-    result = result.concat(
-        h(
-          "div.zag",
-          h(
-            "div.oglavl", "Мои разделы")
-        )
-     ); 
-} 
+
  
 	  
     const categories = attrs.categories;
