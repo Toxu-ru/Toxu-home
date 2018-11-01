@@ -132,26 +132,22 @@ border-radius: 2px;
 .catimg, .scryt {    display: none;}
 .cat-big-img{display: inline-block !important;}
 .cat-big { width: 210px;}
-.cat-img-num {
-    top: 102px;
-    margin-left: 2px;
-    position: absolute;
-    border-radius: 4px;
-    padding: 1px 7px 0px 7px;
-    font-size: 12px;
-    background-color: rgba(0,0,0,.4);
-    color: #fff;
-}
 
+.cat-img-num {
+    margin-left: 2px;
+}
 .cat-img-qa{
-    top: 102px;
     margin-right: 16px;
-    background-color: rgba(0,0,0,.4);
-    color: #fff;
-    position: absolute;
     right: 0;
-    border-radius: 4px;
-    padding: 1px 7px 0px 7px;
+}
+.cat-img-qa, .cat-img-num {
+	padding: 1px 7px 0px 7px; 
+	margin-top: -85px;
+	background-color: rgba(0,0,0,.4);
+	color: #fff;
+	font-size: 12px;
+	border-radius: 4px;
+	position: absolute;
 }
 	
   float: right;
