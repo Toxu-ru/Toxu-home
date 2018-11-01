@@ -83,7 +83,7 @@ html:not(.mobile-view) {
 .blog-list {position: relative;}
  li.nav-item-guidelines {display: none;}
 	
-.sidebar {position: fixed;width: 230px;float: left;}
+.sidebar {margin-top: 11px;width: 230px;float: left;}
 	
 .telo-qa {
     border-left: 1px solid #d6d9dc;
@@ -98,14 +98,6 @@ html:not(.mobile-view) {
 .container-tip {position: relative;}
 
 }	
-
-html.anon { 
-.sidebar-m, .sidebar-right  {margin-top: 9px;}
-.sidebar-add-qa {display: none;}
-.sidebar { position: relative !important;margin-top: 10px;}	
-.list-container.has-sidebar, .telo-qa {    margin-top: 1px;}
-.sidebar-right { .cat-img-num, .cat-img-qa { top: 23px;}}	
-}
 
 .container-telo {float: left;}
 .container-bar {width: 28%;float: right;position: relative;right: 0;}
