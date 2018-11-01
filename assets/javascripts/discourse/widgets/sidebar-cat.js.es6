@@ -32,11 +32,7 @@ export default createWidget('sidebar-cat', {
  
   listCategories() {
 
-    if (!this.currentUser) {
-       var maxCategoriesToDisplay = 28;
-    } else {
-       var maxCategoriesToDisplay = 15;
-    }  
+    var maxCategoriesToDisplay = 28;
     
     let categories = this.site.get("categoriesByCount");
 
