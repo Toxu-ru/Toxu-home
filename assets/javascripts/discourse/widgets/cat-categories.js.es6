@@ -85,7 +85,7 @@ export default createWidget('cat-categories', {
       <div class="toxu-info-soc">
       <a class="info-soc" target="_blank" href="https://toxu.ru/about">О нас</a> 
       <a class="info-soc" target="_blank" href="https://toxu.ru/help">Помощь</a> 
-      <a class="info-soc" target="_blank" href="https://toxu.ru/qa">Писатели</a>
+     
 
 <noindex><div class="dropdown pravo">
 <a title="Мы в социальных сетях..." class="info-soc" data-toggle="dropdown">Ещё...</a>
@@ -98,7 +98,7 @@ export default createWidget('cat-categories', {
 </div></noindex>
      
       </div>
-      ©  2017–2018 «Toxu»  ${uinfo}
+      ©  2018 «Toxu»  ${uinfo}
       </div>`}) 
 	   
 	   
