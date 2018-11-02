@@ -116,7 +116,7 @@ new RawHtml({ html: `<div>
 <div class="mn"> Посмотреть <a class="cvet" href="/u/${username}/badges">мои награды.</a></div>
  
  
-<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас появились вопросы, пожелания по сайту? <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">Ознакомьтесь</a> с этой темой.</div>
+<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Тут, вы можете <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">задать</a> вопросы по сайту.</div>
   
  
 <div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
