@@ -97,7 +97,7 @@ var verh = 'всего дней';
 contents.push(
 new RawHtml({ html: `<div>  
 
-<h3 class="oglavl">Мои данные</h3>
+<h3 class="oglavl"><i aria-hidden="true" class="fa fa-id-card-o"></i> &nbsp;  Мои данные</h3>
 
 <div class="mn"><b>Общее время чтения</b> - важный показатель на сайте.</div>
 
