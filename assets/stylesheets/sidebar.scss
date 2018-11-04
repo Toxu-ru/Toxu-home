@@ -1046,7 +1046,7 @@ border-radius: 0px;
    #scroll-top  {display: none !important;}	
 }
 @media (max-width: 1120px){ 
-    .sidebar-right {display:none;}
+    .sidebar-right, .no-mob {display:none;}
     .list-container.has-sidebar {width: 98% !important;}
     .fon .list-controls #create-topic {display: inline-block;}
 }
