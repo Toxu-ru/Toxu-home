@@ -316,13 +316,11 @@
     {{suggested-topics-sug topic=model}} 
     </div>
     </noindex>
-
-              {{#if model.relatedMessages.length}}
-                {{related-messages topic=model}}
-              {{/if}}
-
 </div>
-  
+
+    {{#if model.relatedMessages.length}}
+        {{related-messages topic=model}}
+    {{/if}}
   
     {{#if model.suggestedTopics.length}}
     {{suggested-topics topic=model}}
