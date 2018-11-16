@@ -318,7 +318,7 @@
     </noindex>
 </div>
 
-      <div class="{{if model.relatedMessages.length 'related-messages-wrapper'}}{{if model.suggestedTopics.length 'suggested-topics-wrapper'}}">
+      <div class="{{if model.relatedMessages.length 'related-messages-wrapper'}} {{if model.suggestedTopics.length 'suggested-topics-wrapper'}}">
                 {{#if model.relatedMessages.length}}
                   {{related-messages topic=model}}
                 {{/if}}
