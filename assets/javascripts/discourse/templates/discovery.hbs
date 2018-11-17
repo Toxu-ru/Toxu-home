@@ -1,12 +1,20 @@
 <div id="fon" class="fon  {{if currentUser.custom_fields.userbar_cat "test"}}">
 <a name="toxu-top"></a> 
  
-{{mount-widget widget="toxu-items"}}
+
 
 {{#if currentUser}}
 <span class="aut"></span>
 {{else}}
+{{mount-widget widget="toxu-banner-home"}}
 <span class="no-aut"></span>
+
+{{#if category}}
+    <span class="center"></span>
+{{else}}
+    <span class="no-center"></span>
+{{/if}}
+
 {{/if}}
 
 
