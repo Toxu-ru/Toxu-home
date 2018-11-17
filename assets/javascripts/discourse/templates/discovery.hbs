@@ -3,6 +3,13 @@
  
 {{mount-widget widget="toxu-items"}}
 
+{{#if currentUser}}
+<span class="aut"></span>
+{{else}}
+<span class="no-aut"></span>
+{{/if}}
+
+
 <div class="blog-list tl-{{{currentUser.trust_level}}}">
 
 <div class="sidebar"> 
