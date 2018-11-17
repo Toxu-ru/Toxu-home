@@ -1,7 +1,7 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
 
-export default createWidget('toxu-items', {
+export default createWidget('toxu-banner-home', {
   buildKey: (attrs) => 'home-toxu',
 
   html(attrs, state) {
