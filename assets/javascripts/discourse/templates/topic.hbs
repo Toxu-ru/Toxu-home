@@ -35,7 +35,7 @@
             {{plugin-outlet name="edit-topic" args=(hash model=model buffered=buffered)}}
             <div class="edit-controls">
               {{d-button action="finishedEditingTopic" class="btn-primary btn-small submit-edit" icon="check"}}
-              {{d-button action="cancelEditingTopic" class="btn-small cancel-edit" icon="times"}}
+              {{d-button action="cancelEditingTopic" class="btn-default btn-small cancel-edit" icon="times"}}
 
               {{#if canRemoveTopicFeaturedLink}}
                 <a href {{action "removeFeaturedLink"}} class="remove-featured-link" title="{{i18n "composer.remove_featured_link"}}">
@@ -69,7 +69,7 @@
               <a href {{action "editTopic"}} class="edit-topic" title="{{i18n "edit"}}">{{d-icon "pencil"}}</a>
             {{/if}}
           </h1>
- <div class="catnav"><a title="Все разделы" href="https://toxu.ru/categories">Разделы</a> <span class="str">/</span></div>  {{topic-category topic=model class="topic-category"}}
+        {{topic-category topic=model class="topic-category"}}
         {{/if}}
       {{/topic-title}}
     {{/if}}
