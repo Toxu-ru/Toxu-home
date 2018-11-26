@@ -57,7 +57,7 @@ export default createWidget('cat-categories', {
   let result = [  ];
   
     result = result.concat(
-	new RawHtml({ html: `<div class="title-dir"><i class="fa fa-sitemap" aria-hidden="true"></i> &nbsp; разделы</div>`})
+	new RawHtml({ html: `<div class="title-dir">разделы</div>`})
     );
 
     const categories = attrs.categories;
