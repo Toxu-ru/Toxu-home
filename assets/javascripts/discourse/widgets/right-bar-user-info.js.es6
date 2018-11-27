@@ -116,13 +116,13 @@ new RawHtml({ html: `<div>
 <div class="mn"> Посмотреть <a class="cvet" href="/u/${username}/badges">мои награды.</a></div>
  
  
-<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Вы можете <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">задать</a> вопросы по сайту.</div>
+<div class="mn">{{d-icon "question-circle"}} Вы можете <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">задать</a> вопросы по сайту.</div>
   
  
-<div class="mn"><i class="fa fa-address-book-o" aria-hidden="true"></i> <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
+<div class="mn">{{d-icon "user"}} <a href="https://toxu.ru/qa/${username}">Моя карточка</a>. Как видят меня?</div>
 
 
-<div class="mn"><i aria-hidden="true" class="fa fa-question-circle-o"></i> Вы можете <a href="https://toxu.ru/my/preferences/profile">убрать</a> эту <br> колонку в профиле.</div>
+<div class="mn">{{d-icon "question-circle"}} Вы можете <a href="https://toxu.ru/my/preferences/profile">убрать</a> эту <br> колонку в профиле.</div>
 
 </div>`}));
   
@@ -140,9 +140,9 @@ new RawHtml({ html: `<div>
 
 <div class="img-my-r"></div>
 
-<div class="mn"> <i aria-hidden="true" class="fa fa-trophy"></i> Про уровень доверия - <b>лидер</b>. Узнайте <a class="cvet" href="https://toxu.ru/level">больше.</a></div>
-<div class="mn"> <i aria-hidden="true" class="fa fa-question-circle-o"></i> У вас есть предложения по сайту? <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">Напишите</a> про них.</div>
-<br><center><a href="https://toxu.ru/login" id="create-topic" class="btn btn-default btn btn-icon-text ember-view">    <i class="fa fa-plus d-icon d-icon-plus"></i>
+<div class="mn"> {{d-icon "question-circle"}} Про уровень доверия - <b>лидер</b>. Узнайте <a class="cvet" href="https://toxu.ru/level">больше.</a></div>
+<div class="mn"> {{d-icon "question-circle"}} {{d-icon "plus"}} У вас есть предложения по сайту? <a href="https://toxu.ru/t/predlozheniya-pozhelaniya-po-sajtu-toxu-ru-obshhaya-tema/4544">Напишите</a> про них.</div>
+<br><center><a href="https://toxu.ru/login" id="create-topic" class="btn btn-default btn btn-icon-text ember-view">  {{d-icon "plus"}}
 <span class="d-button-label">Задать вопрос</span>
 </a></center>
 <br><br><a href="/tags/факты" class="tag-факты discourse-tag bullet">факты</a>
