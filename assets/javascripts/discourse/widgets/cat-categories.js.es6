@@ -2,6 +2,7 @@ import { createWidget } from 'discourse/widgets/widget';
 import { h } from 'virtual-dom';
 import { number } from 'discourse/lib/formatter';
 import RawHtml from 'discourse/widgets/raw-html';
+import { iconNode } from "discourse-common/lib/icon-library";
 
 createWidget('cat-category', {
   tagName: 'div.cat-link',
@@ -81,7 +82,7 @@ export default createWidget('cat-categories', {
   result = result.concat(
        
  
-	  new RawHtml({ html: `<div class="toxu-info"><hr class="hr">
+      new RawHtml({ html: `<div class="toxu-info"><hr class="hr">
       <div class="toxu-info-soc">
       <a class="info-soc" target="_blank" href="https://toxu.ru/about">О нас</a> 
       <a class="info-soc" target="_blank" href="https://toxu.ru/help">Помощь</a> 
@@ -90,10 +91,10 @@ export default createWidget('cat-categories', {
 <noindex><div class="dropdown pravo">
 <a title="Мы в социальных сетях..." class="info-soc" data-toggle="dropdown">Ещё...</a>
   <div class="dropdown-menu soc"><center>
-  <a title="Мы в Моём Мире" class="dropdown-item" rel="nofollow" target="_blank" href="https://my.mail.ru/community/toxu/"><i class="fa fa-at" aria-hidden="true"></i></a>
-  <a title="Мы в Twitter" class="dropdown-item" rel="nofollow" target="_blank" href="https://twitter.com/toxu_russian"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  <a title="Мы в Facebook" class="dropdown-item" rel="nofollow" target="_blank" href="https://www.facebook.com/toxu.ru"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-  <a title="Мы в ВКонтакте" class="dropdown-item" rel="nofollow" target="_blank" href="https://vk.com/toxu_ru"><i class="fa fa-vk" aria-hidden="true"></i></a>
+  <a title="Мы в Моём Мире" class="dropdown-item" rel="nofollow" target="_blank" href="https://my.mail.ru/community/toxu/">{{d-icon "at"}}</a>
+  <a title="Мы в Twitter" class="dropdown-item" rel="nofollow" target="_blank" href="https://twitter.com/toxu_russian">{{d-icon "twitter"}}</a>
+  <a title="Мы в Facebook" class="dropdown-item" rel="nofollow" target="_blank" href="https://www.facebook.com/toxu.ru">{{d-icon "facebook"}}</a>
+  <a title="Мы в ВКонтакте" class="dropdown-item" rel="nofollow" target="_blank" href="https://vk.com/toxu_ru">{{d-icon "vk"}}</a>
   </center></div>
 </div></noindex>
      
