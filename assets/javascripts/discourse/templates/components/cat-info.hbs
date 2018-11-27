@@ -24,8 +24,8 @@
     </div>
 </div>
 
-    <div class="cat-img-num"><i class="fa fa-eye" aria-hidden="true"></i> {{{dir-span category.post_count}}}</div>
-    <div class="cat-img-qa"><i aria-hidden="true" class="fa fa-question"></i> {{{dir-span category.topic_count}}}</div>
+    <div class="cat-img-num">{{d-icon "eye"}} {{{dir-span category.post_count}}}</div>
+    <div class="cat-img-qa">{{d-icon "question"}} {{{dir-span category.topic_count}}}</div>
 </div>
 
 <span class="dis-info-name">{{{dir-span category.name}}}</span>
@@ -33,17 +33,15 @@
 <span class="dis-info">{{{dir-span category.description}}}<br>
 
 <span class="scryt">
-<br> <i class="fa fa-eye" aria-hidden="true"></i> {{{dir-span category.post_count}}} &nbsp; - &nbsp; вопросов: 
+<br> {{d-icon "eye"}} {{{dir-span category.post_count}}} &nbsp; - &nbsp; вопросов: 
 <span class="num-info">{{{dir-span category.topic_count}}}</span>
 </span>
 
 </span>
 
-<span class="dis-info-more"><a href="https://toxu.ru{{{dir-span category.topic_url}}}"><i class="fa fa-list" aria-hidden="true"></i> 
-подробнее...</a></span>
+<span class="dis-info-more"><a href="https://toxu.ru{{{dir-span category.topic_url}}}">{{d-icon "list"}} подробнее...</a></span>
 
-<span class="dis-info-rss"><a href="https://toxu.ru/c/{{{dir-span category.slug}}}.rss"><i class="fa fa-rss" aria-hidden="true"></i>
- лента раздела...</a></span>
+<span class="dis-info-rss"><a href="https://toxu.ru/c/{{{dir-span category.slug}}}.rss">{{d-icon "list"}} лента раздела...</a></span>
 </div>
 
 <div class="sidebar-qa">
