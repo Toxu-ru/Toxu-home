@@ -1,6 +1,6 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
-import { iconNode } from "discourse-common/lib/icon-library";
+import { iconHTML } from "discourse-common/lib/icon-library";
 
 export default createWidget('topic-scroll', {
   buildKey: (args) => 'topic-scroll',
