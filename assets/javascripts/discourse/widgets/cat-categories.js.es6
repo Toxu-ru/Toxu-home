@@ -2,7 +2,7 @@ import { createWidget } from 'discourse/widgets/widget';
 import { h } from 'virtual-dom';
 import { number } from 'discourse/lib/formatter';
 import RawHtml from 'discourse/widgets/raw-html';
-import { iconNode } from "discourse-common/lib/icon-library";
+import { iconHTML } from "discourse-common/lib/icon-library";
 
 createWidget('cat-category', {
   tagName: 'div.cat-link',
