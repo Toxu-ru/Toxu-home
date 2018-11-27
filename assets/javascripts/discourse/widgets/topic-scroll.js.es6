@@ -21,8 +21,8 @@ export default createWidget('topic-scroll', {
  
     if (pcont > 3) {
     contents.push( new RawHtml({ html: `<div class='scroll'>
-    <a class="cvet" href="https://toxu.ru/t/${slug}/${qaid}/${pcont}" id="scroll-bottom" style="display: inline;"><i class="fa fa-arrow-down"></i></a>
-    <a class="cvet" href="https://toxu.ru/t/${slug}/${qaid}" id="scroll-top" style="display: inline;"><i class="fa fa-arrow-up"></i></a>
+    <a class="cvet" href="https://toxu.ru/t/${slug}/${qaid}/${pcont}" id="scroll-bottom" style="display: inline;">{{d-icon "arrow-down"}}</a>
+    <a class="cvet" href="https://toxu.ru/t/${slug}/${qaid}" id="scroll-top" style="display: inline;">{{d-icon "arrow-up"}}</a>
     </div>`}));
      }   
    
