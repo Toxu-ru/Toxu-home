@@ -1,5 +1,10 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
+import { iconHTML } from "discourse-common/lib/icon-library";
+
+let icon_user = iconHTML('user');
+let icon_heart = iconHTML('heart');
+
 
 export default createWidget('user-top', {
   buildKey: (attrs) => 'user-top',
@@ -52,8 +57,8 @@ contents.push( new RawHtml({ html: `<div class="prof-blog-2">
 <img alt="Иконка раздела" src="${img}" class="cat-small" width="32" height="32"></div> 
 <div class="blog-telo">
 <a class="title" href="/t/${slug}/${id}">${title}</a>
-<div class="blog-info"><i class="fa fa-user-o" aria-hidden="true"></i> <span class="rez">${last_poster_username}</span> 
-<i class="fa fa-heart-o d-icon d-icon-d-unliked"></i> <span class="rez">${like_count}</span> 
+<div class="blog-info"> ${icon_user} <span class="rez">${last_poster_username}</span> 
+${icon_heart} <span class="rez">${like_count}</span> 
 Просмотров: <span class="rez">${views}</span>
 <a class="ser" href="${slug}/${id}">Ответов: <span class="rez">${posts_count}</span></a> 
 </div></div></div>`})); 
