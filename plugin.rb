@@ -86,11 +86,8 @@ end
 	DiscourseProfileWidget::Engine.routes.draw do
 		get "data.json" => "profilewidget#index"
 end 
-  
-  
-  
-  
-  
+ 
 end
 
+register_svg_icon "fa-vk" if respond_to?(:register_svg_icon)
 register_asset "javascripts/discourse/templates/connectors/user-custom-preferences/userbar-preferences.hbs"
