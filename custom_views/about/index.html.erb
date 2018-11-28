@@ -90,9 +90,15 @@
 Также пользователи могут не только публиковать свои вопросы и ответы, но и усовершенствовать представленный на сайте другими пользователями материал, для чего необходимо достигнуть соответствующего уровня доверия.<br><br>
 </section>
 
-
 <% end %>
 
-<% content_for :head do %>
-  <%= raw crawlable_meta_data(title: SiteSetting.title, description: SiteSetting.site_description) %>
-<% end %>	
+<% if @title %>
+  <% content_for :title do %><%= @title %><% end %>
+  <% content_for :head do %>
+    <%= raw crawlable_meta_data(title: @title, description: SiteSetting.site_description) %>
+  <% end %>
+<% else %>
+  <% content_for :head do %>
+    <%= raw crawlable_meta_data(title: SiteSetting.title, description: SiteSetting.site_description) %>
+  <% end %>
+<% end %>
