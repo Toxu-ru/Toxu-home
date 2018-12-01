@@ -22,7 +22,7 @@
 .private_message .catnav {display:none;}
 
 /*-comm post_1 + none signature hidden и для общения нет подробного */
-#post_1 nav.post-controls button.reply, .post-hidden .user-signature, .category-other .sidebar-fon .dis-info-more, .topic-excerpt a {
+.post-hidden .user-signature, .category-other .sidebar-fon .dis-info-more, .topic-excerpt a {
     display: none;
 }
 
