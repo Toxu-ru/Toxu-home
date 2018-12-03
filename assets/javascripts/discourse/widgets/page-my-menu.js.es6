@@ -1,5 +1,8 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
+import { iconHTML } from "discourse-common/lib/icon-library";
+
+let caret_right = iconHTML('caret-right');
 
 export default createWidget('page-my-menu', {
   tagName: 'div.page-my-menu',
@@ -17,7 +20,7 @@ export default createWidget('page-my-menu', {
 if (trust_level === 0) { }
 
 contents.push(
-new RawHtml({ html: `<div> <a href="stats" class="menu"> <i class="fa fa-caret-right" aria-hidden="true"></i> Мои возможности</a></div>`})
+new RawHtml({ html: `<div> <a href="stats" class="menu"> ${caret_right} Мои возможности</a></div>`})
  
    );
 } 
