@@ -617,12 +617,6 @@ section.category-heading  {    display: none;}
 /*мелкие детали*/
 img.emoji.emoji-custom {width: auto;height: 100%;vertical-align: middle;}
 .sidebar-fon, .sidebar-m, .sidebar #create-topic, .blogcvet {border-radius: 3px;}
-.topic-list {
-th.activity:before {display: inline-block;content: '\f017';font-family: FontAwesome;}
-th.posts:before {display: inline-block;content: '\f27b';font-family: FontAwesome;}
-th.likes:before {display: inline-block;content: '\f08a';font-family: FontAwesome;}
-th.views:before {display: inline-block;content: '\f06e';font-family: FontAwesome;}
-}
 .topic-post.del { opacity: 0.3; .topic-body { max-width: 690px;} p { margin: 0; }}
 .activity.sortable {text-align: center;}
 #scroll-top{position:fixed;opacity: 0.6;bottom:80px;padding:5px;border-radius:5px;z-index:9999;right:20px;color:#888;font-size:25px;display:none;}
