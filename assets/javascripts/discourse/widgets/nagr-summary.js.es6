@@ -1,6 +1,9 @@
 import { createWidget } from 'discourse/widgets/widget';
 import RawHtml from 'discourse/widgets/raw-html';
- 
+import { iconHTML } from "discourse-common/lib/icon-library";
+
+let icon_trophy = iconHTML('trophy');
+
 export default createWidget('nagr-summary', {
 tagName: 'div.qramota',
   buildKey: (args) => 'qramota',
@@ -49,7 +52,7 @@ $.ajax({
   id = badges[t].badge_id;
   granted_at = badges[t].granted_at;
   if ( id == 104) { 
-  contents.push( new RawHtml({ html: `<div class="bdp ots gr"><a title="Грамота" href="/qa/${username}"><i aria-hidden="true" class="fa fa-trophy"></i></a></div>`})); 
+  contents.push( new RawHtml({ html: `<div class="bdp ots gr"><a title="Грамота" href="/qa/${username}">${icon_trophy}</a></div>`})); 
   } else {  }
   }
 
