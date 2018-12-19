@@ -541,7 +541,6 @@ margin: 0 0 5px 5px;
 
 /*раздел категории*/
 body.navigation-categories {
-    
 background: #f0f3f5;
 .colon.cat-cat {   background: #fff;padding: 15px 20px 15px 0;border-radius: 2px;box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;}  
 .date {margin-top: 10px;float: right;}
@@ -558,8 +557,8 @@ a.title:hover{   color:#f56400;}
 .sidebar, .add-qa, .sidebar-right, #scroll-top, #banner  {display: none !important;}	
 .telo-qa, .list-container.has-sidebar{border-left:none !important; max-width:100% !important;width:100% !important;margin-left:0px !important;float: left;position:relative;}
 h1.cat{margin: 0 0 10px 20px;color: #666;font-size: 18px;}
-.colon.cat-cat {float: left;width: 20%;}
-.colon.cat-post { width: 77%;float: left;}
+.colon.cat-cat {float: left;width: 21%;}
+.colon.cat-post { width: 76%;float: left;}
 .colon.post {float: left;margin-left: 20px;}
 .cat-home{    margin-bottom: 15px;}
 .cat-telo {margin-left: 15px;}
@@ -571,7 +570,6 @@ h1.cat{margin: 0 0 10px 20px;color: #666;font-size: 18px;}
 .avatar {    width: 24px;    height: 24px;}
 .number {margin: 0 14px 0 4px;}
 .stat .fa {    color:#667d99;}
-
 }
 /*end категории*/
 
