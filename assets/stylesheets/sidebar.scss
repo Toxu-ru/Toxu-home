@@ -541,6 +541,7 @@ margin: 0 0 5px 5px;
 
 /*раздел категории*/
 body.navigation-categories {
+.badge-wrapper.bullet .badge-category-bg {border-radius: 1px;}
 background: #f0f3f5;
 .colon.cat-cat {   background: #fff;padding: 15px 20px 15px 0;border-radius: 2px;box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;}  
 .date {margin-top: 10px;float: right;}
