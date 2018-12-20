@@ -542,16 +542,17 @@ margin: 0 0 5px 5px;
 body.navigation-categories {
 background: #f0f3f5;
 .colon.cat-cat {   background: #fff;padding: 15px 20px 15px 0;border-radius: 2px;box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;}  
-.date {float: right;}
+.title-t {width:80%;float: left;}	
+.date, .relative-date {float: right;margin-right: 5px;color: #919191;}
 a.title{font-size: 20px;color: #09c;}
 a.title:hover{color:#f56400;}
 .topic-list { background: #fff;    padding: 10px 5px 10px 10px;    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;}
-.foot {display: block;clear:both;}
+.foot {display: block;clear:both;padding-top: 5px;}
 .list-controls {background: #fff; padding: 12px 6px 0 0;}
-.ava-t {margin-top: 10px;}
+.ava-t {clear: both;padding-top: 5px;}
 .stat {color:#667d99;display: inline-block;margin: 1px 0px 0px 3px;}
 .categories-and-latest, .categories-and-top {    display: block;}
-.topic-excerpt {display: inline-block;font-size: 1em;}
+.topic-excerpt {display: inline-block;font-size: 1em;width: 90%;margin-top: 0px;}
 .sidebar, .add-qa, .sidebar-right, #scroll-top, #banner {display: none !important;}	
 .telo-qa, .list-container.has-sidebar{border-left:none !important; max-width:100% !important;width:100% !important;margin-left:0px !important;float: left;position:relative;}
 h1.cat{margin: 0 0 10px 20px;color: #666;font-size: 18px;}
