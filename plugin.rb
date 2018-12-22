@@ -45,7 +45,7 @@ User.register_custom_field_type('userbar_profile', :boolean)
 register_editable_user_custom_field :userbar_cat if defined? register_editable_user_custom_field
   
   add_to_class :post, :excerpt_for_topic do
-      Post.excerpt(cooked, 300, strip_links: true)
+      Post.excerpt(cooked, 120, strip_links: true)
   end
   add_to_serializer(:listable_topic, :include_excerpt?) { true }
  
