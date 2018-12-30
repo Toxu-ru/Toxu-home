@@ -80,12 +80,12 @@ html:not(.mobile-view) {
 .blog-list {position: relative;}
  li.nav-item-guidelines {display: none;}
 	
-.sidebar {margin-top: 4px;width: 190px;float: left;position: fixed;}
+.sidebar {margin-top: 4px;width: 180px;float: left;position: fixed;}
 	
 .telo-qa {
     border-left: 1px solid #d6d9dc;
     max-width: 1100px;
-    width: calc(100% - 191px);	
+    width: calc(100% - 181px);	
     float: right;
     min-height: 650px;	
 }
@@ -254,13 +254,10 @@ a.widget-link {
 	.badge-category-bg {display: none;}
 	span.badge-category:hover {color: #f56400 !important;}
 	}
-.badge-wrapper .badge-category { 
-	margin-left: 10px;
-	.d-icon {color: #339900;margin-right: 5px;}
-	}	
+.badge-wrapper .badge-category  .d-icon {color: #339900;margin-right: 5px;}
 
 .toxu-info {
-      padding: 1px 0 4px 12px;font-size: 12px;color: #919191;
+      padding: 1px 0 4px 0;font-size: 12px;color: #919191;
       .toxu-info-soc {margin-bottom: 6px; }
       hr.hr {width: 70%;margin-left: 25px;}
       a {color: #919191;}
@@ -504,7 +501,7 @@ margin: 0 0 5px 5px;
 
 #ostan{ position: fixed;max-width: 340px;}
 .oglavl  {display: inline-block;color: #919191;font-size: 0.87em;font-weight: 400;text-transform: uppercase;}
-.title-dir {color: #919191;font-size: 0.87em;font-weight: 400;margin: 0 0 9px 9px;text-transform: uppercase;}
+.title-dir {color: #919191;font-size: 0.87em;font-weight: 400;margin: 0 0 9px 0;text-transform: uppercase;}
 .blogcvet{
  padding: 8px 11px 2px 0;margin-bottom: 15px;
 	.number {
