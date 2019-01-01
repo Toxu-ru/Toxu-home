@@ -131,7 +131,12 @@ html.not-mobile-device.anon {
 
 
 .container-telo {float: left;}
-.container-bar {width: 28%;float: right;position: relative;right: 0;}
+
+.container-bar {
+    width: 28%;float: right;position: relative;right: 0;
+    .sidebar-top {margin-top: 20px;}
+}
+
 h1, h2, h3, h4, h5, h6 {font-weight: 400;}
 a:hover {color: #f56400;}
 
