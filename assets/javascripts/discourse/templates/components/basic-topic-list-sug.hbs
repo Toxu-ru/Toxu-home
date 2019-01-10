@@ -21,7 +21,6 @@
 {{/if}}
 
 <div class='qa-add'>
-{{create-topic currentUser=currentUser createTopic=createTopic}}
 <a href="https://toxu.ru/t/{{unbound topic.slug}}/{{unbound topic.id}}.rss" title="лента для данного вопроса и его ответов" class="ser cvet">RSS лента вопроса...</a>
 
 {{mount-widget widget="topic-scroll" args=(hash model=topic)}}
