@@ -5,15 +5,15 @@
 {{#d-section pageClass="groups"}}
   <div class="groups-header">
     {{#if currentUser.admin}}
-      {{d-button action="new"
-          class="groups-header-new pull-right"
+      {{d-button action=(action "new")
+          class="btn-default groups-header-new pull-right"
           icon="plus"
           label="admin.groups.new.title"}}
     {{/if}}
 
     <div class="groups-header-filters">
       {{text-field value=filterInput
-          placeholderKey="groups.index.all_groups"
+          placeholderKey="groups.index.all"
           class="groups-header-filters-name no-blur"}}
 
       {{combo-box value=type
@@ -27,14 +27,16 @@
 
   {{#if model}}
     {{#conditional-loading-spinner condition=model.loading}}
-      {{#load-more selector=".groups-table .groups-table-row" action="loadMore"}}
+      {{#load-more selector=".groups-table .groups-table-row" action=(action "loadMore")}}
         <div class='container'>
           <table class="groups-table">
             <thead>
-              {{directory-toggle field="name" labelKey="groups.group_name" order=order asc=asc}}
-              {{directory-toggle field="user_count" labelKey="groups.user_count" order=order asc=asc}}
-              <th>{{i18n "groups.index.group_type"}}</th>
-              <th>{{i18n "groups.membership"}}</th>
+              <tr>
+                {{directory-toggle field="name" labelKey="groups.group_name" order=order asc=asc}}
+                {{directory-toggle field="user_count" labelKey="groups.user_count" order=order asc=asc}}
+                <th>{{i18n "groups.index.group_type"}}</th>
+                <th>{{i18n "groups.membership"}}</th>
+              </tr>
             </thead>
 
             <tbody>
@@ -52,23 +54,11 @@
                         </span>
                       {{/if}}
 
-                      <span>
-                        <span class='groups-info-name'>{{group.displayName}}</span>
-
-                        {{#if group.full_name}}
-                          <span class='groups-info-full-name'>{{group.full_name}}</span>
-                        {{/if}}
-
-                        {{#if group.title}}
-                          <div>
-                            <span class='groups-info-title'>{{group.title}}</span>
-                          </div>
-                        {{/if}}
-                      </span>
+                      {{groups-info group=group}}
                     {{/link-to}}
                   </td>
 
-                  <td class="groups-user-count">{{group.user_count}}</td>
+                  <td class="groups-user-count">{{d-icon "group"}}{{group.user_count}}</td>
 
                   <td class="groups-table-type">
                     {{#if group.public_admission}}
@@ -96,7 +86,7 @@
                       </span>
                     {{/if}}
 
-                    {{group-membership-button model=group showLogin='showLogin'}}
+                    {{group-membership-button tagName='' model=group showLogin=(route-action "showLogin")}}
                   </td>
                 </tr>
               {{/each}}
