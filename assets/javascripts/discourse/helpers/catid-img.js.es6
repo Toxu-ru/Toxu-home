@@ -1,6 +1,6 @@
 import { registerUnbound } from 'discourse-common/lib/helpers';
 
-var get = Em.get,
+var get = Ember.get,
     escapeExpression = Handlebars.Utils.escapeExpression;
 
 export function categoryBadgeHTML(category, opts) {
