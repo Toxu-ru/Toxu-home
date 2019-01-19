@@ -423,7 +423,6 @@ html:not(.mobile-view) {
 .nav-pills > li > a {color: #667d99;border-bottom: 2px solid transparent;}
 	
 nav.post-controls button.reply.create span.d-button-label {display: none;}
-button.reply.create {max-width: 85px !important;}
 nav.post-controls button.reply.create:after {   content: "комм";}
 .topic-post.comment nav.post-controls button.reply.create:after { margin-left: 3px;  content: "комм";}
 }	
