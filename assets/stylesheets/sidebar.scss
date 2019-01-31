@@ -136,7 +136,7 @@ html.not-mobile-device.anon {
 }
 
 h1, h2, h3, h4, h5, h6 {font-weight: 400;}
-a:hover {color: #f56400;}
+a:hover {color: #f56400 !important;}
 
 
 .category-other .txt  {display: none !important;}
@@ -361,7 +361,7 @@ html:not(.mobile-view) {
     }
   }
 }
-    label {font-size: 13px;}	
+   
 }
 
 .d-editor-textarea-wrapper-info  {
