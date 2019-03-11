@@ -105,7 +105,7 @@ export default createWidget('cat-categories', {
 </div></noindex>
      
       </div>
-      ©  2018 «Toxu»  ${uinfo}
+      ©  2019 «Toxu»  ${uinfo}
       </div>`}) 
 	   
 	   
