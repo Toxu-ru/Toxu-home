@@ -143,3 +143,15 @@ module DiscourseContacts
     end
   end
 end
+
+module DiscourseFacts
+  class Engine < ::Rails::Engine
+    isolate_namespace DiscourseFacts
+
+    config.after_initialize do
+		Discourse::Application.routes.append do
+			mount ::DiscourseFacts::Engine, at: "/"
+		end
+    end
+  end
+end
