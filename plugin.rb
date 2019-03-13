@@ -20,6 +20,7 @@ Discourse::Application.routes.append do
   get '/chess' => 'discourse_chess/chess#my_page'
   get '/ask' => 'discourse_ask/ask#index'
   get '/contacts' => 'discourse_contacts/contacts#index'
+  get '/facts' => 'discourse_facts/facts#index'
     
   get '/qa' => 'discourse_qa/qa#pages' 
   get '/qa/:username' => 'discourse_qa/qa#index', constraints: { username: RouteFormat.username }
