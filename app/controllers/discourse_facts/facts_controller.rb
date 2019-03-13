@@ -1,6 +1,6 @@
 module DiscourseFacts
 	
-  class ContactsController < ApplicationController
+  class FactsController < ApplicationController
   skip_before_action :check_xhr, only: [:index]
 
   def index
