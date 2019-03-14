@@ -173,7 +173,7 @@ ${gramota}
    
 Во всплывающем окне: <b>пожаловаться</b> (под вопросом/ответом), появилась возможность обращаться к пользователю напрямую, минуя администрацию.  
 Для уточнения вопроса/ответа или продолжение личной беседы в почтовом разделе.<br>
-<img class="img" src="https://toxu.ru/uploads/default/optimized/2X/b/be1d524e3ebb32339bb14781c34a5c6eb1679bef_1_690x224.gif" alt="Личные-сообщения" width="590" height="200">
+<img class="img" src="https://toxu.ru/uploads/default/original/2X/a/a8ffff5222fcd6c8fee41e57ceb9202de91f56ee.jpeg" alt="Личные-сообщения" width="590" height="200">
 <br> <br> 
 
 <h3 class="t3">Ссылка на мой профиль</h3>
@@ -207,7 +207,7 @@ ${shcala}
 <br><br>
 Во всплывающем окне: <b>пожаловаться</b> (под вопросом/ответом), появилась возможность обращаться к пользователю напрямую, минуя администрацию.  
 Для уточнения вопроса/ответа или продолжения личной беседы в почтовом разделе.<br>
-<img class="img" src="https://toxu.ru/uploads/default/optimized/2X/b/be1d524e3ebb32339bb14781c34a5c6eb1679bef_1_690x224.gif" alt="Личные-сообщения" width="590" height="200">
+<img class="img" src="https://toxu.ru/uploads/default/original/2X/a/a8ffff5222fcd6c8fee41e57ceb9202de91f56ee.jpeg" alt="Личные-сообщения" width="590" height="200">
 <br>
 В вопросах и ответах появилась кнопка: <b>Пригласить</b><br>
 <img class="img" src="https://toxu.ru/uploads/default/original/2X/e/ebaabc2e2a3092fd609c886b3b9beb221da11cb5.gif" alt="Пригласить" width="590" height="100">
