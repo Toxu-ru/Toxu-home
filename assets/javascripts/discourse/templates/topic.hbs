@@ -173,6 +173,8 @@
                 rebakePost=(action "rebakePost")
                 changePostOwner=(action "changePostOwner")
                 grantBadge=(action "grantBadge")
+		addNotice=(action "addNotice")
+                removeNotice=(action "removeNotice")
                 lockPost=(action "lockPost")
                 unlockPost=(action "unlockPost")
                 unhidePost=(action "unhidePost")
@@ -190,7 +192,7 @@
                 selectBelow=(action "selectBelow")
                 fillGapBefore=(action "fillGapBefore")
                 fillGapAfter=(action "fillGapAfter")
-                showInvite=(route-action "showInvite")}}
+		showInvite=(route-action "showInvite")}}
             {{/unless}}
 
             {{conditional-loading-spinner condition=model.postStream.loadingBelow}}
