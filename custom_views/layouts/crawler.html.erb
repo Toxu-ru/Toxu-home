@@ -35,12 +35,15 @@
     </div>
     <footer class="container wrap">
       <nav class='crawler-nav' itemscope itemtype='http://schema.org/SiteNavigationElement'>
-        <a title="Разделы" href="/categories">Разделы</a>
-        <a title="Вопросы" href="/ask">Вопросы</a>
-        <a title="Правила" href="/pravila">Правила</a>
-        <a title="О проекте" href="/about">О проекте</a>
-        <a title="Помощь" href="/help">Помощь</a>
+        <ul>
+        <li itemprop="name"><a href='<%= path "/categories" %>' itemprop="url">Разделы </a></li>
+        <li itemprop="name"><a href='<%= path "/ask" %>' itemprop="url">Вопросы </a></li>
+        <li itemprop="name"><a href='<%= path "/pravila" %>' itemprop="url">Правила </a></li>
+        <li itemprop="name"><a href='<%= path "/about" %>' itemprop="url">О проекте </a></li>
+        <li itemprop="name"><a href='<%= path "/help" %>' itemprop="url">Помощь </a></li>
+        </ul>
       </nav>
+      
       <p class='powered-by-link'><%= t 'powered_by_html' %></p>
     </footer>
     <%= theme_lookup("body_tag") %>
