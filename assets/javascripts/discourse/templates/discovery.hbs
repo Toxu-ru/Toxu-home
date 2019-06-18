@@ -1,7 +1,7 @@
 <div id="fon" class="fon  {{if currentUser.custom_fields.userbar_cat "test"}}">
 <a name="toxu-top"></a> 
  
-
+{{#if site.mobileView}}{{else}} 
 
 {{#if currentUser}}
 <span class="aut"></span>
@@ -16,7 +16,7 @@
 {{/if}}
 
 {{/if}}
-
+{{/if}}
 
 <div class="blog-list tl-{{{currentUser.trust_level}}}">
 
@@ -61,9 +61,11 @@
   
 </div>
 
+{{#if site.mobileView}}{{else}} 
 <div class="sidebar-right"> 
   {{cat-info category=category}}
 </div>
+{{/if}}
 
 </div>
 </div>
