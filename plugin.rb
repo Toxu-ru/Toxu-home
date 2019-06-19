@@ -14,13 +14,9 @@ Discourse::Application.routes.append do
   get '/features' => 'discourse_features/features#index'
   get '/help' => 'discourse_help/help#index'
   get '/donate' => 'discourse_donate/donate#index'
-  get '/stats' => 'discourse_stats/stats#my_page'
-  get '/chess' => 'discourse_chess/chess#my_page'
   get '/ask' => 'discourse_ask/ask#index'
   get '/contacts' => 'discourse_contacts/contacts#index'
   get '/facts' => 'discourse_facts/facts#index'
-  get '/qa' => 'discourse_qa/qa#pages' 
-  get '/qa/:username' => 'discourse_qa/qa#index', constraints: { username: RouteFormat.username }
   
 end
 
