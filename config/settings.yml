@@ -1,10 +1,4 @@
 plugins:
-  sidebar_enable:
-    default: false
-    client: true
-  userbar_enabled:
-    default: true
-    client: true
   my_index:
     default: true
     client: true
