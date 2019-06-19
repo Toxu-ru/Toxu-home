@@ -43,6 +43,12 @@ nav.post-controls button.reply.create:after {   content: "комм";}
 h2.tag-show-heading a {margin-top: -6px;}
 #list-area h2.tag-show-heading {margin: 0 0 30px;}
 }	
-	
+
+/*колонки + add*/
+.wrap {max-width: 1190px;}
+#create-topic {color: #fff !important;    font-size: 1em;background-color: #0af !important;}
+#create-topic:hover, #create-topic:active {color: #fff !important;background-color: #0095ff !important;}
+.btn .d-icon-plus {color: #fff;}
+
 	
 }
