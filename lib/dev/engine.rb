@@ -23,19 +23,6 @@ module DiscourseToxu
 end
 
 
-module DiscourseQa
-  class Engine < ::Rails::Engine
-    isolate_namespace DiscourseQa
-
-    config.after_initialize do
-		Discourse::Application.routes.append do
-			mount ::DiscourseQa::Engine, at: "/"
-		end
-    end
-  end
-end
-
-
 module DiscourseFeatures
   class Engine < ::Rails::Engine
     isolate_namespace DiscourseFeatures
@@ -67,18 +54,6 @@ module DiscourseStats
     config.after_initialize do
 		Discourse::Application.routes.append do
 			mount ::DiscourseStats::Engine, at: "/"
-		end
-    end
-  end
-end
-
-module DiscourseChess
-  class Engine < ::Rails::Engine
-    isolate_namespace DiscourseChess
-
-    config.after_initialize do
-		Discourse::Application.routes.append do
-			mount ::DiscourseChess::Engine, at: "/"
 		end
     end
   end
