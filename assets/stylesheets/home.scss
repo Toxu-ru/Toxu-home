@@ -40,9 +40,7 @@ nav.post-controls button.reply.create:after {   content: "комм";}
     padding: .2em .8em;    line-height: 1.2;    border-radius: 3px;    border-image: initial;}
 .discourse-tag.bullet:before {display: none;}
 .discourse-tag.bullet:hover{color: #f56400 !important;background-color:rgba(0,132,255,.15);}
-h2.tag-show-heading a {margin-top: -6px;}
-#list-area h2.tag-show-heading {margin: 0 0 30px;}
-}	
+	
 
 /*колонки + add*/
 .wrap {max-width: 1190px;}
