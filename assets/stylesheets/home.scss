@@ -1,0 +1,17 @@
+/*логин и регистрация фон*/
+html:not(.mobile-view) {
+#discourse-modal {
+  &.login-modal,
+  &.create-account {
+    &:not(.hidden):before {
+      content: "";
+      height: 100vh;
+      width: 100vw;
+      // change background here
+      background: url(https://toxu.ru/uploads/default/original/2X/1/170b51aad7bbc5daffe301cff9f57d93516a3faa.jpg);
+      position: fixed;
+      z-index: -2;
+    }
+  }
+}
+}
