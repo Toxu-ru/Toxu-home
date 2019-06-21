@@ -48,6 +48,8 @@ nav.post-controls button.reply.create:after {   content: "комм";}
 #create-topic:hover, #create-topic:active {color: #fff !important;background-color: #0095ff !important;}
 .btn .d-icon-plus {color: #fff;}
 
+}
+
 
 /*комментарии*/
 .topic-post.comment { 
@@ -71,5 +73,11 @@ nav.post-controls {    margin-top: -10px;}
 .like-button, .share, .who-liked {display: none !important;} 	
 }
 
+/*add mobile*/
+html.mobile-view {
+	
+.category-logo {display: none !important;}
+.topic-post.comment {margin-left: 23px;}
+.topic-post.comment .topic-body {max-width: 687px;}
 	
 }
