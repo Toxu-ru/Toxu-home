@@ -18,20 +18,16 @@
     <%- end %>
 
     <%= build_plugin_html 'server:before-script-load' %>
-    
+
     <%= preload_script "locales/#{I18n.locale}" %>
     <%= preload_script "ember_jquery" %>
     <%= preload_script "preload-store" %>
     <%= preload_script "vendor" %>
     <%= preload_script "pretty-text-bundle" %>
     <%= preload_script "application" %>
-    <%- if allow_plugins? %>
-    <%= preload_script "plugin" %>
+    <%- Discourse.find_plugin_js_assets(include_official: allow_plugins?, include_unofficial: allow_third_party_plugins?).each do |file| %>
+      <%= preload_script file %>
     <%- end %>
-    <%- if allow_third_party_plugins? %>
-    <%= preload_script "plugin-third-party" %>
-    <%- end %>
-
     <%- if staff? %>
       <script src="<%= ExtraLocalesController.url('admin') %>"></script>
       <%= preload_script "admin" %>
@@ -39,6 +35,7 @@
 
     <%- unless customization_disabled? %>
       <%= raw theme_translations_lookup %>
+      <%= raw theme_js_lookup %>
       <%= raw theme_lookup("head_tag") %>
     <%- end %>
 
