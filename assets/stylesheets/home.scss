@@ -78,3 +78,8 @@ html.mobile-view {
 .topic-post.comment .topic-body {max-width: 687px;}
 	
 }
+
+/*icon sraff*/
+button.adm_ui_button {display: none !important;}
+body.staff button.adm_ui_button {display: inline-block !important;}
+.adm {font-size: 14px;border-left: 3px dotted #f56400;padding-left: 12px;color: #666;}
