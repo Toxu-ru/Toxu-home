@@ -1,4 +1,4 @@
-# name: Toxu-home
+# name: toxu-home
 # about: add a detals site and dev, stats
 # version: 1.0
 # authors:  Evg
