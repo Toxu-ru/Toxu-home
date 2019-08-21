@@ -4,7 +4,7 @@
 # authors:  Evg
 # url: https://github.com/Toxu-ru/Toxu-home
 
-register_asset "stylesheets/home.scss"
+# register_asset "stylesheets/home.scss"
 
 Discourse::Application.routes.append do
   get '/dev' => 'discourse_dev/dev#index'
