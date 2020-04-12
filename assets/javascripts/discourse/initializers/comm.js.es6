@@ -36,7 +36,7 @@ function attachComm(api) {
  
  api.addSharingSource({
     id: "vk",
-    icon: "vk",
+    icon: "fab-vk",
     generateUrl: function(link, title) {
       return "http://vk.com/share.php?url=" + encodeURIComponent(link)  + "&title=" + encodeURIComponent(title);
     },
