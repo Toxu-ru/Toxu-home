@@ -1,5 +1,6 @@
 import { ajax } from 'discourse/lib/ajax';
-export default Discourse.Route.extend({
+import DiscourseRoute from "discourse/routes/discourse";
+export default DiscourseRoute.extend({
   model(opts) {
   	return ajax("/level");
   },
